@@ -1,0 +1,75 @@
+The task is as follows: given the URL of an academic conference, you need to generate yaml metadata that captures basic information about the conference as well as the relevant deadlines for submitting to the conference. here are two examples:
+
+For the USENIX Security conference whose website is: https://www.usenix.org/conference/usenixsecurity24
+
+the desired yaml output is:
+"""
+- title: USENIX Security
+  id: usenixsec24summer
+  full_title: USENIX Security Symposium
+  link: https://www.usenix.org/conference/usenixsecurity24
+  deadline: '2023-06-06 23:59:59'
+  timezone: Etc/GMT+12
+  note: Summer Deadline.
+  sub: [SEC]
+  place: Philadelphia, PA, USA
+  date: August 14-16, 2024
+  start: 2024-08-14
+  end: 2024-08-16
+
+- title: USENIX Security
+  id: usenixsec24fall
+  full_title: USENIX Security Symposium
+  link: https://www.usenix.org/conference/usenixsecurity24
+  deadline: '2023-10-17 23:59:59'
+  timezone: Etc/GMT+12
+  note: Fall Deadline.
+  sub: [SEC]
+  place: Philadelphia, PA, USA
+  date: August 14-16, 2024
+  start: 2024-08-14
+  end: 2024-08-16
+
+- title: USENIX Security
+  id: usenixsec24winter
+  full_title: USENIX Security Symposium
+  link: https://www.usenix.org/conference/usenixsecurity24
+  deadline: '2024-02-08 23:59:59'
+  timezone: Etc/GMT+12
+  note: Winter Deadline.
+  sub: [SEC]
+  place: Philadelphia, PA, USA
+  date: August 14-16, 2024
+  start: 2024-08-14
+  end: 2024-08-16
+"""
+
+for IEEE EuroS&P, the website is: https://eurosp2024.ieee-security.org/
+
+the desired yaml output is:
+"""
+- title: IEEE EuroS&P
+  year: 2024
+  id: eurosp24
+  full_title: IEEE European Symposium on Security and Privacy
+  link: https://eurosp2024.ieee-security.org/
+  deadline: '2023-10-30 23:59:59'
+  note: Deadline for abstract registration. Paper deadline 2023-11-02 AoE.
+  timezone: Etc/GMT+12
+  place: Vienna, Austria
+  date: July 8-12, 2024
+  start: 2024-07-08
+  end: 2024-07-12
+  sub: [DS, SEC]
+"""
+
+thus, when multiple deadlines are provided, for instance one for abstract submission and one for full paper submission, use the first deadline, and specify in the note field the later deadline.
+sort the fields of each yaml entry as above.
+do not use the number of the occurrence of the conference or the year in the title or full_title.
+make sure to specify the cycle in the note field and in the id.
+
+when deadlines are in AoE = anywhere on earth, this corresponds to 23:59:59 in the most delayed time zone which is typically UTC-12 = Etc/GMT+12.
+
+sometimes, the deadline information is not available on the conference's main website. in those cases, please find a link to the call for papers (CFP) on the main page, retrieve the CFP, and obtain deadline information from there.
+
+understood?
