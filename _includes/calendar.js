@@ -102,7 +102,7 @@ function load_conference_list() {
   // add Conferences in chosen color
   {% if conf.start != "" %}
   var color = "black";
-  {% assign conf_sub = conf.sub | split: ',' | first | strip %} // use first sub to choose color
+  {% assign conf_sub = conf.sub | first | strip %} // use first sub to choose color
   {% for type in site.data.types %}
   {% if conf_sub == type.sub %}
   color = "{{type.color}}";
