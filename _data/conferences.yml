@@ -73,6 +73,7 @@
   sub: [DS, SEC]
 
 - title: NDSS
+  year: 2024
   id: ndss24summer
   full_title: Network and Distributed System Security Symposium
   link: https://www.ndss-symposium.org/ndss2024/
@@ -86,6 +87,7 @@
   end: 2024-03-01
 
 - title: NDSS
+  year: 2024
   id: ndss24fall
   full_title: Network and Distributed System Security Symposium
   link: https://www.ndss-symposium.org/ndss2024/
@@ -99,6 +101,7 @@
   end: 2024-03-01
 
 - title: USENIX Security
+  year: 2024
   id: usenixsec24summer
   full_title: USENIX Security Symposium
   link: https://www.usenix.org/conference/usenixsecurity24
@@ -112,6 +115,7 @@
   end: 2024-08-16
 
 - title: USENIX Security
+  year: 2024
   id: usenixsec24fall
   full_title: USENIX Security Symposium
   link: https://www.usenix.org/conference/usenixsecurity24
@@ -125,6 +129,7 @@
   end: 2024-08-16
 
 - title: USENIX Security
+  year: 2024
   id: usenixsec24winter
   full_title: USENIX Security Symposium
   link: https://www.usenix.org/conference/usenixsecurity24
@@ -138,6 +143,7 @@
   end: 2024-08-16
 
 - title: IEEE S&P
+  year: 2024
   id: sp2024first
   full_title: IEEE Symposium on Security and Privacy
   link: https://www.ieee-security.org/TC/SP2024/
@@ -151,6 +157,7 @@
   end: 2024-05-23
 
 - title: IEEE S&P
+  year: 2024
   id: sp2024second
   full_title: IEEE Symposium on Security and Privacy
   link: https://www.ieee-security.org/TC/SP2024/
@@ -164,6 +171,7 @@
   end: 2024-05-23
 
 - title: IEEE S&P
+  year: 2024
   id: sp2024third
   full_title: IEEE Symposium on Security and Privacy
   link: https://www.ieee-security.org/TC/SP2024/
@@ -177,6 +185,7 @@
   end: 2024-05-23
 
 - title: ACM AsiaCCS
+  year: 2024
   id: asiaccs24first
   full_title: ACM ASIA Conference on Computer and Communications Security
   link: https://asiaccs2024.sutd.edu.sg/
@@ -190,6 +199,7 @@
   end: 2024-07-05
 
 - title: ACM AsiaCCS
+  year: 2024
   id: asiaccs24second
   full_title: ACM ASIA Conference on Computer and Communications Security
   link: https://asiaccs2024.sutd.edu.sg/
@@ -203,6 +213,7 @@
   end: 2024-07-05
 
 - title: IEEE CSF
+  year: 2024
   id: csf24spring
   full_title: IEEE Computer Security Foundations Symposium
   link: https://www.ieee-security.org/TC/CSF2024/
@@ -216,6 +227,7 @@
   sub: [DS, SEC]
 
 - title: IEEE CSF
+  year: 2024
   id: csf24fall
   full_title: IEEE Computer Security Foundations Symposium
   link: https://www.ieee-security.org/TC/CSF2024/
@@ -229,6 +241,7 @@
   sub: [DS, SEC]
 
 - title: IEEE CSF
+  year: 2024
   id: csf24winter
   full_title: IEEE Computer Security Foundations Symposium
   link: https://www.ieee-security.org/TC/CSF2024/
@@ -246,6 +259,7 @@
 # (DISTRIBUTED) SYSTEMS
 
 - title: ACM PODC
+  year: 2023
   id: podc23
   full_title: ACM Symposium on Principles of Distributed Computing
   link: https://www.podc.org/
@@ -259,6 +273,7 @@
   sub: [DS]
 
 - title: DISC
+  year: 2023
   id: disc23
   full_title: International Symposium on Distributed Computing
   link: http://www.disc-conference.org/wp/disc2023/
