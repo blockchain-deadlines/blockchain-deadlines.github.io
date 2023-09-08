@@ -12,7 +12,7 @@ permalink: /calendar/
   {% include header.html %}
   <div class="container">
     <br>
-    <h1>Calendar Overview of Conference Deadlines and Dates</h1>
+    <h1>Calendar Overview of Deadlines and Dates</h1>
     <div class="row">
       <div class="meta col-sm-12">
         Overview of deadlines and dates in a calendar.
@@ -133,7 +133,6 @@ permalink: /calendar/
     {% include multiselect_handler.js %}
     {% include calendar.js %}  // overwrites update_filtering
 
-
     $(function () {
       // Get data from URL/Cache
       {% include handle_url_retrieval.js %}
@@ -144,9 +143,6 @@ permalink: /calendar/
       // Render calendar
       update_filtering({ subs: subs, all_subs: all_subs });
     });
-
-
-    {% include google_analytics.js %}
   </script>
 </body>
 
