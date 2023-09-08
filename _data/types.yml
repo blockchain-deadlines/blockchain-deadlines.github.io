@@ -14,12 +14,3 @@
 - name: Economics/Incentives
   sub: EC
   color: "#0aff99"
-- name: Conference
-  sub: CONF
-  color: "#580aff"
-- name: Workshop
-  sub: WORK
-  color: "#be0aff"
-- name: Journal
-  sub: JOUR
-  color: "#a432a8"
