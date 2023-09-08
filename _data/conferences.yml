@@ -7,14 +7,21 @@
   id: eurosp24
   full_title: 9th IEEE European Symposium on Security and Privacy
   link: https://eurosp2024.ieee-security.org/
-  deadline: '2023-11-02 23:59:59'
-  abstract_deadline: '2023-10-30 23:59:59'
-  timezone: Europe/Rome
+  deadline: '2023-10-30 23:59:59'
+  note: Deadline for abstract registration. Paper deadline 2023-11-02 AoE.
+  timezone: Etc/GMT+12
   place: Vienna, Austria
   date: July 8-12, 2024
   start: 2024-07-08
   end: 2024-07-12
   sub: [DS, SEC]
+
+
+
+
+
+
+
 
 - title: ACM CCS
   full_title: 30th ACM Conference on Computer and Communications Security 
