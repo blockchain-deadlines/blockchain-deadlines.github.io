@@ -1,5 +1,236 @@
 ---
+
+# SECURITY
+
+- title: EuroS&amp;P
+  year: 2024
+  id: eurosp24
+  full_title: 9th IEEE European Symposium on Security and Privacy
+  link: https://eurosp2024.ieee-security.org/
+  deadline: '2023-11-02 23:59:59'
+  abstract_deadline: '2023-10-30 23:59:59'
+  timezone: Europe/Rome
+  place: Vienna, Austria
+  date: July 8-12, 2024
+  start: 2024-07-08
+  end: 2024-07-12
+  sub: [DS, SEC]
+
+- title: ACM CCS
+  full_title: 30th ACM Conference on Computer and Communications Security 
+  year: 2023
+  id: ccs23
+  link: https://www.sigsac.org/ccs/CCS2023/index.html
+  deadline: '2023-05-04 23:59:59'
+  timezone: Europe/Rome
+  place: Copenhagen, Denmark 
+  date: November 26-30, 2023
+  start: 2023-11-26
+  end: 2023-11-30
+  sub: [BC, SEC, DS]
+
+- title: USENIX NSDI
+  year: 2024
+  full_title: USENIX Symposium on Networked Systems Design and Implementation
+  id: nsdi24
+  link: https://www.usenix.org/conference/nsdi24/
+  abstract_deadline: '2023-09-07 23:59:59'
+  deadline: '2023-09-14 23:59:59'
+  timezone: Europe/Rome
+  place: Santa Clara, California
+  date: April 16-18, 2024
+  start: 2024-04-16
+  end: 2024-04-18
+  sub: [DS, SEC, BC]
+
+# NDSS???
+# Usenix security
+# S&P
+# AsiaCCS
   
+# - title: CSF
+#   description: IEEE Computer Security Foundations Symposium
+#   year: 2024
+#   link: https://www.ieee-security.org/TC/CSF2024/
+#   deadline:
+#     - "2023-05-15 23:59"
+#     - "2023-09-30 23:59"
+#     - "2024-02-03 23:59"
+#   date: July 08 - 12
+#   place: Enschede, The Netherlands
+#   sub: [SEC, PRIV, CONF]
+
+
+
+# (DISTRIBUTED) SYSTEMS
+
+- title: ACM PODC
+  year: 2023
+  full_title: ACM Symposium on Principles of Distributed Computing
+  id: podc23
+  link: https://www.podc.org/
+  abstract_deadline: '2023-01-06 23:59:59'
+  deadline: '2023-01-10 23:59:59'
+  timezone: Europe/Rome
+  place: Orlando, Florida
+  date: June 19-23, 2023
+  start: 2023-06-19
+  end: 2023-06-23
+  sub: [DS, BC]
+
+- title: DISC 
+  year: 2023
+  full_title: International Symposium on Distributed Computing
+  id: disc23
+  link: http://www.disc-conference.org/wp/disc2023/
+  abstract_deadline: '2023-05-03 23:59:59'
+  deadline: '2023-05-10 23:59:59'
+  timezone: Europe/Rome
+  place: L'Aquila, Italy
+  date: October 9-13, 2023
+  start: 2023-10-09
+  end: 2023-10-13
+  sub: [DS]
+
+- title: OPODIS
+  year: 2023
+  id: opodis23
+  full_title: International Conference on Principles of Distributed Systems
+  link: https://xdefago.github.io/opodis23/
+  abstract_deadline: '2023-08-28 23:59:59'
+  deadline: '2023-09-01 23:59:59'
+  timezone: Europe/Rome
+  place: Tokyo, Japan
+  date: December 6-8, 2023
+  start: 2023-12-06
+  end: 2023-12-08
+  sub: [DS, BC]
+
+# ESORICS ?
+
+- title: IEEE ICDCS 
+  year: 2023
+  full_title: IEEE International Conference on Distributed Computing Systems
+  id: icdcs23
+  link: https://icdcs2023.icdcs.org/
+  abstract_deadline: '2023-01-14 23:59:59'
+  deadline: '2023-05-21 23:59:59'
+  timezone: America/New_York
+  place: Hong Kong, China
+  date: July 18-21, 2023
+  start: 2023-07-18
+  end: 2023-07-21
+  sub: [DS]
+
+- title: IPDPS 
+  year: 2024
+  full_title:  IEEE International Parallel &amp; Distributed Processing Symposium
+  id: ipdps24
+  link: http://www.ipdps.org/ipdps2024/
+  abstract_deadline: '2023-09-28 23:59:59'
+  deadline: '2023-10-05 23:59:59'
+  timezone: Europe/Rome
+  place: San Francisco, California, USA
+  date: May 27-31, 2024
+  start: 2024-05-27
+  end: 2024-05-31
+  sub: [DS]
+
+- title: SOSP
+  year: 2023
+  id: sosp23
+  full_title: ACM Symposium on Operating Systems Principles (SOSP) 
+  link: https://sosp2023.mpi-sws.org/
+  deadline: '2023-04-17 23:59:59'
+  timezone: Europe/Rome
+  place: Koblenz, Germany
+  date: October 23rd-26th, 2023
+  start: 2023-10-23
+  end: 2023-10-26
+  sub: [DS]
+
+- title: OSDI
+  year: 2024
+  full_title: USENIX Symposium on Operating Systems Design and Implementation (OSDI '24)
+  id: osdi24
+  link: https://www.usenix.org/conference/osdi24/
+  abstract_deadline: '2023-10-30 23:59:59'
+  deadline: '2023-12-07 23:59:59'
+  timezone: Europe/Rome
+  place: Santa Clara, CA, USA
+  date: July 10th–12th, 2024
+  start: 2024-07-10
+  end: 2024-07-12
+  sub: [DS, SEC]
+
+- title: EuroSys
+  year: 2024
+  full_title: European Conference on Computer Systems (EuroSys)
+  id: eurosys24
+  link: https://2024.eurosys.org/
+  deadline: '2023-10-19 23:59:59'
+  timezone: Europe/Rome
+  place: Athens, Greece
+  date: April 22nd-25th, 2024
+  start: 2024-04-22
+  end: 2024-04-25
+  sub: [DS, SEC, BC]
+
+
+
+# BLOCKCHAIN
+
+- title: FC 
+  year: 2024
+  full_title: Financial Cryptography and Data Security
+  id: fc24
+  link: https://fc24.ifca.ai
+  deadline: '2023-09-18 23:59:59'
+  timezone: Europe/Rome
+  place: Caribbean
+  date: March 4-8, 2024
+  start: 2024-03-04
+  end: 2024-03-08
+  sub: [BC]
+
+# AFT?
+
+
+# CRYPTOGRAPHY
+
+# - title: Crypto
+#   description: International Cryptology Conference
+#   year: 2023
+#   link: https://crypto.iacr.org/2023/
+#   deadline: ["2023-02-16 11:00"]
+#   date: August 19-24
+#   place: Santa Barbara, CA, USA
+#   sub: [CRYPTO, CONF]
+
+# - title: Eurocrypt
+#   description: European Cryptology Conference
+#   year: 2024
+#   link: https://eurocrypt.iacr.org/2024/
+#   deadline: ["2023-10-06 23:59"]
+#   date: May 26-30
+#   place: Zurich, Switzerland
+#   sub: [CRYPTO, CONF]
+
+# - title: Asiacrypt
+#   description: International Conference on the Theory and Application of Cryptology and Information Security
+#   year: 2023
+#   link: https://asiacrypt.iacr.org/2023/
+#   deadline: ["2023-05-26 11:59"]
+#   timezone: Etc/UTC
+#   date: December 4-8
+#   place: Guangzhou, China
+#   sub: [CRYPTO, CONF]
+
+
+
+
+
+
 
 
 
@@ -765,18 +996,7 @@
 
 
 
-- title: EuroS&amp;P
-  year: 2023
-  id: eurosp23
-  full_title: 8th IEEE European Symposium on Security and Privacy
-  link: https://eurosp2023.ieee-security.org/
-  deadline: '2022-10-26 23:59:59'
-  timezone: Europe/Rome
-  place: Delft, Germany
-  date: July 3-7, 2023
-  start: 2023-07-03
-  end: 2023-07-07
-  sub: [BC]
+
 # - title: DAPPS
 #   year: 2023
 #   id: dapps23
@@ -801,43 +1021,6 @@
 #   start: 2023-09-25
 #   end: 2023-09-28
 #   sub: [DS, SE]
-- title: SOSP
-  year: 2023
-  id: sosp23
-  full_title: ACM Symposium on Operating Systems Principles (SOSP) 
-  link: https://sosp2023.mpi-sws.org/
-  deadline: '2023-04-17 23:59:59'
-  timezone: Europe/Rome
-  place: Koblenz, Germany
-  date: October 23rd-26th, 2023
-  start: 2023-10-23
-  end: 2023-10-26
-  sub: [DS]
-- title: CCS
-  full_title: 30th ACM Conference on Computer and Communications Security 
-  year: 2023
-  id: ccs23
-  link: https://www.sigsac.org/ccs/CCS2023/index.html
-  deadline: '2023-05-04 23:59:59'
-  timezone: Europe/Rome
-  place: Copenhagen, Denmark 
-  date: November 26-30, 2023
-  start: 2023-11-26
-  end: 2023-11-30
-  sub: [BC, SEC, DS]
-- title: OPODIS
-  year: 2023
-  id: opodis23
-  full_title: International Conference on Principles of Distributed Systems
-  link: https://xdefago.github.io/opodis23/
-  abstract_deadline: '2023-08-28 23:59:59'
-  deadline: '2023-09-01 23:59:59'
-  timezone: Europe/Rome
-  place: Tokyo, Japan
-  date: December 6-8, 2023
-  start: 2023-12-06
-  end: 2023-12-08
-  sub: [DS, BC]
 # - title: Middleware
 #   year: 2023
 #   id: middleware23
@@ -877,19 +1060,6 @@
 #   end: 2023-06-30
 #   sub: [DS, ES]
 #   rank: B2
-- title: ACM PODC 
-  year: 2023
-  full_title: ACM Symposium on Principles of Distributed Computing
-  id: podc23
-  link: https://www.podc.org/
-  abstract_deadline: '2023-01-06 23:59:59'
-  deadline: '2023-01-10 23:59:59'
-  timezone: Europe/Rome
-  place: Orlando, Florida
-  date: June 19-23, 2023
-  start: 2023-06-19
-  end: 2023-06-23
-  sub: [DS, BC]
 # - title: IEEE/IFIP DSN 
 #   year: 2023
 #   full_title:  IEEE/IFIP International Conference on Dependable Systems and Networks
@@ -904,19 +1074,6 @@
 #   end: 2023-06-30
 #   sub: [DS]
 #   rank: [A, A1]
-- title: IEEE ICDCS 
-  year: 2023
-  full_title: IEEE International Conference on Distributed Computing Systems
-  id: icdcs23
-  link: https://icdcs2023.icdcs.org/
-  abstract_deadline: '2023-01-14 23:59:59'
-  deadline: '2023-05-21 23:59:59'
-  timezone: America/New_York
-  place: Hong Kong, China
-  date: July 18-21, 2023
-  start: 2023-07-18
-  end: 2023-07-21
-  sub: [DS]
 # - title: Euro-Par 
 #   year: 2023
 #   full_title: International European Conference on Parallel and Distributed Computing
@@ -958,19 +1115,6 @@
 #   start: 2023-09-25
 #   end: 2023-09-29
 #   sub: [DS, SE, PER]
-- title: DISC 
-  year: 2023
-  full_title: International Symposium on Distributed Computing
-  id: disc23
-  link: http://www.disc-conference.org/wp/disc2023/
-  abstract_deadline: '2023-05-03 23:59:59'
-  deadline: '2023-05-10 23:59:59'
-  timezone: Europe/Rome
-  place: L'Aquila, Italy
-  date: October 9-13, 2023
-  start: 2023-10-09
-  end: 2023-10-13
-  sub: [DS]
 # - title: MASCOTS 
 #   year: 2023
 #   full_title: International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems
@@ -1050,31 +1194,6 @@
 #   end: 2024-02-29
 #   sub: [DS, SE, PER]
 #   rank: [A, A1]
-- title: FC 
-  year: 2024
-  full_title: Financial Cryptography and Data Security
-  id: fc24
-  link: https://fc24.ifca.ai
-  deadline: '2023-09-18 23:59:59'
-  timezone: Europe/Rome
-  place: Caribbean
-  date: March 4-8, 2024
-  start: 2024-03-04
-  end: 2024-03-08
-  sub: [BC]
-- title: USENIX NSDI 
-  year: 2024
-  full_title: USENIX Symposium on Networked Systems Design and Implementation
-  id: nsdi24
-  link: https://www.usenix.org/conference/nsdi24/
-  abstract_deadline: '2023-09-07 23:59:59'
-  deadline: '2023-09-14 23:59:59'
-  timezone: Europe/Rome
-  place: Santa Clara, California
-  date: April 16-18, 2024
-  start: 2024-04-16
-  end: 2024-04-18
-  sub: [DS, SEC, BC]
 # - title: SAC
 #   year: 2024
 #   full_title: ACM/SIGAPP Symposium On Applied Computing
@@ -1102,18 +1221,6 @@
 #   end: 2024-04-20
 #   sub: [SE]
 #   rank: [A, A1]
-- title: EuroSys
-  year: 2024
-  full_title: European Conference on Computer Systems (EuroSys)
-  id: eurosys24
-  link: https://2024.eurosys.org/
-  deadline: '2023-10-19 23:59:59'
-  timezone: Europe/Rome
-  place: Athens, Greece
-  date: April 22nd-25th, 2024
-  start: 2024-04-22
-  end: 2024-04-25
-  sub: [DS, SEC, BC]
 # - title: ASPLOS
 #   year: 2024
 #   full_title: ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)
@@ -1183,32 +1290,6 @@
 #   start: 2024-05-27
 #   end: 2024-05-31
 #   sub: [BC]
-- title: IPDPS 
-  year: 2024
-  full_title:  IEEE International Parallel &amp; Distributed Processing Symposium
-  id: ipdps24
-  link: http://www.ipdps.org/ipdps2024/
-  abstract_deadline: '2023-09-28 23:59:59'
-  deadline: '2023-10-05 23:59:59'
-  timezone: Europe/Rome
-  place: San Francisco, California, USA
-  date: May 27-31, 2024
-  start: 2024-05-27
-  end: 2024-05-31
-  sub: [DS]
-- title: OSDI
-  year: 2024
-  full_title: USENIX Symposium on Operating Systems Design and Implementation (OSDI '24)
-  id: osdi24
-  link: https://www.usenix.org/conference/osdi24/
-  abstract_deadline: '2023-10-30 23:59:59'
-  deadline: '2023-12-07 23:59:59'
-  timezone: Europe/Rome
-  place: Santa Clara, CA, USA
-  date: July 10th–12th, 2024
-  start: 2024-07-10
-  end: 2024-07-12
-  sub: [DS, SEC]
 # - title: FSE
 #   year: 2024
 #   full_title: ACM International Conference on the Foundations of Software Engineering (FSE) 
