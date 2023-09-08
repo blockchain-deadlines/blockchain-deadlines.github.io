@@ -575,3 +575,21 @@
   start: 2024-03-25
   end: 2024-03-27
   sub: [CR]
+
+
+
+# ECONOMICS
+
+- title: ACM EC
+  year: 2023
+  id: ec23
+  full_title: ACM Conference on Economics and Computation
+  link: https://ec23.sigecom.org/
+  deadline: '2023-01-20 23:59:59'
+  timezone: Etc/GMT+12
+  note: Full paper due at 2023-01-27 23:59:59 AoE.
+  place: King's College London, London
+  date: July 09-12, 2023
+  start: 2023-07-09
+  end: 2023-07-12
+  sub: [EC]
