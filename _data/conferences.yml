@@ -23,7 +23,7 @@
   note: First cycle
   link: https://www.sigsac.org/ccs/CCS2023/index.html
   deadline: '2023-01-19 23:59:59'
-  timezone: Europe/Rome
+  timezone: Etc/GMT+12
   place: Copenhagen, Denmark 
   date: November 26-30, 2023
   start: 2023-11-26
@@ -37,7 +37,7 @@
   note: Second cycle
   link: https://www.sigsac.org/ccs/CCS2023/index.html
   deadline: '2023-05-04 23:59:59'
-  timezone: Europe/Rome
+  timezone: Etc/GMT+12
   place: Copenhagen, Denmark 
   date: November 26-30, 2023
   start: 2023-11-26
@@ -49,9 +49,9 @@
   full_title: USENIX Symposium on Networked Systems Design and Implementation
   id: nsdi24spring
   link: https://www.usenix.org/conference/nsdi24/
-  abstract_deadline: '2023-04-27 23:59:59'
-  deadline: '2023-05-04 23:59:59'
-  timezone: Europe/Rome
+  deadline: '2023-04-27 23:59:59'
+  note: Deadline for abstract registration. Paper deadline 2023-05-04 AoE.
+  timezone: Etc/GMT+12
   place: Santa Clara, California
   date: April 16-18, 2024
   start: 2024-04-16
@@ -63,9 +63,9 @@
   full_title: USENIX Symposium on Networked Systems Design and Implementation
   id: nsdi24fall
   link: https://www.usenix.org/conference/nsdi24/
-  abstract_deadline: '2023-09-07 23:59:59'
-  deadline: '2023-09-14 23:59:59'
-  timezone: Europe/Rome
+  deadline: '2023-09-07 23:59:59'
+  note: Deadline for abstract registration. Paper deadline 2023-09-14 AoE.
+  timezone: Etc/GMT+12
   place: Santa Clara, California
   date: April 16-18, 2024
   start: 2024-04-16
