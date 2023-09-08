@@ -1,13 +1,13 @@
-title: AI Conference Deadlines
-description: Countdowns to top CV/NLP/ML/Robotics/AI conference deadlines
-author: Abhishek Das
+title: Blockchain Deadlines
+description: Deadline countdowns for high-quality academic venues relevant to blockchain 
+author: Blockchain Deadlines
 
-domain: "aideadlin.es"
+domain: "blockchain-deadlines.github.io"
 baseurl: ""
 
-twitter_hashtag: machinelearning
-github_username: paperswithcode
-github_repo: ai-deadlines
+twitter_hashtag: blockchain
+github_username: blockchain-deadlines
+github_repo: blockchain-deadlines.github.io
 
 markdown: kramdown
 ga_id:
