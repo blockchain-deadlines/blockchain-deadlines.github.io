@@ -19,7 +19,22 @@
 - title: ACM CCS
   full_title: 30th ACM Conference on Computer and Communications Security 
   year: 2023
-  id: ccs23
+  id: ccs23a
+  note: First cycle
+  link: https://www.sigsac.org/ccs/CCS2023/index.html
+  deadline: '2023-01-19 23:59:59'
+  timezone: Europe/Rome
+  place: Copenhagen, Denmark 
+  date: November 26-30, 2023
+  start: 2023-11-26
+  end: 2023-11-30
+  sub: [BC, SEC, DS]
+
+- title: ACM CCS
+  full_title: 30th ACM Conference on Computer and Communications Security 
+  year: 2023
+  id: ccs23b
+  note: Second cycle
   link: https://www.sigsac.org/ccs/CCS2023/index.html
   deadline: '2023-05-04 23:59:59'
   timezone: Europe/Rome
@@ -32,7 +47,21 @@
 - title: USENIX NSDI
   year: 2024
   full_title: USENIX Symposium on Networked Systems Design and Implementation
-  id: nsdi24
+  id: nsdi24spring
+  link: https://www.usenix.org/conference/nsdi24/
+  abstract_deadline: '2023-04-27 23:59:59'
+  deadline: '2023-05-04 23:59:59'
+  timezone: Europe/Rome
+  place: Santa Clara, California
+  date: April 16-18, 2024
+  start: 2024-04-16
+  end: 2024-04-18
+  sub: [DS, SEC, BC]
+
+- title: USENIX NSDI
+  year: 2024
+  full_title: USENIX Symposium on Networked Systems Design and Implementation
+  id: nsdi24fall
   link: https://www.usenix.org/conference/nsdi24/
   abstract_deadline: '2023-09-07 23:59:59'
   deadline: '2023-09-14 23:59:59'
