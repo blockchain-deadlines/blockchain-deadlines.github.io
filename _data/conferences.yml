@@ -2,10 +2,10 @@
 
 # SECURITY
 
-- title: EuroS&amp;P
+- title: IEEE EuroS&P
   year: 2024
   id: eurosp24
-  full_title: 9th IEEE European Symposium on Security and Privacy
+  full_title: IEEE European Symposium on Security and Privacy
   link: https://eurosp2024.ieee-security.org/
   deadline: '2023-10-30 23:59:59'
   note: Deadline for abstract registration. Paper deadline 2023-11-02 AoE.
@@ -16,18 +16,11 @@
   end: 2024-07-12
   sub: [DS, SEC]
 
-
-
-
-
-
-
-
 - title: ACM CCS
-  full_title: 30th ACM Conference on Computer and Communications Security 
+  full_title: ACM Conference on Computer and Communications Security 
   year: 2023
   id: ccs23a
-  note: First cycle
+  note: First cycle.
   link: https://www.sigsac.org/ccs/CCS2023/index.html
   deadline: '2023-01-19 23:59:59'
   timezone: Etc/GMT+12
@@ -35,13 +28,13 @@
   date: November 26-30, 2023
   start: 2023-11-26
   end: 2023-11-30
-  sub: [BC, SEC, DS]
+  sub: [SEC, DS]
 
 - title: ACM CCS
-  full_title: 30th ACM Conference on Computer and Communications Security 
+  full_title: ACM Conference on Computer and Communications Security 
   year: 2023
   id: ccs23b
-  note: Second cycle
+  note: Second cycle.
   link: https://www.sigsac.org/ccs/CCS2023/index.html
   deadline: '2023-05-04 23:59:59'
   timezone: Etc/GMT+12
@@ -49,52 +42,204 @@
   date: November 26-30, 2023
   start: 2023-11-26
   end: 2023-11-30
-  sub: [BC, SEC, DS]
+  sub: [SEC, DS]
 
 - title: USENIX NSDI
   year: 2024
   full_title: USENIX Symposium on Networked Systems Design and Implementation
   id: nsdi24spring
   link: https://www.usenix.org/conference/nsdi24/
-  deadline: '2023-04-27 23:59:59'
-  note: Deadline for abstract registration. Paper deadline 2023-05-04 AoE.
-  timezone: Etc/GMT+12
+  deadline: '2023-04-27 20:59:59'
+  note: Spring cycle. Deadline for abstract registration. Paper deadline 2023-05-04 20:59:59 US PDT.
+  timezone: America/Los_Angeles
   place: Santa Clara, California
   date: April 16-18, 2024
   start: 2024-04-16
   end: 2024-04-18
-  sub: [DS, SEC, BC]
+  sub: [DS, SEC]
 
 - title: USENIX NSDI
   year: 2024
   full_title: USENIX Symposium on Networked Systems Design and Implementation
   id: nsdi24fall
   link: https://www.usenix.org/conference/nsdi24/
-  deadline: '2023-09-07 23:59:59'
-  note: Deadline for abstract registration. Paper deadline 2023-09-14 AoE.
-  timezone: Etc/GMT+12
+  deadline: '2023-09-14 20:59:59'
+  note: Fall cycle. Deadline for abstract registration. Paper deadline 2023-09-21 20:59:59 US PDT.
+  timezone: America/Los_Angeles
   place: Santa Clara, California
   date: April 16-18, 2024
   start: 2024-04-16
   end: 2024-04-18
-  sub: [DS, SEC, BC]
+  sub: [DS, SEC]
 
-# NDSS???
-# Usenix security
-# S&P
-# AsiaCCS
-  
-# - title: CSF
-#   description: IEEE Computer Security Foundations Symposium
-#   year: 2024
-#   link: https://www.ieee-security.org/TC/CSF2024/
-#   deadline:
-#     - "2023-05-15 23:59"
-#     - "2023-09-30 23:59"
-#     - "2024-02-03 23:59"
-#   date: July 08 - 12
-#   place: Enschede, The Netherlands
-#   sub: [SEC, PRIV, CONF]
+- title: NDSS
+  id: ndss24summer
+  full_title: Network and Distributed System Security Symposium
+  link: https://www.ndss-symposium.org/ndss2024/
+  deadline: '2023-04-19 23:59:59'
+  timezone: Etc/GMT+12
+  note: Summer Review Cycle. Paper submission deadline.
+  sub: [SEC, DS]
+  place: San Diego, California
+  date: February 26 - March 1, 2024
+  start: 2024-02-26
+  end: 2024-03-01
+
+- title: NDSS
+  id: ndss24fall
+  full_title: Network and Distributed System Security Symposium
+  link: https://www.ndss-symposium.org/ndss2024/
+  deadline: '2023-06-28 23:59:59'
+  timezone: Etc/GMT+12
+  note: Fall Review Cycle. Paper submission deadline.
+  sub: [SEC, DS]
+  place: San Diego, California
+  date: February 26 - March 1, 2024
+  start: 2024-02-26
+  end: 2024-03-01
+
+- title: USENIX Security
+  id: usenixsec24summer
+  full_title: USENIX Security Symposium
+  link: https://www.usenix.org/conference/usenixsecurity24
+  deadline: '2023-06-06 23:59:59'
+  timezone: Etc/GMT+12
+  note: Summer Deadline.
+  sub: [SEC]
+  place: Philadelphia, PA, USA
+  date: August 14-16, 2024
+  start: 2024-08-14
+  end: 2024-08-16
+
+- title: USENIX Security
+  id: usenixsec24fall
+  full_title: USENIX Security Symposium
+  link: https://www.usenix.org/conference/usenixsecurity24
+  deadline: '2023-10-17 23:59:59'
+  timezone: Etc/GMT+12
+  note: Fall Deadline.
+  sub: [SEC]
+  place: Philadelphia, PA, USA
+  date: August 14-16, 2024
+  start: 2024-08-14
+  end: 2024-08-16
+
+- title: USENIX Security
+  id: usenixsec24winter
+  full_title: USENIX Security Symposium
+  link: https://www.usenix.org/conference/usenixsecurity24
+  deadline: '2024-02-08 23:59:59'
+  timezone: Etc/GMT+12
+  note: Winter Deadline.
+  sub: [SEC]
+  place: Philadelphia, PA, USA
+  date: August 14-16, 2024
+  start: 2024-08-14
+  end: 2024-08-16
+
+- title: IEEE S&P
+  id: sp2024first
+  full_title: IEEE Symposium on Security and Privacy
+  link: https://www.ieee-security.org/TC/SP2024/
+  deadline: '2023-04-13 23:59:59'
+  timezone: Etc/GMT+12
+  note: First deadline.
+  sub: [SEC]
+  place: San Francisco, CA, USA
+  date: May 20-23, 2024
+  start: 2024-05-20
+  end: 2024-05-23
+
+- title: IEEE S&P
+  id: sp2024second
+  full_title: IEEE Symposium on Security and Privacy
+  link: https://www.ieee-security.org/TC/SP2024/
+  deadline: '2023-08-03 23:59:59'
+  timezone: Etc/GMT+12
+  note: Second deadline.
+  sub: [SEC]
+  place: San Francisco, CA, USA
+  date: May 20-23, 2024
+  start: 2024-05-20
+  end: 2024-05-23
+
+- title: IEEE S&P
+  id: sp2024third
+  full_title: IEEE Symposium on Security and Privacy
+  link: https://www.ieee-security.org/TC/SP2024/
+  deadline: '2023-12-06 23:59:59'
+  timezone: Etc/GMT+12
+  note: Third deadline.
+  sub: [SEC]
+  place: San Francisco, CA, USA
+  date: May 20-23, 2024
+  start: 2024-05-20
+  end: 2024-05-23
+
+- title: ACM AsiaCCS
+  id: asiaccs24first
+  full_title: ACM ASIA Conference on Computer and Communications Security
+  link: https://asiaccs2024.sutd.edu.sg/
+  deadline: '2023-08-21 23:59:00'
+  timezone: Etc/GMT+12
+  note: First round.
+  sub: [SEC, DS]
+  place: Singapore
+  date: July 1-5, 2024
+  start: 2024-07-01
+  end: 2024-07-05
+
+- title: ACM AsiaCCS
+  id: asiaccs24second
+  full_title: ACM ASIA Conference on Computer and Communications Security
+  link: https://asiaccs2024.sutd.edu.sg/
+  deadline: '2023-12-07 23:59:00'
+  timezone: Etc/GMT+12
+  note: Second round.
+  sub: [SEC, DS]
+  place: Singapore
+  date: July 1-5, 2024
+  start: 2024-07-01
+  end: 2024-07-05
+
+- title: IEEE CSF
+  id: csf24spring
+  full_title: IEEE Computer Security Foundations Symposium
+  link: https://www.ieee-security.org/TC/CSF2024/
+  deadline: '2023-05-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: Spring cycle.
+  place: Enschede, The Netherlands
+  date: July 8-12, 2024
+  start: 2024-07-08
+  end: 2024-07-12
+  sub: [DS, SEC]
+
+- title: IEEE CSF
+  id: csf24fall
+  full_title: IEEE Computer Security Foundations Symposium
+  link: https://www.ieee-security.org/TC/CSF2024/
+  deadline: '2023-09-30 23:59:59'
+  timezone: Etc/GMT+12
+  note: Fall cycle.
+  place: Enschede, The Netherlands
+  date: July 8-12, 2024
+  start: 2024-07-08
+  end: 2024-07-12
+  sub: [DS, SEC]
+
+- title: IEEE CSF
+  id: csf24winter
+  full_title: IEEE Computer Security Foundations Symposium
+  link: https://www.ieee-security.org/TC/CSF2024/
+  deadline: '2024-02-03 23:59:59'
+  timezone: Etc/GMT+12
+  note: Winter cycle.
+  place: Enschede, The Netherlands
+  date: July 8-12, 2024
+  start: 2024-07-08
+  end: 2024-07-12
+  sub: [DS, SEC]
 
 
 
@@ -144,7 +289,7 @@
 
 # ESORICS ?
 
-- title: IEEE ICDCS 
+- title: IEEE ICDCS
   year: 2023
   full_title: IEEE International Conference on Distributed Computing Systems
   id: icdcs23
@@ -158,7 +303,7 @@
   end: 2023-07-21
   sub: [DS]
 
-- title: IPDPS 
+- title: IPDPS
   year: 2024
   full_title:  IEEE International Parallel &amp; Distributed Processing Symposium
   id: ipdps24
@@ -216,7 +361,7 @@
 
 # BLOCKCHAIN
 
-- title: FC 
+- title: FC
   year: 2024
   full_title: Financial Cryptography and Data Security
   id: fc24
@@ -229,7 +374,7 @@
   end: 2024-03-08
   sub: [BC]
 
-# AFT?
+# AFT
 
 
 # CRYPTOGRAPHY
