@@ -541,16 +541,16 @@
 # CRYPTOGRAPHY
 
 - title: CRYPTO
-  year: 2023
-  id: crypto23
+  year: 2024
+  id: crypto24
   full_title: Cryptology Conference
-  link: https://crypto.iacr.org/2023/
-  deadline: '2023-02-16 17:59:59'
+  link: https://crypto.iacr.org/2024/
+  deadline: '2024-02-13 17:59:59'
   timezone: Etc/GMT-5
   place: Santa Barbara, USA
-  date: August 19-24, 2023
-  start: 2023-08-19
-  end: 2023-08-24
+  date: August 18-22, 2024
+  start: 2024-08-18
+  end: 2024-08-22
   sub: [CR]
 
 - title: Eurocrypt
