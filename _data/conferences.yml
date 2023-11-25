@@ -259,17 +259,17 @@
 # (DISTRIBUTED) SYSTEMS
 
 - title: ACM PODC
-  year: 2023
-  id: podc23
+  year: 2024
+  id: podc24
   full_title: ACM Symposium on Principles of Distributed Computing
-  link: https://www.podc.org/
-  deadline: '2023-01-06 23:59:59'
+  link: https://www.podc.org/podc2024/
+  deadline: '2024-02-11 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract deadline. Full paper due at 2023-01-10 23:59:59 AoE.
-  place: Orlando, Florida
-  date: June 19-23, 2023
-  start: 2023-06-19
-  end: 2023-06-23
+  note: Abstract deadline. Full paper due at 2024-02-15 23:59:59 AoE.
+  place: Nantes, France
+  date: July 17-21, 2024
+  start: 2024-07-17
+  end: 2024-07-21
   sub: [DS]
 
 - title: DISC
