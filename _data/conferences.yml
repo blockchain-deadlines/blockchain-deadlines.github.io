@@ -17,28 +17,28 @@
   sub: [DS, SEC]
 
 - title: ACM CCS
-  full_title: ACM Conference on Computer and Communications Security
+  full_title: ACM Conference on Computer and Communications Security 
   year: 2024
   id: ccs24a
-  note: First review cycle.
+  note: First cycle.
   link: https://www.sigsac.org/ccs/CCS2024/
   deadline: '2024-01-28 23:59:59'
   timezone: Etc/GMT+12
-  place: Salt Lake City, U.S.A.
+  place: Salt Lake City, Utah, USA
   date: October 14-18, 2024
   start: 2024-10-14
   end: 2024-10-18
   sub: [SEC, DS]
 
 - title: ACM CCS
-  full_title: ACM Conference on Computer and Communications Security
+  full_title: ACM Conference on Computer and Communications Security 
   year: 2024
   id: ccs24b
-  note: Second review cycle (tentative).
+  note: Second cycle (tentative).
   link: https://www.sigsac.org/ccs/CCS2024/
   deadline: '2024-04-14 23:59:59'
   timezone: Etc/GMT+12
-  place: Salt Lake City, U.S.A.
+  place: Salt Lake City, Utah, USA
   date: October 14-18, 2024
   start: 2024-10-14
   end: 2024-10-18
@@ -262,7 +262,7 @@
   year: 2024
   id: podc24
   full_title: ACM Symposium on Principles of Distributed Computing
-  link: https://www.podc.org/podc2024/call-for-papers/
+  link: https://www.podc.org/podc2024/
   deadline: '2024-02-11 23:59:59'
   timezone: Etc/GMT+12
   note: Abstract deadline. Full paper due at 2024-02-15 23:59:59 AoE.
