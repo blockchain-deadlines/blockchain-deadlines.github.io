@@ -458,16 +458,17 @@
   sub: [BC]
 
 - title: AFT
-  year: 2023
-  id: aft23
+  year: 2024
+  id: aft24
   full_title: Advances in Financial Technologies
-  link: https://aft.acm.org/aft23/
-  deadline: '2023-06-15 23:59:59'
+  link: https://aftconf.github.io/aft24/index.html
+  deadline: '2024-05-15 23:59:59'
   timezone: Etc/GMT+12
-  place: Princeton, NJ, USA
-  date: October 23-25, 2023
-  start: 2023-10-23
-  end: 2023-10-25
+  note: 'Abstract registration deadline. Paper submission deadline: May 22nd, 2024 (AoE)'
+  place: Vienna, Austria
+  date: September 23-25, 2024
+  start: 2024-09-23
+  end: 2024-09-25
   sub: [BC]
 
 - title: SBC
