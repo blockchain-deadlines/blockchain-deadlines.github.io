@@ -143,32 +143,32 @@
   end: 2024-08-16
 
 - title: IEEE S&P
-  year: 2024
-  id: sp2024first
+  year: 2025
+  id: sp2025first
   full_title: IEEE Symposium on Security and Privacy
-  link: https://www.ieee-security.org/TC/SP2024/
-  deadline: '2023-04-13 23:59:59'
+  link: https://www.ieee-security.org/TC/SP2025/
+  deadline: '2023-06-06 23:59:59'
   timezone: Etc/GMT+12
   note: First deadline.
   sub: [SEC]
   place: San Francisco, CA, USA
-  date: May 20-23, 2024
-  start: 2024-05-20
-  end: 2024-05-23
+  date: TBD
+  start: TBD
+  end: TBD
 
 - title: IEEE S&P
-  year: 2024
-  id: sp2024second
+  year: 2025
+  id: sp2025second
   full_title: IEEE Symposium on Security and Privacy
-  link: https://www.ieee-security.org/TC/SP2024/
-  deadline: '2023-08-03 23:59:59'
+  link: https://www.ieee-security.org/TC/SP2025/
+  deadline: '2023-11-14 23:59:59'
   timezone: Etc/GMT+12
   note: Second deadline.
   sub: [SEC]
   place: San Francisco, CA, USA
-  date: May 20-23, 2024
-  start: 2024-05-20
-  end: 2024-05-23
+  date: TBD
+  start: TBD
+  end: TBD
 
 - title: IEEE S&P
   year: 2024
