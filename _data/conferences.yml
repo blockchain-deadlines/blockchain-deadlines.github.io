@@ -259,17 +259,17 @@
   sub: [DS]
 
 - title: DISC
-  year: 2023
-  id: disc23
+  year: 2024
+  id: disc24
   full_title: International Symposium on Distributed Computing
-  link: http://www.disc-conference.org/wp/disc2023/
-  deadline: '2023-05-03 23:59:59'
+  link: http://www.disc-conference.org/wp/disc2024/
+  deadline: '2024-05-07 23:59:59'
   timezone: Etc/GMT+12
-  note: Paper registration. Full paper submission due at 2023-05-10 23:59:59 AoE.
-  place: L’Aquila, Italy
-  date: October 9-13, 2023
-  start: 2023-10-09
-  end: 2023-10-13
+  note: Paper registration. Full paper submission due at 2024-05-14 23:59:59 AoE.
+  place: Madrid, Spain
+  date: October 28-November 1, 2024
+  start: 2024-10-28
+  end: 2024-11-01
   sub: [DS]
 
 - title: OPODIS
