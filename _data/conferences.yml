@@ -17,7 +17,7 @@
   sub: [DS, SEC]
 
 - title: ACM CCS
-  full_title: ACM Conference on Computer and Communications Security 
+  full_title: ACM Conference on Computer and Communications Security
   year: 2024
   id: ccs24a
   note: First cycle.
@@ -31,7 +31,7 @@
   sub: [SEC, DS]
 
 - title: ACM CCS
-  full_title: ACM Conference on Computer and Communications Security 
+  full_title: ACM Conference on Computer and Communications Security
   year: 2024
   id: ccs24b
   note: Second cycle (tentative).
@@ -71,6 +71,34 @@
   start: 2024-04-16
   end: 2024-04-18
   sub: [DS, SEC]
+
+- title: NDSS
+  year: 2025
+  id: ndss25summer
+  full_title: Network and Distributed System Security Symposium
+  link: https://www.ndss-symposium.org/ndss2025/
+  deadline: '2024-04-17 23:59:59'
+  timezone: Etc/GMT+12
+  note: Summer Review Cycle. Paper submission deadline.
+  sub: [SEC, DS]
+  place: San Diego, California
+  date: February 23-28, 2025
+  start: 2025-02-23
+  end: 2025-02-28
+
+- title: NDSS
+  year: 2025
+  id: ndss25fall
+  full_title: Network and Distributed System Security Symposium
+  link: https://www.ndss-symposium.org/ndss2025/
+  deadline: '2024-07-10 23:59:59'
+  timezone: Etc/GMT+12
+  note: Fall Review Cycle. Paper submission deadline.
+  sub: [SEC, DS]
+  place: San Diego, California
+  date: February 23-28, 2025
+  start: 2025-02-23
+  end: 2025-02-28
 
 - title: NDSS
   year: 2024
@@ -368,6 +396,34 @@
   date: July 10-12, 2024
   start: 2024-07-10
   end: 2024-07-12
+  sub: [DS]
+
+- title: EuroSys
+  year: 2025
+  id: eurosys25spring
+  full_title: European Conference on Computer Systems
+  link: https://2025.eurosys.org/
+  deadline: '2024-05-14 23:59:59'
+  timezone: Etc/GMT+12
+  note: Spring cycle. Deadline for abstract registration. Paper deadline 2024-05-21 23:59:59 AoE.
+  place: Rotterdam
+  date: March 30 - April 3, 2025
+  start: 2025-03-30
+  end: 2025-04-03
+  sub: [DS]
+
+- title: EuroSys
+  year: 2025
+  id: eurosys25fall
+  full_title: European Conference on Computer Systems
+  link: https://2025.eurosys.org/
+  deadline: '2024-10-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: Fall cycle. Deadline for abstract registration. Paper deadline 2024-10-22 23:59:59 AoE.
+  place: Rotterdam
+  date: March 30 - April 3, 2025
+  start: 2025-03-30
+  end: 2025-04-03
   sub: [DS]
 
 - title: EuroSys
