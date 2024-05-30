@@ -185,45 +185,45 @@
   end: 2025-08-29
 
 - title: IEEE CSF
-  year: 2024
-  id: csf24spring
+  year: 2025
+  id: csf25spring
   full_title: IEEE Computer Security Foundations Symposium
-  link: https://www.ieee-security.org/TC/CSF2024/
-  deadline: '2023-05-15 23:59:59'
+  link: https://csf2025.ieee-security.org/
+  deadline: '2024-05-28 23:59:59'
   timezone: Etc/GMT+12
   note: Spring cycle.
-  place: Enschede, The Netherlands
-  date: July 8-12, 2024
-  start: 2024-07-08
-  end: 2024-07-12
+  place: Santa Cruz, CA, USA
+  date: July 2025
+  start: TBD
+  end: TBD
   sub: [DS, SEC]
 
 - title: IEEE CSF
-  year: 2024
-  id: csf24fall
+  year: 2025
+  id: csf25fall
   full_title: IEEE Computer Security Foundations Symposium
-  link: https://www.ieee-security.org/TC/CSF2024/
-  deadline: '2023-09-30 23:59:59'
+  link: https://csf2025.ieee-security.org/
+  deadline: '2024-10-01 23:59:59'
   timezone: Etc/GMT+12
   note: Fall cycle.
-  place: Enschede, The Netherlands
-  date: July 8-12, 2024
-  start: 2024-07-08
-  end: 2024-07-12
+  place: Santa Cruz, CA, USA
+  date: July 2025
+  start: TBD
+  end: TBD
   sub: [DS, SEC]
 
 - title: IEEE CSF
-  year: 2024
-  id: csf24winter
+  year: 2025
+  id: csf25winter
   full_title: IEEE Computer Security Foundations Symposium
-  link: https://www.ieee-security.org/TC/CSF2024/
-  deadline: '2024-02-03 23:59:59'
+  link: https://csf2025.ieee-security.org/
+  deadline: '2025-02-04 23:59:59'
   timezone: Etc/GMT+12
   note: Winter cycle.
-  place: Enschede, The Netherlands
-  date: July 8-12, 2024
-  start: 2024-07-08
-  end: 2024-07-12
+  place: Santa Cruz, CA, USA
+  date: July 2025
+  start: TBD
+  end: TBD
   sub: [DS, SEC]
 
 
