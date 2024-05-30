@@ -73,32 +73,32 @@
   sub: [DS, SEC]
 
 - title: NDSS
-  year: 2024
-  id: ndss24summer
+  year: 2025
   full_title: Network and Distributed System Security Symposium
-  link: https://www.ndss-symposium.org/ndss2024/
-  deadline: '2023-04-19 23:59:59'
+  id: ndss25summer
+  link: https://www.ndss-symposium.org/ndss2025/
+  deadline: '2024-04-17 23:59:59'
   timezone: Etc/GMT+12
   note: Summer Review Cycle. Paper submission deadline.
   sub: [SEC, DS]
   place: San Diego, California
-  date: February 26 - March 1, 2024
-  start: 2024-02-26
-  end: 2024-03-01
+  date: February 23-28, 2025
+  start: 2025-02-23
+  end: 2025-02-28
 
 - title: NDSS
-  year: 2024
-  id: ndss24fall
+  year: 2025
   full_title: Network and Distributed System Security Symposium
-  link: https://www.ndss-symposium.org/ndss2024/
-  deadline: '2023-06-28 23:59:59'
+  id: ndss25fall
+  link: https://www.ndss-symposium.org/ndss2025/
+  deadline: '2024-07-10 23:59:59'
   timezone: Etc/GMT+12
   note: Fall Review Cycle. Paper submission deadline.
   sub: [SEC, DS]
   place: San Diego, California
-  date: February 26 - March 1, 2024
-  start: 2024-02-26
-  end: 2024-03-01
+  date: February 23-28, 2025
+  start: 2025-02-23
+  end: 2025-02-28
 
 - title: USENIX Security
   year: 2024
