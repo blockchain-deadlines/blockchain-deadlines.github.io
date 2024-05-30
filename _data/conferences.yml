@@ -17,7 +17,7 @@
   sub: [DS, SEC]
 
 - title: ACM CCS
-  full_title: ACM Conference on Computer and Communications Security 
+  full_title: ACM Conference on Computer and Communications Security
   year: 2024
   id: ccs24a
   note: First cycle.
@@ -31,7 +31,7 @@
   sub: [SEC, DS]
 
 - title: ACM CCS
-  full_title: ACM Conference on Computer and Communications Security 
+  full_title: ACM Conference on Computer and Communications Security
   year: 2024
   id: ccs24b
   note: Second cycle (tentative).
@@ -45,31 +45,31 @@
   sub: [SEC, DS]
 
 - title: USENIX NSDI
-  year: 2024
+  year: 2025
   full_title: USENIX Symposium on Networked Systems Design and Implementation
-  id: nsdi24spring
-  link: https://www.usenix.org/conference/nsdi24/
-  deadline: '2023-04-27 20:59:59'
-  note: Spring cycle. Deadline for abstract registration. Paper deadline 2023-05-04 20:59:59 US PDT.
-  timezone: America/Los_Angeles
-  place: Santa Clara, California
-  date: April 16-18, 2024
-  start: 2024-04-16
-  end: 2024-04-18
+  id: nsdi25spring
+  link: https://www.usenix.org/conference/nsdi25/
+  deadline: '2024-04-30 23:59:59'
+  note: Spring cycle. Abstract registration deadline. Paper deadline 2024-05-07 23:59:59 US EDT.
+  timezone: America/New_York
+  place: Philadelphia, PA, USA
+  date: April 28-30, 2025
+  start: 2025-04-28
+  end: 2025-04-30
   sub: [DS, SEC]
 
 - title: USENIX NSDI
-  year: 2024
+  year: 2025
   full_title: USENIX Symposium on Networked Systems Design and Implementation
-  id: nsdi24fall
-  link: https://www.usenix.org/conference/nsdi24/
-  deadline: '2023-09-14 20:59:59'
-  note: Fall cycle. Deadline for abstract registration. Paper deadline 2023-09-21 20:59:59 US PDT.
-  timezone: America/Los_Angeles
-  place: Santa Clara, California
-  date: April 16-18, 2024
-  start: 2024-04-16
-  end: 2024-04-18
+  id: nsdi25fall
+  link: https://www.usenix.org/conference/nsdi25/
+  deadline: '2024-09-12 23:59:59'
+  note: Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19 23:59:59 US EDT.
+  timezone: America/New_York
+  place: Philadelphia, PA, USA
+  date: April 28-30, 2025
+  start: 2025-04-28
+  end: 2025-04-30
   sub: [DS, SEC]
 
 - title: NDSS

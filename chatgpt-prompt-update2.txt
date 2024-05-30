@@ -1,0 +1,103 @@
+The task is as follows: I will give you YAML metadata that captures basic information (such as title, location, date, ...) about an academic venue (that could be a conference, or journal, etc.), as well as the relevant deadlines for submitting to the venue (a venue may have multiple cycles; it is important to have an entry for each cycle). Specifically, the information I will provide you with may (or may not) be outdated and will be of the most recent edition of the venue I know about, for instance about the conference's edition in 2023 or 2024. Your task is to check whether you can find a website for the next upcoming edition of the venue with a call-for-paper (CFP) that contains the updated information.
+
+If the YAML information I give you is outdated, and you are able to find all required information for the next edition, then you will then provide me with updated YAML information accordingly. Be concise. Don't give me any explanation, just give me the updated YAML, that's it.
+If the YAML information I give you is outdated, but you cannot find the necessary information for the next edition, you will just respond "OUTDATED, BUT NEXT EDITION INFO UNKNOWN", and you will give me your best guess for the URL where you expect the next edition's information to show up, based on the links/call-for-paper of the previous edition. Be concise. Don't give me any explanation, just give me the above string, and a URL.
+If the YAML information I give you is not outdated, you will just respond "UP TO DATE". Be concise. Just answer with the provided string.
+
+I will provide examples below for properly formatted but outdated information, so that you can learn the YAML format.
+Sometimes for each cycle there may be an abstract registration deadline and a full paper submission deadline. Then use the first deadline for the `deadline` and `timezone` field, and specify the later deadline in the `note` field.
+Sort the fields of each YAML entry as in the examples below.
+For the `title` and `full_title` fields, do not use the year of the conference or the number of the installment of the conference.
+Make sure to specify the cycle in the `note` field and in the `id` field.
+
+When deadlines are specified in anywhere-on-earth (AoE), this corresponds to 23:59:59 in the latest possible timezone, which is typically UTC-12 = Etc/GMT+12.
+
+Sometimes, the deadline information is not available on the conference's main website. In those cases, please find a link on the main page to the call-for-papers (CFP). Visit the page of the CFP, and obtain more information including submission cycles and/or deadlines from there.
+
+Here are examples of the YAML format I want you to create:
+"""
+- title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security 
+  year: 2023
+  id: ccs23a
+  note: First cycle.
+  link: https://www.sigsac.org/ccs/CCS2023/index.html
+  deadline: '2023-01-19 23:59:59'
+  timezone: Etc/GMT+12
+  place: Copenhagen, Denmark 
+  date: November 26-30, 2023
+  start: 2023-11-26
+  end: 2023-11-30
+  sub: [SEC, DS]
+
+- title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security 
+  year: 2023
+  id: ccs23b
+  note: Second cycle.
+  link: https://www.sigsac.org/ccs/CCS2023/index.html
+  deadline: '2023-05-04 23:59:59'
+  timezone: Etc/GMT+12
+  place: Copenhagen, Denmark 
+  date: November 26-30, 2023
+  start: 2023-11-26
+  end: 2023-11-30
+  sub: [SEC, DS]
+
+- title: EuroSys
+  year: 2024
+  id: eurosys24spring
+  full_title: European Conference on Computer Systems
+  link: https://2024.eurosys.org/
+  deadline: '2023-05-24 23:59:59'
+  timezone: Etc/GMT
+  note: Spring cycle.
+  place: Athens
+  date: April 22nd-25th, 2024
+  start: 2024-04-22
+  end: 2024-04-25
+  sub: [DS]
+
+- title: EuroSys
+  year: 2024
+  id: eurosys24fall
+  full_title: European Conference on Computer Systems
+  link: https://2024.eurosys.org/
+  deadline: '2023-10-19 23:59:59'
+  timezone: Etc/GMT
+  note: Fall cycle.
+  place: Athens
+  date: April 22nd-25th, 2024
+  start: 2024-04-22
+  end: 2024-04-25
+  sub: [DS]
+
+- title: FC
+  year: 2024
+  id: fc24
+  full_title: Financial Cryptography and Data Security
+  link: https://fc24.ifca.ai
+  deadline: '2023-09-20 23:59:59'
+  timezone: Etc/GMT+12
+  note: Deadline extention based on Ethereum's Beacon Chain random number. Update - random number revealed, deadline has been updated accordingly.
+  place: Curacao Marriott Beach Resort, Willemstad, Curaçao
+  date: 4–8 March 2024
+  start: 2024-03-04
+  end: 2024-03-08
+  sub: [BC]
+
+- title: AFT
+  year: 2023
+  id: aft23
+  full_title: Advances in Financial Technologies
+  link: https://aft.acm.org/aft23/
+  deadline: '2023-06-15 23:59:59'
+  timezone: Etc/GMT+12
+  place: Princeton, NJ, USA
+  date: October 23-25, 2023
+  start: 2023-10-23
+  end: 2023-10-25
+  sub: [BC]
+"""
+
+Understood?
