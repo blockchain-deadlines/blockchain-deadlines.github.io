@@ -357,31 +357,31 @@
   sub: [DS]
 
 - title: EuroSys
-  year: 2024
-  id: eurosys24spring
+  year: 2025
+  id: eurosys25spring
   full_title: European Conference on Computer Systems
-  link: https://2024.eurosys.org/
-  deadline: '2023-05-24 23:59:59'
-  timezone: Etc/GMT
-  note: Spring cycle.
-  place: Athens
-  date: April 22nd-25th, 2024
-  start: 2024-04-22
-  end: 2024-04-25
+  link: https://2025.eurosys.org/
+  deadline: '2024-05-14 23:59:59'
+  timezone: Etc/GMT+12
+  note: Spring cycle. Deadline for abstract registration. Paper deadline 2024-05-21 23:59:59 AoE.
+  place: Rotterdam
+  date: March 30 - April 3, 2025
+  start: 2025-03-30
+  end: 2025-04-03
   sub: [DS]
 
 - title: EuroSys
-  year: 2024
-  id: eurosys24fall
+  year: 2025
+  id: eurosys25fall
   full_title: European Conference on Computer Systems
-  link: https://2024.eurosys.org/
-  deadline: '2023-10-19 23:59:59'
-  timezone: Etc/GMT
-  note: Fall cycle.
-  place: Athens
-  date: April 22nd-25th, 2024
-  start: 2024-04-22
-  end: 2024-04-25
+  link: https://2025.eurosys.org/
+  deadline: '2024-10-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: Fall cycle. Deadline for abstract registration. Paper deadline 2024-10-22 23:59:59 AoE.
+  place: Rotterdam
+  date: March 30 - April 3, 2025
+  start: 2025-03-30
+  end: 2025-04-03
   sub: [DS]
 
 - title: WWW
