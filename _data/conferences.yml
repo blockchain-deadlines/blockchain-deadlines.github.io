@@ -259,17 +259,17 @@
   sub: [DS]
 
 - title: OPODIS
-  year: 2023
-  id: opodis23
+  year: 2024
+  id: opodis24
   full_title: International Conference on Principles of Distributed Systems
-  link: https://xdefago.github.io/opodis23/
-  deadline: '2023-09-04 23:59:59'
+  link: https://opodis2024.imtlucca.it/
+  deadline: '2024-08-23 23:59:59'
   timezone: Etc/GMT+12
-  note: Full paper submission due at 2023-09-08 23:59:59 AoE.
-  place: Tokyo, Japan
-  date: December 6-8, 2023
-  start: 2023-12-06
-  end: 2023-12-08
+  note: Abstract registration. Full paper submission due at 2024-08-30 23:59:59 AoE.
+  place: Lucca, Italy
+  date: December 11-13, 2024
+  start: 2024-12-11
+  end: 2024-12-13
   sub: [DS]
 
 - title: ESORICS
