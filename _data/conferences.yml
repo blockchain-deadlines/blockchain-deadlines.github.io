@@ -555,16 +555,16 @@
   sub: [CR]
 
 - title: Eurocrypt
-  year: 2024
-  id: eurocrypt24
+  year: 2025
+  id: eurocrypt25
   full_title: European Cryptology Conference
-  link: https://eurocrypt.iacr.org/2024/
-  deadline: '2023-10-06 23:59:59'
+  link: https://eurocrypt.iacr.org/2025/
+  deadline: '2024-10-02 23:59:59'
   timezone: Etc/GMT+12
-  place: Zurich, Switzerland
-  date: May 26-30, 2024
-  start: 2024-05-26
-  end: 2024-05-30
+  place: Madrid, Spain
+  date: May 4-8, 2025
+  start: 2025-05-04
+  end: 2025-05-08
   sub: [CR]
 
 - title: Asiacrypt
