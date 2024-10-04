@@ -3,17 +3,17 @@
 # SECURITY
 
 - title: IEEE EuroS&P
-  year: 2024
-  id: eurosp24
+  year: 2025
+  id: eurosp25
   full_title: IEEE European Symposium on Security and Privacy
-  link: https://eurosp2024.ieee-security.org/
-  deadline: '2023-10-30 23:59:59'
-  note: Deadline for abstract registration. Paper deadline 2023-11-02 AoE.
+  link: https://www.eurosp2025.ieee-security.org/
+  deadline: '2024-10-21 23:59:59'
   timezone: Etc/GMT+12
-  place: Vienna, Austria
-  date: July 8-12, 2024
-  start: 2024-07-08
-  end: 2024-07-12
+  note: Mandatory abstract registration deadline on October 21, 2024 AoE. Full paper submission deadline on October 24, 2024 AoE.
+  place: Venice, Italy
+  date: June 30 - July 4, 2025
+  start: 2025-06-30
+  end: 2025-07-04
   sub: [DS, SEC]
 
 - title: ACM CCS
@@ -343,17 +343,17 @@
   sub: [DS]
 
 - title: IEEE IPDPS
-  year: 2024
-  id: ipdps24
+  year: 2025
+  id: ipdps25
   full_title: IEEE International Parallel & Distributed Processing Symposium
-  link: http://www.ipdps.org/ipdps2024/
-  deadline: '2023-09-28 23:59:59'
+  link: http://www.ipdps.org/
+  deadline: '2024-10-03 23:59:59'
   timezone: Etc/GMT+12
-  note: Full paper submission due at 2023-10-05 23:59:59 AoE.
-  place: San Francisco, California
-  date: May 27-31, 2024
-  start: 2024-05-27
-  end: 2024-05-31
+  note: Abstracts due at 2024-10-03 23:59:59 AoE. Full paper submission due at 2024-10-10 23:59:59 AoE.
+  place: Milan, Italy
+  date: June 3-7, 2025
+  start: 2025-06-03
+  end: 2025-06-07
   sub: [DS]
 
 - title: ACM SOSP
@@ -371,17 +371,17 @@
   sub: [DS]
 
 - title: USENIX OSDI
-  year: 2024
-  id: osdi24
+  year: 2025
+  id: osdi25
   full_title: USENIX Symposium on Operating Systems Design and Implementation
-  link: https://www.usenix.org/conference/osdi24/
-  deadline: '2023-11-30 17:59:59'
+  link: https://www.usenix.org/conference/osdi25/
+  deadline: '2024-12-03 17:59:59'
   timezone: Etc/GMT+5
-  note: Full paper submission due at 2023-12-07 17:59:59 EST.
-  place: Santa Clara, CA, USA
-  date: July 10-12, 2024
-  start: 2024-07-10
-  end: 2024-07-12
+  note: Abstracts due at 2024-12-03 17:59:59 EST. Full paper submission due at 2024-12-10 17:59:59 EST.
+  place: Boston, MA, USA
+  date: July 7-9, 2025
+  start: 2025-07-07
+  end: 2025-07-09
   sub: [DS]
 
 - title: EuroSys
@@ -413,16 +413,17 @@
   sub: [DS]
 
 - title: WWW
-  year: 2024
-  id: www24
+  year: 2025
+  id: www25
   full_title: International World Wide Web Conference
-  link: https://www2024.thewebconf.org/
-  deadline: '2023-10-05 23:59:59'
+  link: https://www2025.thewebconf.org/
+  deadline: '2024-10-07 23:59:59'
   timezone: Etc/GMT+12
-  place: Singapore
-  date: May 13-17, 2024
-  start: 2024-05-13
-  end: 2024-05-17
+  note: Abstracts due on October 7, 2024. Full paper submissions due on October 10, 2024.
+  place: Sydney, Australia
+  date: April 28 - May 2, 2025
+  start: 2025-04-28
+  end: 2025-05-02
   sub: [SEC]
 
 - title: ACM SIGCOMM
