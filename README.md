@@ -14,7 +14,7 @@ To add or update a deadline:
 - Update `_data/conferences.yml`
 - Make sure it has the `title`, `year`, `id`, `link`, `deadline`, `timezone`, `date`, `place`, `sub` attributes
     + See available timezone strings [here](https://momentjs.com/timezone/). Anywhere-on-earth usually refers to `Etc/GMT+12`.
-    + If there are multiple deadlines (e.g., for abstract and submission), use the *first* deadline as `deadline`.
+    + If there are multiple deadlines (e.g., for abstract and submission), use the *first* deadline as `deadline` and describe details in `note`.
 - Optionally add a `note` (e.g., for submission deadline, if the first deadline is for abstracts only; or submission cycle)
 - Optionally add `hindex` (refers to h5-index from [here](https://scholar.google.com/citations?view_op=top_venues&vq=eng))
 - Example:
