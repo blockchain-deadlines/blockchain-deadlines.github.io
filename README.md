@@ -7,7 +7,7 @@ Forked from [aideadlin.es](https://aideadlin.es/) originally developed by [abhsh
 
 ## Contributing
 
-Contributions are very welcome!
+**Contributions are very welcome!**
 
 To add or update a deadline:
 - Fork the repository
@@ -34,6 +34,10 @@ To add or update a deadline:
       end: YYYY-MM-DD
     ```
 - Send a pull request
+
+If you want to help out with **updating existing-but-outdated deadlines to next-year's edition**, check out [this prompt](chatgpt-prompt-update.txt) that I have used in the past to ask ChatGPT to update snippets of the YAML file (semi-)automatically.
+It doesn't always work perfectly, so please double check the output with the conference website before submitting a pull request, but it worked astonishingly well and sped the work up by quite a bit with ChatGPT 3.5.
+**Improved prompts are very welcome as well!**
 
 
 ## License
