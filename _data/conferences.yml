@@ -1,192 +1,651 @@
----
-
-# SECURITY
-
-- title: IEEE EuroS&P
-  year: 2025
-  id: eurosp25
-  full_title: IEEE European Symposium on Security and Privacy
-  link: https://www.eurosp2025.ieee-security.org/
-  deadline: '2024-10-21 23:59:59'
-  timezone: Etc/GMT+12
-  note: Mandatory abstract registration deadline on October 21, 2024 AoE. Full paper submission deadline on October 24, 2024 AoE.
-  place: Venice, Italy
-  date: June 30 - July 4, 2025
-  start: 2025-06-30
-  end: 2025-07-04
-  sub: [DS, SEC]
-
-- title: ACM CCS
-  full_title: ACM Conference on Computer and Communications Security
+- id: ec24
   year: 2024
-  id: ccs24a
+  title: ACM EC
+  full_title: ACM Conference on Economics and Computation
+  link: https://ec24.sigecom.org/call-for-contributions-acm/papers/
+  deadline: '2024-02-05 23:59:59'
+  timezone: Etc/GMT+12
+  note: Abstract submission deadline on February 5, 2024. Full paper submission deadline
+    on February 12, 2024 AoE.
+  place: Yale University, New Haven
+  date: July 8-11, 2024
+  start: '2024-07-08'
+  end: '2024-07-11'
+  sub:
+  - EC
+  inactive: false
+- id: podc24
+  year: 2024
+  title: ACM PODC
+  full_title: ACM Symposium on Principles of Distributed Computing
+  link: https://www.podc.org/podc2024/
+  deadline: '2024-02-11 23:59:59'
+  timezone: Etc/GMT+12
+  note: Abstract deadline. Full paper due at 2024-02-15 23:59:59 AoE.
+  place: Nantes, France
+  date: June 17-21, 2024
+  start: '2024-06-17'
+  end: '2024-06-21'
+  sub:
+  - DS
+  inactive: false
+- id: crypto24
+  year: 2024
+  title: CRYPTO
+  full_title: Cryptology Conference
+  link: https://crypto.iacr.org/2024/
+  deadline: '2024-02-13 17:59:59'
+  timezone: Etc/GMT-5
+  note: ''
+  place: Santa Barbara, USA
+  date: August 18-22, 2024
+  start: '2024-08-18'
+  end: '2024-08-22'
+  sub:
+  - CR
+  inactive: false
+- id: sosp24
+  year: 2024
+  title: ACM SOSP
+  full_title: ACM Symposium on Operating Systems Principles
+  link: https://sigops.org/s/conferences/sosp/2024/cfp.html
+  deadline: '2024-04-12 23:59:59'
+  timezone: America/Los_Angeles
+  note: 'Abstract registration deadline. Full paper submission deadline: April 19,
+    2024 23:59 PT.'
+  place: TBD
+  date: November 4-6, 2024
+  start: '2024-11-04'
+  end: '2024-11-06'
+  sub:
+  - DS
+  inactive: false
+- id: sbc24
+  year: 2024
+  title: SBC
+  full_title: Science of Blockchain Conference 2024
+  link: https://www.sbc-conference.com/
+  deadline: '2024-04-16 23:59:59'
+  timezone: America/Los_Angeles
+  note: ''
+  place: Alfred Lerner Hall, Columbia University
+  date: August 7-9, 2024
+  start: '2024-08-07'
+  end: '2024-08-09'
+  sub:
+  - BC
+  inactive: false
+- id: esorics24first
+  year: 2024
+  title: ESORICS
+  full_title: European Symposium on Research in Computer Security
+  link: https://esorics2024.org/
+  deadline: '2024-01-08 23:59:59'
+  timezone: Etc/GMT+12
   note: First cycle.
+  place: Bydgoszcz, Poland
+  date: September 16-20, 2024
+  start: '2024-09-16'
+  end: '2024-09-20'
+  sub:
+  - SEC
+  inactive: false
+- id: esorics24second
+  year: 2024
+  title: ESORICS
+  full_title: European Symposium on Research in Computer Security
+  link: https://esorics2024.org/
+  deadline: '2024-04-19 23:59:59'
+  timezone: Etc/GMT+12
+  note: Second cycle.
+  place: Bydgoszcz, Poland
+  date: September 16-20, 2024
+  start: '2024-09-16'
+  end: '2024-09-20'
+  sub:
+  - SEC
+  inactive: false
+- id: ccs24a
+  year: 2024
+  title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security
   link: https://www.sigsac.org/ccs/CCS2024/
   deadline: '2024-01-28 23:59:59'
   timezone: Etc/GMT+12
+  note: First cycle.
   place: Salt Lake City, Utah, USA
   date: October 14-18, 2024
-  start: 2024-10-14
-  end: 2024-10-18
-  sub: [SEC, DS]
-
-- title: ACM CCS
-  full_title: ACM Conference on Computer and Communications Security
+  start: '2024-10-14'
+  end: '2024-10-18'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: ccs24b
   year: 2024
-  id: ccs24b
-  note: Second cycle (tentative).
+  title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security
   link: https://www.sigsac.org/ccs/CCS2024/
   deadline: '2024-04-29 23:59:59'
   timezone: Etc/GMT+12
+  note: Second cycle (tentative).
   place: Salt Lake City, Utah, USA
   date: October 14-18, 2024
-  start: 2024-10-14
-  end: 2024-10-18
-  sub: [SEC, DS]
-
-- title: USENIX NSDI
+  start: '2024-10-14'
+  end: '2024-10-18'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: disc24
+  year: 2024
+  title: DISC
+  full_title: International Symposium on Distributed Computing
+  link: http://www.disc-conference.org/wp/disc2024/
+  deadline: '2024-05-07 23:59:59'
+  timezone: Etc/GMT+12
+  note: Paper registration. Full paper submission due at 2024-05-14 23:59:59 AoE.
+  place: Madrid, Spain
+  date: October 28-November 1, 2024
+  start: '2024-10-28'
+  end: '2024-11-01'
+  sub:
+  - DS
+  inactive: false
+- id: aft24
+  year: 2024
+  title: AFT
+  full_title: Advances in Financial Technologies
+  link: https://aftconf.github.io/aft24/index.html
+  deadline: '2024-05-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: 'Abstract registration deadline. Paper submission deadline: May 22nd, 2024
+    (AoE)'
+  place: Vienna, Austria
+  date: September 23-25, 2024
+  start: '2024-09-23'
+  end: '2024-09-25'
+  sub:
+  - BC
+  inactive: false
+- id: tcc24
+  year: 2024
+  title: TCC
+  full_title: Theory of Cryptography Conference
+  link: https://tcc.iacr.org/2024/callforpapers.php
+  deadline: '2024-05-20 20:00:00'
+  timezone: Europe/Paris
+  note: Submission deadline at 20:00 CEST.
+  place: Milan, Italy
+  date: December 2-6, 2024
+  start: '2024-12-02'
+  end: '2024-12-06'
+  sub:
+  - CR
+  inactive: false
+- id: asiacrypt24
+  year: 2024
+  title: Asiacrypt
+  full_title: Asiacrypt Conference
+  link: https://asiacrypt.iacr.org/2024/
+  deadline: '2024-05-26 11:59:00'
+  timezone: Etc/GMT
+  note: ''
+  place: Kolkata, India
+  date: December 9-13, 2024
+  start: '2024-12-09'
+  end: '2024-12-13'
+  sub:
+  - CR
+  inactive: false
+- id: cbt24
+  year: 2024
+  title: CBT
+  full_title: International Workshop on Cryptocurrencies and Blockchain Technology
+  link: http://cbtworkshop.org/
+  deadline: '2024-06-06 23:59:59'
+  timezone: Etc/GMT+12
+  note: 'Deadline extension to June 23, 2024. Notification of authors: July 22, 2024.
+    Camera-ready versions: August 19, 2024.'
+  place: Bydgoszcz, Poland
+  date: September 19, 2024
+  start: '2024-09-19'
+  end: '2024-09-19'
+  sub:
+  - BC
+  inactive: false
+- id: ndss25summer
   year: 2025
-  full_title: USENIX Symposium on Networked Systems Design and Implementation
-  id: nsdi25spring
-  link: https://www.usenix.org/conference/nsdi25/
-  deadline: '2024-04-30 23:59:59'
-  note: Spring cycle. Abstract registration deadline. Paper deadline 2024-05-07 23:59:59 US EDT.
-  timezone: America/New_York
-  place: Philadelphia, PA, USA
-  date: April 28-30, 2025
-  start: 2025-04-28
-  end: 2025-04-30
-  sub: [DS, SEC]
-
-- title: USENIX NSDI
-  year: 2025
-  full_title: USENIX Symposium on Networked Systems Design and Implementation
-  id: nsdi25fall
-  link: https://www.usenix.org/conference/nsdi25/
-  deadline: '2024-09-12 23:59:59'
-  note: Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19 23:59:59 US EDT.
-  timezone: America/New_York
-  place: Philadelphia, PA, USA
-  date: April 28-30, 2025
-  start: 2025-04-28
-  end: 2025-04-30
-  sub: [DS, SEC]
-
-- title: NDSS
-  year: 2025
+  title: NDSS
   full_title: Network and Distributed System Security Symposium
-  id: ndss25summer
   link: https://www.ndss-symposium.org/ndss2025/
   deadline: '2024-04-17 23:59:59'
   timezone: Etc/GMT+12
   note: Summer Review Cycle. Paper submission deadline.
-  sub: [SEC, DS]
   place: San Diego, California
   date: February 23-28, 2025
-  start: 2025-02-23
-  end: 2025-02-28
-
-- title: NDSS
+  start: '2025-02-23'
+  end: '2025-02-28'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: ndss25fall
   year: 2025
+  title: NDSS
   full_title: Network and Distributed System Security Symposium
-  id: ndss25fall
   link: https://www.ndss-symposium.org/ndss2025/
   deadline: '2024-07-10 23:59:59'
   timezone: Etc/GMT+12
   note: Fall Review Cycle. Paper submission deadline.
-  sub: [SEC, DS]
   place: San Diego, California
   date: February 23-28, 2025
-  start: 2025-02-23
-  end: 2025-02-28
-
-- title: USENIX Security
-  year: 2025
-  id: usenixsec25cycle1
-  full_title: USENIX Security Symposium
-  link: https://www.usenix.net/conference/usenixsecurity25
-  deadline: '2024-09-04 23:59:59'
+  start: '2025-02-23'
+  end: '2025-02-28'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: opodis24
+  year: 2024
+  title: OPODIS
+  full_title: International Conference on Principles of Distributed Systems
+  link: https://opodis2024.imtlucca.it/
+  deadline: '2024-08-23 23:59:59'
   timezone: Etc/GMT+12
-  note: Cycle 1. Paper submission deadline. TIMEZONE UNKNOWN AS OF 2024-05-29!
-  sub: [SEC]
-  place: Seattle, WA, USA
-  date: August 13-15, 2025
-  start: 2025-08-13
-  end: 2025-08-15
-
-- title: USENIX Security
+  note: Abstract registration. Full paper submission due at 2024-08-30 23:59:59 AoE.
+  place: Lucca, Italy
+  date: December 11-13, 2024
+  start: '2024-12-11'
+  end: '2024-12-13'
+  sub:
+  - DS
+  inactive: false
+- id: nsdi25spring
   year: 2025
-  id: usenixsec25cycle2
-  full_title: USENIX Security Symposium
-  link: https://www.usenix.net/conference/usenixsecurity25
-  deadline: '2025-01-22 23:59:59'
+  title: USENIX NSDI
+  full_title: USENIX Symposium on Networked Systems Design and Implementation
+  link: https://www.usenix.org/conference/nsdi25/
+  deadline: '2024-04-30 23:59:59'
+  timezone: America/New_York
+  note: Spring cycle. Abstract registration deadline. Paper deadline 2024-05-07 23:59:59
+    US EDT.
+  place: Philadelphia, PA, USA
+  date: April 28-30, 2025
+  start: '2025-04-28'
+  end: '2025-04-30'
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: nsdi25fall
+  year: 2025
+  title: USENIX NSDI
+  full_title: USENIX Symposium on Networked Systems Design and Implementation
+  link: https://www.usenix.org/conference/nsdi25/
+  deadline: '2024-09-12 23:59:59'
+  timezone: America/New_York
+  note: Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19
+    23:59:59 US EDT.
+  place: Philadelphia, PA, USA
+  date: April 28-30, 2025
+  start: '2025-04-28'
+  end: '2025-04-30'
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: eurocrypt25
+  year: 2025
+  title: Eurocrypt
+  full_title: European Cryptology Conference
+  link: https://eurocrypt.iacr.org/2025/
+  deadline: '2024-10-02 23:59:59'
   timezone: Etc/GMT+12
-  note: Cycle 2. Paper submission deadline. TIMEZONE UNKNOWN AS OF 2024-05-29!
-  sub: [SEC]
-  place: Seattle, WA, USA
-  date: August 13-15, 2025
-  start: 2025-08-13
-  end: 2025-08-15
-
-- title: IEEE S&P
+  note: ''
+  place: Madrid, Spain
+  date: May 4-8, 2025
+  start: '2025-05-04'
+  end: '2025-05-08'
+  sub:
+  - CR
+  inactive: false
+- id: ipdps25
   year: 2025
-  id: sp2025first
+  title: IEEE IPDPS
+  full_title: IEEE International Parallel & Distributed Processing Symposium
+  link: http://www.ipdps.org/
+  deadline: '2024-10-03 23:59:59'
+  timezone: Etc/GMT+12
+  note: Abstracts due at 2024-10-03 23:59:59 AoE. Full paper submission due at 2024-10-10
+    23:59:59 AoE.
+  place: Milan, Italy
+  date: June 3-7, 2025
+  start: '2025-06-03'
+  end: '2025-06-07'
+  sub:
+  - DS
+  inactive: false
+- id: www25
+  year: 2025
+  title: WWW
+  full_title: International World Wide Web Conference
+  link: https://www2025.thewebconf.org/
+  deadline: '2024-10-07 23:59:59'
+  timezone: Etc/GMT+12
+  note: Abstracts due on October 7, 2024. Full paper submissions due on October 10,
+    2024.
+  place: Sydney, Australia
+  date: April 28 - May 2, 2025
+  start: '2025-04-28'
+  end: '2025-05-02'
+  sub:
+  - SEC
+  inactive: false
+- id: fc25
+  year: 2025
+  title: FC
+  full_title: Financial Cryptography and Data Security
+  link: https://fc25.ifca.ai
+  deadline: '2024-10-11 23:59:59'
+  timezone: Etc/GMT+12
+  note: Random deadline extension to 11 Oct 2025 AoE based on Ethereum RANDAO reveal
+    of https://beaconcha.in/slot/10100000 with least significant hex digit E. https://fc25.ifca.ai/cfp.html
+  place: Hotel Shigira Mirage, Miyakojima, Japan
+  date: "14\u201318 April 2025"
+  start: '2024-04-14'
+  end: '2024-04-18'
+  sub:
+  - BC
+  inactive: false
+- id: eurosys25spring
+  year: 2025
+  title: EuroSys
+  full_title: European Conference on Computer Systems
+  link: https://2025.eurosys.org/
+  deadline: '2024-05-14 23:59:59'
+  timezone: Etc/GMT+12
+  note: Spring cycle. Deadline for abstract registration. Paper deadline 2024-05-21
+    23:59:59 AoE.
+  place: Rotterdam
+  date: March 30 - April 3, 2025
+  start: '2025-03-30'
+  end: '2025-04-03'
+  sub:
+  - DS
+  inactive: false
+- id: eurosys25fall
+  year: 2025
+  title: EuroSys
+  full_title: European Conference on Computer Systems
+  link: https://2025.eurosys.org/
+  deadline: '2024-10-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: Fall cycle. Deadline for abstract registration. Paper deadline 2024-10-22
+    23:59:59 AoE.
+  place: Rotterdam
+  date: March 30 - April 3, 2025
+  start: '2025-03-30'
+  end: '2025-04-03'
+  sub:
+  - DS
+  inactive: false
+- id: pkc25
+  year: 2025
+  title: PKC
+  full_title: Public Key Cryptography Conference
+  link: https://pkc.iacr.org/2025/
+  deadline: '2024-10-16 23:59:59'
+  timezone: Etc/GMT+12
+  note: Submission deadline is on October 16, 2024, 11:59pm AoE.
+  place: "R\xF8ros, Norway"
+  date: May 12-15, 2025
+  start: '2025-05-12'
+  end: '2025-05-15'
+  sub:
+  - CR
+  inactive: false
+- id: eurosp25
+  year: 2025
+  title: IEEE EuroS&P
+  full_title: IEEE European Symposium on Security and Privacy
+  link: https://www.eurosp2025.ieee-security.org/
+  deadline: '2024-10-21 23:59:59'
+  timezone: Etc/GMT+12
+  note: Mandatory abstract registration deadline on October 21, 2024 AoE. Full paper
+    submission deadline on October 24, 2024 AoE.
+  place: Venice, Italy
+  date: June 30 - July 4, 2025
+  start: '2025-06-30'
+  end: '2025-07-04'
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: sp2025first
+  year: 2025
+  title: IEEE S&P
   full_title: IEEE Symposium on Security and Privacy
   link: https://www.ieee-security.org/TC/SP2025/
   deadline: '2024-06-06 23:59:59'
   timezone: Etc/GMT+12
   note: First deadline.
-  sub: [SEC]
   place: San Francisco, CA, USA
   date: TBD
   start: TBD
   end: TBD
-
-- title: IEEE S&P
+  sub:
+  - SEC
+  inactive: false
+- id: sp2025second
   year: 2025
-  id: sp2025second
+  title: IEEE S&P
   full_title: IEEE Symposium on Security and Privacy
   link: https://www.ieee-security.org/TC/SP2025/
   deadline: '2024-11-14 23:59:59'
   timezone: Etc/GMT+12
   note: Second deadline.
-  sub: [SEC]
   place: San Francisco, CA, USA
   date: TBD
   start: TBD
   end: TBD
-
-- title: ACM AsiaCCS
+  sub:
+  - SEC
+  inactive: false
+- id: rwc25
   year: 2025
-  id: asiaccs25first
+  title: RWC
+  full_title: Real World Crypto
+  link: https://rwc.iacr.org/2025/
+  deadline: '2024-11-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: Contributed Talks Submission deadline at 23:59 AoE
+  place: Sofia, Bulgaria
+  date: March 26-28, 2025
+  start: '2025-03-26'
+  end: '2025-03-28'
+  sub:
+  - CR
+  inactive: false
+- id: osdi25
+  year: 2025
+  title: USENIX OSDI
+  full_title: USENIX Symposium on Operating Systems Design and Implementation
+  link: https://www.usenix.org/conference/osdi25/
+  deadline: '2024-12-03 17:59:59'
+  timezone: Etc/GMT+5
+  note: Abstracts due at 2024-12-03 17:59:59 EST. Full paper submission due at 2024-12-10
+    17:59:59 EST.
+  place: Boston, MA, USA
+  date: July 7-9, 2025
+  start: '2025-07-07'
+  end: '2025-07-09'
+  sub:
+  - DS
+  inactive: false
+- id: icdcs25
+  year: 2025
+  title: IEEE ICDCS
+  full_title: IEEE International Conference on Distributed Computing Systems
+  link: https://www.icdcs2025.com/
+  deadline: '2024-12-06 23:59:59'
+  timezone: Etc/GMT+12
+  note: Abstract registration deadline. Full paper submission due at 2024-12-13 23:59:59.
+    TIMEZONE UNKNOWN AS OF 2024-05-29!
+  place: Glasgow, Scotland
+  date: July 21-23, 2025
+  start: '2025-07-21'
+  end: '2025-07-23'
+  sub:
+  - DS
+  inactive: false
+- id: icbc25
+  year: 2025
+  title: IEEE ICBC
+  full_title: IEEE International Conference on Blockchain and Cryptocurrency
+  link: https://icbc2025.ieee-icbc.org/authors/call-papers
+  deadline: '2024-12-23 23:59:59'
+  timezone: Etc/GMT+12
+  note: ''
+  place: Pisa, Italy
+  date: June 2-6, 2025
+  start: '2025-06-02'
+  end: '2025-06-06'
+  sub:
+  - BC
+  inactive: false
+- id: atc25
+  year: 2025
+  title: USENIX ATC
+  full_title: USENIX Annual Technical Conference
+  link: https://www.usenix.org/conference/atc25/call-for-papers
+  deadline: '2025-01-07 23:59:59'
+  timezone: Etc/GMT
+  note: 'Abstract registrations due: January 7, 2025, 23:59 UTC. Submissions due:
+    January 14, 2025, 23:59 UTC.'
+  place: Boston, MA, USA
+  date: July 7-9, 2025
+  start: '2025-07-07'
+  end: '2025-07-09'
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: acns25first
+  year: 2025
+  title: ACNS
+  full_title: International Conference on Applied Cryptography and Network Security
+  link: https://fordaysec.de/en/event/acns-2025
+  deadline: '2024-09-09 23:59:59'
+  timezone: Etc/GMT+12
+  note: First cycle.
+  place: Munich, Germany
+  date: June 23-26, 2025
+  start: '2025-06-23'
+  end: '2025-06-26'
+  sub:
+  - SEC
+  - DS
+  - CR
+  inactive: false
+- id: acns25second
+  year: 2025
+  title: ACNS
+  full_title: International Conference on Applied Cryptography and Network Security
+  link: https://fordaysec.de/en/event/acns-2025
+  deadline: '2025-01-13 23:59:59'
+  timezone: Etc/GMT+12
+  note: Second cycle.
+  place: Munich, Germany
+  date: June 23-26, 2025
+  start: '2025-06-23'
+  end: '2025-06-26'
+  sub:
+  - SEC
+  - DS
+  - CR
+  inactive: false
+- id: asiaccs25first
+  year: 2025
+  title: ACM AsiaCCS
   full_title: ACM ASIA Conference on Computer and Communications Security
   link: https://asiaccs2025.hust.edu.vn/
   deadline: '2024-09-20 23:59:59'
   timezone: Etc/GMT+12
   note: First round. Paper submission deadline.
-  sub: [SEC, DS]
   place: Hanoi, Vietnam
   date: August 25-29, 2025
-  start: 2025-08-25
-  end: 2025-08-29
-
-- title: ACM AsiaCCS
+  start: '2025-08-25'
+  end: '2025-08-29'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: asiaccs25second
   year: 2025
-  id: asiaccs25second
+  title: ACM AsiaCCS
   full_title: ACM ASIA Conference on Computer and Communications Security
   link: https://asiaccs2025.hust.edu.vn/
   deadline: '2025-01-15 23:59:59'
   timezone: Etc/GMT+12
   note: Second round. Paper submission deadline.
-  sub: [SEC, DS]
   place: Hanoi, Vietnam
   date: August 25-29, 2025
-  start: 2025-08-25
-  end: 2025-08-29
-
-- title: IEEE CSF
+  start: '2025-08-25'
+  end: '2025-08-29'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: usenixsec25cycle1
   year: 2025
-  id: csf25spring
+  title: USENIX Security
+  full_title: USENIX Security Symposium
+  link: https://www.usenix.net/conference/usenixsecurity25
+  deadline: '2024-09-04 23:59:59'
+  timezone: Etc/GMT+12
+  note: Cycle 1. Paper submission deadline. TIMEZONE UNKNOWN AS OF 2024-05-29!
+  place: Seattle, WA, USA
+  date: August 13-15, 2025
+  start: '2025-08-13'
+  end: '2025-08-15'
+  sub:
+  - SEC
+  inactive: false
+- id: usenixsec25cycle2
+  year: 2025
+  title: USENIX Security
+  full_title: USENIX Security Symposium
+  link: https://www.usenix.net/conference/usenixsecurity25
+  deadline: '2025-01-22 23:59:59'
+  timezone: Etc/GMT+12
+  note: Cycle 2. Paper submission deadline. TIMEZONE UNKNOWN AS OF 2024-05-29!
+  place: Seattle, WA, USA
+  date: August 13-15, 2025
+  start: '2025-08-13'
+  end: '2025-08-15'
+  sub:
+  - SEC
+  inactive: false
+- id: sigcomm25
+  year: 2025
+  title: ACM SIGCOMM
+  full_title: ACM SIGCOMM Conference
+  link: https://conferences.sigcomm.org/sigcomm/2025/
+  deadline: '2025-01-24 23:59:59'
+  timezone: Etc/GMT
+  note: 'Main Track CFP: Abstract registration deadline. Paper submission deadline:
+    January 31, 2025 23:59 UTC.'
+  place: Coimbra, Portugal
+  date: September 8-11, 2025
+  start: '2025-09-08'
+  end: '2025-09-11'
+  sub:
+  - DS
+  inactive: false
+- id: csf25spring
+  year: 2025
+  title: IEEE CSF
   full_title: IEEE Computer Security Foundations Symposium
   link: https://csf2025.ieee-security.org/
   deadline: '2024-05-28 23:59:59'
@@ -196,11 +655,13 @@
   date: July 2025
   start: TBD
   end: TBD
-  sub: [DS, SEC]
-
-- title: IEEE CSF
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: csf25fall
   year: 2025
-  id: csf25fall
+  title: IEEE CSF
   full_title: IEEE Computer Security Foundations Symposium
   link: https://csf2025.ieee-security.org/
   deadline: '2024-10-01 23:59:59'
@@ -210,11 +671,13 @@
   date: July 2025
   start: TBD
   end: TBD
-  sub: [DS, SEC]
-
-- title: IEEE CSF
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: csf25winter
   year: 2025
-  id: csf25winter
+  title: IEEE CSF
   full_title: IEEE Computer Security Foundations Symposium
   link: https://csf2025.ieee-security.org/
   deadline: '2025-02-04 23:59:59'
@@ -224,417 +687,23 @@
   date: July 2025
   start: TBD
   end: TBD
-  sub: [DS, SEC]
-
-- title: ACNS
-  year: 2025
-  id: acns25first
-  full_title: International Conference on Applied Cryptography and Network Security
-  link: https://fordaysec.de/en/event/acns-2025
-  deadline: '2024-09-09 23:59:59'
-  timezone: Etc/GMT+12
-  note: First cycle.
-  sub: [SEC, DS, CR]
-  place: Munich, Germany
-  date: June 23-26, 2025
-  start: 2025-06-23
-  end: 2025-06-26
-
-- title: ACNS
-  year: 2025
-  id: acns25second
-  full_title: International Conference on Applied Cryptography and Network Security
-  link: https://fordaysec.de/en/event/acns-2025
-  deadline: '2025-01-13 23:59:59'
-  timezone: Etc/GMT+12
-  note: Second cycle.
-  sub: [SEC, DS, CR]
-  place: Munich, Germany
-  date: June 23-26, 2025
-  start: 2025-06-23
-  end: 2025-06-26
-
-
-
-# (DISTRIBUTED) SYSTEMS
-
-- title: ACM PODC
-  year: 2024
-  id: podc24
-  full_title: ACM Symposium on Principles of Distributed Computing
-  link: https://www.podc.org/podc2024/
-  deadline: '2024-02-11 23:59:59'
-  timezone: Etc/GMT+12
-  note: Abstract deadline. Full paper due at 2024-02-15 23:59:59 AoE.
-  place: Nantes, France
-  date: June 17-21, 2024
-  start: 2024-06-17
-  end: 2024-06-21
-  sub: [DS]
-
-- title: DISC
-  year: 2024
-  id: disc24
-  full_title: International Symposium on Distributed Computing
-  link: http://www.disc-conference.org/wp/disc2024/
-  deadline: '2024-05-07 23:59:59'
-  timezone: Etc/GMT+12
-  note: Paper registration. Full paper submission due at 2024-05-14 23:59:59 AoE.
-  place: Madrid, Spain
-  date: October 28-November 1, 2024
-  start: 2024-10-28
-  end: 2024-11-01
-  sub: [DS]
-
-- title: OPODIS
-  year: 2024
-  id: opodis24
-  full_title: International Conference on Principles of Distributed Systems
-  link: https://opodis2024.imtlucca.it/
-  deadline: '2024-08-23 23:59:59'
-  timezone: Etc/GMT+12
-  note: Abstract registration. Full paper submission due at 2024-08-30 23:59:59 AoE.
-  place: Lucca, Italy
-  date: December 11-13, 2024
-  start: 2024-12-11
-  end: 2024-12-13
-  sub: [DS]
-
-- title: ESORICS
-  year: 2024
-  id: esorics24first
-  full_title: European Symposium on Research in Computer Security
-  link: https://esorics2024.org/
-  deadline: '2024-01-08 23:59:59'
-  timezone: Etc/GMT+12
-  note: First cycle.
-  place: Bydgoszcz, Poland
-  date: September 16-20, 2024
-  start: 2024-09-16
-  end: 2024-09-20
-  sub: [SEC]
-
-- title: ESORICS
-  year: 2024
-  id: esorics24second
-  full_title: European Symposium on Research in Computer Security
-  link: https://esorics2024.org/
-  deadline: '2024-04-19 23:59:59'
-  timezone: Etc/GMT+12
-  note: Second cycle.
-  place: Bydgoszcz, Poland
-  date: September 16-20, 2024
-  start: 2024-09-16
-  end: 2024-09-20
-  sub: [SEC]
-
-- title: IEEE ICDCS
-  year: 2025
-  id: icdcs25
-  full_title: IEEE International Conference on Distributed Computing Systems
-  link: https://www.icdcs2025.com/
-  deadline: '2024-12-06 23:59:59'
-  timezone: Etc/GMT+12
-  note: Abstract registration deadline. Full paper submission due at 2024-12-13 23:59:59. TIMEZONE UNKNOWN AS OF 2024-05-29!
-  place: Glasgow, Scotland
-  date: July 21-23, 2025
-  start: 2025-07-21
-  end: 2025-07-23
-  sub: [DS]
-
-- title: IEEE IPDPS
-  year: 2025
-  id: ipdps25
-  full_title: IEEE International Parallel & Distributed Processing Symposium
-  link: http://www.ipdps.org/
-  deadline: '2024-10-03 23:59:59'
-  timezone: Etc/GMT+12
-  note: Abstracts due at 2024-10-03 23:59:59 AoE. Full paper submission due at 2024-10-10 23:59:59 AoE.
-  place: Milan, Italy
-  date: June 3-7, 2025
-  start: 2025-06-03
-  end: 2025-06-07
-  sub: [DS]
-
-- title: ACM SOSP
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: consensusdays23
   year: 2023
-  id: sosp23
-  full_title: ACM Symposium on Operating Systems Principles
-  link: https://sosp2023.mpi-sws.org/
-  deadline: '2023-04-10 23:59:59'
-  timezone: Etc/GMT+5
-  note: Full paper submission due at 2023-04-17 23:59:59 ET.
-  place: Koblenz, Germany
-  date: October 23-26, 2023
-  start: 2023-10-23
-  end: 2023-10-26
-  sub: [DS]
-
-- title: USENIX OSDI
-  year: 2025
-  id: osdi25
-  full_title: USENIX Symposium on Operating Systems Design and Implementation
-  link: https://www.usenix.org/conference/osdi25/
-  deadline: '2024-12-03 17:59:59'
-  timezone: Etc/GMT+5
-  note: Abstracts due at 2024-12-03 17:59:59 EST. Full paper submission due at 2024-12-10 17:59:59 EST.
-  place: Boston, MA, USA
-  date: July 7-9, 2025
-  start: 2025-07-07
-  end: 2025-07-09
-  sub: [DS]
-
-- title: EuroSys
-  year: 2025
-  id: eurosys25spring
-  full_title: European Conference on Computer Systems
-  link: https://2025.eurosys.org/
-  deadline: '2024-05-14 23:59:59'
-  timezone: Etc/GMT+12
-  note: Spring cycle. Deadline for abstract registration. Paper deadline 2024-05-21 23:59:59 AoE.
-  place: Rotterdam
-  date: March 30 - April 3, 2025
-  start: 2025-03-30
-  end: 2025-04-03
-  sub: [DS]
-
-- title: EuroSys
-  year: 2025
-  id: eurosys25fall
-  full_title: European Conference on Computer Systems
-  link: https://2025.eurosys.org/
-  deadline: '2024-10-15 23:59:59'
-  timezone: Etc/GMT+12
-  note: Fall cycle. Deadline for abstract registration. Paper deadline 2024-10-22 23:59:59 AoE.
-  place: Rotterdam
-  date: March 30 - April 3, 2025
-  start: 2025-03-30
-  end: 2025-04-03
-  sub: [DS]
-
-- title: WWW
-  year: 2025
-  id: www25
-  full_title: International World Wide Web Conference
-  link: https://www2025.thewebconf.org/
-  deadline: '2024-10-07 23:59:59'
-  timezone: Etc/GMT+12
-  note: Abstracts due on October 7, 2024. Full paper submissions due on October 10, 2024.
-  place: Sydney, Australia
-  date: April 28 - May 2, 2025
-  start: 2025-04-28
-  end: 2025-05-02
-  sub: [SEC]
-
-- title: ACM SIGCOMM
-  year: 2024
-  id: sigcomm24
-  full_title: ACM SIGCOMM Conference
-  link: https://www.sigcomm.org/sites/default/files/SIGCOMM_CFP_2024.html
-  deadline: '2024-01-26 23:59:59'
-  timezone: Etc/GMT
-  note: Full papers due 2024-02-02 23:59 UTC.
-  place: Sydney, Australia
-  date: August 4-8, 2024
-  start: 2024-08-04
-  end: 2024-08-08
-  sub: [DS]
-
-- title: USENIX ATC
-  year: 2024
-  id: atc24
-  full_title: USENIX Annual Technical Conference
-  link: https://www.usenix.org/conference/atc24
-  deadline: '2024-01-09 23:59:59'
-  timezone: Etc/GMT
-  note: Full papers due 2024-01-16 23:59 UTC.
-  sub: [DS, SEC]
-  place: Santa Clara, CA, USA
-  date: July 10-12, 2024
-  start: 2024-07-10
-  end: 2024-07-12
-
-
-
-# BLOCKCHAIN
-
-- title: FC
-  year: 2025
-  id: fc25
-  full_title: Financial Cryptography and Data Security
-  link: https://fc25.ifca.ai
-  deadline: '2024-10-11 23:59:59'
-  timezone: Etc/GMT+12
-  note: Random deadline extension to 11 Oct 2025 AoE based on Ethereum RANDAO reveal of https://beaconcha.in/slot/10100000 with least significant hex digit E. https://fc25.ifca.ai/cfp.html
-  place: Hotel Shigira Mirage, Miyakojima, Japan
-  date: 14–18 April 2025
-  start: 2024-04-14
-  end: 2024-04-18
-  sub: [BC]
-
-- title: AFT
-  year: 2024
-  id: aft24
-  full_title: Advances in Financial Technologies
-  link: https://aftconf.github.io/aft24/index.html
-  deadline: '2024-05-15 23:59:59'
-  timezone: Etc/GMT+12
-  note: 'Abstract registration deadline. Paper submission deadline: May 22nd, 2024 (AoE)'
-  place: Vienna, Austria
-  date: September 23-25, 2024
-  start: 2024-09-23
-  end: 2024-09-25
-  sub: [BC]
-
-- title: SBC
-  year: 2024
-  id: sbc24
-  full_title: Science of Blockchain Conference 2024
-  link: https://www.sbc-conference.com/
-  deadline: '2024-04-16 23:59:59'
-  timezone: America/Los_Angeles
-  place: Alfred Lerner Hall, Columbia University
-  date: August 7-9, 2024
-  start: 2024-08-07
-  end: 2024-08-09
-  sub: [BC]
-
-- title: ConsensusDays
-  year: 2023
-  id: consensusdays23
+  title: ConsensusDays
   full_title: ConsensusDays '23 Workshop
   link: https://research.protocol.ai/sites/consensusday23/
   deadline: '2023-03-19 23:59:59'
   timezone: Etc/GMT+12
+  note: ''
   place: Virtual
   date: June 5-6, 2023
-  start: 2023-06-05
-  end: 2023-06-06
-  sub: [BC, DS]
-
-- title: CBT
-  year: 2023
-  id: cbt23
-  full_title: International Workshop on Cryptocurrencies and Blockchain Technology
-  link: https://deic.uab.cat/cbt/cbt2023/
-  deadline: '2023-06-30 23:59:59'
-  timezone: Etc/GMT+7
-  place: The Hague, The Netherlands
-  date: September 28, 2023
-  start: 2023-09-28
-  end: 2023-09-28
-  sub: [BC]
-
-- title: IEEE ICBC
-  year: 2024
-  id: icbc24
-  full_title: IEEE International Conference on Blockchain and Cryptocurrency
-  link: https://icbc2024.ieee-icbc.org/
-  deadline: '2023-12-03 23:59:59'
-  timezone: Etc/GMT+12
-  place: Trinity College Dublin, Dublin, Ireland
-  date: May 27-31, 2024
-  start: 2024-05-27
-  end: 2024-05-31
-  sub: [BC]
-
-
-
-# CRYPTOGRAPHY
-
-- title: CRYPTO
-  year: 2024
-  id: crypto24
-  full_title: Cryptology Conference
-  link: https://crypto.iacr.org/2024/
-  deadline: '2024-02-13 17:59:59'
-  timezone: Etc/GMT-5
-  place: Santa Barbara, USA
-  date: August 18-22, 2024
-  start: 2024-08-18
-  end: 2024-08-22
-  sub: [CR]
-
-- title: Eurocrypt
-  year: 2025
-  id: eurocrypt25
-  full_title: European Cryptology Conference
-  link: https://eurocrypt.iacr.org/2025/
-  deadline: '2024-10-02 23:59:59'
-  timezone: Etc/GMT+12
-  place: Madrid, Spain
-  date: May 4-8, 2025
-  start: 2025-05-04
-  end: 2025-05-08
-  sub: [CR]
-
-- title: Asiacrypt
-  year: 2024
-  id: asiacrypt24
-  full_title: Asiacrypt Conference
-  link: https://asiacrypt.iacr.org/2024/
-  deadline: '2024-05-26 11:59:00'
-  timezone: Etc/GMT
-  place: Kolkata, India
-  date: December 9-13, 2024
-  start: 2024-12-09
-  end: 2024-12-13
-  sub: [CR]
-
-- title: PKC
-  year: 2024
-  id: pkc24
-  full_title: Public Key Cryptography Conference
-  link: https://pkc.iacr.org/2024/
-  deadline: '2023-10-15 23:59:59'
-  timezone: Etc/GMT
-  place: Sydney, Australia
-  date: April 15-17, 2024
-  start: 2024-04-15
-  end: 2024-04-17
-  sub: [CR]
-
-- title: TCC
-  year: 2023
-  id: tcc23
-  full_title: Theory of Cryptography Conference
-  link: https://tcc.iacr.org/2023/
-  deadline: '2023-06-01 15:00:00'
-  timezone: Etc/GMT+4
-  note: Full paper due at 2023-06-01 15:00 EDT.
-  place: Taipei, Taiwan
-  date: November 29 - December 2, 2023
-  start: 2023-11-29
-  end: 2023-12-02
-  sub: [CR]
-
-- title: RWC
-  year: 2024
-  id: rwc24
-  full_title: Real World Crypto
-  link: https://rwc.iacr.org/2024/
-  deadline: '2023-11-16 23:59:59'
-  timezone: Etc/GMT+12
-  place: Toronto, Canada
-  date: March 25-27, 2024
-  start: 2024-03-25
-  end: 2024-03-27
-  sub: [CR]
-
-
-
-# ECONOMICS
-
-- title: ACM EC
-  year: 2023
-  id: ec23
-  full_title: ACM Conference on Economics and Computation
-  link: https://ec23.sigecom.org/
-  deadline: '2023-01-20 23:59:59'
-  timezone: Etc/GMT+12
-  note: Full paper due at 2023-01-27 23:59:59 AoE.
-  place: King's College London, London
-  date: July 09-12, 2023
-  start: 2023-07-09
-  end: 2023-07-12
-  sub: [EC]
+  start: '2023-06-05'
+  end: '2023-06-06'
+  sub:
+  - BC
+  - DS
+  inactive: true
