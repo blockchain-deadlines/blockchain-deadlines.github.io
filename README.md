@@ -1,6 +1,6 @@
 ## Blockchain Deadlines
 
-Deadline countdowns for high-quality academic venues relevant to blockchain.
+Deadline countdowns for high-quality academic venues relevant to blockchain research.
 
 Forked from [aideadlin.es](https://aideadlin.es/) originally developed by [abhshkdz](https://twitter.com/abhshkdz).
 
@@ -11,11 +11,11 @@ Forked from [aideadlin.es](https://aideadlin.es/) originally developed by [abhsh
 
 To add or update a deadline:
 - Fork the repository
-- Update `_data/conferences.yml`
-- Make sure it has the `title`, `year`, `id`, `link`, `deadline`, `timezone`, `date`, `place`, `sub` attributes
+- Update/create the respective file in `_data/conferences_raw`
+- Make sure each cycle of the conference has the `title`, `year`, `id`, `link`, `deadline`, `timezone`, `date`, `place`, `sub` attributes
     + See available timezone strings [here](https://momentjs.com/timezone/). Anywhere-on-earth usually refers to `Etc/GMT+12`.
-    + If there are multiple deadlines (e.g., for abstract and submission), use the *first* deadline as `deadline` and describe details in `note`.
-- Optionally add a `note` (e.g., for submission deadline, if the first deadline is for abstracts only; or submission cycle)
+    + If there are multiple deadlines (e.g., for abstract and submission), use the *earliest* deadline as `deadline` and describe details in `note`.
+- Optionally add a `note` (e.g., for submission deadline, if the earliest deadline is for abstracts only; or submission cycle)
 - Optionally add `hindex` (refers to h5-index from [here](https://scholar.google.com/citations?view_op=top_venues&vq=eng))
 - Example:
     ```yaml
@@ -33,11 +33,13 @@ To add or update a deadline:
       start: YYYY-MM-DD
       end: YYYY-MM-DD
     ```
+- Run `compress-conferences.sh` to update `_data/conferences.yml`
 - Send a pull request
 
-If you want to help out with **updating existing-but-outdated deadlines to next-year's edition**, check out [this prompt](chatgpt-prompt-update.txt) that I have used in the past to ask ChatGPT to update snippets of the YAML file (semi-)automatically.
-It doesn't always work perfectly, so please double check the output with the conference website before submitting a pull request, but it worked astonishingly well and sped the work up by quite a bit with ChatGPT 3.5.
-**Improved prompts are very welcome as well!**
+If you want to help out with **updating existing-but-outdated deadlines to next-year's edition**, check out [`chatgpt-updater.py`](chatgpt-updater.py).
+It uses ChatGPT and Serper to update the YAML files (semi-)automatically. (It expects API keys in the environment variables `OPENAI_API_KEY` and `SERPER_API_KEY`.)
+It doesn't always work perfectly, so please double check the output with the conference website before submitting a pull request, but it worked astonishingly well and sped the work up by quite a bit.
+**Improvements to the prompt and/or script are very welcome!**
 
 
 ## License
