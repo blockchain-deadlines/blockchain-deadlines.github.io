@@ -1,0 +1,30 @@
+- id: sp2025first
+  year: 2025
+  title: IEEE S&P
+  full_title: IEEE Symposium on Security and Privacy
+  link: https://www.ieee-security.org/TC/SP2025/
+  deadline: '2024-06-06 23:59:59'
+  timezone: Etc/GMT+12
+  note: First deadline.
+  place: San Francisco, CA, USA
+  date: TBD
+  start: TBD
+  end: TBD
+  sub:
+  - SEC
+  inactive: false
+- id: sp2025second
+  year: 2025
+  title: IEEE S&P
+  full_title: IEEE Symposium on Security and Privacy
+  link: https://www.ieee-security.org/TC/SP2025/
+  deadline: '2024-11-14 23:59:59'
+  timezone: Etc/GMT+12
+  note: Second deadline.
+  place: San Francisco, CA, USA
+  date: TBD
+  start: TBD
+  end: TBD
+  sub:
+  - SEC
+  inactive: false

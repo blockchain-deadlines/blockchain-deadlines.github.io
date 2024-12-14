@@ -1,0 +1,16 @@
+- id: sosp24
+  year: 2024
+  title: ACM SOSP
+  full_title: ACM Symposium on Operating Systems Principles
+  link: https://sigops.org/s/conferences/sosp/2024/cfp.html
+  deadline: '2024-04-12 23:59:59'
+  timezone: America/Los_Angeles
+  note: 'Abstract registration deadline. Full paper submission deadline: April 19,
+    2024 23:59 PT.'
+  place: TBD
+  date: November 4-6, 2024
+  start: '2024-11-04'
+  end: '2024-11-06'
+  sub:
+  - DS
+  inactive: false

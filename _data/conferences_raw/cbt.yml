@@ -1,0 +1,16 @@
+- id: cbt24
+  year: 2024
+  title: CBT
+  full_title: International Workshop on Cryptocurrencies and Blockchain Technology
+  link: http://cbtworkshop.org/
+  deadline: '2024-06-06 23:59:59'
+  timezone: Etc/GMT+12
+  note: 'Deadline extension to June 23, 2024. Notification of authors: July 22, 2024.
+    Camera-ready versions: August 19, 2024.'
+  place: Bydgoszcz, Poland
+  date: September 19, 2024
+  start: '2024-09-19'
+  end: '2024-09-19'
+  sub:
+  - BC
+  inactive: false

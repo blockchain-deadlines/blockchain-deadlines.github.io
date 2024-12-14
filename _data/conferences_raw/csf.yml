@@ -1,0 +1,48 @@
+- id: csf25spring
+  year: 2025
+  title: IEEE CSF
+  full_title: IEEE Computer Security Foundations Symposium
+  link: https://csf2025.ieee-security.org/
+  deadline: '2024-05-28 23:59:59'
+  timezone: Etc/GMT+12
+  note: Spring cycle.
+  place: Santa Cruz, CA, USA
+  date: July 2025
+  start: TBD
+  end: TBD
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: csf25fall
+  year: 2025
+  title: IEEE CSF
+  full_title: IEEE Computer Security Foundations Symposium
+  link: https://csf2025.ieee-security.org/
+  deadline: '2024-10-01 23:59:59'
+  timezone: Etc/GMT+12
+  note: Fall cycle.
+  place: Santa Cruz, CA, USA
+  date: July 2025
+  start: TBD
+  end: TBD
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: csf25winter
+  year: 2025
+  title: IEEE CSF
+  full_title: IEEE Computer Security Foundations Symposium
+  link: https://csf2025.ieee-security.org/
+  deadline: '2025-02-04 23:59:59'
+  timezone: Etc/GMT+12
+  note: Winter cycle.
+  place: Santa Cruz, CA, USA
+  date: July 2025
+  start: TBD
+  end: TBD
+  sub:
+  - DS
+  - SEC
+  inactive: false

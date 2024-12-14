@@ -1,0 +1,15 @@
+- id: tcc24
+  year: 2024
+  title: TCC
+  full_title: Theory of Cryptography Conference
+  link: https://tcc.iacr.org/2024/callforpapers.php
+  deadline: '2024-05-20 20:00:00'
+  timezone: Europe/Paris
+  note: Submission deadline at 20:00 CEST.
+  place: Milan, Italy
+  date: December 2-6, 2024
+  start: '2024-12-02'
+  end: '2024-12-06'
+  sub:
+  - CR
+  inactive: false

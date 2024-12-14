@@ -1,0 +1,17 @@
+- id: atc25
+  year: 2025
+  title: USENIX ATC
+  full_title: USENIX Annual Technical Conference
+  link: https://www.usenix.org/conference/atc25/call-for-papers
+  deadline: '2025-01-07 23:59:59'
+  timezone: Etc/GMT
+  note: 'Abstract registrations due: January 7, 2025, 23:59 UTC. Submissions due:
+    January 14, 2025, 23:59 UTC.'
+  place: Boston, MA, USA
+  date: July 7-9, 2025
+  start: '2025-07-07'
+  end: '2025-07-09'
+  sub:
+  - DS
+  - SEC
+  inactive: false

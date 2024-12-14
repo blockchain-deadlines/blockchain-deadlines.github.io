@@ -1,0 +1,30 @@
+- id: esorics24first
+  year: 2024
+  title: ESORICS
+  full_title: European Symposium on Research in Computer Security
+  link: https://esorics2024.org/
+  deadline: '2024-01-08 23:59:59'
+  timezone: Etc/GMT+12
+  note: First cycle.
+  place: Bydgoszcz, Poland
+  date: September 16-20, 2024
+  start: '2024-09-16'
+  end: '2024-09-20'
+  sub:
+  - SEC
+  inactive: false
+- id: esorics24second
+  year: 2024
+  title: ESORICS
+  full_title: European Symposium on Research in Computer Security
+  link: https://esorics2024.org/
+  deadline: '2024-04-19 23:59:59'
+  timezone: Etc/GMT+12
+  note: Second cycle.
+  place: Bydgoszcz, Poland
+  date: September 16-20, 2024
+  start: '2024-09-16'
+  end: '2024-09-20'
+  sub:
+  - SEC
+  inactive: false

@@ -1,0 +1,16 @@
+- id: aft24
+  year: 2024
+  title: AFT
+  full_title: Advances in Financial Technologies
+  link: https://aftconf.github.io/aft24/index.html
+  deadline: '2024-05-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: 'Abstract registration deadline. Paper submission deadline: May 22nd, 2024
+    (AoE)'
+  place: Vienna, Austria
+  date: September 23-25, 2024
+  start: '2024-09-23'
+  end: '2024-09-25'
+  sub:
+  - BC
+  inactive: false

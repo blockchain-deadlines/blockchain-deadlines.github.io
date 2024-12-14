@@ -1,0 +1,32 @@
+- id: asiaccs25first
+  year: 2025
+  title: ACM AsiaCCS
+  full_title: ACM ASIA Conference on Computer and Communications Security
+  link: https://asiaccs2025.hust.edu.vn/
+  deadline: '2024-09-20 23:59:59'
+  timezone: Etc/GMT+12
+  note: First round. Paper submission deadline.
+  place: Hanoi, Vietnam
+  date: August 25-29, 2025
+  start: '2025-08-25'
+  end: '2025-08-29'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: asiaccs25second
+  year: 2025
+  title: ACM AsiaCCS
+  full_title: ACM ASIA Conference on Computer and Communications Security
+  link: https://asiaccs2025.hust.edu.vn/
+  deadline: '2025-01-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: Second round. Paper submission deadline.
+  place: Hanoi, Vietnam
+  date: August 25-29, 2025
+  start: '2025-08-25'
+  end: '2025-08-29'
+  sub:
+  - SEC
+  - DS
+  inactive: false

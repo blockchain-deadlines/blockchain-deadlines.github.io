@@ -1,0 +1,16 @@
+- id: sigcomm25
+  year: 2025
+  title: ACM SIGCOMM
+  full_title: ACM SIGCOMM Conference
+  link: https://conferences.sigcomm.org/sigcomm/2025/
+  deadline: '2025-01-24 23:59:59'
+  timezone: Etc/GMT
+  note: 'Main Track CFP: Abstract registration deadline. Paper submission deadline:
+    January 31, 2025 23:59 UTC.'
+  place: Coimbra, Portugal
+  date: September 8-11, 2025
+  start: '2025-09-08'
+  end: '2025-09-11'
+  sub:
+  - DS
+  inactive: false

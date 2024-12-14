@@ -1,0 +1,32 @@
+- id: ccs24a
+  year: 2024
+  title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security
+  link: https://www.sigsac.org/ccs/CCS2024/
+  deadline: '2024-01-28 23:59:59'
+  timezone: Etc/GMT+12
+  note: First cycle.
+  place: Salt Lake City, Utah, USA
+  date: October 14-18, 2024
+  start: '2024-10-14'
+  end: '2024-10-18'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: ccs24b
+  year: 2024
+  title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security
+  link: https://www.sigsac.org/ccs/CCS2024/
+  deadline: '2024-04-29 23:59:59'
+  timezone: Etc/GMT+12
+  note: Second cycle (tentative).
+  place: Salt Lake City, Utah, USA
+  date: October 14-18, 2024
+  start: '2024-10-14'
+  end: '2024-10-18'
+  sub:
+  - SEC
+  - DS
+  inactive: false

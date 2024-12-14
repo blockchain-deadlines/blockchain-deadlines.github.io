@@ -1,0 +1,15 @@
+- id: pkc25
+  year: 2025
+  title: PKC
+  full_title: Public Key Cryptography Conference
+  link: https://pkc.iacr.org/2025/
+  deadline: '2024-10-16 23:59:59'
+  timezone: Etc/GMT+12
+  note: Submission deadline is on October 16, 2024, 11:59pm AoE.
+  place: "R\xF8ros, Norway"
+  date: May 12-15, 2025
+  start: '2025-05-12'
+  end: '2025-05-15'
+  sub:
+  - CR
+  inactive: false
