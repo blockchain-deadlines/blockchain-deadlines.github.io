@@ -5,6 +5,7 @@ import requests
 import json
 import yaml
 import copy
+import sys
 from bs4 import BeautifulSoup
 from pydantic import BaseModel, ValidationError
 from typing import Literal
@@ -15,15 +16,16 @@ SERPER_API_KEY = os.environ.get("SERPER_API_KEY")
 
 OPENAI_MODEL = "gpt-4o-2024-08-06" # "gpt-4o"
 PROMPT = """
-Find the submission deadline information for the latest edition (for which a call-for-papers with submission deadline information is available online) of the conference specified by the user.
-
+Find the submission deadline information for the latest edition (for which a call-for-papers with submission deadline information is available online) of the conference (or other academic venue) specified by the user.
 If the user-provided information is for year X, then try to find the information for year X+1, etc. If no more up-to-date information is available, then return no update.
-To find the information, search for the conference edition's website and make educated guesses as to what the website URL could be, based on the URL of previous years.
-If there are multiple submission cycles for the conference, produce a separate conference object for each submission cycle. If there are multiple deadlines mentioned for a particular submission cycle, choose the earliest deadline, and mention all deadlines in the `note` field. Do not include information in `note` any other than information pertaining to deadline(s). Do not include in `note` any information regarding rebuttal, notification, or camera-ready.
+Consider only information from authoritative sources, such as the conference's website or the conference organizer or the publisher of the conference proceedings, not from third-party websites.
+To find the information, search for the conference edition's website, or make educated guesses as to what the website URL could be, based on the URLs of previous years.
+If there are multiple submission cycles for the conference, produce a separate conference object for each submission cycle.
+If there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration/submission deadline and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle. Do not include information in `note` any other than information pertaining to deadline(s), or the name of the cycle. Do not include in `note` any information regarding rebuttal, notification, camera-ready, or conference registration for attending. Do not include in `note` information about whether the deadline is firm.
 Pay attention to timezone information and specify them in `note` as well. Do proper conversion from AM/PM to 24h format. Deadlines in 'anywhere on earth' = 'AoE' should be flagged with `timezone` `Etc/GMT+12`.
 For `link`, provide the URL that contains the submission deadline information.
 Subject areas in `sub` are `BC` (blockchain), `CR` (cryptography), `DS` (distributed systems), `SEC` (security), and `EC` (economics/incentives).
-I will provide you with example information for five conferences, so that you can understand the desired data format.
+I will provide you with example information for a few conferences, so that you can understand the desired data format.
 """
 EXAMPLES = """
 - - title: IEEE EuroS&P
@@ -123,6 +125,20 @@ EXAMPLES = """
     start: 2024-09-23
     end: 2024-09-25
     sub: [BC]
+
+- - title: AFT
+    year: 2025
+    id: aft25
+    full_title: Advances in Financial Technologies
+    link: https://aftconf.github.io/aft25/CFP.html
+    deadline: '2025-05-28 23:59:59'
+    timezone: Etc/GMT+12
+    note: Paper submission deadline.
+    place: Carnegie Mellon University, Pittsburgh, PA, USA
+    date: October 8-10, 2025
+    start: 2025-10-08
+    end: 2025-10-10
+    sub: [BC]
 """
 
 
@@ -163,7 +179,10 @@ def callback_browse_html(url: str) -> str:
     response = requests.get(url, headers=headers, allow_redirects=True)
     response.raise_for_status()
 
-    return response.text
+    if len(response.text) < 50000:
+        return response.text
+    else:
+        return "ERROR: Content exceeds maximum allowed length (100000 bytes)!"
 
 def callback_browse_text(url: str) -> list[str]:
     # print(">>> callback_browse_text", url)
@@ -275,9 +294,9 @@ def load_conferences(string: str) -> list[list[Conference]]:
     conferences = [ [ import_conference(cycle) for cycle in conference ] for conference in conferences ]
     return conferences
 
-def dump_conferences(conferences: list[list[Conference]]) -> str:
-    conferences.sort(key=lambda conf: (conf[-1].inactive, conf[-1].deadline, conf[-1].id))
-    return yaml.dump([ [ cycle.__dict__ for cycle in conference ] for conference in conferences ], sort_keys=False)
+# def dump_conferences(conferences: list[list[Conference]]) -> str:
+#     conferences.sort(key=lambda conf: (conf[-1].inactive, conf[-1].deadline, conf[-1].id))
+#     return yaml.dump([ [ cycle.__dict__ for cycle in conference ] for conference in conferences ], sort_keys=False)
 
 def load_conference(string: str) -> list[Conference]:
     return [ import_conference(cycle) for cycle in yaml.safe_load(string) ]
@@ -285,12 +304,22 @@ def load_conference(string: str) -> list[Conference]:
 def dump_conference(conference: list[Conference]) -> str:
     return yaml.dump([ cycle.__dict__ for cycle in conference ], sort_keys=False)
 
-for conference_file in sorted(os.listdir("_data/conferences_raw")):
+conference_files = []
+if len(sys.argv) > 1:
+    conference_files = [ f"{filename}.yml" for filename in sys.argv[1:] ]
+else:
+    conference_files = list(os.listdir("_data/conferences_raw"))
+
+for conference_file in sorted(conference_files):
     print(conference_file)
     assert(conference_file.endswith(".yml"))
 
     conference = load_conference(open(os.path.join("_data/conferences_raw", conference_file), "r").read())
     print("BEFORE:", conference)
+
+    if conference[0].inactive:
+        print("INACTIVE, SKIPPING!")
+        continue
 
     messages = [
         {
@@ -341,12 +370,15 @@ for conference_file in sorted(os.listdir("_data/conferences_raw")):
                 messages.append({"role": "tool", "content": json.dumps(ret), "tool_call_id": tool_call.id})
 
         elif choice.finish_reason == "stop":
-            print("DONE:", choice.message.parsed)
+            # print("DONE:", choice.message.parsed)
 
             if choice.message.parsed.any_updates:
                 conference = choice.message.parsed.conferences
                 print("AFTER:", conference)
                 open(os.path.join("_data/conferences_raw", conference_file), "w").write(dump_conference(conference))
+
+            else:
+                print("NO UPDATE!")
 
             break
 

@@ -32,19 +32,18 @@
   - DS
   - CR
   inactive: false
-- id: aft24
-  year: 2024
+- id: aft25
+  year: 2025
   title: AFT
   full_title: Advances in Financial Technologies
-  link: https://aftconf.github.io/aft24/index.html
-  deadline: '2024-05-15 23:59:59'
+  link: https://aftconf.github.io/aft25/CFP.html
+  deadline: '2025-05-28 23:59:59'
   timezone: Etc/GMT+12
-  note: 'Abstract registration deadline. Paper submission deadline: May 22nd, 2024
-    (AoE)'
-  place: Vienna, Austria
-  date: September 23-25, 2024
-  start: '2024-09-23'
-  end: '2024-09-25'
+  note: Paper submission deadline (firm).
+  place: Carnegie Mellon University, Pittsburgh, PA, USA
+  date: October 8-10, 2025
+  start: '2025-10-08'
+  end: '2025-10-10'
   sub:
   - BC
   inactive: false
@@ -128,34 +127,36 @@
   sub:
   - BC
   inactive: false
-- id: ccs24a
-  year: 2024
+- id: ccs25a
+  year: 2025
   title: ACM CCS
   full_title: ACM Conference on Computer and Communications Security
-  link: https://www.sigsac.org/ccs/CCS2024/
-  deadline: '2024-01-28 23:59:59'
+  link: https://www.sigsac.org/ccs/CCS2025/call-for-papers/
+  deadline: '2025-01-02 23:59:59'
   timezone: Etc/GMT+12
-  note: First cycle.
-  place: Salt Lake City, Utah, USA
-  date: October 14-18, 2024
-  start: '2024-10-14'
-  end: '2024-10-18'
+  note: First cycle. Abstract submission deadline. Full paper submission deadline
+    2025-01-09 23:59:59 AoE.
+  place: Taipei, Taiwan
+  date: October 13-17, 2025
+  start: '2025-10-13'
+  end: '2025-10-17'
   sub:
   - SEC
   - DS
   inactive: false
-- id: ccs24b
-  year: 2024
+- id: ccs25b
+  year: 2025
   title: ACM CCS
   full_title: ACM Conference on Computer and Communications Security
-  link: https://www.sigsac.org/ccs/CCS2024/
-  deadline: '2024-04-29 23:59:59'
+  link: https://www.sigsac.org/ccs/CCS2025/call-for-papers/
+  deadline: '2025-04-07 23:59:59'
   timezone: Etc/GMT+12
-  note: Second cycle (tentative).
-  place: Salt Lake City, Utah, USA
-  date: October 14-18, 2024
-  start: '2024-10-14'
-  end: '2024-10-18'
+  note: Second cycle. Abstract registration deadline. Full paper submission deadline
+    2025-04-14 23:59:59 AoE.
+  place: Taipei, Taiwan
+  date: October 13-17, 2025
+  start: '2025-10-13'
+  end: '2025-10-17'
   sub:
   - SEC
   - DS
@@ -176,18 +177,18 @@
   - BC
   - DS
   inactive: true
-- id: crypto24
-  year: 2024
+- id: crypto25
+  year: 2025
   title: CRYPTO
   full_title: Cryptology Conference
-  link: https://crypto.iacr.org/2024/
-  deadline: '2024-02-13 17:59:59'
+  link: https://crypto.iacr.org/2025
+  deadline: '2025-02-13 23:59:59'
   timezone: Etc/GMT-5
-  note: ''
+  note: Submission deadline.
   place: Santa Barbara, USA
-  date: August 18-22, 2024
-  start: '2024-08-18'
-  end: '2024-08-22'
+  date: August 17-21, 2025
+  start: '2025-08-17'
+  end: '2025-08-21'
   sub:
   - CR
   inactive: false
