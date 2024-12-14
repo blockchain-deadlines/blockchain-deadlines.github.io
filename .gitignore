@@ -6,3 +6,4 @@ vendor
 .idea
 venv/
 chatgpt-updater-apisecrets
+chatgpt-updater-training/
