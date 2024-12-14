@@ -177,9 +177,7 @@ def callback_search(query: str) -> list[tuple[str, str, str, str, str]]:
     
     return returns
 
-def callback_browse_html(url: str) -> str:
-    # print(">>> callback_browse_html", url)
-
+def _retrieve_url(url: str) -> str:
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
     }
@@ -187,23 +185,32 @@ def callback_browse_html(url: str) -> str:
     try:
         response.raise_for_status()
     except requests.exceptions.HTTPError as e:
+        print("WARNING: HTTP ERROR: " + str(e))
         return "HTTP ERROR: " + str(e)
     except ssl.SSLCertVerificationError as e:
+        print("WARNING: SSL/HTTPS ERROR: " + str(e))
         return "SSL/HTTPS ERROR: " + str(e)
 
-    if len(response.text) < 50000:
-        return response.text
+    return response.text
+
+def _guard_max_return_length(text: str) -> str:
+    callback_max_return_length = 50000
+
+    if len(text) <= callback_max_return_length:
+        return text
     else:
-        return "ERROR: Content exceeds maximum allowed length (100000 bytes)!"
+        print(f"WARNING: Content exceeds maximum allowed length ({callback_max_return_length} bytes)!")
+        return f"ERROR: Content exceeds maximum allowed length ({callback_max_return_length} bytes)!"
+
+def callback_browse_html(url: str) -> str:
+    text = _retrieve_url(url)
+    return _guard_max_return_length(text)
 
 def callback_browse_text(url: str) -> list[str]:
-    # print(">>> callback_browse_text", url)
-
-    html = callback_browse_html(url)
+    html = _retrieve_url(url)
     soup = BeautifulSoup(html, "html.parser")
     text = list(soup.stripped_strings)
-    
-    return text
+    return _guard_max_return_length(text)
 
 tools = [
     {
