@@ -271,33 +271,33 @@
   sub:
   - EC
   inactive: false
-- id: esorics24first
-  year: 2024
+- id: esorics25first
+  year: 2025
   title: ESORICS
   full_title: European Symposium on Research in Computer Security
-  link: https://esorics2024.org/
-  deadline: '2024-01-08 23:59:59'
+  link: https://esorics2025.sciencesconf.org/resource/page/id/1
+  deadline: '2025-01-10 23:59:59'
   timezone: Etc/GMT+12
   note: First cycle.
-  place: Bydgoszcz, Poland
-  date: September 16-20, 2024
-  start: '2024-09-16'
-  end: '2024-09-20'
+  place: Toulouse, France
+  date: September 22-26, 2025
+  start: '2025-09-22'
+  end: '2025-09-26'
   sub:
   - SEC
   inactive: false
-- id: esorics24second
-  year: 2024
+- id: esorics25second
+  year: 2025
   title: ESORICS
   full_title: European Symposium on Research in Computer Security
-  link: https://esorics2024.org/
-  deadline: '2024-04-19 23:59:59'
+  link: https://esorics2025.sciencesconf.org/resource/page/id/1
+  deadline: '2025-04-22 23:59:59'
   timezone: Etc/GMT+12
   note: Second cycle.
-  place: Bydgoszcz, Poland
-  date: September 16-20, 2024
-  start: '2024-09-16'
-  end: '2024-09-20'
+  place: Toulouse, France
+  date: September 22-26, 2025
+  start: '2025-09-22'
+  end: '2025-09-26'
   sub:
   - SEC
   inactive: false
@@ -571,18 +571,18 @@
   sub:
   - CR
   inactive: false
-- id: sbc24
-  year: 2024
+- id: sbc25
+  year: 2025
   title: SBC
-  full_title: Science of Blockchain Conference 2024
-  link: https://www.sbc-conference.com/
-  deadline: '2024-04-16 23:59:59'
+  full_title: Science of Blockchain Conference 2025
+  link: https://sbc-conference.com/2025/
+  deadline: '2025-03-13 23:59:59'
   timezone: America/Los_Angeles
-  note: ''
-  place: Alfred Lerner Hall, Columbia University
-  date: August 7-9, 2024
-  start: '2024-08-07'
-  end: '2024-08-09'
+  note: Talk submission deadline.
+  place: Martin Luther King Jr. Building, U.C. Berkeley
+  date: August 4-6, 2025
+  start: '2025-08-04'
+  end: '2025-08-06'
   sub:
   - BC
   inactive: false
