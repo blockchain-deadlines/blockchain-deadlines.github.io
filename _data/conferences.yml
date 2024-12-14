@@ -255,19 +255,19 @@
   sub:
   - DS
   inactive: false
-- id: ec24
-  year: 2024
+- id: ec25
+  year: 2025
   title: ACM EC
   full_title: ACM Conference on Economics and Computation
-  link: https://ec24.sigecom.org/call-for-contributions-acm/papers/
-  deadline: '2024-02-05 23:59:59'
+  link: https://ec25.sigecom.org/call-for-contributions-acm/papers/
+  deadline: '2025-02-03 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract submission deadline on February 5, 2024. Full paper submission deadline
-    on February 12, 2024 AoE.
-  place: Yale University, New Haven
-  date: July 8-11, 2024
-  start: '2024-07-08'
-  end: '2024-07-11'
+  note: Abstract submission deadline. Full paper submission deadline on February 10,
+    2025 23:59:59 AoE.
+  place: Stanford University, Stanford, CA
+  date: July 07-12, 2025
+  start: '2025-07-07'
+  end: '2025-07-12'
   sub:
   - EC
   inactive: false
