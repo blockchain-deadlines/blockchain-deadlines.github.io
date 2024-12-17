@@ -37,8 +37,9 @@ To add or update a deadline:
 - Send a pull request
 
 If you want to help out with **updating existing-but-outdated deadlines to next-year's edition**, check out [`chatgpt-updater.py`](chatgpt-updater.py).
-It uses ChatGPT and Serper to update the YAML files (semi-)automatically. (It expects API keys in the environment variables `OPENAI_API_KEY` and `SERPER_API_KEY`.)
+It uses ChatGPT and Serper to update the YAML files (semi-)automatically. It expects API keys in the environment variables `OPENAI_API_KEY` and `SERPER_API_KEY`. It can also, optionally when the environment variable `COLLECT_TRAINING_DATA` is set, record its interactions to local files, to collect training data for model fine-tuning in the future.
 It doesn't always work perfectly, so please double check the output with the conference website before submitting a pull request, but it worked astonishingly well and sped the work up by quite a bit.
+See [this thread on X](https://x.com/jneu_net/status/1868995269691588672) for a bit more context.
 **Improvements to the prompt and/or script are very welcome!**
 
 
