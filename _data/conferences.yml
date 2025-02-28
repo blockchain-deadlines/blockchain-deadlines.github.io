@@ -352,35 +352,35 @@
   - DS
   - SEC
   inactive: false
-- id: eurosys25spring
-  year: 2025
+- id: eurosys26spring
+  year: 2026
   title: EuroSys
   full_title: European Conference on Computer Systems
-  link: https://2025.eurosys.org/
-  deadline: '2024-05-14 23:59:59'
+  link: https://2026.eurosys.org/cfp.html
+  deadline: '2025-05-08 23:59:59'
   timezone: Etc/GMT+12
-  note: Spring cycle. Deadline for abstract registration. Paper deadline 2024-05-21
-    23:59:59 AoE.
-  place: Rotterdam
-  date: March 30 - April 3, 2025
-  start: '2025-03-30'
-  end: '2025-04-03'
+  note: Spring cycle. Deadline for paper titles and abstracts. Full paper deadline
+    2025-05-15 23:59:59 AoE.
+  place: Edinburgh
+  date: April 13 - 16, 2026
+  start: '2026-04-13'
+  end: '2026-04-16'
   sub:
   - DS
   inactive: false
-- id: eurosys25fall
-  year: 2025
+- id: eurosys26fall
+  year: 2026
   title: EuroSys
   full_title: European Conference on Computer Systems
-  link: https://2025.eurosys.org/
-  deadline: '2024-10-15 23:59:59'
+  link: https://2026.eurosys.org/cfp.html
+  deadline: '2025-09-18 23:59:59'
   timezone: Etc/GMT+12
-  note: Fall cycle. Deadline for abstract registration. Paper deadline 2024-10-22
+  note: Fall cycle. Deadline for paper titles and abstracts. Full paper deadline 2025-09-25
     23:59:59 AoE.
-  place: Rotterdam
-  date: March 30 - April 3, 2025
-  start: '2025-03-30'
-  end: '2025-04-03'
+  place: Edinburgh
+  date: April 13 - 16, 2026
+  start: '2026-04-13'
+  end: '2026-04-16'
   sub:
   - DS
   inactive: false
