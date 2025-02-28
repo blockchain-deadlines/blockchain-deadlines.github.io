@@ -1,15 +1,19 @@
-- title: Crypto Valley Conference
+- id: cvc25
   year: 2025
-  id: cvc25
-  full_name: Crypto Valley Conference 2025
+  title: CVC
+  full_title: Crypto Valley Conference
   link: https://cryptovalleyconference.com/call-for-papers
   deadline: '2025-03-13 23:59:59'
   timezone: Etc/GMT+12
-  sub: 
-    - BC
-    - CR
-    - DS
-    - SEC
-    - EC
+  note: ''
   place: Rotkreuz, Switzerland
   date: June, 05-06, 2025
+  start: '2025-06-05'
+  end: '2025-06-06'
+  sub:
+  - BC
+  - CR
+  - DS
+  - SEC
+  - EC
+  inactive: false

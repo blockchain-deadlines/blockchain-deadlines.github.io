@@ -199,8 +199,8 @@ def _guard_max_return_length(text: str) -> str:
     if len(text) <= callback_max_return_length:
         return text
     else:
-        print(f"WARNING: Content exceeds maximum allowed length ({callback_max_return_length} bytes)!")
-        return f"ERROR: Content exceeds maximum allowed length ({callback_max_return_length} bytes)!"
+        print(f"WARNING: Content exceeds maximum allowed length ({callback_max_return_length} bytes)! Try requesting text rather than HTML!")
+        return f"ERROR: Content exceeds maximum allowed length ({callback_max_return_length} bytes)! Try requesting text rather than HTML!"
 
 def callback_browse_html(url: str) -> str:
     text = _retrieve_url(url)
