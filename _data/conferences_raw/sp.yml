@@ -1,30 +1,30 @@
-- id: sp2025first
-  year: 2025
+- id: sp2026first
+  year: 2026
   title: IEEE S&P
   full_title: IEEE Symposium on Security and Privacy
-  link: https://www.ieee-security.org/TC/SP2025/
-  deadline: '2024-06-06 23:59:59'
+  link: https://sp2026.ieee-security.org/cfpapers.html
+  deadline: '2025-06-05 23:59:59'
   timezone: Etc/GMT+12
-  note: First deadline.
+  note: First deadline. Paper submission deadline.
   place: San Francisco, CA, USA
-  date: TBD
-  start: TBD
-  end: TBD
+  date: May 18-21, 2026
+  start: '2026-05-18'
+  end: '2026-05-21'
   sub:
   - SEC
   inactive: false
-- id: sp2025second
-  year: 2025
+- id: sp2026second
+  year: 2026
   title: IEEE S&P
   full_title: IEEE Symposium on Security and Privacy
-  link: https://www.ieee-security.org/TC/SP2025/
-  deadline: '2024-11-14 23:59:59'
+  link: https://sp2026.ieee-security.org/cfpapers.html
+  deadline: '2025-11-13 23:59:59'
   timezone: Etc/GMT+12
-  note: Second deadline.
+  note: Second deadline. Paper submission deadline.
   place: San Francisco, CA, USA
-  date: TBD
-  start: TBD
-  end: TBD
+  date: May 18-21, 2026
+  start: '2026-05-18'
+  end: '2026-05-21'
   sub:
   - SEC
   inactive: false

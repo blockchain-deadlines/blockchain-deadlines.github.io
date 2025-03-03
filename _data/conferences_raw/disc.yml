@@ -1,15 +1,16 @@
-- id: disc24
-  year: 2024
+- id: disc25
+  year: 2025
   title: DISC
   full_title: International Symposium on Distributed Computing
-  link: http://www.disc-conference.org/wp/disc2024/
-  deadline: '2024-05-07 23:59:59'
+  link: http://www.disc-conference.org/wp/disc2025/
+  deadline: '2025-05-20 23:59:59'
   timezone: Etc/GMT+12
-  note: Paper registration. Full paper submission due at 2024-05-14 23:59:59 AoE.
-  place: Madrid, Spain
-  date: October 28-November 1, 2024
-  start: '2024-10-28'
-  end: '2024-11-01'
+  note: Paper registration deadline. Full paper submission due at 2025-05-23 23:59:59
+    AoE.
+  place: Berlin, Germany
+  date: October 27-31, 2025
+  start: '2025-10-27'
+  end: '2025-10-31'
   sub:
   - DS
   inactive: false

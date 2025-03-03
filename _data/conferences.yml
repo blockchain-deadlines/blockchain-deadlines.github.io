@@ -259,18 +259,19 @@
   - SEC
   - EC
   inactive: false
-- id: disc24
-  year: 2024
+- id: disc25
+  year: 2025
   title: DISC
   full_title: International Symposium on Distributed Computing
-  link: http://www.disc-conference.org/wp/disc2024/
-  deadline: '2024-05-07 23:59:59'
+  link: http://www.disc-conference.org/wp/disc2025/
+  deadline: '2025-05-20 23:59:59'
   timezone: Etc/GMT+12
-  note: Paper registration. Full paper submission due at 2024-05-14 23:59:59 AoE.
-  place: Madrid, Spain
-  date: October 28-November 1, 2024
-  start: '2024-10-28'
-  end: '2024-11-01'
+  note: Paper registration deadline. Full paper submission due at 2025-05-23 23:59:59
+    AoE.
+  place: Berlin, Germany
+  date: October 27-31, 2025
+  start: '2025-10-27'
+  end: '2025-10-31'
   sub:
   - DS
   inactive: false
@@ -621,49 +622,49 @@
   sub:
   - DS
   inactive: false
-- id: sosp24
-  year: 2024
+- id: sosp25
+  year: 2025
   title: ACM SOSP
   full_title: ACM Symposium on Operating Systems Principles
-  link: https://sigops.org/s/conferences/sosp/2024/cfp.html
-  deadline: '2024-04-12 23:59:59'
+  link: https://sigops.org/s/conferences/sosp/2025/cfp.html
+  deadline: '2025-04-10 23:59:59'
   timezone: America/Los_Angeles
-  note: 'Abstract registration deadline. Full paper submission deadline: April 19,
-    2024 23:59 PT.'
-  place: TBD
-  date: November 4-6, 2024
-  start: '2024-11-04'
-  end: '2024-11-06'
+  note: 'Abstract registration deadline. Full paper submission deadline: April 17,
+    2025; 23:59 PT.'
+  place: Seoul, Republic of Korea
+  date: October 13-16, 2025
+  start: '2025-10-13'
+  end: '2025-10-16'
   sub:
   - DS
   inactive: false
-- id: sp2025first
-  year: 2025
+- id: sp2026first
+  year: 2026
   title: IEEE S&P
   full_title: IEEE Symposium on Security and Privacy
-  link: https://www.ieee-security.org/TC/SP2025/
-  deadline: '2024-06-06 23:59:59'
+  link: https://sp2026.ieee-security.org/cfpapers.html
+  deadline: '2025-06-05 23:59:59'
   timezone: Etc/GMT+12
-  note: First deadline.
+  note: First deadline. Paper submission deadline.
   place: San Francisco, CA, USA
-  date: TBD
-  start: TBD
-  end: TBD
+  date: May 18-21, 2026
+  start: '2026-05-18'
+  end: '2026-05-21'
   sub:
   - SEC
   inactive: false
-- id: sp2025second
-  year: 2025
+- id: sp2026second
+  year: 2026
   title: IEEE S&P
   full_title: IEEE Symposium on Security and Privacy
-  link: https://www.ieee-security.org/TC/SP2025/
-  deadline: '2024-11-14 23:59:59'
+  link: https://sp2026.ieee-security.org/cfpapers.html
+  deadline: '2025-11-13 23:59:59'
   timezone: Etc/GMT+12
-  note: Second deadline.
+  note: Second deadline. Paper submission deadline.
   place: San Francisco, CA, USA
-  date: TBD
-  start: TBD
-  end: TBD
+  date: May 18-21, 2026
+  start: '2026-05-18'
+  end: '2026-05-21'
   sub:
   - SEC
   inactive: false
