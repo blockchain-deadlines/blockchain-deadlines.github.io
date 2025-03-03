@@ -190,6 +190,9 @@ def _retrieve_url(url: str) -> str:
     except ssl.SSLCertVerificationError as e:
         print("WARNING: SSL/HTTPS ERROR: " + str(e))
         return "SSL/HTTPS ERROR: " + str(e)
+    except requests.exceptions.ConnectionError as e:
+        print("WARNING: CONNECTION ERROR: " + str(e))
+        return "CONNECTION ERROR: " + str(e)
 
     return response.text
 
