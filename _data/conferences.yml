@@ -79,18 +79,18 @@
   - SEC
   - DS
   inactive: false
-- id: asiacrypt24
-  year: 2024
+- id: asiacrypt25
+  year: 2025
   title: Asiacrypt
   full_title: Asiacrypt Conference
-  link: https://asiacrypt.iacr.org/2024/
-  deadline: '2024-05-26 11:59:00'
+  link: https://asiacrypt.iacr.org/2025/callforpapers.php
+  deadline: '2025-05-16 12:00:00'
   timezone: Etc/GMT
-  note: ''
-  place: Kolkata, India
-  date: December 9-13, 2024
-  start: '2024-12-09'
-  end: '2024-12-13'
+  note: Submission deadline.
+  place: Melbourne, Australia
+  date: December 8-12, 2025
+  start: '2025-12-08'
+  end: '2025-12-12'
   sub:
   - CR
   inactive: false
