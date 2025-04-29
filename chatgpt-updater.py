@@ -25,7 +25,7 @@ OPENAI_MODEL = "gpt-4o-2024-08-06" # "gpt-4o"
 PROMPT = """
 Find the submission deadline information for the latest edition (for which a call-for-papers with submission deadline information is available online) of the conference (or other academic venue) specified by the user.
 If the user-provided information is for year X, then try to find the information for year X+1, etc. If no more up-to-date information is available, then return no update.
-Consider only information from authoritative sources, such as the conference's website or the conference organizer or the publisher of the conference proceedings or reputable professional organizations (IACR, IEEE, ACM, etc.), not from third-party websites such as conference deadline aggregators (e.g., mpc-deadlines.github.io, wikicfp.com, etc.). If you find the information on a third-party website, make every effort to find it from official sources, and use that URL for the `link` field. If you cannot find it from official sources, then eventually return no update.
+Consider only information from authoritative sources, such as the conference's website or the conference organizer or the publisher of the conference proceedings or reputable professional organizations (IACR, IEEE, ACM, etc.), not from third-party websites such as conference deadline aggregators (e.g., mpc-deadlines.github.io, wikicfp.com, sslab.skku.edu, etc.). If you find the information on a third-party website, make every effort to find it from official sources, and use that URL for the `link` field. If you cannot find it from official sources, then eventually return no update.
 To find the information, search for the conference edition's website, or make educated guesses as to what the website URL could be, based on the URLs of previous years.
 If there are multiple submission cycles for the conference, produce a separate conference object for each submission cycle.
 If there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration/submission deadline and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle. Do not include information in `note` any other than information pertaining to deadline(s), or the name of the cycle. Do not include in `note` any information regarding rebuttal, notification, camera-ready, or conference registration for attending. Do not include in `note` information about whether the deadline is firm.
@@ -334,7 +334,7 @@ else:
     conference_files = list(os.listdir("_data/conferences_raw"))
 
 for conference_file in sorted(conference_files):
-    print(conference_file)
+    print("###", conference_file)
     assert(conference_file.endswith(".yml"))
 
     conference = load_conference(open(os.path.join("_data/conferences_raw", conference_file), "r").read())
@@ -342,6 +342,7 @@ for conference_file in sorted(conference_files):
 
     if conference[0].inactive:
         print("INACTIVE, SKIPPING!")
+        print()
         continue
 
     messages = [
@@ -418,3 +419,4 @@ for conference_file in sorted(conference_files):
             print("ERROR:", choice)
             break
 
+    print()
