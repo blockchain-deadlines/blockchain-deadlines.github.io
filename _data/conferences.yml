@@ -111,19 +111,18 @@
   - DS
   - SEC
   inactive: false
-- id: cbt24
-  year: 2024
+- id: cbt25
+  year: 2025
   title: CBT
   full_title: International Workshop on Cryptocurrencies and Blockchain Technology
-  link: http://cbtworkshop.org/
-  deadline: '2024-06-06 23:59:59'
+  link: https://cbtworkshop.org/
+  deadline: '2025-06-17 23:59:59'
   timezone: Etc/GMT+12
-  note: 'Deadline extension to June 23, 2024. Notification of authors: July 22, 2024.
-    Camera-ready versions: August 19, 2024.'
-  place: Bydgoszcz, Poland
-  date: September 19, 2024
-  start: '2024-09-19'
-  end: '2024-09-19'
+  note: Paper submission deadline.
+  place: Toulouse, France
+  date: September 25-26, 2025
+  start: '2025-09-25'
+  end: '2025-09-26'
   sub:
   - BC
   inactive: false
@@ -448,34 +447,34 @@
   sub:
   - DS
   inactive: false
-- id: ndss25summer
-  year: 2025
+- id: ndss26summer
+  year: 2026
   title: NDSS
   full_title: Network and Distributed System Security Symposium
-  link: https://www.ndss-symposium.org/ndss2025/
-  deadline: '2024-04-17 23:59:59'
+  link: https://www.ndss-symposium.org/ndss2026/submissions/call-for-papers/
+  deadline: '2025-04-23 23:59:59'
   timezone: Etc/GMT+12
-  note: Summer Review Cycle. Paper submission deadline.
+  note: Summer Cycle. Paper submission deadline.
   place: San Diego, California
-  date: February 23-28, 2025
-  start: '2025-02-23'
-  end: '2025-02-28'
+  date: February 23-27, 2026
+  start: '2026-02-23'
+  end: '2026-02-27'
   sub:
   - SEC
   - DS
   inactive: false
-- id: ndss25fall
-  year: 2025
+- id: ndss26fall
+  year: 2026
   title: NDSS
   full_title: Network and Distributed System Security Symposium
-  link: https://www.ndss-symposium.org/ndss2025/
-  deadline: '2024-07-10 23:59:59'
+  link: https://www.ndss-symposium.org/ndss2026/submissions/call-for-papers/
+  deadline: '2025-08-06 23:59:59'
   timezone: Etc/GMT+12
-  note: Fall Review Cycle. Paper submission deadline.
+  note: Fall Cycle. Paper submission deadline.
   place: San Diego, California
-  date: February 23-28, 2025
-  start: '2025-02-23'
-  end: '2025-02-28'
+  date: February 23-27, 2026
+  start: '2026-02-23'
+  end: '2026-02-27'
   sub:
   - SEC
   - DS
@@ -514,18 +513,19 @@
   - DS
   - SEC
   inactive: false
-- id: opodis24
-  year: 2024
+- id: opodis25
+  year: 2025
   title: OPODIS
   full_title: International Conference on Principles of Distributed Systems
-  link: https://opodis2024.imtlucca.it/
-  deadline: '2024-08-23 23:59:59'
+  link: https://conferences.info.uaic.ro/opodis2025/cfp.html
+  deadline: '2025-08-22 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract registration. Full paper submission due at 2024-08-30 23:59:59 AoE.
-  place: Lucca, Italy
-  date: December 11-13, 2024
-  start: '2024-12-11'
-  end: '2024-12-13'
+  note: Abstract registration deadline. Full paper submission deadline 2025-08-29
+    23:59:59 AoE.
+  place: "Ia\u0219i, Romania"
+  date: December 3-5, 2025
+  start: '2025-12-03'
+  end: '2025-12-05'
   sub:
   - DS
   inactive: false
