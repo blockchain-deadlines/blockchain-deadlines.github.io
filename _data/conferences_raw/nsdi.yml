@@ -1,33 +1,33 @@
-- id: nsdi25spring
-  year: 2025
+- id: nsdi26spring
+  year: 2026
   title: USENIX NSDI
   full_title: USENIX Symposium on Networked Systems Design and Implementation
-  link: https://www.usenix.org/conference/nsdi25/
-  deadline: '2024-04-30 23:59:59'
-  timezone: America/New_York
-  note: Spring cycle. Abstract registration deadline. Paper deadline 2024-05-07 23:59:59
-    US EDT.
-  place: Philadelphia, PA, USA
-  date: April 28-30, 2025
-  start: '2025-04-28'
-  end: '2025-04-30'
+  link: https://www.usenix.org/conference/nsdi26/call-for-papers
+  deadline: '2025-04-18 23:59:59'
+  timezone: America/Los_Angeles
+  note: Spring cycle. Abstract registration deadline. Full paper deadline 2025-04-25
+    23:59:59 US PDT.
+  place: Renton, WA, USA
+  date: May 4-6, 2026
+  start: '2026-05-04'
+  end: '2026-05-06'
   sub:
   - DS
   - SEC
   inactive: false
-- id: nsdi25fall
-  year: 2025
+- id: nsdi26fall
+  year: 2026
   title: USENIX NSDI
   full_title: USENIX Symposium on Networked Systems Design and Implementation
-  link: https://www.usenix.org/conference/nsdi25/
-  deadline: '2024-09-12 23:59:59'
-  timezone: America/New_York
-  note: Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19
-    23:59:59 US EDT.
-  place: Philadelphia, PA, USA
-  date: April 28-30, 2025
-  start: '2025-04-28'
-  end: '2025-04-30'
+  link: https://www.usenix.org/conference/nsdi26/call-for-papers
+  deadline: '2025-09-11 23:59:59'
+  timezone: America/Los_Angeles
+  note: Fall cycle. Abstract registration deadline. Full paper deadline 2025-09-18
+    23:59:59 US PDT.
+  place: Renton, WA, USA
+  date: May 4-6, 2026
+  start: '2026-05-04'
+  end: '2026-05-06'
   sub:
   - DS
   - SEC

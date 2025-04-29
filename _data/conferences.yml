@@ -479,36 +479,36 @@
   - SEC
   - DS
   inactive: false
-- id: nsdi25spring
-  year: 2025
+- id: nsdi26spring
+  year: 2026
   title: USENIX NSDI
   full_title: USENIX Symposium on Networked Systems Design and Implementation
-  link: https://www.usenix.org/conference/nsdi25/
-  deadline: '2024-04-30 23:59:59'
-  timezone: America/New_York
-  note: Spring cycle. Abstract registration deadline. Paper deadline 2024-05-07 23:59:59
-    US EDT.
-  place: Philadelphia, PA, USA
-  date: April 28-30, 2025
-  start: '2025-04-28'
-  end: '2025-04-30'
+  link: https://www.usenix.org/conference/nsdi26/call-for-papers
+  deadline: '2025-04-18 23:59:59'
+  timezone: America/Los_Angeles
+  note: Spring cycle. Abstract registration deadline. Full paper deadline 2025-04-25
+    23:59:59 US PDT.
+  place: Renton, WA, USA
+  date: May 4-6, 2026
+  start: '2026-05-04'
+  end: '2026-05-06'
   sub:
   - DS
   - SEC
   inactive: false
-- id: nsdi25fall
-  year: 2025
+- id: nsdi26fall
+  year: 2026
   title: USENIX NSDI
   full_title: USENIX Symposium on Networked Systems Design and Implementation
-  link: https://www.usenix.org/conference/nsdi25/
-  deadline: '2024-09-12 23:59:59'
-  timezone: America/New_York
-  note: Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19
-    23:59:59 US EDT.
-  place: Philadelphia, PA, USA
-  date: April 28-30, 2025
-  start: '2025-04-28'
-  end: '2025-04-30'
+  link: https://www.usenix.org/conference/nsdi26/call-for-papers
+  deadline: '2025-09-11 23:59:59'
+  timezone: America/Los_Angeles
+  note: Fall cycle. Abstract registration deadline. Full paper deadline 2025-09-18
+    23:59:59 US PDT.
+  place: Renton, WA, USA
+  date: May 4-6, 2026
+  start: '2026-05-04'
+  end: '2026-05-06'
   sub:
   - DS
   - SEC
@@ -668,18 +668,18 @@
   sub:
   - SEC
   inactive: false
-- id: tcc24
-  year: 2024
+- id: tcc25
+  year: 2025
   title: TCC
   full_title: Theory of Cryptography Conference
-  link: https://tcc.iacr.org/2024/callforpapers.php
-  deadline: '2024-05-20 20:00:00'
-  timezone: Europe/Paris
-  note: Submission deadline at 20:00 CEST.
-  place: Milan, Italy
-  date: December 2-6, 2024
-  start: '2024-12-02'
-  end: '2024-12-06'
+  link: https://tcc.iacr.org/2025/callforpapers.php
+  deadline: '2025-05-27 23:59:59'
+  timezone: Etc/GMT+12
+  note: Submission deadline, 23:59 anywhere on earth (AoE).
+  place: Aarhus, Denmark
+  date: December 2-5, 2025
+  start: '2025-12-02'
+  end: '2025-12-05'
   sub:
   - CR
   inactive: false
