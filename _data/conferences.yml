@@ -643,9 +643,10 @@
   title: IEEE S&P
   full_title: IEEE Symposium on Security and Privacy
   link: https://sp2026.ieee-security.org/cfpapers.html
-  deadline: '2025-06-05 23:59:59'
+  deadline: '2025-05-29 23:59:59'
   timezone: Etc/GMT+12
-  note: First deadline. Paper submission deadline.
+  note: First deadline. Abstract registration deadline. Full paper submission deadline
+    2025-06-05 23:59:59 AoE.
   place: San Francisco, CA, USA
   date: May 18-21, 2026
   start: '2026-05-18'
@@ -658,9 +659,10 @@
   title: IEEE S&P
   full_title: IEEE Symposium on Security and Privacy
   link: https://sp2026.ieee-security.org/cfpapers.html
-  deadline: '2025-11-13 23:59:59'
+  deadline: '2025-11-06 23:59:59'
   timezone: Etc/GMT+12
-  note: Second deadline. Paper submission deadline.
+  note: Second deadline. Abstract registration deadline. Full paper submission deadline
+    2025-11-13 23:59:59 AoE.
   place: San Francisco, CA, USA
   date: May 18-21, 2026
   start: '2026-05-18'
