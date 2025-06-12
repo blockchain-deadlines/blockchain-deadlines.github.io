@@ -335,19 +335,36 @@
   sub:
   - CR
   inactive: false
-- id: eurosp25
-  year: 2025
+- id: eurosp26a
+  year: 2026
   title: IEEE EuroS&P
   full_title: IEEE European Symposium on Security and Privacy
-  link: https://www.eurosp2025.ieee-security.org/
-  deadline: '2024-10-21 23:59:59'
+  link: https://sp2026.ieee-security.org/cfpapers.html
+  deadline: '2025-05-29 23:59:59'
   timezone: Etc/GMT+12
-  note: Mandatory abstract registration deadline on October 21, 2024 AoE. Full paper
-    submission deadline on October 24, 2024 AoE.
-  place: Venice, Italy
-  date: June 30 - July 4, 2025
-  start: '2025-06-30'
-  end: '2025-07-04'
+  note: First cycle. Abstract registration deadline. Full paper submission deadline
+    2025-06-05 23:59:59 AoE.
+  place: San Francisco, CA, USA
+  date: May 18-20, 2026
+  start: '2026-05-18'
+  end: '2026-05-21'
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: eurosp26b
+  year: 2026
+  title: IEEE EuroS&P
+  full_title: IEEE European Symposium on Security and Privacy
+  link: https://sp2026.ieee-security.org/cfpapers.html
+  deadline: '2025-11-06 23:59:59'
+  timezone: Etc/GMT+12
+  note: Second cycle. Abstract registration deadline. Full paper submission deadline
+    2025-11-13 23:59:59 AoE.
+  place: San Francisco, CA, USA
+  date: May 18-20, 2026
+  start: '2026-05-18'
+  end: '2026-05-21'
   sub:
   - DS
   - SEC
@@ -576,18 +593,18 @@
   sub:
   - DS
   inactive: false
-- id: rwc25
-  year: 2025
+- id: rwc26
+  year: 2026
   title: RWC
   full_title: Real World Crypto
-  link: https://rwc.iacr.org/2025/
-  deadline: '2024-11-15 23:59:59'
+  link: https://rwc.iacr.org/2026/
+  deadline: '2025-10-24 23:59:59'
   timezone: Etc/GMT+12
-  note: Contributed Talks Submission deadline at 23:59 AoE
-  place: Sofia, Bulgaria
-  date: March 26-28, 2025
-  start: '2025-03-26'
-  end: '2025-03-28'
+  note: Contributed talks submission deadline at 23:59 AoE
+  place: Taipei, Taiwan
+  date: March 9-11, 2026
+  start: '2026-03-09'
+  end: '2026-03-11'
   sub:
   - CR
   inactive: false
@@ -685,33 +702,35 @@
   sub:
   - CR
   inactive: false
-- id: usenixsec25cycle1
-  year: 2025
+- id: usenixsec26cycle1
+  year: 2026
   title: USENIX Security
   full_title: USENIX Security Symposium
-  link: https://www.usenix.org/conference/usenixsecurity25/submission-policies-and-instructions
-  deadline: '2024-09-04 23:59:59'
+  link: https://www.usenix.org/conference/usenixsecurity26
+  deadline: '2025-08-19 23:59:59'
   timezone: Etc/GMT+12
-  note: Cycle 1. Paper submission deadline.
-  place: Seattle, WA, USA
-  date: August 13-15, 2025
-  start: '2025-08-13'
-  end: '2025-08-15'
+  note: Cycle 1. Paper registration deadline. Paper submissions due 2025-08-26 23:59:59
+    AoE.
+  place: Baltimore, MD, USA
+  date: August 12-14, 2026
+  start: '2026-08-12'
+  end: '2026-08-14'
   sub:
   - SEC
   inactive: false
-- id: usenixsec25cycle2
-  year: 2025
+- id: usenixsec26cycle2
+  year: 2026
   title: USENIX Security
   full_title: USENIX Security Symposium
-  link: https://www.usenix.org/conference/usenixsecurity25/submission-policies-and-instructions
-  deadline: '2025-01-22 23:59:59'
+  link: https://www.usenix.org/conference/usenixsecurity26
+  deadline: '2026-01-29 23:59:59'
   timezone: Etc/GMT+12
-  note: Cycle 2. Paper submission deadline.
-  place: Seattle, WA, USA
-  date: August 13-15, 2025
-  start: '2025-08-13'
-  end: '2025-08-15'
+  note: Cycle 2. Paper registration deadline. Paper submissions due 2026-02-05 23:59:59
+    AoE.
+  place: Baltimore, MD, USA
+  date: August 12-14, 2026
+  start: '2026-08-12'
+  end: '2026-08-14'
   sub:
   - SEC
   inactive: false
