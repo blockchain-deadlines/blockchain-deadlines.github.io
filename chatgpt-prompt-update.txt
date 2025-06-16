@@ -75,7 +75,7 @@ Here are examples of the YAML format I want you to create:
   link: https://fc24.ifca.ai
   deadline: '2023-09-20 23:59:59'
   timezone: Etc/GMT+12
-  note: Deadline extention based on Ethereum's Beacon Chain random number. Update - random number revealed, deadline has been updated accordingly.
+  note: Deadline extension based on Ethereum's Beacon Chain random number. Update - random number revealed, deadline has been updated accordingly.
   place: Curacao Marriott Beach Resort, Willemstad, Curaçao
   date: 4–8 March 2024
   start: 2024-03-04
