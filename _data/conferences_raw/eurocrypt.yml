@@ -1,15 +1,15 @@
-- id: eurocrypt25
-  year: 2025
+- id: eurocrypt26
+  year: 2026
   title: Eurocrypt
   full_title: European Cryptology Conference
-  link: https://eurocrypt.iacr.org/2025/
-  deadline: '2024-10-02 23:59:59'
+  link: https://eurocrypt.iacr.org/2026/
+  deadline: '2025-10-02 23:59:59'
   timezone: Etc/GMT+12
-  note: ''
-  place: Madrid, Spain
-  date: May 4-8, 2025
-  start: '2025-05-04'
-  end: '2025-05-08'
+  note: Paper submission deadline.
+  place: Rome, Italy
+  date: May 10-14, 2026
+  start: '2026-05-10'
+  end: '2026-05-14'
   sub:
   - CR
   inactive: false
