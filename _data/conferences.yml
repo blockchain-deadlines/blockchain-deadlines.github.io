@@ -133,8 +133,8 @@
   link: https://www.sigsac.org/ccs/CCS2025/call-for-papers/
   deadline: '2025-01-02 23:59:59'
   timezone: Etc/GMT+12
-  note: First cycle. Abstract submission deadline. Full paper submission deadline
-    2025-01-09 23:59:59 AoE.
+  note: 'First cycle. Abstract submission deadline. Full paper submission deadline:
+    2025-01-09 23:59:59 AoE.'
   place: Taipei, Taiwan
   date: October 13-17, 2025
   start: '2025-10-13'
@@ -150,8 +150,8 @@
   link: https://www.sigsac.org/ccs/CCS2025/call-for-papers/
   deadline: '2025-04-07 23:59:59'
   timezone: Etc/GMT+12
-  note: Second cycle. Abstract registration deadline. Full paper submission deadline
-    2025-04-14 23:59:59 AoE.
+  note: 'Second cycle. Abstract registration deadline. Full paper submission deadline:
+    2025-04-14 23:59:59 AoE.'
   place: Taipei, Taiwan
   date: October 13-17, 2025
   start: '2025-10-13'
@@ -405,15 +405,15 @@
   year: 2025
   title: FC
   full_title: Financial Cryptography and Data Security
-  link: https://fc25.ifca.ai
+  link: https://fc25.ifca.ai/cfp.html
   deadline: '2024-10-11 23:59:59'
   timezone: Etc/GMT+12
-  note: Random deadline extension to 11 Oct 2025 AoE based on Ethereum RANDAO reveal
-    of https://beaconcha.in/slot/10100000 with least significant hex digit E. https://fc25.ifca.ai/cfp.html
+  note: Deadline extension finalized to 11 Oct 2024 AoE based on Ethereum RANDAO reveal
+    for slot 10100000. See linked information for details.
   place: Hotel Shigira Mirage, Miyakojima, Japan
   date: "14\u201318 April 2025"
-  start: '2024-04-14'
-  end: '2024-04-18'
+  start: '2025-04-14'
+  end: '2025-04-18'
   sub:
   - BC
   inactive: false
@@ -550,9 +550,9 @@
   year: 2025
   title: USENIX OSDI
   full_title: USENIX Symposium on Operating Systems Design and Implementation
-  link: https://www.usenix.org/conference/osdi25/
+  link: https://www.usenix.org/conference/osdi25/call-for-papers
   deadline: '2024-12-03 17:59:59'
-  timezone: Etc/GMT+5
+  timezone: America/New_York
   note: Abstracts due at 2024-12-03 17:59:59 EST. Full paper submission due at 2024-12-10
     17:59:59 EST.
   place: Boston, MA, USA
@@ -562,18 +562,18 @@
   sub:
   - DS
   inactive: false
-- id: pkc25
-  year: 2025
+- id: pkc26
+  year: 2026
   title: PKC
   full_title: Public Key Cryptography Conference
-  link: https://pkc.iacr.org/2025/
-  deadline: '2024-10-16 23:59:59'
+  link: https://pkc.iacr.org/
+  deadline: '2025-10-24 23:59:59'
   timezone: Etc/GMT+12
-  note: Submission deadline is on October 16, 2024, 11:59pm AoE.
-  place: "R\xF8ros, Norway"
-  date: May 12-15, 2025
-  start: '2025-05-12'
-  end: '2025-05-15'
+  note: Submission deadline is on October 24, 2025, 11:59pm AoE.
+  place: West Palm Beach, USA
+  date: May 25-28, 2026
+  start: '2026-05-25'
+  end: '2026-05-28'
   sub:
   - CR
   inactive: false
@@ -696,8 +696,8 @@
   timezone: Etc/GMT+12
   note: Submission deadline, 23:59 anywhere on earth (AoE).
   place: Aarhus, Denmark
-  date: December 2-5, 2025
-  start: '2025-12-02'
+  date: December 1-5, 2025
+  start: '2025-12-01'
   end: '2025-12-05'
   sub:
   - CR
