@@ -639,6 +639,21 @@
   sub:
   - DS
   inactive: false
+- id: sirocco25
+  year: 2025
+  title: SIROCCO
+  full_title: International Colloquium on Structural Information and Communication Complexity
+  link: https://www.torontomu.ca/sirocco-2025/call-for-papers/
+  deadline: '2024-11-02 23:59:59'
+  timezone: Etc/GMT+12
+  note: Abstract/registration deadline. Full paper submission due at 2024-11-08 23:59:59 AoE.
+  place: Toronto, Canada
+  date: June 2-4, 2025
+  start: '2025-06-02'
+  end: '2025-06-04'
+  sub:
+  - DS
+  inactive: false
 - id: sosp25
   year: 2025
   title: ACM SOSP
