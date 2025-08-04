@@ -401,19 +401,19 @@
   sub:
   - DS
   inactive: false
-- id: fc25
-  year: 2025
+- id: fc26
+  year: 2026
   title: FC
   full_title: Financial Cryptography and Data Security
-  link: https://fc25.ifca.ai/cfp.html
-  deadline: '2024-10-11 23:59:59'
+  link: https://fc26.ifca.ai/cfp.html
+  deadline: '2025-09-16 23:59:59'
   timezone: Etc/GMT+12
-  note: Deadline extension finalized to 11 Oct 2024 AoE based on Ethereum RANDAO reveal
-    for slot 10100000. See linked information for details.
-  place: Hotel Shigira Mirage, Miyakojima, Japan
-  date: "14\u201318 April 2025"
-  start: '2025-04-14'
-  end: '2025-04-18'
+  note: Paper submission deadline. Workshop and tutorial submission deadline is 2025-09-03
+    AoE.
+  place: St. Kitts Marriott Resort, St. Kitts
+  date: "2\u20136 March 2026"
+  start: '2026-03-02'
+  end: '2026-03-06'
   sub:
   - BC
   inactive: false
