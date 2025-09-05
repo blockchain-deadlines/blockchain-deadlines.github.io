@@ -45,7 +45,7 @@ EXAMPLES = """
     link: https://www.eurosp2025.ieee-security.org/
     deadline: '2024-10-21 23:59:59'
     timezone: Etc/GMT+12
-    note: Abstract registration deadline. Full paper submission deadline 2024-10-24 23:59:59 AoE.
+    note: Abstract registration deadline. Full paper deadline 2024-10-24 23:59:59 AoE. Author notification 2025-02-13 AoE.
     place: Venice, Italy
     date: June 30 - July 4, 2025
     start: 2025-06-30
@@ -86,7 +86,7 @@ EXAMPLES = """
     id: nsdi25spring
     link: https://www.usenix.org/conference/nsdi25/
     deadline: '2024-04-30 23:59:59'
-    note: Spring cycle. Abstract registration deadline. Full paper deadline 2024-05-07 23:59:59 EDT.
+    note: Spring cycle. Abstract registration deadline. Full paper deadline 2024-05-07 23:59:59 EDT. Author notification 2024-07-24 AoE.
     timezone: America/New_York
     place: Philadelphia, PA, USA
     date: April 28-30, 2025
@@ -100,7 +100,7 @@ EXAMPLES = """
     id: nsdi25fall
     link: https://www.usenix.org/conference/nsdi25/
     deadline: '2024-09-12 23:59:59'
-    note: Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19 23:59:59 EDT.
+    note: Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19 23:59:59 EDT. Author notification 2024-12-10 AoE.
     timezone: America/New_York
     place: Philadelphia, PA, USA
     date: April 28-30, 2025
@@ -129,7 +129,7 @@ EXAMPLES = """
     link: https://aftconf.github.io/aft24/index.html
     deadline: '2024-05-15 23:59:59'
     timezone: Etc/GMT+12
-    note: Abstract registration deadline. Full paper deadline 2024-05-22 23:59:59 AoE.
+    note: Abstract registration deadline. Full paper deadline 2024-05-22 23:59:59 AoE. Author notification 2024-07-03 AoE.
     place: Vienna, Austria
     date: September 23-25, 2024
     start: 2024-09-23
@@ -143,7 +143,7 @@ EXAMPLES = """
     link: https://aftconf.github.io/aft25/CFP.html
     deadline: '2025-05-28 23:59:59'
     timezone: Etc/GMT+12
-    note: Paper submission deadline.
+    note: Full paper deadline. Author notification 2025-07-16 AoE.
     place: Carnegie Mellon University, Pittsburgh, PA, USA
     date: October 8-10, 2025
     start: 2025-10-08
