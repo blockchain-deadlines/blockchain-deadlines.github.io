@@ -35,7 +35,7 @@ If there are multiple submission cycles for the conference, produce a separate c
 If there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration/submission deadline and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle.
 Include in `note` also information about the author notification date (without time and timezone information).
 Do not include information in `note` any other than the aforementioned information.
-In particular, do not include in `note` any information regarding early-rejection, rebuttal, camera-ready, or conference registration for attendance.
+In particular, do not include in `note` any deadline information regarding early-rejection, rebuttal, camera-ready, workshop/tutorial proposals, or conference registration for attendance.
 Do not include in `note` information about whether the deadline is firm.
 Pay attention to timezone information and specify them in `note` as well. Do proper conversion from AM/PM to 24h format. Deadlines in 'anywhere on earth' = 'AoE' should be flagged with `timezone` `Etc/GMT+12`.
 For `link`, provide the URL that contains the official source of the submission deadline information.
@@ -71,7 +71,7 @@ EXAMPLES = """
     full_title: ACM Conference on Computer and Communications Security
     year: 2024
     id: ccs24a
-    note: First cycle.
+    note: First cycle. Author notification 2024-04-03.
     link: https://www.sigsac.org/ccs/CCS2024/
     deadline: '2024-01-28 23:59:59'
     timezone: Etc/GMT+12
@@ -85,7 +85,7 @@ EXAMPLES = """
     full_title: ACM Conference on Computer and Communications Security
     year: 2024
     id: ccs24b
-    note: Second cycle (tentative).
+    note: Second cycle. Author notification 2024-07-04.
     link: https://www.sigsac.org/ccs/CCS2024/
     deadline: '2024-04-29 23:59:59'
     timezone: Etc/GMT+12
