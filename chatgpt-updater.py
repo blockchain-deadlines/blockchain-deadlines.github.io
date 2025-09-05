@@ -5,38 +5,53 @@ import requests
 import json
 import yaml
 import copy
-import sys
 import time
 import ssl
 from bs4 import BeautifulSoup
 from pydantic import BaseModel, ValidationError
-from typing import Literal
+from typing import Literal, Optional
 from openai import OpenAI
+import typer
 
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-SERPER_API_KEY = os.environ.get("SERPER_API_KEY")
-COLLECT_TRAINING_DATA = os.environ.get("COLLECT_TRAINING_DATA", "0")
-if COLLECT_TRAINING_DATA == "0":
-    COLLECT_TRAINING_DATA = False
-else:
-    COLLECT_TRAINING_DATA = bool(COLLECT_TRAINING_DATA)
 
-# OPENAI_MODEL = "gpt-4o-2024-08-06"
-# OPENAI_MODEL = "gpt-4o-2024-11-20"
-# OPENAI_MODEL = "gpt-4o"
-OPENAI_MODEL = "gpt-5"
 PROMPT = """
+# Overall Goal
+
 Find the submission deadline information for the latest edition (for which a call-for-papers with submission deadline information is available online) of the conference (or other academic venue) specified by the user.
 If the user-provided information is for year X, then try to find the information for year X+1, etc. If no more up-to-date information is available, then return no update.
-Consider only information from authoritative sources, such as the conference's website or the conference organizer or the publisher of the conference proceedings or reputable professional organizations (IACR, IEEE, ACM, etc.), not from third-party websites such as conference deadline aggregators (e.g., mpc-deadlines.github.io, wikicfp.com, sslab.skku.edu, aconf.org, etc.). If you find the information on a third-party website, make every effort to find it from official sources, and use that URL for the `link` field. If you cannot find it from official sources, then eventually return no update.
-To find the information, search for the conference edition's website, or make educated guesses as to what the website URL could be, based on the URLs of previous years.
+
+
+# Information Sources
+
+Consider only information from authoritative sources. Examples for authoritative sources are the conference's website, the conference organizer, the publisher of the conference proceedings, or reputable professional organizations (IACR, IEEE, ACM, etc.).
+Do not consider information from third parties. Examples of third parties are conference deadline aggregators (e.g., mpc-deadlines.github.io, wikicfp.com, sslab.skku.edu, aconf.org, etc.).
+If you find the information on a third-party website, make every effort to locate the official source. Use that official source for the `link` field and to population the other fields. If you cannot verify information on third-party websites through official sources, then better return no update.
+To find information, search for the conference edition's website, or make educated guesses as to what the website URL could be, based on the URLs of previous years.
+
+
+# Data Format
+
 If there are multiple submission cycles for the conference, produce a separate conference object for each submission cycle.
-If there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration/submission deadline and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle. Do not include information in `note` any other than information pertaining to deadline(s), or the name of the cycle. Do not include in `note` any information regarding rebuttal, notification, camera-ready, or conference registration for attending. Do not include in `note` information about whether the deadline is firm.
+If there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration/submission deadline and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle.
+Include in `note` also information about the author notification date.
+Do not include information in `note` any other than information pertaining to deadline(s), or the name of the cycle, or the author notification date. 
+Do not include in `note` any information regarding rebuttal, camera-ready, or conference registration for attending. 
+Do not include in `note` information about whether the deadline is firm.
 Pay attention to timezone information and specify them in `note` as well. Do proper conversion from AM/PM to 24h format. Deadlines in 'anywhere on earth' = 'AoE' should be flagged with `timezone` `Etc/GMT+12`.
-For `link`, provide the URL that contains the submission deadline information.
+For `link`, provide the URL that contains the official source of the submission deadline information.
 Subject areas in `sub` are `BC` (blockchain), `CR` (cryptography), `DS` (distributed systems), `SEC` (security), and `EC` (economics/incentives).
+
+
+# Tools
+
+Prefer text content over HTML content, when possible, because text content is cheaper to retrieve than HTML content.
+
+
+# Examples
+
 I will provide you with example information for a few conferences, so that you can understand the desired data format.
 """
+
 EXAMPLES = """
 - - title: IEEE EuroS&P
     year: 2025
@@ -151,17 +166,23 @@ EXAMPLES = """
     sub: [BC]
 """
 
+PROMPT_REFRESH = """
+Refresh requested: Treat the user-provided deadline information as potentially unreliable. Re-verify all details of the provided information from official sources before returning it as an update or indicating that no update is needed. You may assume that the `full_title` and `year` fields are correct and should not be changed.
+"""
 
-def callback_search(query: str) -> list[tuple[str, str, str, str, str]]:
+
+def callback_search(query: str, serper_api_key: str) -> list[tuple[str, str, str, str, str]]:
     # print(">>> callback_search", query)
 
     url = "https://google.serper.dev/search"
+    if not serper_api_key:
+        raise RuntimeError("SERPER API key not provided. Use --api-key-serper or set API_KEY_SERPER.")
     payload = json.dumps({
         "q": query,
         "num": 5
     })
     headers = {
-        "X-API-KEY": SERPER_API_KEY,
+        "X-API-KEY": serper_api_key,
         "Content-Type": "application/json"
     }
     response = requests.request("POST", url, headers=headers, data=payload)
@@ -330,96 +351,140 @@ def load_conference(string: str) -> list[Conference]:
 def dump_conference(conference: list[Conference]) -> str:
     return yaml.dump([ cycle.__dict__ for cycle in conference ], sort_keys=False)
 
-conference_files = []
-if len(sys.argv) > 1:
-    conference_files = [ f"{filename}.yml" for filename in sys.argv[1:] ]
-else:
-    conference_files = list(os.listdir("_data/conferences_raw"))
+def main(
+    conferences: list[str] = typer.Argument(None),
+    training_data_collect: bool = typer.Option(
+        False,
+        "--training-data-collect",
+        help="If set, save model interaction traces for training",
+    ),
+    training_data_dir: str = typer.Option(
+        "chatgpt-updater-training",
+        "--training-data-dir",
+        help="Directory to store training traces when collection is enabled",
+    ),
+    refresh: bool = typer.Option(
+        False,
+        "--refresh",
+        help="If set, treat provided conference info as unreliable and re-verify",
+    ),
+    model: str = typer.Option(
+        "gpt-5",
+        "--model",
+        help="OpenAI model to use for completions",
+    ),
+    api_key_openai: Optional[str] = typer.Option(
+        None,
+        "--api-key-openai",
+        envvar="API_KEY_OPENAI",
+        help="OpenAI API key. If omitted, reads from API_KEY_OPENAI env var.",
+    ),
+    api_key_serper: Optional[str] = typer.Option(
+        None,
+        "--api-key-serper",
+        envvar="API_KEY_SERPER",
+        help="Serper.dev API key. If omitted, reads from API_KEY_SERPER env var.",
+    ),
+) -> None:
+    conference_files = []
+    if conferences and len(conferences) > 0:
+        conference_files = [ f"{filename}.yml" for filename in conferences ]
+    else:
+        conference_files = list(os.listdir("_data/conferences_raw"))
 
-for conference_file in sorted(conference_files):
-    print("###", conference_file)
-    assert(conference_file.endswith(".yml"))
+    for conference_file in sorted(conference_files):
+        print("###", conference_file)
+        assert(conference_file.endswith(".yml"))
 
-    conference = load_conference(open(os.path.join("_data/conferences_raw", conference_file), "r").read())
-    print("BEFORE:", conference)
+        conference = load_conference(open(os.path.join("_data/conferences_raw", conference_file), "r").read())
+        print("BEFORE:", conference)
 
-    if conference[0].inactive:
-        print("INACTIVE, SKIPPING!")
-        print()
-        continue
+        if conference[0].inactive:
+            print("INACTIVE, SKIPPING!")
+            print()
+            continue
 
-    messages = [
-        {
-            "role": "system",
-            "content": PROMPT,
-        },
-        {
-            "role": "system",
-            "content": str(load_conferences(EXAMPLES))
-        },
-        {
-            "role": "user",
-            "content": str(conference)
-        }
-    ]
+        messages = [
+            {
+                "role": "system",
+                "content": PROMPT,
+            },
+            {
+                "role": "system",
+                "content": str(load_conferences(EXAMPLES))
+            },
+            {
+                "role": "user",
+                "content": str(conference)
+            }
+        ]
 
-    client = OpenAI(api_key=OPENAI_API_KEY)
+        if refresh:
+            messages.append({
+                "role": "system",
+                "content": PROMPT_REFRESH,
+            })
 
-    while True:
-        completion = client.beta.chat.completions.parse(
-            model=OPENAI_MODEL,
-            tools=tools,
-            messages=messages,
-            response_format=UpdatedInformationData,
-        )
+        client = OpenAI(api_key=api_key_openai)
 
-        choice = completion.choices[0]
+        while True:
+            completion = client.beta.chat.completions.parse(
+                model=model,
+                tools=tools,
+                messages=messages,
+                response_format=UpdatedInformationData,
+            )
 
-        if choice.finish_reason == "tool_calls":
-            messages.append(choice.message)
+            choice = completion.choices[0]
 
-            for tool_call in choice.message.tool_calls:
-                call_fn = tool_call.function.name
-                call_args = tool_call.function.parsed_arguments
-                ret = None
+            if choice.finish_reason == "tool_calls":
+                messages.append(choice.message)
 
-                print(">>>", call_fn, call_args)
+                for tool_call in choice.message.tool_calls:
+                    call_fn = tool_call.function.name
+                    call_args = tool_call.function.parsed_arguments
+                    ret = None
 
-                if call_fn == "callback_search":
-                    ret = callback_search(**call_args)
-                elif call_fn == "callback_browse_html":
-                    ret = callback_browse_html(**call_args)
-                elif call_fn == "callback_browse_text":
-                    ret = callback_browse_text(**call_args)
+                    print(">>>", call_fn, call_args)
+
+                    if call_fn == "callback_search":
+                        ret = callback_search(serper_api_key=api_key_serper, **call_args)
+                    elif call_fn == "callback_browse_html":
+                        ret = callback_browse_html(**call_args)
+                    elif call_fn == "callback_browse_text":
+                        ret = callback_browse_text(**call_args)
+                    else:
+                        raise Exception("Unknown function!")
+
+                    messages.append({"role": "tool", "content": json.dumps(ret), "tool_call_id": tool_call.id})
+
+            elif choice.finish_reason == "stop":
+                # print("DONE:", choice.message.parsed)
+
+                if choice.message.parsed.any_updates:
+                    conference = choice.message.parsed.conferences
+                    print("AFTER:", conference)
+                    open(os.path.join("_data/conferences_raw", conference_file), "w").write(dump_conference(conference))
+
                 else:
-                    raise Exception("Unknown function!")
+                    print("NO UPDATE!")
 
-                messages.append({"role": "tool", "content": json.dumps(ret), "tool_call_id": tool_call.id})
+                if training_data_collect:
+                    messages.append(choice.message)
+                    os.makedirs(training_data_dir, exist_ok=True)
+                    assert(conference_file.endswith(".yml"))
+                    tmp_confid = conference_file[:-len(".yml")]
+                    tmp_runid = str(int(time.time()))
+                    tmp_updated = "updated" if choice.message.parsed.any_updates else "noupdate"
+                    open(os.path.join(training_data_dir, f"{tmp_confid}-run{tmp_runid}-{tmp_updated}.json"), "w").write(json.dumps([ m.model_dump() if isinstance(m, BaseModel) else m for m in messages ], indent=2))
 
-        elif choice.finish_reason == "stop":
-            # print("DONE:", choice.message.parsed)
-
-            if choice.message.parsed.any_updates:
-                conference = choice.message.parsed.conferences
-                print("AFTER:", conference)
-                open(os.path.join("_data/conferences_raw", conference_file), "w").write(dump_conference(conference))
+                break
 
             else:
-                print("NO UPDATE!")
+                print("ERROR:", choice)
+                break
 
-            if COLLECT_TRAINING_DATA:
-                messages.append(choice.message)
-                os.makedirs("chatgpt-updater-training", exist_ok=True)
-                assert(conference_file.endswith(".yml"))
-                tmp_confid = conference_file[:-len(".yml")]
-                tmp_runid = str(int(time.time()))
-                tmp_updated = "updated" if choice.message.parsed.any_updates else "noupdate"
-                open(os.path.join("chatgpt-updater-training", f"{tmp_confid}-run{tmp_runid}-{tmp_updated}.json"), "w").write(json.dumps([ m.model_dump() if isinstance(m, BaseModel) else m for m in messages ], indent=2))
+        print()
 
-            break
-
-        else:
-            print("ERROR:", choice)
-            break
-
-    print()
+if __name__ == "__main__":
+    typer.run(main)
