@@ -33,9 +33,9 @@ To find information, search for the conference edition's website, or make educat
 
 If there are multiple submission cycles for the conference, produce a separate conference object for each submission cycle.
 If there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration/submission deadline and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle.
-Include in `note` also information about the author notification date.
-Do not include information in `note` any other than information pertaining to deadline(s), or the name of the cycle, or the author notification date. 
-Do not include in `note` any information regarding rebuttal, camera-ready, or conference registration for attending. 
+Include in `note` also information about the author notification date (without time and timezone information).
+Do not include information in `note` any other than the aforementioned information.
+In particular, do not include in `note` any information regarding early-rejection, rebuttal, camera-ready, or conference registration for attendance.
 Do not include in `note` information about whether the deadline is firm.
 Pay attention to timezone information and specify them in `note` as well. Do proper conversion from AM/PM to 24h format. Deadlines in 'anywhere on earth' = 'AoE' should be flagged with `timezone` `Etc/GMT+12`.
 For `link`, provide the URL that contains the official source of the submission deadline information.
@@ -60,7 +60,7 @@ EXAMPLES = """
     link: https://www.eurosp2025.ieee-security.org/
     deadline: '2024-10-21 23:59:59'
     timezone: Etc/GMT+12
-    note: Abstract registration deadline. Full paper deadline 2024-10-24 23:59:59 AoE. Author notification 2025-02-13 AoE.
+    note: Abstract registration deadline. Full paper deadline 2024-10-24 23:59:59 AoE. Author notification 2025-02-13.
     place: Venice, Italy
     date: June 30 - July 4, 2025
     start: 2025-06-30
@@ -101,7 +101,7 @@ EXAMPLES = """
     id: nsdi25spring
     link: https://www.usenix.org/conference/nsdi25/
     deadline: '2024-04-30 23:59:59'
-    note: Spring cycle. Abstract registration deadline. Full paper deadline 2024-05-07 23:59:59 EDT. Author notification 2024-07-24 AoE.
+    note: Spring cycle. Abstract registration deadline. Full paper deadline 2024-05-07 23:59:59 EDT. Author notification 2024-07-24.
     timezone: America/New_York
     place: Philadelphia, PA, USA
     date: April 28-30, 2025
@@ -115,7 +115,7 @@ EXAMPLES = """
     id: nsdi25fall
     link: https://www.usenix.org/conference/nsdi25/
     deadline: '2024-09-12 23:59:59'
-    note: Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19 23:59:59 EDT. Author notification 2024-12-10 AoE.
+    note: Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19 23:59:59 EDT. Author notification 2024-12-10.
     timezone: America/New_York
     place: Philadelphia, PA, USA
     date: April 28-30, 2025
@@ -144,7 +144,7 @@ EXAMPLES = """
     link: https://aftconf.github.io/aft24/index.html
     deadline: '2024-05-15 23:59:59'
     timezone: Etc/GMT+12
-    note: Abstract registration deadline. Full paper deadline 2024-05-22 23:59:59 AoE. Author notification 2024-07-03 AoE.
+    note: Abstract registration deadline. Full paper deadline 2024-05-22 23:59:59 AoE. Author notification 2024-07-03.
     place: Vienna, Austria
     date: September 23-25, 2024
     start: 2024-09-23
@@ -158,7 +158,7 @@ EXAMPLES = """
     link: https://aftconf.github.io/aft25/CFP.html
     deadline: '2025-05-28 23:59:59'
     timezone: Etc/GMT+12
-    note: Full paper deadline. Author notification 2025-07-16 AoE.
+    note: Full paper deadline. Author notification 2025-07-16.
     place: Carnegie Mellon University, Pittsburgh, PA, USA
     date: October 8-10, 2025
     start: 2025-10-08
