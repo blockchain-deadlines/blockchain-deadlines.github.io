@@ -132,7 +132,7 @@ EXAMPLES = """
     timezone: Etc/GMT+12
     note: ''
     place: Hotel Shigira Mirage, Miyakojima, Japan
-    date: 14–18 April 2025
+    date: 14-18 April 2025
     start: 2024-04-14
     end: 2024-04-18
     sub: [BC]
@@ -164,6 +164,36 @@ EXAMPLES = """
     start: 2025-10-08
     end: 2025-10-10
     sub: [BC]
+
+- - id: sp2026first
+    year: 2026
+    title: IEEE S&P
+    full_title: IEEE Symposium on Security and Privacy
+    link: https://sp2026.ieee-security.org/cfpapers.html
+    deadline: '2025-05-29 23:59:59'
+    timezone: Etc/GMT+12
+    note: First cycle. Abstract registration deadline. Full paper deadline 2025-06-05 23:59:59 AoE. Author notification 2025-09-09.
+    place: San Francisco, CA, USA
+    date: May 18-21, 2026
+    start: 2026-05-18
+    end: 2026-05-21
+    sub: [SEC]
+    inactive: false
+
+  - id: sp2026second
+    year: 2026
+    title: IEEE S&P
+    full_title: IEEE Symposium on Security and Privacy
+    link: https://sp2026.ieee-security.org/cfpapers.html
+    deadline: '2025-11-06 23:59:59'
+    timezone: Etc/GMT+12
+    note: Second cycle. Abstract registration deadline. Full paper deadline 2025-11-13 23:59:59 AoE. Author notification 2026-03-19.
+    place: San Francisco, CA, USA
+    date: May 18-21, 2026
+    start: 2026-05-18
+    end: 2026-05-21
+    sub: [SEC]
+    inactive: false
 """
 
 PROMPT_REFRESH = """
