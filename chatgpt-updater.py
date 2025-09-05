@@ -137,6 +137,20 @@ EXAMPLES = """
     end: 2024-04-18
     sub: [BC]
 
+- - id: fc26
+    year: 2026
+    title: FC
+    full_title: Financial Cryptography and Data Security
+    link: https://fc26.ifca.ai/cfp.html
+    deadline: '2025-09-16 23:59:59'
+    timezone: Etc/GMT+12
+    note: Full paper deadline. Author notification 2025-11-24.
+    place: St. Kitts Marriott Resort, St. Kitts
+    date: 2-6 March 2026
+    start: 2026-03-02
+    end: 2026-03-06
+    sub: [BC]
+
 - - title: AFT
     year: 2024
     id: aft24
