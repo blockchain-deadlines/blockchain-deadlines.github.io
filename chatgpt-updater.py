@@ -22,8 +22,9 @@ else:
     COLLECT_TRAINING_DATA = bool(COLLECT_TRAINING_DATA)
 
 # OPENAI_MODEL = "gpt-4o-2024-08-06"
-OPENAI_MODEL = "gpt-4o-2024-11-20"
+# OPENAI_MODEL = "gpt-4o-2024-11-20"
 # OPENAI_MODEL = "gpt-4o"
+OPENAI_MODEL = "gpt-5"
 PROMPT = """
 Find the submission deadline information for the latest edition (for which a call-for-papers with submission deadline information is available online) of the conference (or other academic venue) specified by the user.
 If the user-provided information is for year X, then try to find the information for year X+1, etc. If no more up-to-date information is available, then return no update.

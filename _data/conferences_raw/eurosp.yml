@@ -1,33 +1,16 @@
-- id: eurosp26a
+- id: eurosp26
   year: 2026
   title: IEEE EuroS&P
   full_title: IEEE European Symposium on Security and Privacy
-  link: https://sp2026.ieee-security.org/cfpapers.html
-  deadline: '2025-05-29 23:59:59'
+  link: https://eurosp2026.ieee-security.org/
+  deadline: '2025-11-13 23:59:59'
   timezone: Etc/GMT+12
-  note: First cycle. Abstract registration deadline. Full paper submission deadline
-    2025-06-05 23:59:59 AoE.
-  place: San Francisco, CA, USA
-  date: May 18-20, 2026
-  start: '2026-05-18'
-  end: '2026-05-21'
-  sub:
-  - DS
-  - SEC
-  inactive: false
-- id: eurosp26b
-  year: 2026
-  title: IEEE EuroS&P
-  full_title: IEEE European Symposium on Security and Privacy
-  link: https://sp2026.ieee-security.org/cfpapers.html
-  deadline: '2025-11-06 23:59:59'
-  timezone: Etc/GMT+12
-  note: Second cycle. Abstract registration deadline. Full paper submission deadline
-    2025-11-13 23:59:59 AoE.
-  place: San Francisco, CA, USA
-  date: May 18-20, 2026
-  start: '2026-05-18'
-  end: '2026-05-21'
+  note: Registration deadline. Full paper submission deadline 2025-11-20 23:59:59
+    AoE.
+  place: Lisbon, Portugal
+  date: July 6-10, 2026
+  start: '2026-07-06'
+  end: '2026-07-10'
   sub:
   - DS
   - SEC
