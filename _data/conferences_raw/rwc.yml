@@ -2,10 +2,10 @@
   year: 2026
   title: RWC
   full_title: Real World Crypto
-  link: https://rwc.iacr.org/2026/
-  deadline: '2025-10-24 23:59:59'
-  timezone: Etc/GMT+12
-  note: Contributed talks submission deadline at 23:59 AoE
+  link: https://realworldcrypto.iacr.org/2026/contributed.php
+  deadline: '2025-10-10 23:59:59'
+  timezone: Etc/UTC
+  note: Author notification 2025-12-08.
   place: Taipei, Taiwan
   date: March 9-11, 2026
   start: '2026-03-09'

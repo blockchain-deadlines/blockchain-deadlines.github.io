@@ -1,16 +1,15 @@
-- id: www25
-  year: 2025
+- id: www26
+  year: 2026
   title: WWW
   full_title: International World Wide Web Conference
-  link: https://www2025.thewebconf.org/
-  deadline: '2024-10-07 23:59:59'
+  link: https://www2026.thewebconf.org/calls.html
+  deadline: '2025-09-30 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstracts due on October 7, 2024. Full paper submissions due on October 10,
-    2024.
-  place: Sydney, Australia
-  date: April 28 - May 2, 2025
-  start: '2025-04-28'
-  end: '2025-05-02'
+  note: Full paper deadline 2025-10-07 23:59:59 AoE. Author notification 2026-01-13.
+  place: Dubai, United Arab Emirates
+  date: April 13-17, 2026
+  start: '2026-04-13'
+  end: '2026-04-17'
   sub:
   - SEC
   inactive: false

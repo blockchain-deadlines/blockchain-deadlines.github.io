@@ -42,170 +42,172 @@ Subject areas in `sub` are `BC` (blockchain), `CR` (cryptography), `DS` (distrib
 # Tools
 
 Prefer text content over HTML content, when possible, because text content is cheaper to retrieve than HTML content.
-
-
-# Examples
-
-I will provide you with example information for a few conferences, so that you can understand the desired data format.
 """
 
-EXAMPLES = """
-- - title: IEEE EuroS&P
-    year: 2025
-    id: eurosp25
-    full_title: IEEE European Symposium on Security and Privacy
-    link: https://www.eurosp2025.ieee-security.org/
-    deadline: '2024-10-21 23:59:59'
-    timezone: Etc/GMT+12
-    note: Abstract registration deadline. Full paper deadline 2024-10-24 23:59:59 AoE. Author notification 2025-02-13.
-    place: Venice, Italy
-    date: June 30 - July 4, 2025
-    start: 2025-06-30
-    end: 2025-07-04
-    sub: [DS, SEC]
+# PROMPT += """
 
-- - title: ACM CCS
-    full_title: ACM Conference on Computer and Communications Security
-    year: 2024
-    id: ccs24a
-    note: First cycle. Author notification 2024-04-03.
-    link: https://www.sigsac.org/ccs/CCS2024/
-    deadline: '2024-01-28 23:59:59'
-    timezone: Etc/GMT+12
-    place: Salt Lake City, Utah, USA
-    date: October 14-18, 2024
-    start: 2024-10-14
-    end: 2024-10-18
-    sub: [SEC, DS]
+# # Examples
 
-  - title: ACM CCS
-    full_title: ACM Conference on Computer and Communications Security
-    year: 2024
-    id: ccs24b
-    note: Second cycle. Author notification 2024-07-04.
-    link: https://www.sigsac.org/ccs/CCS2024/
-    deadline: '2024-04-29 23:59:59'
-    timezone: Etc/GMT+12
-    place: Salt Lake City, Utah, USA
-    date: October 14-18, 2024
-    start: 2024-10-14
-    end: 2024-10-18
-    sub: [SEC, DS]
+# I will provide you with example information for a few conferences, so that you can understand the desired data format.
+# """
 
-- - title: USENIX NSDI
-    year: 2025
-    full_title: USENIX Symposium on Networked Systems Design and Implementation
-    id: nsdi25spring
-    link: https://www.usenix.org/conference/nsdi25/
-    deadline: '2024-04-30 23:59:59'
-    note: Spring cycle. Abstract registration deadline. Full paper deadline 2024-05-07 23:59:59 EDT. Author notification 2024-07-24.
-    timezone: America/New_York
-    place: Philadelphia, PA, USA
-    date: April 28-30, 2025
-    start: 2025-04-28
-    end: 2025-04-30
-    sub: [DS, SEC]
+# EXAMPLES = """
+# - - title: IEEE EuroS&P
+#     year: 2025
+#     id: eurosp25
+#     full_title: IEEE European Symposium on Security and Privacy
+#     link: https://www.eurosp2025.ieee-security.org/
+#     deadline: '2024-10-21 23:59:59'
+#     timezone: Etc/GMT+12
+#     note: Abstract registration deadline. Full paper deadline 2024-10-24 23:59:59 AoE. Author notification 2025-02-13.
+#     place: Venice, Italy
+#     date: June 30 - July 4, 2025
+#     start: 2025-06-30
+#     end: 2025-07-04
+#     sub: [DS, SEC]
 
-  - title: USENIX NSDI
-    year: 2025
-    full_title: USENIX Symposium on Networked Systems Design and Implementation
-    id: nsdi25fall
-    link: https://www.usenix.org/conference/nsdi25/
-    deadline: '2024-09-12 23:59:59'
-    note: Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19 23:59:59 EDT. Author notification 2024-12-10.
-    timezone: America/New_York
-    place: Philadelphia, PA, USA
-    date: April 28-30, 2025
-    start: 2025-04-28
-    end: 2025-04-30
-    sub: [DS, SEC]
+# - - title: ACM CCS
+#     full_title: ACM Conference on Computer and Communications Security
+#     year: 2024
+#     id: ccs24a
+#     note: First cycle. Author notification 2024-04-03.
+#     link: https://www.sigsac.org/ccs/CCS2024/
+#     deadline: '2024-01-28 23:59:59'
+#     timezone: Etc/GMT+12
+#     place: Salt Lake City, Utah, USA
+#     date: October 14-18, 2024
+#     start: 2024-10-14
+#     end: 2024-10-18
+#     sub: [SEC, DS]
 
-- - title: FC
-    year: 2025
-    id: fc25
-    full_title: Financial Cryptography and Data Security
-    link: https://fc25.ifca.ai
-    deadline: '2024-10-11 23:59:59'
-    timezone: Etc/GMT+12
-    note: Author notification 2024-12-06.
-    place: Hotel Shigira Mirage, Miyakojima, Japan
-    date: 14-18 April 2025
-    start: 2024-04-14
-    end: 2024-04-18
-    sub: [BC]
+#   - title: ACM CCS
+#     full_title: ACM Conference on Computer and Communications Security
+#     year: 2024
+#     id: ccs24b
+#     note: Second cycle. Author notification 2024-07-04.
+#     link: https://www.sigsac.org/ccs/CCS2024/
+#     deadline: '2024-04-29 23:59:59'
+#     timezone: Etc/GMT+12
+#     place: Salt Lake City, Utah, USA
+#     date: October 14-18, 2024
+#     start: 2024-10-14
+#     end: 2024-10-18
+#     sub: [SEC, DS]
 
-- - id: fc26
-    year: 2026
-    title: FC
-    full_title: Financial Cryptography and Data Security
-    link: https://fc26.ifca.ai/cfp.html
-    deadline: '2025-09-16 23:59:59'
-    timezone: Etc/GMT+12
-    note: Author notification 2025-11-24.
-    place: St. Kitts Marriott Resort, St. Kitts
-    date: 2-6 March 2026
-    start: 2026-03-02
-    end: 2026-03-06
-    sub: [BC]
+# - - title: USENIX NSDI
+#     year: 2025
+#     full_title: USENIX Symposium on Networked Systems Design and Implementation
+#     id: nsdi25spring
+#     link: https://www.usenix.org/conference/nsdi25/
+#     deadline: '2024-04-30 23:59:59'
+#     note: Spring cycle. Abstract registration deadline. Full paper deadline 2024-05-07 23:59:59 EDT. Author notification 2024-07-24.
+#     timezone: America/New_York
+#     place: Philadelphia, PA, USA
+#     date: April 28-30, 2025
+#     start: 2025-04-28
+#     end: 2025-04-30
+#     sub: [DS, SEC]
 
-- - title: AFT
-    year: 2024
-    id: aft24
-    full_title: Advances in Financial Technologies
-    link: https://aftconf.github.io/aft24/index.html
-    deadline: '2024-05-15 23:59:59'
-    timezone: Etc/GMT+12
-    note: Abstract registration deadline. Full paper deadline 2024-05-22 23:59:59 AoE. Author notification 2024-07-03.
-    place: Vienna, Austria
-    date: September 23-25, 2024
-    start: 2024-09-23
-    end: 2024-09-25
-    sub: [BC]
+#   - title: USENIX NSDI
+#     year: 2025
+#     full_title: USENIX Symposium on Networked Systems Design and Implementation
+#     id: nsdi25fall
+#     link: https://www.usenix.org/conference/nsdi25/
+#     deadline: '2024-09-12 23:59:59'
+#     note: Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19 23:59:59 EDT. Author notification 2024-12-10.
+#     timezone: America/New_York
+#     place: Philadelphia, PA, USA
+#     date: April 28-30, 2025
+#     start: 2025-04-28
+#     end: 2025-04-30
+#     sub: [DS, SEC]
 
-- - title: AFT
-    year: 2025
-    id: aft25
-    full_title: Advances in Financial Technologies
-    link: https://aftconf.github.io/aft25/CFP.html
-    deadline: '2025-05-28 23:59:59'
-    timezone: Etc/GMT+12
-    note: Full paper deadline. Author notification 2025-07-16.
-    place: Carnegie Mellon University, Pittsburgh, PA, USA
-    date: October 8-10, 2025
-    start: 2025-10-08
-    end: 2025-10-10
-    sub: [BC]
+# - - title: FC
+#     year: 2025
+#     id: fc25
+#     full_title: Financial Cryptography and Data Security
+#     link: https://fc25.ifca.ai
+#     deadline: '2024-10-11 23:59:59'
+#     timezone: Etc/GMT+12
+#     note: Author notification 2024-12-06.
+#     place: Hotel Shigira Mirage, Miyakojima, Japan
+#     date: 14-18 April 2025
+#     start: 2024-04-14
+#     end: 2024-04-18
+#     sub: [BC]
 
-- - id: sp2026first
-    year: 2026
-    title: IEEE S&P
-    full_title: IEEE Symposium on Security and Privacy
-    link: https://sp2026.ieee-security.org/cfpapers.html
-    deadline: '2025-05-29 23:59:59'
-    timezone: Etc/GMT+12
-    note: First cycle. Abstract registration deadline. Full paper deadline 2025-06-05 23:59:59 AoE. Author notification 2025-09-09.
-    place: San Francisco, CA, USA
-    date: May 18-21, 2026
-    start: 2026-05-18
-    end: 2026-05-21
-    sub: [SEC]
-    inactive: false
+# - - id: fc26
+#     year: 2026
+#     title: FC
+#     full_title: Financial Cryptography and Data Security
+#     link: https://fc26.ifca.ai/cfp.html
+#     deadline: '2025-09-16 23:59:59'
+#     timezone: Etc/GMT+12
+#     note: Author notification 2025-11-24.
+#     place: St. Kitts Marriott Resort, St. Kitts
+#     date: 2-6 March 2026
+#     start: 2026-03-02
+#     end: 2026-03-06
+#     sub: [BC]
 
-  - id: sp2026second
-    year: 2026
-    title: IEEE S&P
-    full_title: IEEE Symposium on Security and Privacy
-    link: https://sp2026.ieee-security.org/cfpapers.html
-    deadline: '2025-11-06 23:59:59'
-    timezone: Etc/GMT+12
-    note: Second cycle. Abstract registration deadline. Full paper deadline 2025-11-13 23:59:59 AoE. Author notification 2026-03-19.
-    place: San Francisco, CA, USA
-    date: May 18-21, 2026
-    start: 2026-05-18
-    end: 2026-05-21
-    sub: [SEC]
-    inactive: false
-"""
+# - - title: AFT
+#     year: 2024
+#     id: aft24
+#     full_title: Advances in Financial Technologies
+#     link: https://aftconf.github.io/aft24/index.html
+#     deadline: '2024-05-15 23:59:59'
+#     timezone: Etc/GMT+12
+#     note: Abstract registration deadline. Full paper deadline 2024-05-22 23:59:59 AoE. Author notification 2024-07-03.
+#     place: Vienna, Austria
+#     date: September 23-25, 2024
+#     start: 2024-09-23
+#     end: 2024-09-25
+#     sub: [BC]
+
+# - - title: AFT
+#     year: 2025
+#     id: aft25
+#     full_title: Advances in Financial Technologies
+#     link: https://aftconf.github.io/aft25/CFP.html
+#     deadline: '2025-05-28 23:59:59'
+#     timezone: Etc/GMT+12
+#     note: Full paper deadline. Author notification 2025-07-16.
+#     place: Carnegie Mellon University, Pittsburgh, PA, USA
+#     date: October 8-10, 2025
+#     start: 2025-10-08
+#     end: 2025-10-10
+#     sub: [BC]
+
+# - - id: sp2026first
+#     year: 2026
+#     title: IEEE S&P
+#     full_title: IEEE Symposium on Security and Privacy
+#     link: https://sp2026.ieee-security.org/cfpapers.html
+#     deadline: '2025-05-29 23:59:59'
+#     timezone: Etc/GMT+12
+#     note: First cycle. Abstract registration deadline. Full paper deadline 2025-06-05 23:59:59 AoE. Author notification 2025-09-09.
+#     place: San Francisco, CA, USA
+#     date: May 18-21, 2026
+#     start: 2026-05-18
+#     end: 2026-05-21
+#     sub: [SEC]
+#     inactive: false
+
+#   - id: sp2026second
+#     year: 2026
+#     title: IEEE S&P
+#     full_title: IEEE Symposium on Security and Privacy
+#     link: https://sp2026.ieee-security.org/cfpapers.html
+#     deadline: '2025-11-06 23:59:59'
+#     timezone: Etc/GMT+12
+#     note: Second cycle. Abstract registration deadline. Full paper deadline 2025-11-13 23:59:59 AoE. Author notification 2026-03-19.
+#     place: San Francisco, CA, USA
+#     date: May 18-21, 2026
+#     start: 2026-05-18
+#     end: 2026-05-21
+#     sub: [SEC]
+#     inactive: false
+# """
 
 PROMPT_REFRESH = """
 Refresh requested: Treat the user-provided deadline information as potentially unreliable. Re-verify all details of the provided information from official sources before returning it as an update or indicating that no update is needed. You may assume that the `full_title` and `year` fields are correct and should not be changed.
@@ -286,13 +288,13 @@ tools = [
         "type": "function",
         "function": {
             "name": "callback_search",
-            "description": "Search the web for information. Call this and provide a search query whenever you need to search the web for information. Idempotent. Case insensitive. Small variations of the query usually return very similar results.",
+            "description": "Search the web for information. Call this and provide a search query whenever you need to search the web for information. Idempotent, do not call repeatedly with the same query.",
             "parameters": {
                 "type": "object",
                 "properties": {
                     "query": {
                         "type": "string",
-                        "description": "The search query to search the web for information.",
+                        "description": "The search query to search the web for information. Case insensitive. Small variations of the query usually return very similar results.",
                     },
                 },
                 "required": ["query"],
@@ -305,7 +307,7 @@ tools = [
         "type": "function",
         "function": {
             "name": "callback_browse_html",
-            "description": "Get HTML content of a website via the http or https URL. Call this and provide a URL whenever you want to retrieve the HTML content of a web page. This function provides more detailed input than callback_browse_text, but is also more expensive, so use it only when necessary. Idempotent.",
+            "description": "Get HTML content of a website via the http or https URL. Call this and provide a URL whenever you want to retrieve the HTML content of a web page. This function provides more detailed input than callback_browse_text, but is also more expensive, so use it only when necessary. Idempotent, do not call repeatedly with the same URL.",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -324,7 +326,7 @@ tools = [
         "type": "function",
         "function": {
             "name": "callback_browse_text",
-            "description": "Get text content of a website via the http or https URL. Call this and provide a URL whenever you want to retrieve the text content of a web page. This function provides less detailed input than callback_browse_html, but is also cheaper, so use it when possible. Idempotent.",
+            "description": "Get text content of a website via the http or https URL. Call this and provide a URL whenever you want to retrieve the text content of a web page. This function provides less detailed input than callback_browse_html, but is also cheaper, so use it when possible. Idempotent, do not call repeatedly with the same URL.",
             "parameters": {
                 "type": "object",
                 "properties": {
@@ -450,10 +452,10 @@ def main(
                 "role": "system",
                 "content": PROMPT,
             },
-            {
-                "role": "system",
-                "content": str(load_conferences(EXAMPLES))
-            },
+            # {
+            #     "role": "system",
+            #     "content": str(load_conferences(EXAMPLES))
+            # },
             {
                 "role": "user",
                 "content": str(conference)
