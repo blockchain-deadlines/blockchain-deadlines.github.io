@@ -32,12 +32,9 @@ To find information, search for the conference edition's website, or make educat
 # Data Format
 
 If there are multiple submission cycles for the conference, produce a separate conference object for each submission cycle.
-If there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration/submission deadline and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle.
-Include in `note` also information about the author notification date (without time and timezone information).
-Do not include information in `note` any other than the aforementioned information.
-In particular, do not include in `note` any deadline information regarding early-rejection, rebuttal, camera-ready, workshop/tutorial proposals, or conference registration for attendance.
-Do not include in `note` information about whether the deadline is firm.
-Pay attention to timezone information and specify them in `note` as well. Do proper conversion from AM/PM to 24h format. Deadlines in 'anywhere on earth' = 'AoE' should be flagged with `timezone` `Etc/GMT+12`.
+If there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration deadline or abstract submission deadline, and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle (format: YYYY-MM-DD HH:MM:SS TZ).
+Include in `note` also information about the author notification date (without time and timezone information, format: YYYY-MM-DD). Do not include information in `note` any other than the aforementioned information. Examples for information to not include in `note` are any deadline information regarding early-rejection, rebuttal, camera-ready, workshop/tutorial proposals, or conference registration for attendance. Do not include in `note` information about whether the deadline is firm.
+Pay attention to timezone information. If you provide date/time of a deadline in `note`, then specify the timezone as well. Do proper conversion from AM/PM to 24h format. Deadlines in 'anywhere on earth' = 'AoE' should be flagged with `timezone` `Etc/GMT+12`.
 For `link`, provide the URL that contains the official source of the submission deadline information.
 Subject areas in `sub` are `BC` (blockchain), `CR` (cryptography), `DS` (distributed systems), `SEC` (security), and `EC` (economics/incentives).
 
@@ -518,9 +515,9 @@ def main(
                     os.makedirs(training_data_dir, exist_ok=True)
                     assert(conference_file.endswith(".yml"))
                     tmp_confid = conference_file[:-len(".yml")]
-                    tmp_runid = str(int(time.time()))
+                    tmp_runid = time.strftime("%Y%m%d-%H%M%S", time.localtime())
                     tmp_updated = "updated" if choice.message.parsed.any_updates else "noupdate"
-                    open(os.path.join(training_data_dir, f"{tmp_confid}-run{tmp_runid}-{tmp_updated}.json"), "w").write(json.dumps([ m.model_dump() if isinstance(m, BaseModel) else m for m in messages ], indent=2))
+                    open(os.path.join(training_data_dir, f"{tmp_confid}-{tmp_runid}-{tmp_updated}.json"), "w").write(json.dumps([ m.model_dump() if isinstance(m, BaseModel) else m for m in messages ], indent=2))
 
                 break
 
