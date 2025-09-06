@@ -1,15 +1,15 @@
-- id: icbc25
-  year: 2025
+- id: icbc26
+  year: 2026
   title: IEEE ICBC
   full_title: IEEE International Conference on Blockchain and Cryptocurrency
-  link: https://icbc2025.ieee-icbc.org/authors/call-papers
-  deadline: '2024-12-23 23:59:59'
+  link: https://icbc2026.ieee-icbc.org/important-dates
+  deadline: '2026-01-07 23:59:59'
   timezone: Etc/GMT+12
-  note: ''
-  place: Pisa, Italy
-  date: June 2-6, 2025
-  start: '2025-06-02'
-  end: '2025-06-06'
+  note: Author notification 2026-03-18.
+  place: Brisbane, Australia
+  date: '2026'
+  start: '2026-06-01'
+  end: '2026-06-05'
   sub:
   - BC
   inactive: false

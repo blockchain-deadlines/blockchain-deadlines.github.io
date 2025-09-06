@@ -1,32 +1,32 @@
-- id: acns25first
-  year: 2025
+- id: acns26first
+  year: 2026
   title: ACNS
   full_title: International Conference on Applied Cryptography and Network Security
-  link: https://fordaysec.de/en/event/acns-2025
-  deadline: '2024-09-09 23:59:59'
+  link: https://acns2026.github.io/cfp.html
+  deadline: '2025-09-26 23:59:59'
   timezone: Etc/GMT+12
-  note: First cycle.
-  place: Munich, Germany
-  date: June 23-26, 2025
-  start: '2025-06-23'
-  end: '2025-06-26'
+  note: First cycle. Author notification 2025-11-20.
+  place: SUNY Global Center, New York City, NY, USA
+  date: June 22-25, 2026
+  start: '2026-06-22'
+  end: '2026-06-25'
   sub:
   - SEC
   - DS
   - CR
   inactive: false
-- id: acns25second
-  year: 2025
+- id: acns26second
+  year: 2026
   title: ACNS
   full_title: International Conference on Applied Cryptography and Network Security
-  link: https://fordaysec.de/en/event/acns-2025
-  deadline: '2025-01-13 23:59:59'
+  link: https://acns2026.github.io/cfp.html
+  deadline: '2026-01-23 23:59:59'
   timezone: Etc/GMT+12
-  note: Second cycle.
-  place: Munich, Germany
-  date: June 23-26, 2025
-  start: '2025-06-23'
-  end: '2025-06-26'
+  note: Second cycle. Author notification 2026-03-19.
+  place: SUNY Global Center, New York City, NY, USA
+  date: June 22-25, 2026
+  start: '2026-06-22'
+  end: '2026-06-25'
   sub:
   - SEC
   - DS
