@@ -517,7 +517,12 @@ def main(
                     tmp_confid = conference_file[:-len(".yml")]
                     tmp_runid = time.strftime("%Y%m%d-%H%M%S", time.localtime())
                     tmp_updated = "updated" if choice.message.parsed.any_updates else "noupdate"
-                    open(os.path.join(training_data_dir, f"{tmp_confid}-{tmp_runid}-{tmp_updated}.json"), "w").write(json.dumps([ m.model_dump() if isinstance(m, BaseModel) else m for m in messages ], indent=2))
+                    training_data = {
+                        "messages": [ m.model_dump() if isinstance(m, BaseModel) else m for m in messages ],
+                        "tools": tools,
+                        "parallel_tool_calls": True,
+                    }
+                    open(os.path.join(training_data_dir, f"{tmp_confid}-{tmp_runid}-{tmp_updated}.json"), "w").write(json.dumps(training_data, indent=2))
 
                 break
 
