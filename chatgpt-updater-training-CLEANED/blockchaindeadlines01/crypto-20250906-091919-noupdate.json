@@ -1,0 +1,167 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "\n# Overall Goal\n\nFind the submission deadline information for the latest edition (for which a call-for-papers with submission deadline information is available online) of the conference (or other academic venue) specified by the user.\nIf the user-provided information is for year X, then try to find the information for year X+1, etc. If no more up-to-date information is available, then return no update.\n\n\n# Information Sources\n\nConsider only information from authoritative sources. Examples for authoritative sources are the conference's website, the conference organizer, the publisher of the conference proceedings, or reputable professional organizations (IACR, IEEE, ACM, etc.).\nDo not consider information from third parties. Examples of third parties are conference deadline aggregators (e.g., mpc-deadlines.github.io, wikicfp.com, sslab.skku.edu, aconf.org, etc.).\nIf you find the information on a third-party website, make every effort to locate the official source. Use that official source for the `link` field and to population the other fields. If you cannot verify information on third-party websites through official sources, then better return no update.\nTo find information, search for the conference edition's website, or make educated guesses as to what the website URL could be, based on the URLs of previous years.\n\n\n# Data Format\n\nIf there are multiple submission cycles for the conference, produce a separate conference object for each submission cycle.\nIf there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration deadline or abstract submission deadline, and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle (format: YYYY-MM-DD HH:MM:SS TZ).\nInclude in `note` also information about the author notification date (without time and timezone information, format: YYYY-MM-DD). Do not include information in `note` any other than the aforementioned information. Examples for information to not include in `note` are any deadline information regarding early-rejection, rebuttal, camera-ready, workshop/tutorial proposals, or conference registration for attendance. Do not include in `note` information about whether the deadline is firm.\nPay attention to timezone information. If you provide date/time of a deadline in `note`, then specify the timezone as well. Do proper conversion from AM/PM to 24h format. Deadlines in 'anywhere on earth' = 'AoE' should be flagged with `timezone` `Etc/GMT+12`.\nFor `link`, provide the URL that contains the official source of the submission deadline information.\nSubject areas in `sub` are `BC` (blockchain), `CR` (cryptography), `DS` (distributed systems), `SEC` (security), and `EC` (economics/incentives).\n\n\n# Tools\n\nPrefer text content over HTML content, when possible, because text content is cheaper to retrieve than HTML content.\n\n\n# Examples\n\nI will provide you with example information for a few conferences, so that you can understand the desired data format.\n"
+    },
+    {
+      "role": "system",
+      "content": "[[Conference(id='eurosp25', year=2025, title='IEEE EuroS&P', full_title='IEEE European Symposium on Security and Privacy', link='https://www.eurosp2025.ieee-security.org/', deadline='2024-10-21 23:59:59', timezone='Etc/GMT+12', note='Abstract registration deadline. Full paper deadline 2024-10-24 23:59:59 AoE. Author notification 2025-02-13.', place='Venice, Italy', date='June 30 - July 4, 2025', start='2025-06-30', end='2025-07-04', sub=['DS', 'SEC'], inactive=False)], [Conference(id='ccs24a', year=2024, title='ACM CCS', full_title='ACM Conference on Computer and Communications Security', link='https://www.sigsac.org/ccs/CCS2024/', deadline='2024-01-28 23:59:59', timezone='Etc/GMT+12', note='First cycle. Author notification 2024-04-03.', place='Salt Lake City, Utah, USA', date='October 14-18, 2024', start='2024-10-14', end='2024-10-18', sub=['SEC', 'DS'], inactive=False), Conference(id='ccs24b', year=2024, title='ACM CCS', full_title='ACM Conference on Computer and Communications Security', link='https://www.sigsac.org/ccs/CCS2024/', deadline='2024-04-29 23:59:59', timezone='Etc/GMT+12', note='Second cycle. Author notification 2024-07-04.', place='Salt Lake City, Utah, USA', date='October 14-18, 2024', start='2024-10-14', end='2024-10-18', sub=['SEC', 'DS'], inactive=False)], [Conference(id='nsdi25spring', year=2025, title='USENIX NSDI', full_title='USENIX Symposium on Networked Systems Design and Implementation', link='https://www.usenix.org/conference/nsdi25/', deadline='2024-04-30 23:59:59', timezone='America/New_York', note='Spring cycle. Abstract registration deadline. Full paper deadline 2024-05-07 23:59:59 EDT. Author notification 2024-07-24.', place='Philadelphia, PA, USA', date='April 28-30, 2025', start='2025-04-28', end='2025-04-30', sub=['DS', 'SEC'], inactive=False), Conference(id='nsdi25fall', year=2025, title='USENIX NSDI', full_title='USENIX Symposium on Networked Systems Design and Implementation', link='https://www.usenix.org/conference/nsdi25/', deadline='2024-09-12 23:59:59', timezone='America/New_York', note='Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19 23:59:59 EDT. Author notification 2024-12-10.', place='Philadelphia, PA, USA', date='April 28-30, 2025', start='2025-04-28', end='2025-04-30', sub=['DS', 'SEC'], inactive=False)], [Conference(id='fc25', year=2025, title='FC', full_title='Financial Cryptography and Data Security', link='https://fc25.ifca.ai', deadline='2024-10-11 23:59:59', timezone='Etc/GMT+12', note='', place='Hotel Shigira Mirage, Miyakojima, Japan', date='14-18 April 2025', start='2024-04-14', end='2024-04-18', sub=['BC'], inactive=False)], [Conference(id='fc26', year=2026, title='FC', full_title='Financial Cryptography and Data Security', link='https://fc26.ifca.ai/cfp.html', deadline='2025-09-16 23:59:59', timezone='Etc/GMT+12', note='Full paper deadline. Author notification 2025-11-24.', place='St. Kitts Marriott Resort, St. Kitts', date='2-6 March 2026', start='2026-03-02', end='2026-03-06', sub=['BC'], inactive=False)], [Conference(id='aft24', year=2024, title='AFT', full_title='Advances in Financial Technologies', link='https://aftconf.github.io/aft24/index.html', deadline='2024-05-15 23:59:59', timezone='Etc/GMT+12', note='Abstract registration deadline. Full paper deadline 2024-05-22 23:59:59 AoE. Author notification 2024-07-03.', place='Vienna, Austria', date='September 23-25, 2024', start='2024-09-23', end='2024-09-25', sub=['BC'], inactive=False)], [Conference(id='aft25', year=2025, title='AFT', full_title='Advances in Financial Technologies', link='https://aftconf.github.io/aft25/CFP.html', deadline='2025-05-28 23:59:59', timezone='Etc/GMT+12', note='Full paper deadline. Author notification 2025-07-16.', place='Carnegie Mellon University, Pittsburgh, PA, USA', date='October 8-10, 2025', start='2025-10-08', end='2025-10-10', sub=['BC'], inactive=False)], [Conference(id='sp2026first', year=2026, title='IEEE S&P', full_title='IEEE Symposium on Security and Privacy', link='https://sp2026.ieee-security.org/cfpapers.html', deadline='2025-05-29 23:59:59', timezone='Etc/GMT+12', note='First cycle. Abstract registration deadline. Full paper deadline 2025-06-05 23:59:59 AoE. Author notification 2025-09-09.', place='San Francisco, CA, USA', date='May 18-21, 2026', start='2026-05-18', end='2026-05-21', sub=['SEC'], inactive=False), Conference(id='sp2026second', year=2026, title='IEEE S&P', full_title='IEEE Symposium on Security and Privacy', link='https://sp2026.ieee-security.org/cfpapers.html', deadline='2025-11-06 23:59:59', timezone='Etc/GMT+12', note='Second cycle. Abstract registration deadline. Full paper deadline 2025-11-13 23:59:59 AoE. Author notification 2026-03-19.', place='San Francisco, CA, USA', date='May 18-21, 2026', start='2026-05-18', end='2026-05-21', sub=['SEC'], inactive=False)]]"
+    },
+    {
+      "role": "user",
+      "content": "[Conference(id='crypto25', year=2025, title='CRYPTO', full_title='Cryptology Conference', link='https://crypto.iacr.org/2025/callforpapers.php', deadline='2025-02-13 23:59:59', timezone='Etc/GMT+12', note='Author notification 2025-05-03.', place='Santa Barbara, USA', date='August 17-21, 2025', start='2025-08-17', end='2025-08-21', sub=['CR'], inactive=False)]"
+    },
+    {
+      "role": "system",
+      "content": "\nRefresh requested: Treat the user-provided deadline information as potentially unreliable. Re-verify all details of the provided information from official sources before returning it as an update or indicating that no update is needed. You may assume that the `full_title` and `year` fields are correct and should not be changed.\n"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_1Dov0L5CXOnH6rD9wHjhRdt1",
+          "function": {
+            "arguments": "{\"query\":\"CRYPTO 2025 call for papers submission deadline site:crypto.iacr.org 2025\"}",
+            "name": "callback_search"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[[\"Call for papers - Crypto 2025 - IACR\", \"https://crypto.iacr.org/2025/callforpapers.php\", \"REGULAR-RESULT\", \"Submit a paper. Important dates. Feb 13, 2025. Submission deadline at 23:59 AoE (anywhere on earth). Apr 7, 2025. First round notification. Apr 12, 2025.\", \"\"], [\"Paper submission - Crypto 2025 - IACR\", \"https://crypto.iacr.org/2025/papersubmission.php\", \"REGULAR-RESULT\", \"Important dates ; Feb 13, 2025. Submission deadline at 23:59 AoE (anywhere on earth) ; Apr 7, 2025. First round notification ; Apr 12, 2025. Rebuttal deadline ; May ...\", \"\"], [\"Crypto 2025\", \"https://crypto.iacr.org/\", \"REGULAR-RESULT\", \"Important dates ; Feb 13, 2025. Submission deadline at 23:59 AoE (anywhere on earth) ; Apr 7, 2025. First round notification ; Apr 12, 2025. Rebuttal deadline ; May ...\", \"\"], [\"Crypto 2025 Accepted Papers - IACR\", \"https://crypto.iacr.org/2025/acceptedpapers.php\", \"REGULAR-RESULT\", \"August 17-21, 2025 Santa Barbara, USA Accepted Papers These papers are listed in order of submission.\", \"\"], [\"Rump session - Crypto 2025 - IACR\", \"https://crypto.iacr.org/2025/rumpsession.php\", \"REGULAR-RESULT\", \"Submission guidelines. Time constraints: 1-5 minutes, 6 minutes if very funny. Submission deadline: Monday, August 18th at 22:00 PDT.\", \"\"]]",
+      "tool_call_id": "call_1Dov0L5CXOnH6rD9wHjhRdt1"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_Nh1afxd4XBgv7lemYiBopEs3",
+          "function": {
+            "arguments": "{\"query\":\"CRYPTO 2026 call for papers site:crypto.iacr.org 2026\"}",
+            "name": "callback_search"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[[\"Call for papers - Crypto 2025 - IACR\", \"https://crypto.iacr.org/2025/callforpapers.php\", \"REGULAR-RESULT\", \"Crypto 2025 will take place in Santa Barbara, USA on August 17-21, 2025. Crypto 2025 is organized by the International Association for Cryptologic Research ( ...\", \"\"], [\"Crypto 2025\", \"https://crypto.iacr.org/\", \"REGULAR-RESULT\", \"Crypto 2025 is a hybrid conference and will take place in Santa Barbara, California, USA on August 17-21, 2025. This year is the 45th annual international ...\", \"\"], [\"Call for papers\", \"https://crypto.iacr.org/2025/callforpapers.php\", \"GIVEN-AS-ADDITIONAL-SITELINK-TO-REGULAR-RESULT\", \"\", \"\"], [\"Accepted papers\", \"https://crypto.iacr.org/2025/acceptedpapers.php\", \"GIVEN-AS-ADDITIONAL-SITELINK-TO-REGULAR-RESULT\", \"\", \"\"], [\"Venue & travel\", \"https://crypto.iacr.org/2025/travel.php\", \"GIVEN-AS-ADDITIONAL-SITELINK-TO-REGULAR-RESULT\", \"\", \"\"], [\"Affiliated events\", \"https://crypto.iacr.org/2025/affiliated.php\", \"GIVEN-AS-ADDITIONAL-SITELINK-TO-REGULAR-RESULT\", \"\", \"\"], [\"Rump session - Crypto 2025 - IACR\", \"https://crypto.iacr.org/2025/rumpsession.php\", \"REGULAR-RESULT\", \"Accepted papers Call for papers Paper submission. Attend. Registration ... An announcement from the Crypto 2026 chairs. Nadia Heninger ...\", \"\"], [\"Crypto 2025 Program - IACR\", \"https://crypto.iacr.org/2025/program.php\", \"REGULAR-RESULT\", \"Accepted papers Call for papers Paper submission. Attend. Registration Venue & travel Visas Code of conduct \\u00b7 Sponsors \\u00b7 Contact. This site is designed for ...\", \"\"]]",
+      "tool_call_id": "call_Nh1afxd4XBgv7lemYiBopEs3"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_OqcARNlFprFz1aI1KOCH5V77",
+          "function": {
+            "arguments": "{\"query\":\"site:crypto.iacr.org 2026 call for papers Crypto 2026 submission deadline\"}",
+            "name": "callback_search"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[[\"Call for papers - Crypto 2025 - IACR\", \"https://crypto.iacr.org/2025/callforpapers.php\", \"REGULAR-RESULT\", \"Submit a paper. Important dates. Feb 13, 2025. Submission deadline at 23:59 AoE (anywhere on earth). Apr 7, 2025. First round notification. Apr 12, 2025.\", \"\"], [\"Rump session - Crypto 2025 - IACR\", \"https://crypto.iacr.org/2025/rumpsession.php\", \"REGULAR-RESULT\", \"Submission guidelines. Time constraints: 1-5 minutes, 6 minutes if very funny. Submission deadline: Monday, August 18th at 22:00 PDT.\", \"\"], [\"Crypto 2025\", \"https://crypto.iacr.org/\", \"REGULAR-RESULT\", \"Important dates ; Feb 13, 2025. Submission deadline at 23:59 AoE (anywhere on earth) ; Apr 7, 2025. First round notification ; Apr 12, 2025. Rebuttal deadline ; May ...\", \"\"], [\"Call for papers\", \"https://crypto.iacr.org/2025/callforpapers.php\", \"GIVEN-AS-ADDITIONAL-SITELINK-TO-REGULAR-RESULT\", \"\", \"\"], [\"Accepted papers\", \"https://crypto.iacr.org/2025/acceptedpapers.php\", \"GIVEN-AS-ADDITIONAL-SITELINK-TO-REGULAR-RESULT\", \"\", \"\"], [\"Paper submission\", \"https://crypto.iacr.org/2025/papersubmission.php\", \"GIVEN-AS-ADDITIONAL-SITELINK-TO-REGULAR-RESULT\", \"\", \"\"], [\"Venue & travel\", \"https://crypto.iacr.org/2025/travel.php\", \"GIVEN-AS-ADDITIONAL-SITELINK-TO-REGULAR-RESULT\", \"\", \"\"], [\"Crypto 2025 Program - IACR\", \"https://crypto.iacr.org/2025/program.php\", \"REGULAR-RESULT\", \"Accepted papers Call for papers Paper submission. Attend. Registration Venue & travel Visas Code of conduct \\u00b7 Sponsors \\u00b7 Contact. This site is designed for ...\", \"\"]]",
+      "tool_call_id": "call_OqcARNlFprFz1aI1KOCH5V77"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_eKRQXTwf26EIx44DxL9ryooA",
+          "function": {
+            "arguments": "{\"url\":\"https://crypto.iacr.org/2025/callforpapers.php\"}",
+            "name": "callback_browse_text"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[\"Crypto 2025 Call for Papers\", \"Crypto 2025\", \"August 17-21, 2025\", \"Santa Barbara, USA\", \"Home\", \"Technical Program\", \"Main program\", \"Affiliated events\", \"Rump session\", \"Accepted papers\", \"Call for papers\", \"Paper submission\", \"Attend\", \"Registration\", \"Venue & travel\", \"Visas\", \"Code of conduct\", \"Sponsors\", \"Contact\", \"This site is designed for browsers with javascript.\", \"The dates, name, and location for the conference are\", \"in a json file.\", \"Call for Papers\", \"General information\", \"Crypto 2025 will take place in\\n          Santa Barbara, USA on August 17-21, 2025.\\n          Crypto 2025 is organized by\", \"the International Association for\\n            Cryptologic Research\", \"(IACR). The proceedings will be published\\n          by Springer in the LNCS series.\", \"Original research papers are welcomed on any cryptographic topic, including\\n          but not limited to:\", \"foundational theory and mathematics\", \"the design, proposal, and analysis of cryptographic primitives and protocols\", \"secure implementation and optimization in hardware or software\", \"applied aspects of cryptography\", \"How to submit\", \"Author instructions for paper submission may be found on the\\n          submission page.\", \"Submit a paper\", \"Important dates\", \"Feb 13, 2025\", \"Submission deadline at 23:59 AoE (anywhere on earth)\", \"Apr 7, 2025\", \"First round notification\", \"Apr 12, 2025\", \"Rebuttal deadline\", \"May 3, 2025\", \"Final notification\", \"Jun 5, 2025\", \"Final versions due\", \"Aug 17, 2025\", \"Conference begins\", \"Review process\", \"Submissions must not substantially duplicate published work or work that has been submitted in\\n          parallel to any other journal or conference/workshop with published proceedings. Additionally,\\n          submissions may not be submitted to any other venue unless notified of rejection or withdrawn\\n          by the authors. Accepted submissions may not appear in any other conference or workshop that has\\n          proceedings.\", \"The review process will consist of two rounds with a rebuttal phase. In the first round, the program\\n      committee will reject some submissions; the rest will proceed to the second round. At the end of the\\n      first round, the authors will be either notified of rejection, or invited to submit a response to\\n      questions from the program committee (if any). The authors' response will be used to make the\\n      final decision in the second round.\", \"The double-blind review process will follow the\", \"IACR Conflict of Interest Policy\", \". The authors\\n      will be asked, at submission time, to help identify program committee members with potential\\n      conflicts of interest.\", \"Awards\", \"The Program Committee may choose one or more papers to receive an overall\\n          Best Paper Award. The Program Committee may also award a prize for the\\n          best paper(s) authored exclusively by students and postdocs (at the time\\n          of submission). As usual, awards will only be given if deserving papers are identified.\", \"Stipends\", \"Students whose papers have been accepted and who present their \\n          talks at the conference will have their registration fees waived. \\n          A limited number of stipends will be available to those unable to\\n          obtain funding to attend the conference. Students in \\n          under-represented groups are especially encouraged to apply. Application \\n          instructions will be posted together with other registration information.\", \"Program committee\", \"Program co-chairs\", \"Seny Kamara\", \"MongoDB and Brown University\", \"Yael Tauman Kalai\", \"Massachusetts Institute of Technology (MIT)\", \"crypto2025programchairs@iacr.org\", \"General chair\", \"Francisco Rodr\\u00edguez-Henr\\u00edquez\", \"Technology Innovation Institute (TII)\", \"crypto2025@iacr.org\", \"Crypto 2025\", \"Copyright \\u00a9\\n      2025\", \"by the\", \"IACR\", \"International Association for\\n        Cryptologic Research\", \"\\u2022\", \"Privacy Policy\"]",
+      "tool_call_id": "call_eKRQXTwf26EIx44DxL9ryooA"
+    },
+    {
+      "content": "{\"any_updates\":false,\"conferences\":[]}",
+      "role": "assistant",
+      "tool_calls": []
+    }
+  ],
+  "parallel_tool_calls": true,
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "callback_search",
+        "description": "Search the web for information. Call this and provide a search query whenever you need to search the web for information.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "The search query to search the web for information."
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "callback_browse_html",
+        "description": "Get HTML content of a website via the http or https URL. Call this and provide a URL whenever you want to retrieve the HTML content of a web page. This function provides more detailed input than callback_browse_text, but is also more expensive, so use it only when necessary.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL to browse."
+            }
+          },
+          "required": [
+            "url"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "callback_browse_text",
+        "description": "Get text content of a website via the http or https URL. Call this and provide a URL whenever you want to retrieve the text content of a web page. This function provides less detailed input than callback_browse_html, but is also cheaper, so use it when possible.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL to browse."
+            }
+          },
+          "required": [
+            "url"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    }
+  ]
+}

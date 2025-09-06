@@ -1,0 +1,186 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "\n# Overall Goal\n\nFind the submission deadline information for the latest edition (for which a call-for-papers with submission deadline information is available online) of the conference (or other academic venue) specified by the user.\nIf the user-provided information is for year X, then try to find the information for year X+1, etc. If no more up-to-date information is available, then return no update.\n\n\n# Information Sources\n\nConsider only information from authoritative sources. Examples for authoritative sources are the conference's website, the conference organizer, the publisher of the conference proceedings, or reputable professional organizations (IACR, IEEE, ACM, etc.).\nDo not consider information from third parties. Examples of third parties are conference deadline aggregators (e.g., mpc-deadlines.github.io, wikicfp.com, sslab.skku.edu, aconf.org, etc.).\nIf you find the information on a third-party website, make every effort to locate the official source. Use that official source for the `link` field and to population the other fields. If you cannot verify information on third-party websites through official sources, then better return no update.\nTo find information, search for the conference edition's website, or make educated guesses as to what the website URL could be, based on the URLs of previous years.\n\n\n# Data Format\n\nIf there are multiple submission cycles for the conference, produce a separate conference object for each submission cycle.\nIf there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration deadline or abstract submission deadline, and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle (format: YYYY-MM-DD HH:MM:SS TZ).\nInclude in `note` also information about the author notification date (without time and timezone information, format: YYYY-MM-DD). Do not include information in `note` any other than the aforementioned information. Examples for information to not include in `note` are any deadline information regarding early-rejection, rebuttal, camera-ready, workshop/tutorial proposals, or conference registration for attendance. Do not include in `note` information about whether the deadline is firm.\nPay attention to timezone information. If you provide date/time of a deadline in `note`, then specify the timezone as well. Do proper conversion from AM/PM to 24h format. Deadlines in 'anywhere on earth' = 'AoE' should be flagged with `timezone` `Etc/GMT+12`.\nFor `link`, provide the URL that contains the official source of the submission deadline information.\nSubject areas in `sub` are `BC` (blockchain), `CR` (cryptography), `DS` (distributed systems), `SEC` (security), and `EC` (economics/incentives).\n\n\n# Tools\n\nPrefer text content over HTML content, when possible, because text content is cheaper to retrieve than HTML content.\n\n\n# Examples\n\nI will provide you with example information for a few conferences, so that you can understand the desired data format.\n"
+    },
+    {
+      "role": "system",
+      "content": "[[Conference(id='eurosp25', year=2025, title='IEEE EuroS&P', full_title='IEEE European Symposium on Security and Privacy', link='https://www.eurosp2025.ieee-security.org/', deadline='2024-10-21 23:59:59', timezone='Etc/GMT+12', note='Abstract registration deadline. Full paper deadline 2024-10-24 23:59:59 AoE. Author notification 2025-02-13.', place='Venice, Italy', date='June 30 - July 4, 2025', start='2025-06-30', end='2025-07-04', sub=['DS', 'SEC'], inactive=False)], [Conference(id='ccs24a', year=2024, title='ACM CCS', full_title='ACM Conference on Computer and Communications Security', link='https://www.sigsac.org/ccs/CCS2024/', deadline='2024-01-28 23:59:59', timezone='Etc/GMT+12', note='First cycle. Author notification 2024-04-03.', place='Salt Lake City, Utah, USA', date='October 14-18, 2024', start='2024-10-14', end='2024-10-18', sub=['SEC', 'DS'], inactive=False), Conference(id='ccs24b', year=2024, title='ACM CCS', full_title='ACM Conference on Computer and Communications Security', link='https://www.sigsac.org/ccs/CCS2024/', deadline='2024-04-29 23:59:59', timezone='Etc/GMT+12', note='Second cycle. Author notification 2024-07-04.', place='Salt Lake City, Utah, USA', date='October 14-18, 2024', start='2024-10-14', end='2024-10-18', sub=['SEC', 'DS'], inactive=False)], [Conference(id='nsdi25spring', year=2025, title='USENIX NSDI', full_title='USENIX Symposium on Networked Systems Design and Implementation', link='https://www.usenix.org/conference/nsdi25/', deadline='2024-04-30 23:59:59', timezone='America/New_York', note='Spring cycle. Abstract registration deadline. Full paper deadline 2024-05-07 23:59:59 EDT. Author notification 2024-07-24.', place='Philadelphia, PA, USA', date='April 28-30, 2025', start='2025-04-28', end='2025-04-30', sub=['DS', 'SEC'], inactive=False), Conference(id='nsdi25fall', year=2025, title='USENIX NSDI', full_title='USENIX Symposium on Networked Systems Design and Implementation', link='https://www.usenix.org/conference/nsdi25/', deadline='2024-09-12 23:59:59', timezone='America/New_York', note='Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19 23:59:59 EDT. Author notification 2024-12-10.', place='Philadelphia, PA, USA', date='April 28-30, 2025', start='2025-04-28', end='2025-04-30', sub=['DS', 'SEC'], inactive=False)], [Conference(id='fc25', year=2025, title='FC', full_title='Financial Cryptography and Data Security', link='https://fc25.ifca.ai', deadline='2024-10-11 23:59:59', timezone='Etc/GMT+12', note='', place='Hotel Shigira Mirage, Miyakojima, Japan', date='14-18 April 2025', start='2024-04-14', end='2024-04-18', sub=['BC'], inactive=False)], [Conference(id='fc26', year=2026, title='FC', full_title='Financial Cryptography and Data Security', link='https://fc26.ifca.ai/cfp.html', deadline='2025-09-16 23:59:59', timezone='Etc/GMT+12', note='Full paper deadline. Author notification 2025-11-24.', place='St. Kitts Marriott Resort, St. Kitts', date='2-6 March 2026', start='2026-03-02', end='2026-03-06', sub=['BC'], inactive=False)], [Conference(id='aft24', year=2024, title='AFT', full_title='Advances in Financial Technologies', link='https://aftconf.github.io/aft24/index.html', deadline='2024-05-15 23:59:59', timezone='Etc/GMT+12', note='Abstract registration deadline. Full paper deadline 2024-05-22 23:59:59 AoE. Author notification 2024-07-03.', place='Vienna, Austria', date='September 23-25, 2024', start='2024-09-23', end='2024-09-25', sub=['BC'], inactive=False)], [Conference(id='aft25', year=2025, title='AFT', full_title='Advances in Financial Technologies', link='https://aftconf.github.io/aft25/CFP.html', deadline='2025-05-28 23:59:59', timezone='Etc/GMT+12', note='Full paper deadline. Author notification 2025-07-16.', place='Carnegie Mellon University, Pittsburgh, PA, USA', date='October 8-10, 2025', start='2025-10-08', end='2025-10-10', sub=['BC'], inactive=False)], [Conference(id='sp2026first', year=2026, title='IEEE S&P', full_title='IEEE Symposium on Security and Privacy', link='https://sp2026.ieee-security.org/cfpapers.html', deadline='2025-05-29 23:59:59', timezone='Etc/GMT+12', note='First cycle. Abstract registration deadline. Full paper deadline 2025-06-05 23:59:59 AoE. Author notification 2025-09-09.', place='San Francisco, CA, USA', date='May 18-21, 2026', start='2026-05-18', end='2026-05-21', sub=['SEC'], inactive=False), Conference(id='sp2026second', year=2026, title='IEEE S&P', full_title='IEEE Symposium on Security and Privacy', link='https://sp2026.ieee-security.org/cfpapers.html', deadline='2025-11-06 23:59:59', timezone='Etc/GMT+12', note='Second cycle. Abstract registration deadline. Full paper deadline 2025-11-13 23:59:59 AoE. Author notification 2026-03-19.', place='San Francisco, CA, USA', date='May 18-21, 2026', start='2026-05-18', end='2026-05-21', sub=['SEC'], inactive=False)]]"
+    },
+    {
+      "role": "user",
+      "content": "[Conference(id='acns25first', year=2025, title='ACNS', full_title='International Conference on Applied Cryptography and Network Security', link='https://acns2025.fordaysec.de/call-for-papers/', deadline='2024-09-09 23:59:59', timezone='Etc/GMT+12', note='First cycle. Submission deadline (AoE). Author notification 2024-11-11.', place='Munich, Germany', date='June 23-26, 2025', start='2025-06-23', end='2025-06-26', sub=['SEC', 'DS', 'CR'], inactive=False), Conference(id='acns25second', year=2025, title='ACNS', full_title='International Conference on Applied Cryptography and Network Security', link='https://acns2025.fordaysec.de/call-for-papers/', deadline='2025-01-13 23:59:59', timezone='Etc/GMT+12', note='Second cycle. Submission deadline (AoE). Author notification 2025-03-17.', place='Munich, Germany', date='June 23-26, 2025', start='2025-06-23', end='2025-06-26', sub=['SEC', 'DS', 'CR'], inactive=False)]"
+    },
+    {
+      "role": "system",
+      "content": "\nRefresh requested: Treat the user-provided deadline information as potentially unreliable. Re-verify all details of the provided information from official sources before returning it as an update or indicating that no update is needed. You may assume that the `full_title` and `year` fields are correct and should not be changed.\n"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_ZMCsIeMoKHsJG2vNEcKf3mW4",
+          "function": {
+            "arguments": "{\"query\":\"ACNS 2026 call for papers Applied Cryptography and Network Security\"}",
+            "name": "callback_search"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[[\"ACNS 2026: Home\", \"https://acns2026.github.io/\", \"REGULAR-RESULT\", \"ACNS 2026 - Applied Cryptography and Network Security. ... Submissions may focus on the modelling, design, analysis (including security proofs and attacks) ...\", \"\"], [\"ACNS 2026: Submission deadline 26 Sept 2025, awards announced\", \"https://www.linkedin.com/posts/jianying-zhou-15b811_acns-2026-conference-activity-7364586829292974081-mjIM\", \"REGULAR-RESULT\", \"ACNS 2026 open for submission, 1st round deadline 26 Sept 2025. Mark the calendar. See you @New York. ACNS awards: # Best Student Paper ...\", \"\"], [\"ACNS: Applied Cryptography and Network Security 2026 2025 2024 ...\", \"http://www.wikicfp.com/cfp/program?id=41\", \"REGULAR-RESULT\", \"ACNS is an annual conference focusing on current developments that advance the areas of applied cryptography, cyber security (including network and computer ...\", \"\"], [\"ACNS - Applied Cryptography and Network Security - Jianying Zhou\", \"http://jianying.space/acns/\", \"REGULAR-RESULT\", \"ACNS gave the inaugural Test-of-Time Award in 2025 to recognize papers that have had a lasting impact on the field. ACNS 2026 \\u2013 New York, USA, June 22-25, 2026.\", \"\"], [\"Aniket Kate on X: \\\"Call for Papers (CFP) is up for ACNS 2026 (first ...\", \"https://x.com/aniketpkate/status/1959052987047059538\", \"REGULAR-RESULT\", \"Call for Papers (CFP) is up for ACNS 2026 (first deadline in a month) Place: New York City. acns2026.github.io. ACNS 2026 Conference.\", \"\"]]",
+      "tool_call_id": "call_ZMCsIeMoKHsJG2vNEcKf3mW4"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_Z0Qub6f6YZLDRAlLna3fDLZK",
+          "function": {
+            "arguments": "{\"url\":\"https://acns2026.github.io/\"}",
+            "name": "callback_browse_text"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[\"ACNS 2026: Home\", \"Applied Cryptography and Network Security (ACNS) 2026\", \"The Applied Cryptography and Network Security (ACNS) conference is an annual conference focusing on current\\n            developments that advance the areas of applied cryptography, cybersecurity (including network and computer\\n            security) and privacy. The goal is to represent both academic research works as well as developments in\\n            industrial and technical frontiers. Submissions may focus on the modelling, design, analysis (including\\n            security proofs and attacks), development (e.g. implementations), deployment (e.g. system integration), and\\n            maintenance (e.g. performance measurements, usability studies) of algorithms, protocols, standards,\\n            implementations, technologies devices, systems standing in relation with applied cryptography, cybersecurity\\n            and privacy, while advancing or bringing new insights to the state of the art.\", \"The 2026 edition of ACNS will be held at the\", \"SUNY Global Center\", \"in New York City. The proceedings of\\n        ACNS 2026 will be published as a part of Springer's LNCS series.\", \"Important Dates\", \"While taking place at New York, NY during June 22-25, 2026, the ACNS 2026 conference will have two cycles for\\n      paper submissions. The first cycle will be due on September 26, 2025 AoE and the second cycle will be due on\\n      January 23, 2026 AoE.\", \"Cycle 1 Submission deadline: September 26, 2025 AoE\", \"Cycle 1 Notification: November 20, 2025 AoE\", \"Cycle 2 Submission deadline: January 23, 2026 AoE\", \"Cycle 2 Notification: Mar 19, 2025 AoE\", \"Conference: June 22\\u201325, 2026\", \"News\", \"Aug 1, 2025 - CFP Updated.\", \"Website launched.\"]",
+      "tool_call_id": "call_Z0Qub6f6YZLDRAlLna3fDLZK"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_L2djd9KwaQY0FfmrFjAMJ0pv",
+          "function": {
+            "arguments": "{\"url\":\"https://acns2026.github.io/\"}",
+            "name": "callback_browse_html"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "\"<!DOCTYPE html>\\n<html>\\n\\n<head>\\n  <meta charset=\\\"utf-8\\\">\\n  <title>ACNS 2026: Home</title>\\n  <meta name=\\\"description\\\" content=\\\"ACNS 2026 - Applied Cryptography and Network Security\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1\\\">\\n  <meta property=\\\"og:title\\\" content=\\\"ACNS 2026 Conference\\\">\\n  <meta property=\\\"og:description\\\" content=\\\"Annual conference on applied cryptography and network security.\\\">\\n  <meta property=\\\"og:url\\\" content=\\\"https://acns2026.github.io/\\\">\\n  <meta property=\\\"og:type\\\" content=\\\"website\\\">\\n\\n  <script type=\\\"application/ld+json\\\">\\n    {\\n      \\\"@context\\\" : \\\"https://schema.org\\\",\\n      \\\"@type\\\" : \\\"WebSite\\\",\\n      \\\"name\\\" : \\\"ACNS 2026\\\",\\n      \\\"url\\\" : \\\"https://acns2026.github.io/\\\"\\n    }\\n    </script>\\n\\n  <link rel=\\\"stylesheet\\\" href=\\\"css/normalize.css\\\">\\n  <link rel=\\\"stylesheet\\\" href=\\\"css/skeleton.css\\\">\\n  <link rel=\\\"stylesheet\\\" href=\\\"css/main.css\\\">\\n  <link rel=\\\"stylesheet\\\" href=\\\"css/dropdown.css\\\">\\n</head>\\n\\n<body>\\n  <header class=\\\"site-header\\\">\\n    <div class=\\\"container\\\">\\n      <div class=\\\"row\\\">\\n        <img class=\\\"header-image u-max-full-width\\\" src=\\\"images/banner3.jpg\\\" alt=\\\"ACNS 2026, NYC\\\">\\n      </div>\\n    </div>\\n  </header>\\n\\n  <header class=\\\"site-menu\\\">\\n    <div id=\\\"menu\\\"></div>\\n    <script>\\n      fetch(\\\"components/menu.html\\\")\\n        .then(response => response.text())\\n        .then(data => { document.getElementById(\\\"menu\\\").innerHTML = data; });\\n    </script>\\n  </header>\\n\\n  <div class=\\\"container\\\">\\n    <div class=\\\"page\\\">\\n      <h2>Applied Cryptography and Network Security (ACNS) 2026</h2>\\n\\n      <div class=\\\"row\\\">\\n        <div class=\\\"eight columns\\\">\\n          <p>The Applied Cryptography and Network Security (ACNS) conference is an annual conference focusing on current\\n            developments that advance the areas of applied cryptography, cybersecurity (including network and computer\\n            security) and privacy. The goal is to represent both academic research works as well as developments in\\n            industrial and technical frontiers. Submissions may focus on the modelling, design, analysis (including\\n            security proofs and attacks), development (e.g. implementations), deployment (e.g. system integration), and\\n            maintenance (e.g. performance measurements, usability studies) of algorithms, protocols, standards,\\n            implementations, technologies devices, systems standing in relation with applied cryptography, cybersecurity\\n            and privacy, while advancing or bringing new insights to the state of the art.</p>\\n\\n        </div>\\n        <div class=\\\"four columns\\\">\\n          <img src=\\\"images/acns-logo_L.jpg\\\" alt=\\\"ACNS Logo\\\" class=\\\"u-max-full-width\\\">\\n        </div>\\n\\n      </div>\\n      <p>The 2026 edition of ACNS will be held at the <b>SUNY Global Center</b> in New York City. The proceedings of\\n        ACNS 2026 will be published as a part of Springer's LNCS series.</p>\\n      <p></p>\\n\\n      <h2>Important Dates</h2>\\n      While taking place at New York, NY during June 22-25, 2026, the ACNS 2026 conference will have two cycles for\\n      paper submissions. The first cycle will be due on September 26, 2025 AoE and the second cycle will be due on\\n      January 23, 2026 AoE.\\n      <ul>\\n        <li>Cycle 1 Submission deadline: September 26, 2025 AoE</li>\\n        <li>Cycle 1 Notification: November 20, 2025 AoE</li>\\n        <li>Cycle 2 Submission deadline: January 23, 2026 AoE</li>\\n        <li>Cycle 2 Notification: Mar 19, 2025 AoE</li>\\n        <li>Conference: June 22\\u201325, 2026</li>\\n      </ul>\\n      <h2>News</h2>\\n      <ul>\\n        <!--\\n        <li>Aug 11, 2025 - <a href=\\\"https://acns26-cycle1.hotcrp.com/\\\">Submission site (cycle1)</a> opened.</li>\\n        -->\\n        <li>Aug 1, 2025 - CFP Updated.</li>\\n        <li>Website launched.</li>\\n      </ul>\\n    </div>\\n  </div>\\n\\n  <footer class=\\\"site-footer\\\">\\n    <div id=\\\"sponsors\\\"></div>\\n    <script>\\n      fetch(\\\"components/sponsors.html\\\")\\n        .then(response => response.text())\\n        .then(data => { document.getElementById(\\\"sponsors\\\").innerHTML = data;});\\n    </script>\\n  </footer>\\n</body>\\n\\n</html>\"",
+      "tool_call_id": "call_L2djd9KwaQY0FfmrFjAMJ0pv"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_Kj1GFOsLiKzjuXOMelMzXTwd",
+          "function": {
+            "arguments": "{\"url\":\"https://acns2026.github.io/components/menu.html\"}",
+            "name": "callback_browse_html"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "\"<div class=\\\"container\\\">\\n    <a class=\\\"site-menu-leftentry\\\" href=\\\"index.html\\\">Home</a>\\n    <nav class=\\\"site-nav\\\">\\n        <div class=\\\"dropdown\\\">\\n            <a class=\\\"page-link\\\" href=\\\"cfp.html\\\"><span>Calls</span></a>\\n            <div class=\\\"dropdown-content\\\">\\n                <a href=\\\"cfp.html\\\">Call for Papers</a>\\n                <a href=\\\"workshops.html\\\">Call for Workshops</a>\\n                <a href=\\\"posters.html\\\">Call for Posters</a>\\n            </div>\\n        </div>\\n        <div class=\\\"dropdown\\\">\\n          <a class=\\\"page-link\\\" href=\\\"organization.html\\\"><span>Committees</span></a>\\n          <div class=\\\"dropdown-content\\\">\\n              <a href=\\\"organization.html\\\">Organization committee</a>\\n              <a href=\\\"tpc.html\\\">Program committee</a>\\n              <!-- <a href=\\\"tpc.html\\\">TPC</a> -->\\n          </div>\\n      </div>\\n        <a class=\\\"page-link\\\" href=\\\"venue.html\\\"><span>Venue</span></a>\\n        <!-- <a class=\\\"page-link\\\" href=\\\"organization.html\\\"><span>Organization</span></a> -->\\n        <a class=\\\"page-link\\\" href=\\\"http://jianying.space/acns/\\\" target=\\\"_blank\\\"><span>Previous Events</span></a>\\n    </nav>\\n</div>\\n\"",
+      "tool_call_id": "call_Kj1GFOsLiKzjuXOMelMzXTwd"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_8ArM37sqBMjQ2AEWgEQs9rA3",
+          "function": {
+            "arguments": "{\"url\":\"https://acns2026.github.io/cfp.html\"}",
+            "name": "callback_browse_text"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[\"ACNS 2026: Call for Papers\", \"Call for Papers\", \"Important Dates\", \"All deadlines are on the given day, 23:59 AoE (Anywhere on Earth). The submission system opens two weeks before\\n      the deadline.\", \"First submission cycle dates.\", \"Submission: September 26, 2025 AoE\", \"Notification: November 20, 2025 AoE\", \"Camera ready: December 15, 2025 AoE\", \"Second submission cycle dates.\", \"Submission: January 23, 2026 AoE\", \"Notification: March 19, 2026 AoE\", \"Camera ready: April 15, 2026 AoE\", \"General Information\", \"The Applied Cryptography and Network Security (ACNS) conference is an annual international conference covering\\n        research in theory and applications of information security. ACNS aims to attract high quality papers in all\\n        technical aspects of information security. This includes submissions from academia, industry and government on\\n        traditional as well as emerging topics and new paradigms in these areas, with a clear connection to real-world\\n        problems, systems, or applications.\", \"ACNS gives the best student paper award, with 1500 EUR prize sponsored by Springer, to encourage promising\\n        students to publish their best results at this venue. Any paper with a student as an author is eligible for this\\n        award. In addition, ACNS gives the best workshop paper award, with 500 EUR prize sponsored by Springer.\", \"Types of Submissions Solicited\", \"Papers on all technical aspects of information security and privacy are solicited for submission. Areas of\\n        interest include, but are not limited to:\", \"Access control\", \"Accountability\", \"Anonymity and pseudonymity\", \"Applied cryptography\", \"Authentication\", \"Biometrics\", \"Computer forensics\", \"Critical infrastructure security\", \"Cryptographic protocols\", \"Database security\", \"Data protection\", \"Data/system integrity\", \"Digital right management\", \"Economics of security and privacy\", \"Electronic fraud\", \"Embedded security\", \"Formal methods in security\", \"Identity management\", \"Information hiding and watermarking\", \"Intrusion detection\", \"Network security\", \"Peer-to-peer security\", \"Privacy\", \"Secure group communications\", \"Security in blockchain\", \"Security in information flow\", \"Security for the Internet of Things\", \"Security for mobile code\", \"Secure cloud computing\", \"Security in location services\", \"Security modeling and architectures\", \"Security and privacy in social networks\", \"Security and privacy in pervasive and ubiquitous computing\", \"Security of e-commerce, e-business, and e-government\", \"Security models for ambient intelligence environments\", \"Trust models and trust policies\", \"Information dissemination control\", \"Instructions for Authors\", \"ACNS 2026 will be an\", \"in-person\", \"conference. Since remote presentations or videos will not be accepted,\\n        authors submitting a paper must ensure that one of the authors can present the paper at the conference in\\n        person.\", \"Submitted papers must not substantially overlap with papers that have been published (other than preprint) or\\n        accepted for publication or that are simultaneously in submission to a journal, conference, or workshop with\\n        published proceedings. Information about submissions may be shared with program chairs of other conferences for\\n        that purpose.\", \"Systematization of Knowledge\", \"ACNS 2025 solicits the submission of Systematization of Knowledge (SoK) papers, which have been very valuable\\n        to help our community to clarify and put into context complex research problems.\", \"It is important to stress that SoK papers go beyond simply summarizing previous research (like in a survey) but\\n        also include a thorough examination and analysis of existing approaches, identify gaps and limitations, and\\n        offer\\n        insights or new perspectives on a given, major research area.\\n        We encourage the authors to distinguish SoK submissions by adding the \\u201cSoK:\\u201d prefix to the title. SoK\\n        submissions\\n        will be reviewed by the full PC and held to the same standards as traditional research papers, but they will be\\n        accepted based on their treatment of existing work and value to the community, and not based on any new research\\n        results they may contain. Accepted papers will be presented at the conference and included in the proceedings.\", \"Submission Guidelines\", \"Submissions must be anonymous, with no author names, affiliations, acknowledgments, or obvious references. Each\\n        submission must begin with a title, short abstract, and a list of keywords. The introduction should summarize\\n        the contributions of the paper at a level appropriate for a non-specialist reader.\", \"All submissions must be submitted in PDF format, following the unmodified LNCS format (accessible on the\", \"Springer LCNS\\n          author guidelines\", \"webpage) and typeset using the corresponding LaTeX class file. They must fit within a\\n        page\\n        limit of 20 pages, including title and abstract, figures, etc., but excluding references. Optionally, any amount\\n        of clearly marked supplementary material may be supplied, following the main body of the paper; however,\\n        reviewers\\n        are not required to read or review any supplementary material, and submissions are expected to be intelligible\\n        without it. Submissions not meeting these guidelines risk rejection without consideration of their merits. To\\n        accommodate for changes requested in reviews, the page limit for the camera-ready proceedings versions is 30\\n        pages, including references and appendices.\", \"For papers that might raise ethical concerns, authors are expected to convince reviewers that proper procedures\\n        (such as Institutional Review Board approval) have been followed and due diligence has been made to minimize\\n        potential harm.\", \"ACNS 2026 has two submission deadlines (in September and January) that authors may choose to submit their\\n        papers to. Papers rejected after the September round cannot be resubmitted at the January round.\", \"We will publish our proceedings with Springer as a volume of the Lecture Notes in Computer Science (LNCS)\\n        series.\", \"Conflicts of Interest\", \"The program co-chairs require cooperation from both authors and program committee members to prevent submissions\\n        from being evaluated by reviewers who have a conflict of interest. During the submission process, we will ask\\n        authors to identify members of the program committee with whom they share a conflict of interest.\", \"We regard the following relationships as conflicts of interest:\", \"Anyone who shares an institutional affiliation with an author at the time of submission (including\\n          secondary affiliations and consulting work),\", \"Anyone who was the advisor or advisee of an author at any time in the past,\", \"Anyone the author has collaborated or published within the prior two years,\", \"Anyone who is serving as the sponsor or administrator of a grant that funds your research, or\", \"Close personal or family ties.\", \"If authors want to specify a conflict of another type than those listed above, they must contact the chairs and\\n        explain the perceived conflict. Program committee members who are in a conflict of interest with a paper,\\n        including program co-chairs, will be excluded from the evaluation and discussion of the paper by default.\", \"Ethical Considerations for Vulnerability Disclosure (adapted from IEEE S&P)\", \"Where research identifies a vulnerability (e.g., software vulnerabilities in a given program, design weaknesses\\n        in\\n        a hardware system, or any other kind of vulnerability in deployed systems), we expect that researchers act in a\\n        way that avoids gratuitous harm to affected users and, where possible, affirmatively protects those users. In\\n        nearly every case, disclosing the vulnerability to vendors of affected systems, and other stakeholders, will\\n        help\\n        protect users. It is the committee\\u2019s sense that a disclosure window of 45 days to 90 days ahead of publication\\n        is\\n        consistent with authors\\u2019 ethical obligations.\", \"Longer disclosure windows (which may keep vulnerabilities from the public for extended periods of time) should\\n        only be considered in exceptional situations, e.g., if the affected parties have provided convincing evidence\\n        the\\n        vulnerabilities were previously unknown and the full rollout of mitigations requires additional time. The\\n        authors\\n        are encouraged to consult with the PC chairs in case of questions or concerns.\\n        The version of the paper submitted for review must discuss in detail the steps the authors have taken or plan to\\n        take to address these vulnerabilities; but, consistent with the timelines above, the authors do not have to\\n        disclose vulnerabilities ahead of submission. The PC chairs will be happy to consult with authors about how this\\n        policy applies to their submissions.\"]",
+      "tool_call_id": "call_8ArM37sqBMjQ2AEWgEQs9rA3"
+    },
+    {
+      "content": "{\"any_updates\":true,\"conferences\":[{\"id\":\"acns26first\",\"year\":2026,\"title\":\"ACNS\",\"full_title\":\"International Conference on Applied Cryptography and Network Security\",\"link\":\"https://acns2026.github.io/cfp.html\",\"deadline\":\"2025-09-26 23:59:59\",\"timezone\":\"Etc/GMT+12\",\"note\":\"First cycle. Author notification 2025-11-20.\",\"place\":\"SUNY Global Center, New York City, NY, USA\",\"date\":\"June 22-25, 2026\",\"start\":\"2026-06-22\",\"end\":\"2026-06-25\",\"sub\":[\"SEC\",\"DS\",\"CR\"],\"inactive\":false},{\"id\":\"acns26second\",\"year\":2026,\"title\":\"ACNS\",\"full_title\":\"International Conference on Applied Cryptography and Network Security\",\"link\":\"https://acns2026.github.io/cfp.html\",\"deadline\":\"2026-01-23 23:59:59\",\"timezone\":\"Etc/GMT+12\",\"note\":\"Second cycle. Author notification 2026-03-19.\",\"place\":\"SUNY Global Center, New York City, NY, USA\",\"date\":\"June 22-25, 2026\",\"start\":\"2026-06-22\",\"end\":\"2026-06-25\",\"sub\":[\"SEC\",\"DS\",\"CR\"],\"inactive\":false}]}",
+      "role": "assistant",
+      "tool_calls": []
+    }
+  ],
+  "parallel_tool_calls": true,
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "callback_search",
+        "description": "Search the web for information. Call this and provide a search query whenever you need to search the web for information.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "The search query to search the web for information."
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "callback_browse_html",
+        "description": "Get HTML content of a website via the http or https URL. Call this and provide a URL whenever you want to retrieve the HTML content of a web page. This function provides more detailed input than callback_browse_text, but is also more expensive, so use it only when necessary.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL to browse."
+            }
+          },
+          "required": [
+            "url"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "callback_browse_text",
+        "description": "Get text content of a website via the http or https URL. Call this and provide a URL whenever you want to retrieve the text content of a web page. This function provides less detailed input than callback_browse_html, but is also cheaper, so use it when possible.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL to browse."
+            }
+          },
+          "required": [
+            "url"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    }
+  ]
+}

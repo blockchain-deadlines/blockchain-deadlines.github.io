@@ -1,0 +1,167 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "\n# Overall Goal\n\nFind the submission deadline information for the latest edition (for which a call-for-papers with submission deadline information is available online) of the conference (or other academic venue) specified by the user.\nIf the user-provided information is for year X, then try to find the information for year X+1, etc. If no more up-to-date information is available, then return no update.\n\n\n# Information Sources\n\nConsider only information from authoritative sources. Examples for authoritative sources are the conference's website, the conference organizer, the publisher of the conference proceedings, or reputable professional organizations (IACR, IEEE, ACM, etc.).\nDo not consider information from third parties. Examples of third parties are conference deadline aggregators (e.g., mpc-deadlines.github.io, wikicfp.com, sslab.skku.edu, aconf.org, etc.).\nIf you find the information on a third-party website, make every effort to locate the official source. Use that official source for the `link` field and to population the other fields. If you cannot verify information on third-party websites through official sources, then better return no update.\nTo find information, search for the conference edition's website, or make educated guesses as to what the website URL could be, based on the URLs of previous years.\n\n\n# Data Format\n\nIf there are multiple submission cycles for the conference, produce a separate conference object for each submission cycle.\nIf there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration deadline or abstract submission deadline, and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle (format: YYYY-MM-DD HH:MM:SS TZ).\nInclude in `note` also information about the author notification date (without time and timezone information, format: YYYY-MM-DD). Do not include information in `note` any other than the aforementioned information. Examples for information to not include in `note` are any deadline information regarding early-rejection, rebuttal, camera-ready, workshop/tutorial proposals, or conference registration for attendance. Do not include in `note` information about whether the deadline is firm.\nPay attention to timezone information. If you provide date/time of a deadline in `note`, then specify the timezone as well. Do proper conversion from AM/PM to 24h format. Deadlines in 'anywhere on earth' = 'AoE' should be flagged with `timezone` `Etc/GMT+12`.\nFor `link`, provide the URL that contains the official source of the submission deadline information.\nSubject areas in `sub` are `BC` (blockchain), `CR` (cryptography), `DS` (distributed systems), `SEC` (security), and `EC` (economics/incentives).\n\n\n# Tools\n\nPrefer text content over HTML content, when possible, because text content is cheaper to retrieve than HTML content.\n\n\n# Examples\n\nI will provide you with example information for a few conferences, so that you can understand the desired data format.\n"
+    },
+    {
+      "role": "system",
+      "content": "[[Conference(id='eurosp25', year=2025, title='IEEE EuroS&P', full_title='IEEE European Symposium on Security and Privacy', link='https://www.eurosp2025.ieee-security.org/', deadline='2024-10-21 23:59:59', timezone='Etc/GMT+12', note='Abstract registration deadline. Full paper deadline 2024-10-24 23:59:59 AoE. Author notification 2025-02-13.', place='Venice, Italy', date='June 30 - July 4, 2025', start='2025-06-30', end='2025-07-04', sub=['DS', 'SEC'], inactive=False)], [Conference(id='ccs24a', year=2024, title='ACM CCS', full_title='ACM Conference on Computer and Communications Security', link='https://www.sigsac.org/ccs/CCS2024/', deadline='2024-01-28 23:59:59', timezone='Etc/GMT+12', note='First cycle. Author notification 2024-04-03.', place='Salt Lake City, Utah, USA', date='October 14-18, 2024', start='2024-10-14', end='2024-10-18', sub=['SEC', 'DS'], inactive=False), Conference(id='ccs24b', year=2024, title='ACM CCS', full_title='ACM Conference on Computer and Communications Security', link='https://www.sigsac.org/ccs/CCS2024/', deadline='2024-04-29 23:59:59', timezone='Etc/GMT+12', note='Second cycle. Author notification 2024-07-04.', place='Salt Lake City, Utah, USA', date='October 14-18, 2024', start='2024-10-14', end='2024-10-18', sub=['SEC', 'DS'], inactive=False)], [Conference(id='nsdi25spring', year=2025, title='USENIX NSDI', full_title='USENIX Symposium on Networked Systems Design and Implementation', link='https://www.usenix.org/conference/nsdi25/', deadline='2024-04-30 23:59:59', timezone='America/New_York', note='Spring cycle. Abstract registration deadline. Full paper deadline 2024-05-07 23:59:59 EDT. Author notification 2024-07-24.', place='Philadelphia, PA, USA', date='April 28-30, 2025', start='2025-04-28', end='2025-04-30', sub=['DS', 'SEC'], inactive=False), Conference(id='nsdi25fall', year=2025, title='USENIX NSDI', full_title='USENIX Symposium on Networked Systems Design and Implementation', link='https://www.usenix.org/conference/nsdi25/', deadline='2024-09-12 23:59:59', timezone='America/New_York', note='Fall cycle. Abstract registration deadline. Full paper deadline 2024-09-19 23:59:59 EDT. Author notification 2024-12-10.', place='Philadelphia, PA, USA', date='April 28-30, 2025', start='2025-04-28', end='2025-04-30', sub=['DS', 'SEC'], inactive=False)], [Conference(id='fc25', year=2025, title='FC', full_title='Financial Cryptography and Data Security', link='https://fc25.ifca.ai', deadline='2024-10-11 23:59:59', timezone='Etc/GMT+12', note='', place='Hotel Shigira Mirage, Miyakojima, Japan', date='14-18 April 2025', start='2024-04-14', end='2024-04-18', sub=['BC'], inactive=False)], [Conference(id='fc26', year=2026, title='FC', full_title='Financial Cryptography and Data Security', link='https://fc26.ifca.ai/cfp.html', deadline='2025-09-16 23:59:59', timezone='Etc/GMT+12', note='Full paper deadline. Author notification 2025-11-24.', place='St. Kitts Marriott Resort, St. Kitts', date='2-6 March 2026', start='2026-03-02', end='2026-03-06', sub=['BC'], inactive=False)], [Conference(id='aft24', year=2024, title='AFT', full_title='Advances in Financial Technologies', link='https://aftconf.github.io/aft24/index.html', deadline='2024-05-15 23:59:59', timezone='Etc/GMT+12', note='Abstract registration deadline. Full paper deadline 2024-05-22 23:59:59 AoE. Author notification 2024-07-03.', place='Vienna, Austria', date='September 23-25, 2024', start='2024-09-23', end='2024-09-25', sub=['BC'], inactive=False)], [Conference(id='aft25', year=2025, title='AFT', full_title='Advances in Financial Technologies', link='https://aftconf.github.io/aft25/CFP.html', deadline='2025-05-28 23:59:59', timezone='Etc/GMT+12', note='Full paper deadline. Author notification 2025-07-16.', place='Carnegie Mellon University, Pittsburgh, PA, USA', date='October 8-10, 2025', start='2025-10-08', end='2025-10-10', sub=['BC'], inactive=False)], [Conference(id='sp2026first', year=2026, title='IEEE S&P', full_title='IEEE Symposium on Security and Privacy', link='https://sp2026.ieee-security.org/cfpapers.html', deadline='2025-05-29 23:59:59', timezone='Etc/GMT+12', note='First cycle. Abstract registration deadline. Full paper deadline 2025-06-05 23:59:59 AoE. Author notification 2025-09-09.', place='San Francisco, CA, USA', date='May 18-21, 2026', start='2026-05-18', end='2026-05-21', sub=['SEC'], inactive=False), Conference(id='sp2026second', year=2026, title='IEEE S&P', full_title='IEEE Symposium on Security and Privacy', link='https://sp2026.ieee-security.org/cfpapers.html', deadline='2025-11-06 23:59:59', timezone='Etc/GMT+12', note='Second cycle. Abstract registration deadline. Full paper deadline 2025-11-13 23:59:59 AoE. Author notification 2026-03-19.', place='San Francisco, CA, USA', date='May 18-21, 2026', start='2026-05-18', end='2026-05-21', sub=['SEC'], inactive=False)]]"
+    },
+    {
+      "role": "user",
+      "content": "[Conference(id='aft25', year=2025, title='AFT', full_title='Advances in Financial Technologies', link='https://advfintech.org/aft25/CFP.html', deadline='2025-05-28 23:59:59', timezone='Etc/GMT+12', note='Paper submission deadline (AoE). Author notification 2025-07-16.', place='Carnegie Mellon University, Pittsburgh, PA, USA', date='October 8-10, 2025', start='2025-10-08', end='2025-10-10', sub=['BC'], inactive=False)]"
+    },
+    {
+      "role": "system",
+      "content": "\nRefresh requested: Treat the user-provided deadline information as potentially unreliable. Re-verify all details of the provided information from official sources before returning it as an update or indicating that no update is needed. You may assume that the `full_title` and `year` fields are correct and should not be changed.\n"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_8fefLcnyAm5cduHmhfQBBtbv",
+          "function": {
+            "arguments": "{\"query\":\"AFT 2025 CFP Advances in Financial Technologies 2025 CFP submission deadline\"}",
+            "name": "callback_search"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[[\"Call for Papers - Advances in Financial Technologies \\u2014 AFT 2025\", \"https://advfintech.org/aft25/CFP.html\", \"REGULAR-RESULT\", \"Important dates  Paper submission deadline: May 28, 2025 (AoE) (firm!)\", \"\"], [\"Advances in Financial Technologies \\u2014 AFT 2025\", \"https://advfintech.org/\", \"REGULAR-RESULT\", \"The AFT 2025 conference will take place October 7-10, 2025 at Carnegie Mellon University in Pittsburgh, PA, USA. All accepted research papers will be available ...\", \"\"], [\"Call for Papers - Advances in Financial Technologies \\u2014 AFT 2025\", \"https://aft.acm.org/aft21/cfp.html\", \"REGULAR-RESULT\", \"Missing: 2025\", \"\"], [\"CFP: Advances in Financial Technologies (AFT) - ENACT\", \"https://enact-eu.net/calendar/cfp-advances-in-financial-technologies-aft/\", \"REGULAR-RESULT\", \"Abstract registration deadline: May 15th, 2024 (AoE) \\u00b7 Paper submission deadline: May 22nd, 2024 (AoE) \\u00b7 Notification: July 3rd, 2024 \\u00b7 Camera ready: \\u2014-, 2024 \\u00b7 AFT ...\", \"\"], [\"OCT 8, 2025 - BDLT conference Deadlines\", \"https://conference-deadlines-nicolo-vallarano-22a222b64e416f84af442864c.pages.uzh.ch/conference?id=atf25\", \"REGULAR-RESULT\", \"The international conference on Advances in Financial Technologies (AFT) 2025. OCT 8, 2025. Carnegie Mellon University in Pittsburgh, PA, USA.\", \"\"]]",
+      "tool_call_id": "call_8fefLcnyAm5cduHmhfQBBtbv"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_jO3HVyJQcFPvEwlXYjSC0wv6",
+          "function": {
+            "arguments": "{\"url\":\"https://advfintech.org/aft25/CFP.html\"}",
+            "name": "callback_browse_text"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[\"Advances in Financial Technologies\", \"AFT '25\", \"Home\", \"Attend\", \"Program\", \"Call for Papers\", \"(current)\", \"Committees\", \"Editions\", \"Call for Papers\", \"The international conference on Advances in Financial Technologies (AFT) is a premier venue for presenting the latest developments in technologies related to novel financial infrastructure such as digital currencies and their applications, blockchains, cryptographic financial instruments, decentralized finance, and exchanges. Papers may present advances in theory, design, implementation, analysis, verification, or empirical evaluation and measurement of relevant systems.\", \"We solicit previously unpublished papers offering novel research contributions. Proceedings will be published with open-access by\", \"LIPIcs\", \".\", \"Papers may be submitted on\", \"the submission server\", \". Please email\", \"aft2025.chairs@gmail.com\", \"with any questions or issues.\", \"Important dates\", \"Paper submission deadline\", \": May 28, 2025 (AoE)\", \"(firm!)\", \"Registration opens\", \": June 20, 2025\", \"Notification\", \": July 16, 2025\", \"Camera ready\", \": August 6, 2025\", \"AFT conference\", \": October 8-10, 2025\", \"Topics of interest\", \"Topics of interest include, but are not limited to the following:\", \"Anonymity and privacy\", \"Blockchains, cryptocurrencies, and their applications\", \"Blockchain interoperability\", \"Case studies (e.g., of adoption, attacks, forks, scams, etc.)\", \"Censorship resistance\", \"Central bank digital currencies (CBDCs)\", \"Centralized and decentralized exchanges\", \"Consensus protocols\", \"Cryptoasset custody solutions\", \"Cryptographic protocols and tools\", \"Decentralized autonomous organizations (DAOs)\", \"Decentralized Finance (DeFi)\", \"Digital cash and payment systems\", \"Economic, legal, ethical, regulatory, and societal aspects\", \"Financial markets and auctions\", \"Fraud detection and financial crime prevention\", \"Game-theoretic analysis of blockchains and financial protocols\", \"Protocol governance and stakeholder voting\", \"Mechanism design for blockchains\", \"Metrics, measurements, and network forensics\", \"Miner/maximal extractable value (MEV)\", \"Quantum-resilience in financial technologies\", \"Secure hardware for financial technologies\", \"Scalability and performance\", \"Smart contracts and applications\", \"Smart contract security, formal analysis, and correctness by design\", \"Transaction graph analysis\", \"User studies\", \"Submission Policy\", \"All submissions must be original work; the submitters must clearly document any overlap with previously published or simultaneously submitted papers from any of the authors. Failure to point out and explain overlap will be grounds for rejection. Simultaneous submission of the same paper to another venue with proceedings or a journal is not allowed and will be grounds for desk rejection. Please contact the program committee chairs if there are any questions about this policy.\", \"In order to accommodate publishing traditions in different fields, we give the option for authors of accepted papers to request that an extended abstract of up to 3 pages and a link to the full paper be included in the proceedings (the URL should remain active for 2 years). This way, a subsequent version of the work can be submitted for full publication in a journal without conflicting with the conference proceedings. Authors wishing to publish an extended abstract will submit and be reviewed as a regular full submission, and once accepted, can request that only the extended abstract is published. The main consideration taken for the request is the publishing tradition of the main field of the submission. The full online version must still follow possible shepherding requirements.\", \"Anonymous Submission\", \"Papers\", \"must\", \"be submitted in a form suitable for anonymous review: no author names or affiliations may appear on the title page, and papers should avoid revealing their identity in the text. When referring to your previous work, do so in the third person, as though it were written by someone else. Only blind the reference itself in the (unusual) case that a third-person reference is infeasible. Publication as a technical report or in an online repository does not constitute a violation of this policy. Contact the program chairs if you have any questions. Papers that are not properly anonymized may be rejected without review.\", \"Conflict of Interest\", \"During submission of a research paper, the submission site will request information about conflicts of interest of the paper\\u2019s authors with program committee (PC) members. It is the full responsibility of all authors of a paper to identify all and only their potential conflict-of-interest PC members, according to the following definition. A paper author has a conflict of interest with a PC member when one or more of the following conditions holds:\", \"The PC member is a co-author of the paper.\", \"The PC member is or was the author\\u2019s primary thesis advisor at any point.\", \"The author is or was the PC member\\u2019s primary thesis advisor at any point.\", \"The PC member has been a direct collaborator within the past two years.\", \"The PC member has been a co-worker in the same organization or university within the past two years.\", \"For student interns, the student is conflicted with their supervisors and with members of the same research group. If the student no longer works for the organization, then they are not conflicted with a PC member from the larger organization.\", \"The PC member is a relative or close personal friend of the author.\", \"For any other situation where the authors feel they have a conflict with a PC member, they must explain the nature of the conflict to the PC chairs, who will mark the conflict if appropriate. Papers with incorrect or incomplete conflict of interest information as of the submission closing time are subject to rejection without review.\", \"When a program co-chair is conflicted, the other co-chair will be responsible for managing that paper. When both program co-chairs are in conflict, a committee member will be appointed to handle the paper. Program co-chairs are not allowed to be authors or co-authors of any submissions.\", \"Financial Conflicts-of-interest\", \"Authors are required to state material conflicts-of-interest in the camera-ready version of their papers (but not at the time of submission). This includes not just direct research funding, but also disclosure of any financial interest that could be reasonably construed as related to the research described. For example, \\\"Author X is on the Technical Advisory Board of the ByteCoin Foundation,\\\" or \\\"Professor Y is the CTO of DoubleChain, which specializes in on-chain forensics.\\\"\", \"Human Subjects and Ethical Considerations\", \"Submissions that describe experiments on human subjects, that analyze data derived from human subjects (even anonymized data), or that otherwise may put humans at risk or affect financial situation of humans in existing systems, must:\", \"Disclose whether the research received an approval or waiver from each of the authors\\u2019 institutional ethics review boards (IRB) if applicable.\", \"Discuss steps taken to ensure that participants and others who might have been affected by an experiment were treated ethically and with respect.\", \"If the submission deals with vulnerabilities (e.g., software vulnerabilities in a given program or design weaknesses in a hardware system), the authors need to discuss in detail the steps they have taken or plan to take to address these vulnerabilities (e.g., by disclosing vulnerabilities to the vendors). The same applies if the submission deals with personal identifiable information (PII) or other kinds of sensitive data. If a paper raises significant ethical and legal concerns, it might be rejected based on these concerns.\", \"Page Limit and Formatting\", \"Submissions may include up to 20 pages of text in LIPIcs format (see\", \"https://www.dagstuhl.de/en/publishing/series/details/LIPIcs\", \"), and an unlimited number of pages for references and appendices.\", \"All submissions may be automatically checked for conformance to these requirements. Failure to adhere to the page limit and formatting requirements are grounds for immediate rejection.\", \"The same page limits apply to camera-ready accepted papers. Appendices will be read at the reviewers' discretion.\", \"Submission\", \"Submissions must be in Portable Document Format (.pdf). Authors should pay special attention to unusual fonts, images, and figures that might create problems for reviewers. Your document should render correctly in Adobe Reader 9 and when printed in black and white.\", \"Papers must be submitted at\", \"https://arima.cylab.cmu.edu/aft25/\", \".\", \"Publication and Presentation\", \"Accepted papers will be published with open access.\", \"Authors are responsible for obtaining appropriate publication clearances. At least one of the authors of the accepted paper is expected to register for the conference. In the event of an in-person meeting, one of the authors is expected to attend and deliver a presentation at the meeting. Authors may contact the program chairs directly to enquire about exceptions.\", \"Call for Workshop Proposals\", \"AFT invites proposals for workshops to be co-located with AFT 2025 (the day before the main conference). Proposals should be emailed to\", \"aft2025.chairs@gmail.com\", \". Proposals are due on March 31, 2025, decisions will be announced April 30, 2025, and the workshop would take place on October 7, 2025.\", \"Proposals can be brief (one page should suffice), but should contain the following:\", \"The title of the workshop\", \"The names, contact information, and short biographies of the organizers (links to the organizers' web pages would suffice)\", \"A brief description of the workshop theme\", \"The organization/format of the workshop\", \"Any previous versions of the workshop\", \"Required facilities for the workshop\", \"The desired workshop length (half day preferred)\", \"Organization\", \"AFT 2025 is hosted by\", \"Carnegie Mellon University\", \"'s\", \"CyLab Security and Privacy Institute\", \", and more specifically, the\", \"Secure Blockchain Initiative\", \".\", \"For comments and questions please email\", \"aft2025.chairs@gmail.com\", \"Gold Sponsors\", \"Silver Sponsors\", \"Organizers\"]",
+      "tool_call_id": "call_jO3HVyJQcFPvEwlXYjSC0wv6"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_ftDPdXmPIjh42tB8bVKlG4f2",
+          "function": {
+            "arguments": "{\"url\":\"https://advfintech.org/\"}",
+            "name": "callback_browse_text"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[\"Advances in Financial Technologies\", \"AFT\", \"Advances in Financial Technologies (AFT)\", \"Welcome\", \"The Conference on Advances in Financial Technologies aims to be a premier venue presenting the latest developments in technologies related directly and indirectly to novel financial infrastructure such as cryptocurrencies and their applications, blockchains, and exchanges.\", \"Editions:\", \"AFT 2019\", \"AFT 2020\", \"AFT 2021\", \"AFT 2022\", \"AFT 2023\", \"AFT 2024\", \"For comments and questions please email\", \"AFT.Chair@gmail.com\"]",
+      "tool_call_id": "call_ftDPdXmPIjh42tB8bVKlG4f2"
+    },
+    {
+      "content": null,
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_OhUQlu9JzhUcDNzOJE3LJVX5",
+          "function": {
+            "arguments": "{\"url\":\"https://advfintech.org/aft25/\"}",
+            "name": "callback_browse_text"
+          },
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "content": "[\"Advances in Financial Technologies\", \"AFT '25\", \"Home\", \"(current)\", \"Attend\", \"Program\", \"Call for Papers\", \"Committees\", \"Editions\", \"Advances in Financial Technologies \\u2014 AFT 2025\", \"The seventh international conference on Advances in Financial Technologies (AFT\\u201925) is a premier venue for presenting the latest developments in technologies related to novel financial infrastructure such as cryptocurrencies and their applications, blockchains, and exchanges.\", \"The AFT 2025 conference will take place\", \"October 7-10, 2025\", \"at Carnegie Mellon University in\", \"Pittsburgh, PA, USA\", \".\", \"All accepted research papers will be available as open access.\", \"Affiliated Workshop\", \"The\", \"CMU Secure Blockchain Initiative Summit\", \", an invitation-only workshop, will take place on the first \\n day of the conference (October 7, 2025) and \\nthe main conference will take place October 8-10, 2025. If you are registered for the main conference, and are interested in attending the\", \"CMU Secure Blockchain Initiative Summit\", \", please reach out to\", \"Michael Lisanti\", \".\", \"Sponsors\", \"Gold Level\", \"Silver Level\", \"Join us as a valued sponsor for AFT'25, an exceptional venue to showcase your brand and make meaningful connections with leading experts in the field. Your support is instrumental in bringing together leading minds and fostering innovation.\", \"Contact us\", \"to obtain more information about our sponsorship packages.\", \"The Advances in Financial Technologies 2025 Conference is further partially supported by the U.S. National Science Foundation Security, Privacy, and Trust in Cyberspace (SaTC 2.0) program under Grant No. 2420955.\", \"Organizers\", \"For comments and questions please email\", \"aft2025.chairs@gmail.com\"]",
+      "tool_call_id": "call_OhUQlu9JzhUcDNzOJE3LJVX5"
+    },
+    {
+      "content": "{\"any_updates\":true,\"conferences\":[{\"id\":\"aft25\",\"year\":2025,\"title\":\"AFT\",\"full_title\":\"Advances in Financial Technologies\",\"link\":\"https://advfintech.org/aft25/CFP.html\",\"deadline\":\"2025-05-28 23:59:59\",\"timezone\":\"Etc/GMT+12\",\"note\":\"Author notification 2025-07-16.\",\"place\":\"Carnegie Mellon University, Pittsburgh, PA, USA\",\"date\":\"October 8-10, 2025\",\"start\":\"2025-10-08\",\"end\":\"2025-10-10\",\"sub\":[\"BC\"],\"inactive\":false}]}",
+      "role": "assistant",
+      "tool_calls": []
+    }
+  ],
+  "parallel_tool_calls": true,
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "callback_search",
+        "description": "Search the web for information. Call this and provide a search query whenever you need to search the web for information.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "The search query to search the web for information."
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "callback_browse_html",
+        "description": "Get HTML content of a website via the http or https URL. Call this and provide a URL whenever you want to retrieve the HTML content of a web page. This function provides more detailed input than callback_browse_text, but is also more expensive, so use it only when necessary.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL to browse."
+            }
+          },
+          "required": [
+            "url"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "callback_browse_text",
+        "description": "Get text content of a website via the http or https URL. Call this and provide a URL whenever you want to retrieve the text content of a web page. This function provides less detailed input than callback_browse_html, but is also cheaper, so use it when possible.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "The URL to browse."
+            }
+          },
+          "required": [
+            "url"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      }
+    }
+  ]
+}
