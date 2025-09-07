@@ -214,7 +214,7 @@ Refresh requested: Treat the user-provided deadline information as potentially u
 """
 
 
-def callback_search(query: str, serper_api_key: str) -> list[tuple[str, str, str, str, str]]:
+def callback_search(query: str, serper_api_key: str) -> list[dict]:
     # print(">>> callback_search", query)
 
     url = "https://google.serper.dev/search"
@@ -234,13 +234,28 @@ def callback_search(query: str, serper_api_key: str) -> list[tuple[str, str, str
     returns = []
 
     if "answerBox" in results:
-        returns.append((results["answerBox"]["title"], results["answerBox"]["link"], "HIGHLIGHTED-RESULT", results["answerBox"]["snippet"], results["answerBox"].get("snippetHighlighted", "")))
+        returns.append({
+            "type": "highlighted search result",
+            "title": results["answerBox"].get("title", ""),
+            "link": results["answerBox"].get("link", ""),
+            "snippet": results["answerBox"].get("snippet", ""),
+            "snippetHighlighted": results["answerBox"].get("snippetHighlighted", ""),
+        })
 
     for result in results["organic"]:
-        returns.append((result["title"], result["link"], "REGULAR-RESULT", result["snippet"], ""))
+        returns.append({
+            "type": "regular search result",
+            "title": result.get("title", ""),
+            "link": result.get("link", ""),
+            "snippet": result.get("snippet", ""),
+        })
         if "sitelinks" in result:
             for sitelink in result["sitelinks"]:
-                returns.append((sitelink["title"], sitelink["link"], "GIVEN-AS-ADDITIONAL-SITELINK-TO-REGULAR-RESULT", "", ""))
+                returns.append({
+                    "type": "sitelink in addition to regular search result",
+                    "title": sitelink.get("title", ""),
+                    "link": sitelink.get("link", ""),
+                })
     
     return returns
 
@@ -275,12 +290,23 @@ def _guard_max_return_length(text: str) -> str:
 
 def callback_browse_html(url: str) -> str:
     text = _retrieve_url(url)
+
+    text = text.replace("\n", " ")
+    while "  " in text:
+        text = text.replace("  ", " ")
+    text = text.strip()
+    
     return _guard_max_return_length(text)
 
 def callback_browse_text(url: str) -> list[str]:
     html = _retrieve_url(url)
+
     soup = BeautifulSoup(html, "html.parser")
-    text = list(soup.stripped_strings)
+    text = " ".join(list(soup.stripped_strings))
+    while "  " in text:
+        text = text.replace("  ", " ")
+    text = text.strip()
+
     return _guard_max_return_length(text)
 
 tools = [
@@ -498,6 +524,8 @@ def main(
                         ret = callback_browse_text(**call_args)
                     else:
                         raise Exception("Unknown function!")
+
+                    # print("<<<", ret)
 
                     messages.append({"role": "tool", "content": json.dumps(ret), "tool_call_id": tool_call.id})
 
