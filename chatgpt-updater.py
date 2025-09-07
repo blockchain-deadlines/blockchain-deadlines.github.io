@@ -214,7 +214,7 @@ Refresh requested: Treat the user-provided deadline information as potentially u
 """
 
 
-def callback_search(query: str, serper_api_key: str) -> list[dict]:
+def callback_search(query: str, serper_api_key: str) -> str:
     # print(">>> callback_search", query)
 
     url = "https://google.serper.dev/search"
@@ -231,31 +231,25 @@ def callback_search(query: str, serper_api_key: str) -> list[dict]:
     response = requests.request("POST", url, headers=headers, data=payload)
     results = response.json()
 
-    returns = []
+    returns = ""
 
     if "answerBox" in results:
-        returns.append({
-            "type": "highlighted search result",
-            "title": results["answerBox"].get("title", ""),
-            "link": results["answerBox"].get("link", ""),
-            "snippet": results["answerBox"].get("snippet", ""),
-            "snippetHighlighted": results["answerBox"].get("snippetHighlighted", ""),
-        })
+        returns += f"# HIGHLIGHT: {results['answerBox'].get('title', '')}\n"
+        returns += f"\"{results['answerBox'].get('snippet', '')}\"\n"
+        returns += f"\"{results['answerBox'].get('snippetHighlighted', '')}\"\n"
+        returns += f"{results['answerBox'].get('link', '')}\n"
 
     for result in results["organic"]:
-        returns.append({
-            "type": "regular search result",
-            "title": result.get("title", ""),
-            "link": result.get("link", ""),
-            "snippet": result.get("snippet", ""),
-        })
+        if returns != "":
+            returns += "\n"
+        
+        returns += f"# {result.get('title', '')}\n"
+        returns += f"\"{result.get('snippet', '')}\"\n"
+        returns += f"{result.get('link', '')}\n"
+
         if "sitelinks" in result:
             for sitelink in result["sitelinks"]:
-                returns.append({
-                    "type": "sitelink in addition to regular search result",
-                    "title": sitelink.get("title", ""),
-                    "link": sitelink.get("link", ""),
-                })
+                returns += f"- {sitelink.get('title', '')} -> {sitelink.get('link', '')}\n"
     
     return returns
 
