@@ -302,7 +302,7 @@ def callback_browse_text(url: str) -> list[str]:
     html = _retrieve_url(url)
 
     soup = BeautifulSoup(html, "html.parser")
-    text = " ".join(list(soup.stripped_strings))
+    text = "\n\n".join(list(soup.stripped_strings))
     while "  " in text:
         text = text.replace("  ", " ")
     text = text.strip()
