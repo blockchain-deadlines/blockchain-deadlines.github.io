@@ -14,7 +14,7 @@
   sub:
   - SEC
   - DS
-  inactive: false
+  inactive: true
 - id: ccs25b
   year: 2025
   title: ACM CCS
@@ -31,4 +31,4 @@
   sub:
   - SEC
   - DS
-  inactive: false
+  inactive: true

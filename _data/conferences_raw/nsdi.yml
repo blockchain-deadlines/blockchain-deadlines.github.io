@@ -14,7 +14,7 @@
   sub:
   - DS
   - SEC
-  inactive: false
+  inactive: true
 - id: nsdi26fall
   year: 2026
   title: USENIX NSDI

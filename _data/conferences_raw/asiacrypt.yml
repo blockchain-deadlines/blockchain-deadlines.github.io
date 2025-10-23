@@ -12,4 +12,4 @@
   end: '2025-12-12'
   sub:
   - CR
-  inactive: false
+  inactive: true

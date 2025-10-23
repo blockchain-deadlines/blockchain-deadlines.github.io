@@ -13,4 +13,4 @@
   end: '2025-07-10'
   sub:
   - EC
-  inactive: false
+  inactive: true

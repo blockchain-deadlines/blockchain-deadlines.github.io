@@ -13,4 +13,4 @@
   end: '2025-10-16'
   sub:
   - DS
-  inactive: false
+  inactive: true

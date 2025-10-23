@@ -7,3 +7,4 @@ vendor
 venv/
 chatgpt-updater-apisecrets
 chatgpt-updater-training/
+*.bak

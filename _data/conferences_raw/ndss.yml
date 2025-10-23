@@ -13,7 +13,7 @@
   sub:
   - SEC
   - DS
-  inactive: false
+  inactive: true
 - id: ndss26fall
   year: 2026
   title: NDSS

@@ -46,7 +46,7 @@
   end: '2025-10-10'
   sub:
   - BC
-  inactive: false
+  inactive: true
 - id: asiaccs26first
   year: 2026
   title: ACM AsiaCCS
@@ -93,7 +93,7 @@
   end: '2025-12-12'
   sub:
   - CR
-  inactive: false
+  inactive: true
 - id: atc25
   year: 2025
   title: USENIX ATC
@@ -110,7 +110,7 @@
   sub:
   - DS
   - SEC
-  inactive: false
+  inactive: true
 - id: cbt25
   year: 2025
   title: CBT
@@ -125,7 +125,7 @@
   end: '2025-09-25'
   sub:
   - BC
-  inactive: false
+  inactive: true
 - id: ccs25a
   year: 2025
   title: ACM CCS
@@ -142,7 +142,7 @@
   sub:
   - SEC
   - DS
-  inactive: false
+  inactive: true
 - id: ccs25b
   year: 2025
   title: ACM CCS
@@ -159,7 +159,7 @@
   sub:
   - SEC
   - DS
-  inactive: false
+  inactive: true
 - id: consensusdays23
   year: 2023
   title: ConsensusDays
@@ -190,7 +190,7 @@
   end: '2025-08-21'
   sub:
   - CR
-  inactive: false
+  inactive: true
 - id: csf26summer
   year: 2026
   title: IEEE CSF
@@ -257,7 +257,7 @@
   - DS
   - SEC
   - EC
-  inactive: false
+  inactive: true
 - id: disc25
   year: 2025
   title: DISC
@@ -273,7 +273,7 @@
   end: '2025-10-31'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: ec25
   year: 2025
   title: ACM EC
@@ -289,7 +289,7 @@
   end: '2025-07-10'
   sub:
   - EC
-  inactive: false
+  inactive: true
 - id: esorics25first
   year: 2025
   title: ESORICS
@@ -304,7 +304,7 @@
   end: '2025-09-26'
   sub:
   - SEC
-  inactive: false
+  inactive: true
 - id: esorics25second
   year: 2025
   title: ESORICS
@@ -319,7 +319,7 @@
   end: '2025-09-26'
   sub:
   - SEC
-  inactive: false
+  inactive: true
 - id: eurocrypt26
   year: 2026
   title: Eurocrypt
@@ -429,7 +429,7 @@
   end: '2025-07-23'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: ipdps26
   year: 2026
   title: IEEE IPDPS
@@ -461,7 +461,7 @@
   sub:
   - SEC
   - DS
-  inactive: false
+  inactive: true
 - id: ndss26fall
   year: 2026
   title: NDSS
@@ -494,7 +494,7 @@
   sub:
   - DS
   - SEC
-  inactive: false
+  inactive: true
 - id: nsdi26fall
   year: 2026
   title: USENIX NSDI
@@ -527,7 +527,7 @@
   end: '2025-12-05'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: osdi25
   year: 2025
   title: USENIX OSDI
@@ -543,7 +543,7 @@
   end: '2025-07-09'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: pkc26
   year: 2026
   title: PKC
@@ -574,7 +574,7 @@
   end: '2025-06-20'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: rwc26
   year: 2026
   title: RWC
@@ -604,7 +604,7 @@
   end: '2025-08-06'
   sub:
   - BC
-  inactive: false
+  inactive: true
 - id: sigcomm25
   year: 2025
   title: ACM SIGCOMM
@@ -619,7 +619,7 @@
   end: '2025-09-11'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: sirocco26
   year: 2026
   title: SIROCCO
@@ -652,7 +652,7 @@
   end: '2025-10-16'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: sp2026first
   year: 2026
   title: IEEE S&P
@@ -699,7 +699,7 @@
   end: '2025-12-05'
   sub:
   - CR
-  inactive: false
+  inactive: true
 - id: usenixsec26cycle1
   year: 2026
   title: USENIX Security
