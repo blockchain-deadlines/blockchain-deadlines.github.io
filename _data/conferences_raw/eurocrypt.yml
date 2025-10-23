@@ -13,3 +13,18 @@
   sub:
   - CR
   inactive: false
+- id: eurocrypt27
+  year: 2027
+  title: Eurocrypt
+  full_title: European Cryptology Conference
+  link: https://eurocrypt.iacr.org/2027/
+  deadline: '2026-10-01 23:59:00'
+  timezone: Etc/GMT+12
+  note: Submission deadline. Check official site for exact dates.
+  place: TBD
+  date: May 2027
+  start: '2027-05-01'
+  end: '2027-05-31'
+  sub:
+  - CR
+  inactive: false

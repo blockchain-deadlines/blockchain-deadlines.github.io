@@ -12,4 +12,4 @@
   end: '2025-10-10'
   sub:
   - BC
-  inactive: false
+  inactive: true

@@ -46,7 +46,7 @@
   end: '2025-10-10'
   sub:
   - BC
-  inactive: false
+  inactive: true
 - id: asiaccs26first
   year: 2026
   title: ACM AsiaCCS
@@ -93,6 +93,21 @@
   end: '2025-12-12'
   sub:
   - CR
+  inactive: true
+- id: asiacrypt26
+  year: 2026
+  title: Asiacrypt
+  full_title: Asiacrypt Conference
+  link: https://asiacrypt.iacr.org/2026/
+  deadline: '2026-05-16 12:00:00'
+  timezone: Etc/GMT
+  note: Submission deadline. Check official site for exact dates.
+  place: TBD
+  date: December 2026
+  start: '2026-12-01'
+  end: '2026-12-31'
+  sub:
+  - CR
   inactive: false
 - id: atc25
   year: 2025
@@ -110,7 +125,7 @@
   sub:
   - DS
   - SEC
-  inactive: false
+  inactive: true
 - id: cbt25
   year: 2025
   title: CBT
@@ -125,7 +140,7 @@
   end: '2025-09-25'
   sub:
   - BC
-  inactive: false
+  inactive: true
 - id: ccs25a
   year: 2025
   title: ACM CCS
@@ -142,7 +157,7 @@
   sub:
   - SEC
   - DS
-  inactive: false
+  inactive: true
 - id: ccs25b
   year: 2025
   title: ACM CCS
@@ -156,6 +171,38 @@
   date: October 13-17, 2025
   start: '2025-10-13'
   end: '2025-10-17'
+  sub:
+  - SEC
+  - DS
+  inactive: true
+- id: ccs26a
+  year: 2026
+  title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security
+  link: https://www.sigsac.org/ccs/CCS2026/
+  deadline: '2026-01-02 23:59:59'
+  timezone: Etc/GMT+12
+  note: First cycle. Abstract submission deadline. Check official site for exact dates.
+  place: TBD
+  date: October 13-17, 2026
+  start: '2026-10-13'
+  end: '2026-10-17'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: ccs26b
+  year: 2026
+  title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security
+  link: https://www.sigsac.org/ccs/CCS2026/
+  deadline: '2026-04-07 23:59:59'
+  timezone: Etc/GMT+12
+  note: Second cycle. Abstract submission deadline. Check official site for exact dates.
+  place: TBD
+  date: October 13-17, 2026
+  start: '2026-10-13'
+  end: '2026-10-17'
   sub:
   - SEC
   - DS
@@ -188,6 +235,21 @@
   date: August 17-21, 2025
   start: '2025-08-17'
   end: '2025-08-21'
+  sub:
+  - CR
+  inactive: true
+- id: crypto26
+  year: 2026
+  title: CRYPTO
+  full_title: Cryptology Conference
+  link: https://crypto.iacr.org/2026
+  deadline: '2026-02-13 23:59:59'
+  timezone: Etc/GMT-5
+  note: Submission deadline. Check official site for exact dates.
+  place: TBD
+  date: August 2026
+  start: '2026-08-01'
+  end: '2026-08-31'
   sub:
   - CR
   inactive: false
@@ -257,7 +319,7 @@
   - DS
   - SEC
   - EC
-  inactive: false
+  inactive: true
 - id: disc25
   year: 2025
   title: DISC
@@ -273,7 +335,7 @@
   end: '2025-10-31'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: ec25
   year: 2025
   title: ACM EC
@@ -289,7 +351,7 @@
   end: '2025-07-10'
   sub:
   - EC
-  inactive: false
+  inactive: true
 - id: esorics25first
   year: 2025
   title: ESORICS
@@ -304,7 +366,7 @@
   end: '2025-09-26'
   sub:
   - SEC
-  inactive: false
+  inactive: true
 - id: esorics25second
   year: 2025
   title: ESORICS
@@ -319,7 +381,7 @@
   end: '2025-09-26'
   sub:
   - SEC
-  inactive: false
+  inactive: true
 - id: eurocrypt26
   year: 2026
   title: Eurocrypt
@@ -332,6 +394,21 @@
   date: May 10-14, 2026
   start: '2026-05-10'
   end: '2026-05-14'
+  sub:
+  - CR
+  inactive: false
+- id: eurocrypt27
+  year: 2027
+  title: Eurocrypt
+  full_title: European Cryptology Conference
+  link: https://eurocrypt.iacr.org/2027/
+  deadline: '2026-10-01 23:59:00'
+  timezone: Etc/GMT+12
+  note: Submission deadline. Check official site for exact dates.
+  place: TBD
+  date: May 2027
+  start: '2027-05-01'
+  end: '2027-05-31'
   sub:
   - CR
   inactive: false
@@ -429,7 +506,7 @@
   end: '2025-07-23'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: ipdps26
   year: 2026
   title: IEEE IPDPS
@@ -478,6 +555,38 @@
   - SEC
   - DS
   inactive: false
+- id: ndss27summer
+  year: 2027
+  title: NDSS
+  full_title: Network and Distributed System Security Symposium
+  link: https://www.ndss-symposium.org/ndss2027/
+  deadline: '2026-05-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: Summer Cycle. Paper submission deadline. Check official site for exact dates.
+  place: TBD
+  date: February 23-27, 2027
+  start: '2027-02-23'
+  end: '2027-02-27'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: ndss27fall
+  year: 2027
+  title: NDSS
+  full_title: Network and Distributed System Security Symposium
+  link: https://www.ndss-symposium.org/ndss2027/
+  deadline: '2026-09-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: Fall Cycle. Paper submission deadline. Check official site for exact dates.
+  place: TBD
+  date: February 23-27, 2027
+  start: '2027-02-23'
+  end: '2027-02-27'
+  sub:
+  - SEC
+  - DS
+  inactive: false
 - id: nsdi26spring
   year: 2026
   title: USENIX NSDI
@@ -494,7 +603,7 @@
   sub:
   - DS
   - SEC
-  inactive: false
+  inactive: true
 - id: nsdi26fall
   year: 2026
   title: USENIX NSDI
@@ -527,7 +636,7 @@
   end: '2025-12-05'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: osdi25
   year: 2025
   title: USENIX OSDI
@@ -543,7 +652,7 @@
   end: '2025-07-09'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: pkc26
   year: 2026
   title: PKC
@@ -574,7 +683,7 @@
   end: '2025-06-20'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: rwc26
   year: 2026
   title: RWC
@@ -604,7 +713,7 @@
   end: '2025-08-06'
   sub:
   - BC
-  inactive: false
+  inactive: true
 - id: sigcomm25
   year: 2025
   title: ACM SIGCOMM
@@ -619,7 +728,7 @@
   end: '2025-09-11'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: sirocco26
   year: 2026
   title: SIROCCO
@@ -652,7 +761,7 @@
   end: '2025-10-16'
   sub:
   - DS
-  inactive: false
+  inactive: true
 - id: sp2026first
   year: 2026
   title: IEEE S&P
@@ -699,7 +808,7 @@
   end: '2025-12-05'
   sub:
   - CR
-  inactive: false
+  inactive: true
 - id: usenixsec26cycle1
   year: 2026
   title: USENIX Security
