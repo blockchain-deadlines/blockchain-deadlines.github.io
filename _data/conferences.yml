@@ -160,6 +160,38 @@
   - SEC
   - DS
   inactive: true
+- id: ccs26a
+  year: 2026
+  title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security
+  link: https://www.sigsac.org/ccs/CCS2026/
+  deadline: '2026-01-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: First cycle. Abstract submission deadline. Check official site for exact dates.
+  place: TBD
+  date: October 2026
+  start: '2026-10-01'
+  end: '2026-10-31'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: ccs26b
+  year: 2026
+  title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security
+  link: https://www.sigsac.org/ccs/CCS2026/
+  deadline: '2026-04-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: Second cycle. Abstract submission deadline. Check official site for exact dates.
+  place: TBD
+  date: October 2026
+  start: '2026-10-01'
+  end: '2026-10-31'
+  sub:
+  - SEC
+  - DS
+  inactive: false
 - id: consensusdays23
   year: 2023
   title: ConsensusDays
@@ -191,6 +223,21 @@
   sub:
   - CR
   inactive: true
+- id: crypto26
+  year: 2026
+  title: CRYPTO
+  full_title: Cryptology Conference
+  link: https://crypto.iacr.org/2026
+  deadline: '2026-02-13 23:59:59'
+  timezone: Etc/GMT-5
+  note: Submission deadline. Check official site for exact dates.
+  place: TBD
+  date: August 2026
+  start: '2026-08-01'
+  end: '2026-08-31'
+  sub:
+  - CR
+  inactive: false
 - id: csf26summer
   year: 2026
   title: IEEE CSF
@@ -335,6 +382,21 @@
   sub:
   - CR
   inactive: false
+- id: eurocrypt27
+  year: 2027
+  title: Eurocrypt
+  full_title: European Cryptology Conference
+  link: https://eurocrypt.iacr.org/2027/
+  deadline: '2026-10-01 23:59:00'
+  timezone: Etc/GMT+12
+  note: Submission deadline. Check official site for exact dates.
+  place: TBD
+  date: May 2027
+  start: '2027-05-01'
+  end: '2027-05-31'
+  sub:
+  - CR
+  inactive: false
 - id: eurosp26
   year: 2026
   title: IEEE EuroS&P
@@ -461,7 +523,7 @@
   sub:
   - SEC
   - DS
-  inactive: true
+  inactive: false
 - id: ndss26fall
   year: 2026
   title: NDSS
@@ -474,6 +536,38 @@
   date: February 23-27, 2026
   start: '2026-02-23'
   end: '2026-02-27'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: ndss27summer
+  year: 2027
+  title: NDSS
+  full_title: Network and Distributed System Security Symposium
+  link: https://www.ndss-symposium.org/ndss2027/
+  deadline: '2026-04-23 23:59:59'
+  timezone: Etc/GMT+12
+  note: Summer Cycle. Paper submission deadline. Check official site for exact dates.
+  place: TBD
+  date: February 2027
+  start: '2027-02-01'
+  end: '2027-02-28'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: ndss27fall
+  year: 2027
+  title: NDSS
+  full_title: Network and Distributed System Security Symposium
+  link: https://www.ndss-symposium.org/ndss2027/
+  deadline: '2026-08-06 23:59:59'
+  timezone: Etc/GMT+12
+  note: Fall Cycle. Paper submission deadline. Check official site for exact dates.
+  place: TBD
+  date: February 2027
+  start: '2027-02-01'
+  end: '2027-02-28'
   sub:
   - SEC
   - DS

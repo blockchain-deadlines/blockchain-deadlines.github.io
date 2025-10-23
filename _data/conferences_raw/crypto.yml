@@ -13,3 +13,18 @@
   sub:
   - CR
   inactive: true
+- id: crypto26
+  year: 2026
+  title: CRYPTO
+  full_title: Cryptology Conference
+  link: https://crypto.iacr.org/2026
+  deadline: '2026-02-13 23:59:59'
+  timezone: Etc/GMT-5
+  note: Submission deadline. Check official site for exact dates.
+  place: TBD
+  date: August 2026
+  start: '2026-08-01'
+  end: '2026-08-31'
+  sub:
+  - CR
+  inactive: false

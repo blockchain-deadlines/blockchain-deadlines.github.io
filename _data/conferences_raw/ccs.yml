@@ -32,3 +32,35 @@
   - SEC
   - DS
   inactive: true
+- id: ccs26a
+  year: 2026
+  title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security
+  link: https://www.sigsac.org/ccs/CCS2026/
+  deadline: '2026-01-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: First cycle. Abstract submission deadline. Check official site for exact dates.
+  place: TBD
+  date: October 2026
+  start: '2026-10-01'
+  end: '2026-10-31'
+  sub:
+  - SEC
+  - DS
+  inactive: false
+- id: ccs26b
+  year: 2026
+  title: ACM CCS
+  full_title: ACM Conference on Computer and Communications Security
+  link: https://www.sigsac.org/ccs/CCS2026/
+  deadline: '2026-04-15 23:59:59'
+  timezone: Etc/GMT+12
+  note: Second cycle. Abstract submission deadline. Check official site for exact dates.
+  place: TBD
+  date: October 2026
+  start: '2026-10-01'
+  end: '2026-10-31'
+  sub:
+  - SEC
+  - DS
+  inactive: false
