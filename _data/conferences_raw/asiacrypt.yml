@@ -13,3 +13,18 @@
   sub:
   - CR
   inactive: true
+- id: asiacrypt26
+  year: 2026
+  title: Asiacrypt
+  full_title: Asiacrypt Conference
+  link: https://asiacrypt.iacr.org/2026/
+  deadline: '2026-05-16 12:00:00'
+  timezone: Etc/GMT
+  note: Submission deadline. Check official site for exact dates.
+  place: TBD
+  date: December 2026
+  start: '2026-12-01'
+  end: '2026-12-31'
+  sub:
+  - CR
+  inactive: false

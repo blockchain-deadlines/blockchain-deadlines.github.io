@@ -94,6 +94,21 @@
   sub:
   - CR
   inactive: true
+- id: asiacrypt26
+  year: 2026
+  title: Asiacrypt
+  full_title: Asiacrypt Conference
+  link: https://asiacrypt.iacr.org/2026/
+  deadline: '2026-05-16 12:00:00'
+  timezone: Etc/GMT
+  note: Submission deadline. Check official site for exact dates.
+  place: TBD
+  date: December 2026
+  start: '2026-12-01'
+  end: '2026-12-31'
+  sub:
+  - CR
+  inactive: false
 - id: atc25
   year: 2025
   title: USENIX ATC
@@ -165,13 +180,13 @@
   title: ACM CCS
   full_title: ACM Conference on Computer and Communications Security
   link: https://www.sigsac.org/ccs/CCS2026/
-  deadline: '2026-01-15 23:59:59'
+  deadline: '2026-01-02 23:59:59'
   timezone: Etc/GMT+12
   note: First cycle. Abstract submission deadline. Check official site for exact dates.
   place: TBD
-  date: October 2026
-  start: '2026-10-01'
-  end: '2026-10-31'
+  date: October 13-17, 2026
+  start: '2026-10-13'
+  end: '2026-10-17'
   sub:
   - SEC
   - DS
@@ -181,13 +196,13 @@
   title: ACM CCS
   full_title: ACM Conference on Computer and Communications Security
   link: https://www.sigsac.org/ccs/CCS2026/
-  deadline: '2026-04-15 23:59:59'
+  deadline: '2026-04-07 23:59:59'
   timezone: Etc/GMT+12
   note: Second cycle. Abstract submission deadline. Check official site for exact dates.
   place: TBD
-  date: October 2026
-  start: '2026-10-01'
-  end: '2026-10-31'
+  date: October 13-17, 2026
+  start: '2026-10-13'
+  end: '2026-10-17'
   sub:
   - SEC
   - DS
@@ -545,13 +560,13 @@
   title: NDSS
   full_title: Network and Distributed System Security Symposium
   link: https://www.ndss-symposium.org/ndss2027/
-  deadline: '2026-04-23 23:59:59'
+  deadline: '2026-05-15 23:59:59'
   timezone: Etc/GMT+12
   note: Summer Cycle. Paper submission deadline. Check official site for exact dates.
   place: TBD
-  date: February 2027
-  start: '2027-02-01'
-  end: '2027-02-28'
+  date: February 23-27, 2027
+  start: '2027-02-23'
+  end: '2027-02-27'
   sub:
   - SEC
   - DS
@@ -561,13 +576,13 @@
   title: NDSS
   full_title: Network and Distributed System Security Symposium
   link: https://www.ndss-symposium.org/ndss2027/
-  deadline: '2026-08-06 23:59:59'
+  deadline: '2026-09-15 23:59:59'
   timezone: Etc/GMT+12
   note: Fall Cycle. Paper submission deadline. Check official site for exact dates.
   place: TBD
-  date: February 2027
-  start: '2027-02-01'
-  end: '2027-02-28'
+  date: February 23-27, 2027
+  start: '2027-02-23'
+  end: '2027-02-27'
   sub:
   - SEC
   - DS

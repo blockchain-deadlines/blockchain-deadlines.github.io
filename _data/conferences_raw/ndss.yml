@@ -35,13 +35,13 @@
   title: NDSS
   full_title: Network and Distributed System Security Symposium
   link: https://www.ndss-symposium.org/ndss2027/
-  deadline: '2026-04-23 23:59:59'
+  deadline: '2026-05-15 23:59:59'
   timezone: Etc/GMT+12
   note: Summer Cycle. Paper submission deadline. Check official site for exact dates.
   place: TBD
-  date: February 2027
-  start: '2027-02-01'
-  end: '2027-02-28'
+  date: February 23-27, 2027
+  start: '2027-02-23'
+  end: '2027-02-27'
   sub:
   - SEC
   - DS
@@ -51,13 +51,13 @@
   title: NDSS
   full_title: Network and Distributed System Security Symposium
   link: https://www.ndss-symposium.org/ndss2027/
-  deadline: '2026-08-06 23:59:59'
+  deadline: '2026-09-15 23:59:59'
   timezone: Etc/GMT+12
   note: Fall Cycle. Paper submission deadline. Check official site for exact dates.
   place: TBD
-  date: February 2027
-  start: '2027-02-01'
-  end: '2027-02-28'
+  date: February 23-27, 2027
+  start: '2027-02-23'
+  end: '2027-02-27'
   sub:
   - SEC
   - DS

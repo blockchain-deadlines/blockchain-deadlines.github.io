@@ -37,13 +37,13 @@
   title: ACM CCS
   full_title: ACM Conference on Computer and Communications Security
   link: https://www.sigsac.org/ccs/CCS2026/
-  deadline: '2026-01-15 23:59:59'
+  deadline: '2026-01-02 23:59:59'
   timezone: Etc/GMT+12
   note: First cycle. Abstract submission deadline. Check official site for exact dates.
   place: TBD
-  date: October 2026
-  start: '2026-10-01'
-  end: '2026-10-31'
+  date: October 13-17, 2026
+  start: '2026-10-13'
+  end: '2026-10-17'
   sub:
   - SEC
   - DS
@@ -53,13 +53,13 @@
   title: ACM CCS
   full_title: ACM Conference on Computer and Communications Security
   link: https://www.sigsac.org/ccs/CCS2026/
-  deadline: '2026-04-15 23:59:59'
+  deadline: '2026-04-07 23:59:59'
   timezone: Etc/GMT+12
   note: Second cycle. Abstract submission deadline. Check official site for exact dates.
   place: TBD
-  date: October 2026
-  start: '2026-10-01'
-  end: '2026-10-31'
+  date: October 13-17, 2026
+  start: '2026-10-13'
+  end: '2026-10-17'
   sub:
   - SEC
   - DS
