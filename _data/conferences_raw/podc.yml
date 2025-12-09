@@ -1,16 +1,16 @@
-- id: podc25
-  year: 2025
+- id: podc26
+  year: 2026
   title: ACM PODC
   full_title: ACM Symposium on Principles of Distributed Computing
-  link: https://www.podc.org/podc2025/call-for-papers/
-  deadline: '2025-02-04 23:59:59'
+  link: https://www.podc.org/podc2026/call-for-papers/
+  deadline: '2026-02-11 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract submission deadline. Full paper submission deadline 2025-02-08 23:59:59
-    AoE. Author notification 2025-04-17.
-  place: Huatulco, Mexico
-  date: June 16-20, 2025
-  start: '2025-06-16'
-  end: '2025-06-20'
+  note: Abstract submission deadline. Full paper submission deadline 2026-02-16 23:59:59
+    AoE. Author notification 2026-04-29.
+  place: Egham, England
+  date: July 6-10, 2026
+  start: '2026-07-06'
+  end: '2026-07-10'
   sub:
   - DS
   inactive: false

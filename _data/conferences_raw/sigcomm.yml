@@ -1,15 +1,16 @@
-- id: sigcomm25
-  year: 2025
+- id: sigcomm26
+  year: 2026
   title: ACM SIGCOMM
   full_title: ACM SIGCOMM Conference
-  link: https://conferences.sigcomm.org/sigcomm/2025/cfp/
-  deadline: '2025-01-24 23:59:00'
-  timezone: Etc/UTC
-  note: Full paper deadline 2025-01-31 23:59:00 UTC. Author notification 2025-04-29.
-  place: Coimbra, Portugal
-  date: September 8-11, 2025
-  start: '2025-09-08'
-  end: '2025-09-11'
+  link: https://conferences.sigcomm.org/sigcomm/2026/cfp/
+  deadline: '2026-01-30 23:59:59'
+  timezone: Etc/GMT+12
+  note: Full paper abstract registration deadline. Full paper deadline 2026-02-06
+    23:59:59 AoE. Review results notification TBD.
+  place: TBD
+  date: TBD
+  start: '2026-01-01'
+  end: '2026-12-31'
   sub:
   - DS
   inactive: false

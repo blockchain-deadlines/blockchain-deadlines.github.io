@@ -1,16 +1,16 @@
-- id: icdcs25
-  year: 2025
+- id: icdcs26
+  year: 2026
   title: IEEE ICDCS
   full_title: IEEE International Conference on Distributed Computing Systems
-  link: https://www.icdcs2025.com/
-  deadline: '2024-12-06 23:59:59'
+  link: https://icdcs2026.icdcs.org/calls/call-for-papers/
+  deadline: '2026-01-07 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract registration deadline. Full paper submission due at 2024-12-13 23:59:59.
-    TIMEZONE UNKNOWN AS OF 2024-05-29!
-  place: Glasgow, Scotland
-  date: July 21-23, 2025
-  start: '2025-07-21'
-  end: '2025-07-23'
+  note: Paper track. Abstract registration deadline. Full paper submission due 2026-01-14
+    23:59:59 AoE. Author notification date not specified on the CFP page as of access.
+  place: Seoul, South Korea
+  date: June 22-25, 2026
+  start: '2026-06-22'
+  end: '2026-06-25'
   sub:
   - DS
   inactive: false

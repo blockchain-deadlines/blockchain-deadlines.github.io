@@ -1,15 +1,16 @@
-- id: sbc25
-  year: 2025
+- id: sbc26
+  year: 2026
   title: SBC
-  full_title: Science of Blockchain Conference 2025
-  link: https://sbc-conference.com/2025/
-  deadline: '2025-03-13 23:59:59'
+  full_title: Science of Blockchain Conference
+  link: https://www.sbc-conference.com/2026/
+  deadline: '2026-03-13 23:59:59'
   timezone: America/Los_Angeles
-  note: Talk submission deadline.
-  place: Martin Luther King Jr. Building, U.C. Berkeley
-  date: August 4-6, 2025
-  start: '2025-08-04'
-  end: '2025-08-06'
+  note: Talk submission deadline. Final acceptance notification 2026-05-13 23:59:59
+    PT. Conference 2026-07-27 to 2026-07-29 PT.
+  place: Arrillaga Alumni Center, Stanford University, CA, USA
+  date: July 27-29, 2026
+  start: '2026-07-27'
+  end: '2026-07-29'
   sub:
   - BC
   inactive: false

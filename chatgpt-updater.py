@@ -15,51 +15,197 @@ import typer
 
 
 PROMPT = """
-# Tentative Definitions
+You are an expert at finding and extracting academic conference deadline information from official websites.
 
-A "venue" is a series of academic conference events, workshop events, journal issues, etc., for the dissemination and/or publication of academic research results.
-An "edition" of a venue is a specific event of a conference/workshop series, issue of a journal, etc.
-For instance, ACM CCS is a venue, and each year there is a new edition of that venue.
-A "submission cycle" of a particular edition of a particular venue is a specific period of time at the beginning of which contributions can be submitted to the edition, and are being reviewed, and ultimately accepted/rejected.
-For instance, ACM CCS 2026 has two submission cycles: one for the first cycle, in Jan 2026, and one for the second cycle, in Apr 2026.
-A "deadline" is a specific date and time by which contributions must be registered/submitted to the edition of the venue, and if that deadline has passed, no further contributions can be submitted for that cycle.
+Today's date: December 9, 2025
 
+# YOUR TASK
 
-# Overall Goal
+The user will provide you with YAML data about an academic conference (venue) that is (quite possibly) OUTDATED. Your job is to:
+1. Find the OFFICIAL website for the NEXT edition of this conference (if the user provides year X, look for year X+1, X+2, etc.)
+2. Extract accurate deadline information from the official Call for Papers (CFP) page
+3. Return updated YAML data in the exact format specified below
 
-Find the submission deadline information for the upcoming edition (for which a call-for-papers with submission deadline information is available online) of the academic venue specified by the user.
-If the user-provided information is for year X, then try to find the information for year X+1, etc. If no more up-to-date information is available, then return no update.
-Keep in mind, even if today is 2025, there may be information for the 2026 edition of the venue already available online.
-If the user-provided information appears incomplete or outdated, then try to complete or update the information.
+IMPORTANT: Only return updates if you find official, verifiable information. If you cannot find updated information from an authoritative source, return `any_updates: false`.
 
 
-# Information Sources
+# DEFINITIONS
 
-Consider only information from authoritative sources. Examples for authoritative sources are the venue's official website, the venue's organizer, the publisher of the venue, or websites under direct curation of reputable professional organizations (IACR, IEEE, ACM, etc.).
-Do not consider information from third parties. Examples of third parties are conference deadline aggregators (e.g., mpc-deadlines.github.io, wikicfp.com, sslab.skku.edu, aconf.org, etc.).
-If you find the information on a third-party website, make every effort to locate the official source. Use that official source for the `link` field and to population the other fields. If you cannot verify information on third-party websites through official sources, then better return no update.
-To find information, search for the conference edition's website, or make educated guesses as to what the website URL could be, based on the URLs of previous years.
-
-
-# Data Format
-
-If there are multiple submission cycles for the conference, produce a separate conference object for each submission cycle.
-If there are multiple deadlines mentioned for a particular submission cycle (e.g., an abstract registration deadline or abstract submission deadline, and a full paper submission deadline), choose the earliest deadline for the `deadline` field, and mention in the `note` field what the deadline used in `deadline` is for, and mention in the `note` field all other deadlines of that cycle (format: YYYY-MM-DD HH:MM:SS TZ).
-Include in `note` also information about the author notification date (without time and timezone information, format: YYYY-MM-DD). Do not include information in `note` any other than the aforementioned information. Examples for information to not include in `note` are any deadline information regarding early-rejection, rebuttal, camera-ready, workshop/tutorial proposals, or conference registration for attendance. Do not include in `note` information about whether the deadline is firm.
-Pay attention to timezone information. If you provide date/time of a deadline in `note`, then specify the timezone as well. Do proper conversion from AM/PM to 24h format. Deadlines in 'anywhere on earth' = 'AoE' should be flagged with `timezone` `Etc/GMT+12`.
-For `link`, provide the URL that contains the official source of the submission deadline information.
-Subject areas in `sub` are `BC` (blockchain), `CR` (cryptography), `DS` (distributed systems), `SEC` (security), and `EC` (economics/incentives).
+- **Venue**: A series of academic conferences/workshops (e.g., "ACM CCS" is a venue)
+- **Edition**: A specific year's instance of a venue (e.g., "ACM CCS 2026" is an edition)
+- **Submission Cycle**: A period during which papers can be submitted for a specific edition. Some conferences have multiple cycles per year (e.g., "First cycle", "Spring cycle", "Fall cycle")
+- **Deadline**: The earliest date/time by which submissions must be registered or submitted for a cycle
 
 
-# Tools
+# INFORMATION SOURCES - CRITICAL RULES
 
-Prefer text content over HTML content, when possible, because text content is cheaper to retrieve than HTML content.
+**ONLY use authoritative sources:**
+- Official conference websites (e.g., ccs2026.sigsac.org, fc26.ifca.ai)
+- Publisher websites (ACM, IEEE, USENIX, IACR official pages)
+- Direct links from conference organizers
+
+**NEVER use third-party aggregators:**
+- Do NOT trust: wikicfp.com, mpc-deadlines.github.io, sslab.skku.edu, aconf.org, or similar aggregator sites
+- If you find info on a third-party site, you MUST locate the official source and verify
+- If you cannot verify through official sources, return `any_updates: false`
+
+
+# REQUIRED OUTPUT FORMAT
+
+You must return a JSON object with this structure:
+{
+  "any_updates": true/false,
+  "conferences": [array of conference objects]
+}
+
+Each conference object represents ONE submission cycle and must have these fields in this exact order:
+
+1. **id** (string, REQUIRED): Unique identifier for this cycle. Format: `{shortname}{year}{cycle}` 
+   - Examples: `ccs26a`, `ccs26b`, `nsdi26spring`, `nsdi26fall`, `eurosp26`, `fc26`
+   - Use lowercase, no spaces. For cycles: `a`/`b` for first/second, or `spring`/`fall`/`winter` for seasonal
+
+2. **year** (integer, REQUIRED): The year of the conference edition (e.g., 2026)
+
+3. **title** (string, REQUIRED): Short name WITHOUT year or edition number
+   - Correct: "ACM CCS", "IEEE S&P", "FC", "USENIX NSDI"
+   - Wrong: "ACM CCS 2026", "CCS 26th", "FC 2026"
+
+4. **full_title** (string, REQUIRED): Complete official name WITHOUT year
+   - Correct: "ACM Conference on Computer and Communications Security"
+   - Wrong: "ACM Conference on Computer and Communications Security 2026"
+
+5. **link** (string, REQUIRED): URL to the official CFP page where deadline info was found
+   - Must be the exact page containing the deadline information
+   - Prefer direct CFP links over main conference pages
+
+6. **deadline** (string, REQUIRED): Earliest submission deadline in format 'YYYY-MM-DD HH:MM:SS'
+   - Use 24-hour format (23:59:59, not 11:59:59 PM)
+   - If multiple deadlines exist (e.g., abstract + full paper), use the EARLIEST one
+   - Format: '2026-01-14 23:59:59' (with quotes in YAML)
+
+7. **timezone** (string, REQUIRED): IANA timezone name or Etc/GMT format
+   - For "Anywhere on Earth" (AoE) deadlines: use `Etc/GMT+12`
+   - Common timezones: `America/New_York`, `America/Los_Angeles`, `Europe/London`, `Etc/GMT+12`
+   - Must be a valid timezone from the allowed list
+
+8. **note** (string, REQUIRED): Additional deadline and notification information
+   - MUST include: cycle name (if multiple cycles), what the `deadline` field represents, other deadlines, author notification date
+   - Format examples:
+     - "First cycle. Abstract registration deadline. Full paper deadline 2026-01-14 23:59:59 AoE. Author notification 2026-04-09."
+     - "Spring cycle. Abstract registration deadline. Full paper deadline 2025-04-25 23:59:59 PDT. Author notification 2025-07-24."
+     - "Author notification 2025-11-24." (if only one deadline)
+   - DO NOT include: early-rejection dates, rebuttal deadlines, camera-ready deadlines, workshop proposals, tutorial deadlines, registration deadlines, or "firm deadline" notes, etc.
+
+9. **place** (string, REQUIRED): Location where conference will be held
+   - Format: "City, State, Country" or "City, Country"
+   - Examples: "San Francisco, CA, USA", "The Hague, The Netherlands", "St. Kitts Marriott Resort, St. Kitts"
+
+10. **date** (string, REQUIRED): Human-readable conference dates
+    - Format: "Day-Day Month Year" or "Day Month-Day Month Year"
+
+11. **start** (string, REQUIRED): Conference start date in format 'YYYY-MM-DD'
+    - Format: '2026-11-15' (with quotes in YAML)
+
+12. **end** (string, REQUIRED): Conference end date in format 'YYYY-MM-DD'
+    - Format: '2026-11-19' (with quotes in YAML)
+
+13. **sub** (array, REQUIRED): Subject areas. Must be array of strings from: ["BC", "CR", "DS", "SEC", "EC"]
+    - BC = blockchain
+    - CR = cryptography  
+    - DS = distributed systems
+    - SEC = security
+    - EC = economics/incentives
+    - Format: ["SEC", "DS"] or ["BC"]
+
+14. **inactive** (boolean, REQUIRED): Set to `false` for active conferences
+
+
+# MULTIPLE CYCLES HANDLING
+
+If a conference has multiple submission cycles (e.g., first/second cycle, spring/fall cycles):
+- Create a SEPARATE conference object for EACH cycle
+- Each cycle gets its own `id`, `deadline`, and `note` field
+- All cycles share the same `year`, `title`, `full_title`, `link`, `place`, `date`, `start`, `end`, `sub`
+- Clearly indicate the cycle in both the `id` field and `note` field
+
+
+# TIMEZONE HANDLING - CRITICAL
+
+- **"Anywhere on Earth" (AoE)**: Always use `Etc/GMT+12` as timezone
+- **Time format**: Always use 24-hour format (23:59:59, never 11:59:59 PM)
+- **Conversion**: If source says "11:59 PM EDT", convert to "23:59:59" and timezone "America/New_York"
+- **In note field**: When mentioning additional deadlines, always include timezone:
+  - Good: "Full paper deadline 2026-01-14 23:59:59 AoE"
+  - Good: "Full paper deadline 2025-04-25 23:59:59 PDT"
+  - Bad: "Full paper deadline 2026-01-14" (missing time and timezone)
+
+
+# SEARCH STRATEGY
+
+1. Start by searching for the conference name + year (e.g., "ACM CCS 2026")
+2. Look for official websites with patterns like:
+   - {conf}{year}.{domain} (e.g., ccs2026.sigsac.org)
+   - {year}.{conf}.{domain} (e.g., 2026.ccs.sigsac.org)
+   - Official publisher pages (usenix.org, ieee-security.org, etc.)
+3. Navigate to the "Call for Papers" or "CFP" page
+4. Extract all deadline information from that page
+5. Verify the information is for the correct year and edition
+
+
+# WHEN TO RETURN UPDATES
+
+Return `any_updates: true` if:
+- You find a newer edition (year X+1, X+2, etc.) with official deadline information
+- You can verify all information from authoritative sources
+- The information is more complete or accurate than what the user provided
+
+Return `any_updates: false` if:
+- No newer edition information is available online
+- You cannot find official sources to verify the information
+- The information you find is not more up-to-date than what the user provided
+- You can only find information on third-party aggregator sites
+
+CRITICAL: Return `any_updates: false` only after thorough research and verification (at least 5 search or browsing attempts)!
+
+
+# TOOLS
+
+You have access to web search and browsing tools. Prefer `callback_browse_text` over `callback_browse_html` when possible, as text content is cheaper. Use tools to:
+1. Search for the conference website
+2. Browse the main conference page
+3. Navigate to and read the CFP page
+4. Verify information from official sources only
+
+
+# EXAMPLES
+
+See the examples provided below to understand the exact format and structure expected.
 """
 
 PROMPT += """
-# Examples
+# EXAMPLES - STUDY THESE CAREFULLY
 
-I will provide you with example information for a few conferences, so that you can understand the desired data format.
+Below are correctly formatted examples. Notice:
+- Each submission cycle is a separate entry (see ACM CCS and USENIX NSDI examples)
+- Field order is consistent: id, year, title, full_title, link, deadline, timezone, note, place, date, start, end, sub, inactive
+- Titles never include years or edition numbers
+- Deadlines use 24-hour format with proper timezone
+- Note field clearly describes what deadline is used and includes all relevant deadlines + notification date
+- IDs follow consistent patterns (shortname + year + cycle identifier)
+
+
+# COMMON MISTAKES TO AVOID
+
+1. **Including year in title**: Wrong: "ACM CCS 2026", Right: "ACM CCS"
+2. **Wrong date format**: Wrong: "2026/11/15", Right: "2026-11-15" (for start/end) or "November 15-19, 2026" (for date)
+3. **Missing timezone in note**: Wrong: "Full paper deadline 2026-01-14", Right: "Full paper deadline 2026-01-14 23:59:59 AoE"
+4. **Using 12-hour format**: Wrong: "11:59:59 PM", Right: "23:59:59"
+5. **Including wrong info in note**: Don't include camera-ready, rebuttal, or registration deadlines
+6. **Wrong timezone for AoE**: Wrong: "Etc/GMT-12", Right: "Etc/GMT+12" (note the + sign!)
+7. **Mixing cycles**: Each cycle must be a separate conference object with unique id
+8. **Using third-party sources**: Always verify through official conference websites
+9. **Incorrect field order**: Follow the exact order specified in the format section
+10. **Missing required fields**: All 14 fields must be present for each conference object
 """
 
 EXAMPLES = """
@@ -143,8 +289,8 @@ EXAMPLES = """
     note: Author notification 2024-12-06.
     place: Hotel Shigira Mirage, Miyakojima, Japan
     date: 14-18 April 2025
-    start: 2024-04-14
-    end: 2024-04-18
+    start: 2025-04-14
+    end: 2025-04-18
     sub: [BC]
 
 - - id: fc26
