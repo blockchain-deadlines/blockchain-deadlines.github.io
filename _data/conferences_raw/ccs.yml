@@ -1,33 +1,33 @@
-- id: ccs25a
-  year: 2025
+- id: ccs26a
+  year: 2026
   title: ACM CCS
   full_title: ACM Conference on Computer and Communications Security
-  link: https://www.sigsac.org/ccs/CCS2025/call-for-papers/
-  deadline: '2025-01-02 23:59:59'
+  link: https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html
+  deadline: '2026-01-07 23:59:59'
   timezone: Etc/GMT+12
-  note: First cycle. Abstract submission deadline. Full paper deadline 2025-01-09
-    23:59:59 AoE. Author notification 2025-03-28.
-  place: Taipei, Taiwan
-  date: October 13-17, 2025
-  start: '2025-10-13'
-  end: '2025-10-17'
+  note: First cycle. Abstract submission deadline. Full paper deadline 2026-01-14
+    23:59:59 Etc/GMT+12. Author notification 2026-04-09.
+  place: The World Forum, The Hague, The Netherlands
+  date: November 15-19, 2026
+  start: '2026-11-15'
+  end: '2026-11-19'
   sub:
   - SEC
   - DS
   inactive: false
-- id: ccs25b
-  year: 2025
+- id: ccs26b
+  year: 2026
   title: ACM CCS
   full_title: ACM Conference on Computer and Communications Security
-  link: https://www.sigsac.org/ccs/CCS2025/call-for-papers/
-  deadline: '2025-04-07 23:59:59'
+  link: https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html
+  deadline: '2026-04-22 23:59:59'
   timezone: Etc/GMT+12
-  note: Second cycle. Abstract submission deadline. Full paper deadline 2025-04-14
-    23:59:59 AoE. Author notification 2025-07-01.
-  place: Taipei, Taiwan
-  date: October 13-17, 2025
-  start: '2025-10-13'
-  end: '2025-10-17'
+  note: Second cycle. Abstract submission deadline. Full paper deadline 2026-04-29
+    23:59:59 Etc/GMT+12. Author notification 2026-07-17.
+  place: The World Forum, The Hague, The Netherlands
+  date: November 15-19, 2026
+  start: '2026-11-15'
+  end: '2026-11-19'
   sub:
   - SEC
   - DS

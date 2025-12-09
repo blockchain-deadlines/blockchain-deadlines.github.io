@@ -15,15 +15,27 @@ import typer
 
 
 PROMPT = """
+# Tentative Definitions
+
+A "venue" is a series of academic conference events, workshop events, journal issues, etc., for the dissemination and/or publication of academic research results.
+An "edition" of a venue is a specific event of a conference/workshop series, issue of a journal, etc.
+For instance, ACM CCS is a venue, and each year there is a new edition of that venue.
+A "submission cycle" of a particular edition of a particular venue is a specific period of time at the beginning of which contributions can be submitted to the edition, and are being reviewed, and ultimately accepted/rejected.
+For instance, ACM CCS 2026 has two submission cycles: one for the first cycle, in Jan 2026, and one for the second cycle, in Apr 2026.
+A "deadline" is a specific date and time by which contributions must be registered/submitted to the edition of the venue, and if that deadline has passed, no further contributions can be submitted for that cycle.
+
+
 # Overall Goal
 
-Find the submission deadline information for the latest edition (for which a call-for-papers with submission deadline information is available online) of the conference (or other academic venue) specified by the user.
+Find the submission deadline information for the upcoming edition (for which a call-for-papers with submission deadline information is available online) of the academic venue specified by the user.
 If the user-provided information is for year X, then try to find the information for year X+1, etc. If no more up-to-date information is available, then return no update.
+Keep in mind, even if today is 2025, there may be information for the 2026 edition of the venue already available online.
+If the user-provided information appears incomplete or outdated, then try to complete or update the information.
 
 
 # Information Sources
 
-Consider only information from authoritative sources. Examples for authoritative sources are the conference's website, the conference organizer, the publisher of the conference proceedings, or reputable professional organizations (IACR, IEEE, ACM, etc.).
+Consider only information from authoritative sources. Examples for authoritative sources are the venue's official website, the venue's organizer, the publisher of the venue, or websites under direct curation of reputable professional organizations (IACR, IEEE, ACM, etc.).
 Do not consider information from third parties. Examples of third parties are conference deadline aggregators (e.g., mpc-deadlines.github.io, wikicfp.com, sslab.skku.edu, aconf.org, etc.).
 If you find the information on a third-party website, make every effort to locate the official source. Use that official source for the `link` field and to population the other fields. If you cannot verify information on third-party websites through official sources, then better return no update.
 To find information, search for the conference edition's website, or make educated guesses as to what the website URL could be, based on the URLs of previous years.
@@ -431,7 +443,7 @@ def main(
         help="If set, treat provided conference info as unreliable and re-verify",
     ),
     model: str = typer.Option(
-        "gpt-5",
+        "gpt-5.1",
         "--model",
         help="OpenAI model to use for completions",
     ),
