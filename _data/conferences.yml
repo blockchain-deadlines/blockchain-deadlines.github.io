@@ -415,19 +415,19 @@
   sub:
   - BC
   inactive: false
-- id: icdcs25
-  year: 2025
+- id: icdcs26
+  year: 2026
   title: IEEE ICDCS
   full_title: IEEE International Conference on Distributed Computing Systems
-  link: https://www.icdcs2025.com/
-  deadline: '2024-12-06 23:59:59'
+  link: https://icdcs2026.icdcs.org/calls/call-for-papers/
+  deadline: '2026-01-07 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract registration deadline. Full paper submission due at 2024-12-13 23:59:59.
-    TIMEZONE UNKNOWN AS OF 2024-05-29!
-  place: Glasgow, Scotland
-  date: July 21-23, 2025
-  start: '2025-07-21'
-  end: '2025-07-23'
+  note: Paper track. Abstract registration deadline. Full paper submission due 2026-01-14
+    23:59:59 AoE. Author notification date not specified on the CFP page as of access.
+  place: Seoul, South Korea
+  date: June 22-25, 2026
+  start: '2026-06-22'
+  end: '2026-06-25'
   sub:
   - DS
   inactive: false
@@ -529,19 +529,19 @@
   sub:
   - DS
   inactive: false
-- id: osdi25
-  year: 2025
+- id: osdi26
+  year: 2026
   title: USENIX OSDI
   full_title: USENIX Symposium on Operating Systems Design and Implementation
-  link: https://www.usenix.org/conference/osdi25/call-for-papers
-  deadline: '2024-12-03 17:59:59'
+  link: https://www.usenix.org/conference/osdi26/call-for-papers
+  deadline: '2025-12-04 17:59:59'
   timezone: America/New_York
-  note: Abstracts due at 2024-12-03 17:59:59 EST. Full paper submission due at 2024-12-10
-    17:59:59 EST.
-  place: Boston, MA, USA
-  date: July 7-9, 2025
-  start: '2025-07-07'
-  end: '2025-07-09'
+  note: Single submission cycle. Abstract registration deadline. Full paper deadline
+    2025-12-11 17:59:59 EST. Author notification 2026-03-26.
+  place: Seattle, WA, USA
+  date: July 13-15, 2026
+  start: '2026-07-13'
+  end: '2026-07-15'
   sub:
   - DS
   inactive: false
@@ -560,19 +560,19 @@
   sub:
   - CR
   inactive: false
-- id: podc25
-  year: 2025
+- id: podc26
+  year: 2026
   title: ACM PODC
   full_title: ACM Symposium on Principles of Distributed Computing
-  link: https://www.podc.org/podc2025/call-for-papers/
-  deadline: '2025-02-04 23:59:59'
+  link: https://www.podc.org/podc2026/call-for-papers/
+  deadline: '2026-02-11 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract submission deadline. Full paper submission deadline 2025-02-08 23:59:59
-    AoE. Author notification 2025-04-17.
-  place: Huatulco, Mexico
-  date: June 16-20, 2025
-  start: '2025-06-16'
-  end: '2025-06-20'
+  note: Abstract submission deadline. Full paper submission deadline 2026-02-16 23:59:59
+    AoE. Author notification 2026-04-29.
+  place: Egham, England
+  date: July 6-10, 2026
+  start: '2026-07-06'
+  end: '2026-07-10'
   sub:
   - DS
   inactive: false
@@ -591,33 +591,35 @@
   sub:
   - CR
   inactive: false
-- id: sbc25
-  year: 2025
+- id: sbc26
+  year: 2026
   title: SBC
-  full_title: Science of Blockchain Conference 2025
-  link: https://sbc-conference.com/2025/
-  deadline: '2025-03-13 23:59:59'
+  full_title: Science of Blockchain Conference
+  link: https://www.sbc-conference.com/2026/
+  deadline: '2026-03-13 23:59:59'
   timezone: America/Los_Angeles
-  note: Talk submission deadline.
-  place: Martin Luther King Jr. Building, U.C. Berkeley
-  date: August 4-6, 2025
-  start: '2025-08-04'
-  end: '2025-08-06'
+  note: Talk submission deadline. Final acceptance notification 2026-05-13 23:59:59
+    PT. Conference 2026-07-27 to 2026-07-29 PT.
+  place: Arrillaga Alumni Center, Stanford University, CA, USA
+  date: July 27-29, 2026
+  start: '2026-07-27'
+  end: '2026-07-29'
   sub:
   - BC
   inactive: false
-- id: sigcomm25
-  year: 2025
+- id: sigcomm26
+  year: 2026
   title: ACM SIGCOMM
   full_title: ACM SIGCOMM Conference
-  link: https://conferences.sigcomm.org/sigcomm/2025/cfp/
-  deadline: '2025-01-24 23:59:00'
-  timezone: Etc/UTC
-  note: Full paper deadline 2025-01-31 23:59:00 UTC. Author notification 2025-04-29.
-  place: Coimbra, Portugal
-  date: September 8-11, 2025
-  start: '2025-09-08'
-  end: '2025-09-11'
+  link: https://conferences.sigcomm.org/sigcomm/2026/cfp/
+  deadline: '2026-01-30 23:59:59'
+  timezone: Etc/GMT+12
+  note: Full paper abstract registration deadline. Full paper deadline 2026-02-06
+    23:59:59 AoE. Review results notification TBD.
+  place: TBD
+  date: TBD
+  start: '2026-01-01'
+  end: '2026-12-31'
   sub:
   - DS
   inactive: false
