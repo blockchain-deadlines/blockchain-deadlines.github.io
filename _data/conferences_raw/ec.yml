@@ -1,16 +1,16 @@
-- id: ec25
-  year: 2025
+- id: ec26
+  year: 2026
   title: ACM EC
   full_title: ACM Conference on Economics and Computation
-  link: https://ec25.sigecom.org/papers/
-  deadline: '2025-02-03 23:59:59'
+  link: https://ec26.sigecom.org/
+  deadline: '2026-02-02 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract submission deadline. Full paper submission deadline 2025-02-10 23:59:59
-    AoE. Author notification 2025-05-17.
-  place: Stanford University, Stanford, CA
-  date: July 07-10, 2025
-  start: '2025-07-07'
-  end: '2025-07-10'
+  note: Abstract submission deadline. Full paper submission deadline 2026-02-09 23:59:59
+    AoE. Author notification 2026-05-18.
+  place: Rome, Italy
+  date: July 06-10, 2026
+  start: '2026-07-06'
+  end: '2026-07-10'
   sub:
   - EC
   inactive: false

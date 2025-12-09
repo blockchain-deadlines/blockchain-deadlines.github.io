@@ -3,9 +3,9 @@
   title: Eurocrypt
   full_title: European Cryptology Conference
   link: https://eurocrypt.iacr.org/2026/callforpapers.php
-  deadline: '2025-10-02 23:59:00'
+  deadline: '2025-10-02 23:59:59'
   timezone: Etc/GMT+12
-  note: Author notification 2026-01-29.
+  note: Full paper submission deadline. Author notification 2026-01-29.
   place: Rome, Italy
   date: May 10-14, 2026
   start: '2026-05-10'

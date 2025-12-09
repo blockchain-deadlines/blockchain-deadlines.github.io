@@ -1,15 +1,16 @@
-- id: crypto25
-  year: 2025
+- id: crypto26
+  year: 2026
   title: CRYPTO
-  full_title: Cryptology Conference
-  link: https://crypto.iacr.org/2025
-  deadline: '2025-02-13 23:59:59'
-  timezone: Etc/GMT-5
-  note: Submission deadline.
+  full_title: International Cryptology Conference
+  link: https://crypto.iacr.org/
+  deadline: '2026-02-12 23:59:00'
+  timezone: Etc/GMT+12
+  note: Submission deadline at 2026-02-12 23:59:00 AoE. Author notification date not
+    yet announced.
   place: Santa Barbara, USA
-  date: August 17-21, 2025
-  start: '2025-08-17'
-  end: '2025-08-21'
+  date: August 17-20, 2026
+  start: '2026-08-17'
+  end: '2026-08-20'
   sub:
   - CR
   inactive: false
