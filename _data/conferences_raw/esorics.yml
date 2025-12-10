@@ -1,30 +1,32 @@
-- id: esorics25first
-  year: 2025
+- id: esorics26winter
+  year: 2026
   title: ESORICS
   full_title: European Symposium on Research in Computer Security
-  link: https://esorics2025.sciencesconf.org/page/page_personnalisable?lang=en
-  deadline: '2025-01-10 23:59:59'
+  link: https://sites.google.com/di.uniroma1.it/esorics2026/call-for/papers
+  deadline: '2026-01-09 23:59:59'
   timezone: Etc/GMT+12
-  note: First round. Author notification 2025-03-24.
-  place: Toulouse, France
-  date: September 22-26, 2025
-  start: '2025-09-22'
-  end: '2025-09-26'
+  note: Winter cycle. Full paper submission deadline. Author notification 2026-03-10.
+    Camera-ready deadline 2026-03-24 23:59:59 AoE.
+  place: Rome, Italy
+  date: September 21-25, 2026
+  start: '2026-09-21'
+  end: '2026-09-25'
   sub:
   - SEC
   inactive: false
-- id: esorics25second
-  year: 2025
+- id: esorics26spring
+  year: 2026
   title: ESORICS
   full_title: European Symposium on Research in Computer Security
-  link: https://esorics2025.sciencesconf.org/page/page_personnalisable?lang=en
-  deadline: '2025-04-29 23:59:59'
+  link: https://sites.google.com/di.uniroma1.it/esorics2026/call-for/papers
+  deadline: '2026-04-21 23:59:59'
   timezone: Etc/GMT+12
-  note: Second round. Author notification 2025-06-20.
-  place: Toulouse, France
-  date: September 22-26, 2025
-  start: '2025-09-22'
-  end: '2025-09-26'
+  note: Spring cycle. Full paper submission deadline. Author notification 2026-06-12.
+    Camera-ready deadline 2026-06-26 23:59:59 AoE.
+  place: Rome, Italy
+  date: September 21-25, 2026
+  start: '2026-09-21'
+  end: '2026-09-25'
   sub:
   - SEC
   inactive: false

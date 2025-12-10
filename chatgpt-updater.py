@@ -7,6 +7,7 @@ import yaml
 import copy
 import time
 import ssl
+from datetime import datetime
 from bs4 import BeautifulSoup
 from pydantic import BaseModel, ValidationError
 from typing import Literal, Optional
@@ -17,7 +18,7 @@ import typer
 PROMPT = """
 You are an expert at finding and extracting academic conference deadline information from official websites.
 
-Today's date: December 9, 2025
+Today's date: [[CURRENT DATE HERE]]
 
 # YOUR TASK
 
@@ -180,7 +181,7 @@ You have access to web search and browsing tools. Prefer `callback_browse_text` 
 # EXAMPLES
 
 See the examples provided below to understand the exact format and structure expected.
-"""
+""".replace("[[CURRENT DATE HERE]]", datetime.now().strftime("%B %d, %Y"))
 
 PROMPT += """
 # EXAMPLES - STUDY THESE CAREFULLY
@@ -605,6 +606,11 @@ def main(
         envvar="API_KEY_SERPER",
         help="Serper.dev API key. If omitted, reads from API_KEY_SERPER env var.",
     ),
+    hint: Optional[str] = typer.Option(
+        None,
+        "--hint",
+        help="Optional hint to pass to the LLM to guide the update process",
+    ),
 ) -> None:
     conference_files = []
     if conferences and len(conferences) > 0:
@@ -643,6 +649,12 @@ def main(
             messages.append({
                 "role": "system",
                 "content": PROMPT_REFRESH,
+            })
+
+        if hint:
+            messages.append({
+                "role": "system",
+                "content": f"Hint: {hint}",
             })
 
         client = OpenAI(api_key=api_key_openai)
