@@ -1,16 +1,16 @@
-- id: sosp25
-  year: 2025
+- id: sosp26
+  year: 2026
   title: ACM SOSP
   full_title: ACM Symposium on Operating Systems Principles
-  link: https://sigops.org/s/conferences/sosp/2025/cfp.html
-  deadline: '2025-04-10 23:59:59'
-  timezone: America/Los_Angeles
-  note: 'Abstract registration deadline. Full paper submission deadline: April 17,
-    2025; 23:59 PT.'
-  place: Seoul, Republic of Korea
-  date: October 13-16, 2025
-  start: '2025-10-13'
-  end: '2025-10-16'
+  link: https://sigops.org/s/conferences/sosp/2026/cfp.html
+  deadline: '2026-03-26 23:59:59'
+  timezone: Etc/GMT+12
+  note: Single submission cycle. Abstract registration deadline. Full paper submission
+    deadline 2026-04-01 23:59:59 AoE. Author notification 2026-07-03.
+  place: Prague, Czechia
+  date: September 30 - October 2, 2026
+  start: '2026-09-30'
+  end: '2026-10-02'
   sub:
   - DS
   inactive: false
