@@ -110,7 +110,7 @@
   sub:
   - DS
   - SEC
-  inactive: false
+  inactive: true
 - id: cbt25
   year: 2025
   title: CBT
