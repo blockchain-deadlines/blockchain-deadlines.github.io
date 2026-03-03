@@ -7,16 +7,17 @@ argument-hint: "[venue1 venue2 ...] (optional, defaults to all)"
 
 # Auto-Update All Venues
 
-Scan conference venues for outdated data and invoke `/update-venue` for each venue that needs updating. This replaces the batch-processing logic formerly in `chatgpt-updater.py`.
+Scan conference venues for outdated data and update each one that needs it. Uses parallel agents for efficient processing, with each venue update running in its own context window.
 
 ## YOUR TASK
 
 You are given an optional list of venue identifiers via `$ARGUMENTS` (e.g., `fc ccs sp`). If no arguments are provided, process ALL venues in `_data/conferences_raw/`.
 
 Your job is to:
-1. Identify which venues need updating
-2. Invoke `/update-venue` for each one
-3. Run `compress-conferences.sh` at the end
+1. Identify which venues need updating (triage)
+2. Launch agents in parallel batches to update them
+3. Review agent results and fix any issues
+4. Run `compress-conferences.sh` at the end
 
 ## PROCEDURE
 
@@ -55,18 +56,42 @@ Before starting updates, print a summary table of all venues and their triage st
 Venues to update: fc, ccs, disc, ...
 ```
 
-### Step 4: Update venues
+### Step 4: Update venues using parallel agents
 
-For each venue classified as **UPDATE**, invoke the `/update-venue` skill using the `Skill` tool:
+Launch venue updates using the `Agent` tool with `subagent_type: "general-purpose"`. Process venues in **parallel batches of 4-6 agents** at a time to balance speed with resource usage.
+
+For each agent, provide a detailed prompt that includes:
+1. The venue identifier
+2. Instructions to invoke `/update-venue {venue}` using the `Skill` tool
+3. Instructions to report whether the venue was updated, had no update available, or encountered an error
+
+**Agent prompt template:**
 
 ```
-Skill: update-venue
-Args: {venue-identifier}
+Invoke the /update-venue skill for the venue "{venue}" by calling the Skill tool with skill="update-venue" and args="{venue}".
+
+After the skill completes, report:
+- Whether the venue was UPDATED (and to what edition/year)
+- Or NO UPDATE AVAILABLE (and why)
+- Or ERROR (and what went wrong)
 ```
 
-Process venues **one at a time** and report the outcome of each update (updated / no update available / error).
+**Batching strategy:**
+- Launch 4-6 agents in a single message (they run in parallel)
+- Wait for all agents in the batch to complete
+- Report results from the batch
+- Launch the next batch
+- Continue until all venues are processed
 
-### Step 5: Run compress-conferences.sh
+### Step 5: Review agent results
+
+After each batch completes:
+1. Read the result from each agent
+2. Verify the changes look correct (check the modified YAML files against the specification of the /update-venue skill)
+3. Fix any issues (e.g., agents that incorrectly set `inactive: true` — this flag is ONLY for discontinued venues, never for past deadlines)
+4. Report the outcome for each venue
+
+### Step 6: Run compress-conferences.sh
 
 After all venue updates are complete, run:
 
@@ -76,7 +101,7 @@ After all venue updates are complete, run:
 
 This regenerates `_data/conferences.yml` from the individual YAML files.
 
-### Step 6: Final summary
+### Step 7: Final summary
 
 Print a final summary of what was done:
 
@@ -96,7 +121,9 @@ compress-conferences.sh executed successfully.
 
 ## IMPORTANT NOTES
 
-- **Do NOT modify any YAML files directly** — that's the job of `/update-venue`.
+- **Do NOT modify any YAML files directly** — that's the job of `/update-venue` (invoked via agents).
 - **Do NOT skip the triage step** — it avoids unnecessary web searches for venues that are clearly still current.
-- **Process updates sequentially**, not in parallel, to avoid overwhelming web sources and to keep output readable.
+- **Use parallel agents** for venue updates — each agent gets its own context window, preventing context bloat when processing many venues.
+- **Review agent results** — agents may make mistakes (like incorrectly setting `inactive: true`). Always check changes.
 - **Always run `compress-conferences.sh`** at the end, even if no venues were updated (it's idempotent).
+- The `inactive` flag means a venue series is **discontinued**. It does NOT mean "the deadline has passed." Never set `inactive: true` just because a deadline is in the past.
