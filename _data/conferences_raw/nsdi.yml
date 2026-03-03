@@ -32,3 +32,37 @@
   - DS
   - SEC
   inactive: false
+- id: nsdi27spring
+  year: 2027
+  title: USENIX NSDI
+  full_title: USENIX Symposium on Networked Systems Design and Implementation
+  link: https://www.usenix.org/conference/nsdi27/call-for-papers
+  deadline: '2026-04-16 23:59:59'
+  timezone: America/New_York
+  note: Spring cycle. Abstract registration deadline. Full paper deadline 2026-04-23
+    23:59:59 EDT. Author notification 2026-07-23.
+  place: Providence, RI, USA
+  date: May 11-13, 2027
+  start: '2027-05-11'
+  end: '2027-05-13'
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: nsdi27fall
+  year: 2027
+  title: USENIX NSDI
+  full_title: USENIX Symposium on Networked Systems Design and Implementation
+  link: https://www.usenix.org/conference/nsdi27/call-for-papers
+  deadline: '2026-09-10 23:59:59'
+  timezone: America/New_York
+  note: Fall cycle. Abstract registration deadline. Full paper deadline 2026-09-17
+    23:59:59 EDT. Author notification 2026-12-08.
+  place: Providence, RI, USA
+  date: May 11-13, 2027
+  start: '2027-05-11'
+  end: '2027-05-13'
+  sub:
+  - DS
+  - SEC
+  inactive: false

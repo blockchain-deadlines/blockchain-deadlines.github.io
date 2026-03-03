@@ -362,9 +362,9 @@
   deadline: '2025-05-08 23:59:59'
   timezone: Etc/GMT+12
   note: Spring cycle. Deadline for paper titles and abstracts. Full paper deadline
-    2025-05-15 23:59:59 AoE.
-  place: Edinburgh
-  date: April 13 - 16, 2026
+    2025-05-15 23:59:59 AoE. Author notification 2025-08-22.
+  place: Edinburgh, United Kingdom
+  date: April 13-16, 2026
   start: '2026-04-13'
   end: '2026-04-16'
   sub:
@@ -378,9 +378,9 @@
   deadline: '2025-09-18 23:59:59'
   timezone: Etc/GMT+12
   note: Fall cycle. Deadline for paper titles and abstracts. Full paper deadline 2025-09-25
-    23:59:59 AoE.
-  place: Edinburgh
-  date: April 13 - 16, 2026
+    23:59:59 AoE. Author notification 2026-01-30.
+  place: Edinburgh, United Kingdom
+  date: April 13-16, 2026
   start: '2026-04-13'
   end: '2026-04-16'
   sub:
@@ -410,7 +410,7 @@
   timezone: Etc/GMT+12
   note: Author notification 2026-03-18.
   place: Brisbane, Australia
-  date: '2026'
+  date: June 1-5, 2026
   start: '2026-06-01'
   end: '2026-06-05'
   sub:
@@ -421,10 +421,10 @@
   title: IEEE ICDCS
   full_title: IEEE International Conference on Distributed Computing Systems
   link: https://icdcs2026.icdcs.org/calls/call-for-papers/
-  deadline: '2026-01-07 23:59:59'
+  deadline: '2026-01-21 23:59:59'
   timezone: Etc/GMT+12
-  note: Paper track. Abstract registration deadline. Full paper submission due 2026-01-14
-    23:59:59 AoE. Author notification date not specified on the CFP page as of access.
+  note: Paper track. Abstract registration and full paper submission deadline (extended).
+    Author notification and camera-ready dates not yet specified on the CFP page.
   place: Seoul, South Korea
   date: June 22-25, 2026
   start: '2026-06-22'
@@ -514,6 +514,40 @@
   - DS
   - SEC
   inactive: false
+- id: nsdi27spring
+  year: 2027
+  title: USENIX NSDI
+  full_title: USENIX Symposium on Networked Systems Design and Implementation
+  link: https://www.usenix.org/conference/nsdi27/call-for-papers
+  deadline: '2026-04-16 23:59:59'
+  timezone: America/New_York
+  note: Spring cycle. Abstract registration deadline. Full paper deadline 2026-04-23
+    23:59:59 EDT. Author notification 2026-07-23.
+  place: Providence, RI, USA
+  date: May 11-13, 2027
+  start: '2027-05-11'
+  end: '2027-05-13'
+  sub:
+  - DS
+  - SEC
+  inactive: false
+- id: nsdi27fall
+  year: 2027
+  title: USENIX NSDI
+  full_title: USENIX Symposium on Networked Systems Design and Implementation
+  link: https://www.usenix.org/conference/nsdi27/call-for-papers
+  deadline: '2026-09-10 23:59:59'
+  timezone: America/New_York
+  note: Fall cycle. Abstract registration deadline. Full paper deadline 2026-09-17
+    23:59:59 EDT. Author notification 2026-12-08.
+  place: Providence, RI, USA
+  date: May 11-13, 2027
+  start: '2027-05-11'
+  end: '2027-05-13'
+  sub:
+  - DS
+  - SEC
+  inactive: false
 - id: opodis25
   year: 2025
   title: OPODIS
@@ -549,12 +583,12 @@
 - id: pkc26
   year: 2026
   title: PKC
-  full_title: Public Key Cryptography Conference
-  link: https://pkc.iacr.org/
+  full_title: IACR International Conference on Public-Key Cryptography
+  link: https://pkc.iacr.org/2026/callforpapers.php
   deadline: '2025-10-24 23:59:59'
   timezone: Etc/GMT+12
-  note: Submission deadline is on October 24, 2025, 11:59pm AoE.
-  place: West Palm Beach, USA
+  note: Author notification 2026-02-13.
+  place: West Palm Beach, FL, USA
   date: May 25-28, 2026
   start: '2026-05-25'
   end: '2026-05-28'
@@ -616,11 +650,11 @@
   deadline: '2026-01-30 23:59:59'
   timezone: Etc/GMT+12
   note: Full paper abstract registration deadline. Full paper deadline 2026-02-06
-    23:59:59 AoE. Review results notification TBD.
-  place: TBD
-  date: TBD
-  start: '2026-01-01'
-  end: '2026-12-31'
+    23:59:59 AoE. Author notification 2026-05-11.
+  place: Denver, CO, USA
+  date: 17-21 August 2026
+  start: '2026-08-17'
+  end: '2026-08-21'
   sub:
   - DS
   inactive: false
@@ -704,35 +738,35 @@
   sub:
   - CR
   inactive: false
-- id: usenixsec26cycle1
-  year: 2026
+- id: usenixsec27cycle1
+  year: 2027
   title: USENIX Security
   full_title: USENIX Security Symposium
-  link: https://www.usenix.org/conference/usenixsecurity26/call-for-papers
-  deadline: '2025-08-19 23:59:59'
+  link: https://www.usenix.org/conference/usenixsecurity27
+  deadline: '2026-08-18 23:59:59'
   timezone: Etc/GMT+12
-  note: Cycle 1. Paper registration deadline. Paper submissions due 2025-08-26 23:59:59
+  note: Cycle 1. Paper registration deadline. Paper submissions due 2026-08-25 23:59:59
     AoE.
-  place: Baltimore, MD, USA
-  date: August 12-14, 2026
-  start: '2026-08-12'
-  end: '2026-08-14'
+  place: Denver, CO, USA
+  date: August 11-13, 2027
+  start: '2027-08-11'
+  end: '2027-08-13'
   sub:
   - SEC
   inactive: false
-- id: usenixsec26cycle2
-  year: 2026
+- id: usenixsec27cycle2
+  year: 2027
   title: USENIX Security
   full_title: USENIX Security Symposium
-  link: https://www.usenix.org/conference/usenixsecurity26/call-for-papers
-  deadline: '2026-01-29 23:59:59'
+  link: https://www.usenix.org/conference/usenixsecurity27
+  deadline: '2027-01-19 23:59:59'
   timezone: Etc/GMT+12
-  note: Cycle 2. Paper registration deadline. Paper submissions due 2026-02-05 23:59:59
+  note: Cycle 2. Paper registration deadline. Paper submissions due 2027-01-26 23:59:59
     AoE.
-  place: Baltimore, MD, USA
-  date: August 12-14, 2026
-  start: '2026-08-12'
-  end: '2026-08-14'
+  place: Denver, CO, USA
+  date: August 11-13, 2027
+  start: '2027-08-11'
+  end: '2027-08-13'
   sub:
   - SEC
   inactive: false

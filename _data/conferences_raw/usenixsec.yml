@@ -1,32 +1,32 @@
-- id: usenixsec26cycle1
-  year: 2026
+- id: usenixsec27cycle1
+  year: 2027
   title: USENIX Security
   full_title: USENIX Security Symposium
-  link: https://www.usenix.org/conference/usenixsecurity26/call-for-papers
-  deadline: '2025-08-19 23:59:59'
+  link: https://www.usenix.org/conference/usenixsecurity27
+  deadline: '2026-08-18 23:59:59'
   timezone: Etc/GMT+12
-  note: Cycle 1. Paper registration deadline. Paper submissions due 2025-08-26 23:59:59
+  note: Cycle 1. Paper registration deadline. Paper submissions due 2026-08-25 23:59:59
     AoE.
-  place: Baltimore, MD, USA
-  date: August 12-14, 2026
-  start: '2026-08-12'
-  end: '2026-08-14'
+  place: Denver, CO, USA
+  date: August 11-13, 2027
+  start: '2027-08-11'
+  end: '2027-08-13'
   sub:
   - SEC
   inactive: false
-- id: usenixsec26cycle2
-  year: 2026
+- id: usenixsec27cycle2
+  year: 2027
   title: USENIX Security
   full_title: USENIX Security Symposium
-  link: https://www.usenix.org/conference/usenixsecurity26/call-for-papers
-  deadline: '2026-01-29 23:59:59'
+  link: https://www.usenix.org/conference/usenixsecurity27
+  deadline: '2027-01-19 23:59:59'
   timezone: Etc/GMT+12
-  note: Cycle 2. Paper registration deadline. Paper submissions due 2026-02-05 23:59:59
+  note: Cycle 2. Paper registration deadline. Paper submissions due 2027-01-26 23:59:59
     AoE.
-  place: Baltimore, MD, USA
-  date: August 12-14, 2026
-  start: '2026-08-12'
-  end: '2026-08-14'
+  place: Denver, CO, USA
+  date: August 11-13, 2027
+  start: '2027-08-11'
+  end: '2027-08-13'
   sub:
   - SEC
   inactive: false

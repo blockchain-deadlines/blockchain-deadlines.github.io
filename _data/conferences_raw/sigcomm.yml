@@ -6,11 +6,11 @@
   deadline: '2026-01-30 23:59:59'
   timezone: Etc/GMT+12
   note: Full paper abstract registration deadline. Full paper deadline 2026-02-06
-    23:59:59 AoE. Review results notification TBD.
-  place: TBD
-  date: TBD
-  start: '2026-01-01'
-  end: '2026-12-31'
+    23:59:59 AoE. Author notification 2026-05-11.
+  place: Denver, CO, USA
+  date: 17-21 August 2026
+  start: '2026-08-17'
+  end: '2026-08-21'
   sub:
   - DS
   inactive: false

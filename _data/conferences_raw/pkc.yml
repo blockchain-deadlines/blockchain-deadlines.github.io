@@ -1,12 +1,12 @@
 - id: pkc26
   year: 2026
   title: PKC
-  full_title: Public Key Cryptography Conference
-  link: https://pkc.iacr.org/
+  full_title: IACR International Conference on Public-Key Cryptography
+  link: https://pkc.iacr.org/2026/callforpapers.php
   deadline: '2025-10-24 23:59:59'
   timezone: Etc/GMT+12
-  note: Submission deadline is on October 24, 2025, 11:59pm AoE.
-  place: West Palm Beach, USA
+  note: Author notification 2026-02-13.
+  place: West Palm Beach, FL, USA
   date: May 25-28, 2026
   start: '2026-05-25'
   end: '2026-05-28'
