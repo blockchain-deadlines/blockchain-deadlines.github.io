@@ -22,7 +22,7 @@ This is a Jekyll-based static website that tracks submission deadlines for acade
   - Optional flags:
     - `--training-data-collect`: Save interaction traces for model training
     - `--refresh`: Re-verify all provided information from official sources
-    - `--model`: Specify OpenAI model (default: "gpt-5")
+    - `--model`: Specify OpenAI model (default: "gpt-5.2")
   - Examples:
     - Update all conferences: `./chatgpt-updater.py`
     - Update specific conferences: `./chatgpt-updater.py fc crypto`
@@ -31,7 +31,7 @@ This is a Jekyll-based static website that tracks submission deadlines for acade
 ### Python Environment
 - **Setup virtual environment**: `python3 -m venv venv && source venv/bin/activate`
 - **Install dependencies**: `pip install -r requirements.txt`
-- Dependencies include: openai, pydantic, requests, PyYAML, beautifulsoup4, typer
+- Dependencies include: openai, pydantic, requests, PyYAML, beautifulsoup4, lxml, typer
 
 ## Architecture
 
