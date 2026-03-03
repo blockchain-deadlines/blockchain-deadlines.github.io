@@ -364,9 +364,9 @@
   note: Spring cycle. Deadline for paper titles and abstracts. Full paper deadline
     2025-05-15 23:59:59 AoE. Author notification 2025-08-22.
   place: Edinburgh, United Kingdom
-  date: April 13-16, 2026
-  start: '2026-04-13'
-  end: '2026-04-16'
+  date: 27-30 April 2026
+  start: '2026-04-27'
+  end: '2026-04-30'
   sub:
   - DS
   inactive: false
@@ -380,9 +380,9 @@
   note: Fall cycle. Deadline for paper titles and abstracts. Full paper deadline 2025-09-25
     23:59:59 AoE. Author notification 2026-01-30.
   place: Edinburgh, United Kingdom
-  date: April 13-16, 2026
-  start: '2026-04-13'
-  end: '2026-04-16'
+  date: 27-30 April 2026
+  start: '2026-04-27'
+  end: '2026-04-30'
   sub:
   - DS
   inactive: false
