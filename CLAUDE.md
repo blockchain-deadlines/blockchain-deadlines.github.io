@@ -16,22 +16,11 @@ This is a Jekyll-based static website that tracks submission deadlines for acade
 - **Compress conferences**: `./compress-conferences.sh` - Concatenates all YAML files from `_data/conferences_raw/` into `_data/conferences.yml`. **Must be run** after any changes to conference data files.
 
 ### Automated Conference Updates
-- **Update conferences with AI**: `./chatgpt-updater.py [conference_names...]`
-  - Uses GPT and Serper API to automatically update conference deadlines
-  - Requires environment variables: `API_KEY_OPENAI` and `API_KEY_SERPER`
-  - Optional flags:
-    - `--training-data-collect`: Save interaction traces for model training
-    - `--refresh`: Re-verify all provided information from official sources
-    - `--model`: Specify OpenAI model (default: "gpt-5.2")
-  - Examples:
-    - Update all conferences: `./chatgpt-updater.py`
-    - Update specific conferences: `./chatgpt-updater.py fc crypto`
-    - With training data collection: `./chatgpt-updater.py --training-data-collect`
-
-### Python Environment
-- **Setup virtual environment**: `python3 -m venv venv && source venv/bin/activate`
-- **Install dependencies**: `pip install -r requirements.txt`
-- Dependencies include: openai, pydantic, requests, PyYAML, beautifulsoup4, lxml, typer
+- Conference updates are now handled via **Claude skills** (Claude Code slash commands)
+- The following files are **outdated and no longer in use** (kept for historical reference only):
+  - `chatgpt-updater.py` - Former GPT-based automated updater script
+  - `chatgpt-prompt-create.txt` - Former prompt template for creating new conference entries
+  - `chatgpt-prompt-update.txt` - Former prompt template for updating existing conference entries
 
 ## Architecture
 
@@ -82,15 +71,11 @@ Each conference cycle in the YAML files must have:
 ### Plugin System
 - `_plugins/data_page_generator.rb`: Jekyll plugin that generates individual pages for each conference from YAML data
 
-## AI-Powered Conference Updates
+## AI-Powered Conference Updates (Legacy)
 
-The `chatgpt-updater.py` script automates the tedious task of updating conference deadlines. It:
-1. Reads existing conference data from `_data/conferences_raw/`
-2. Uses web search (Serper API) to find the latest call-for-papers
-3. Extracts deadline information from official conference websites
-4. Uses structured output with Pydantic validation to ensure data integrity
-5. Only trusts authoritative sources (conference websites, organizers, publishers)
-6. Handles multiple submission cycles and complex deadline scenarios
-7. Optionally collects training data for fine-tuning
+The following files are **outdated and no longer in use**, having been replaced by Claude skills:
+- `chatgpt-updater.py` - Former GPT-based automated updater that used OpenAI API and Serper for web search
+- `chatgpt-prompt-create.txt` - Former prompt template for creating new conference YAML entries
+- `chatgpt-prompt-update.txt` - Former prompt template for updating existing conference YAML entries
 
-The script prioritizes text content over HTML to reduce token usage, and implements validation to ensure timezone, date format, and field consistency.
+These files are kept in the repository for historical reference only. Conference updates are now performed using Claude Code skills.
