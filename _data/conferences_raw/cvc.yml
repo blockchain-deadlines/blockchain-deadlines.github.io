@@ -1,15 +1,15 @@
-- id: cvc25
-  year: 2025
+- id: cvc26
+  year: 2026
   title: CVC
   full_title: Crypto Valley Conference
   link: https://cryptovalleyconference.com/call-for-papers
-  deadline: '2025-02-20 23:59:59'
+  deadline: '2026-03-13 23:59:59'
   timezone: Etc/GMT+12
-  note: Full paper deadline. Author notification 2025-04-01.
+  note: Full paper deadline. Author notification 2026-04-05.
   place: Rotkreuz, Switzerland
-  date: June 05-06, 2025
-  start: '2025-06-05'
-  end: '2025-06-06'
+  date: May 28-29, 2026
+  start: '2026-05-28'
+  end: '2026-05-29'
   sub:
   - BC
   - CR
