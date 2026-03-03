@@ -15,8 +15,19 @@ This is a Jekyll-based static website that tracks submission deadlines for acade
 ### Conference Data Management
 - **Compress conferences**: `./compress-conferences.sh` - Concatenates all YAML files from `_data/conferences_raw/` into `_data/conferences.yml`. **Must be run** after any changes to conference data files.
 
-### Automated Conference Updates
-- Conference updates are now handled via **Claude skills** (Claude Code slash commands)
+### Automated Conference Updates (Claude Skills)
+- **`/update-venue <venue>`**: Update a single venue's deadline data by researching official sources
+  - Takes a venue identifier (e.g., `fc`, `ccs`, `sp`) matching a file in `_data/conferences_raw/`
+  - Searches for the next edition's official website and CFP page
+  - Extracts and verifies deadline information from authoritative sources only
+  - Writes updated YAML back to the venue's file (does NOT run `compress-conferences.sh`)
+  - Skips venues marked as `inactive: true`
+- **`/auto-update [venue1 venue2 ...]`**: Batch-update all (or specified) venues
+  - Triages each venue: skips inactive venues and those with upcoming deadlines/conferences
+  - Invokes `/update-venue` sequentially for each venue that needs updating
+  - Runs `compress-conferences.sh` at the end to regenerate `_data/conferences.yml`
+  - Prints triage summary and final update report
+- Skill definitions live in `.claude/skills/update-venue/SKILL.md` and `.claude/skills/auto-update/SKILL.md`
 - The following files are **outdated and no longer in use** (kept for historical reference only):
   - `chatgpt-updater.py` - Former GPT-based automated updater script
   - `chatgpt-prompt-create.txt` - Former prompt template for creating new conference entries
@@ -73,9 +84,9 @@ Each conference cycle in the YAML files must have:
 
 ## AI-Powered Conference Updates (Legacy)
 
-The following files are **outdated and no longer in use**, having been replaced by Claude skills:
+The following files are **outdated and no longer in use**, having been replaced by the `/update-venue` and `/auto-update` Claude skills:
 - `chatgpt-updater.py` - Former GPT-based automated updater that used OpenAI API and Serper for web search
 - `chatgpt-prompt-create.txt` - Former prompt template for creating new conference YAML entries
 - `chatgpt-prompt-update.txt` - Former prompt template for updating existing conference YAML entries
 
-These files are kept in the repository for historical reference only. Conference updates are now performed using Claude Code skills.
+These files are kept in the repository for historical reference only. Conference updates are now performed using Claude Code skills (see "Automated Conference Updates" section above).
