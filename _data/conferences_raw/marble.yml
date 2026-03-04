@@ -1,0 +1,15 @@
+- id: marble26
+  year: 2026
+  title: MARBLE
+  full_title: International Conference on Mathematical Research for Blockchain Economy
+  link: https://www.marble-conference.org/marble2026
+  deadline: '2026-06-14 23:59:59'
+  timezone: Etc/GMT+12
+  note: Author notification 2026-07-31.
+  place: Cyprus
+  date: September 16-18, 2026
+  start: '2026-09-16'
+  end: '2026-09-18'
+  sub:
+  - EC
+  inactive: false
