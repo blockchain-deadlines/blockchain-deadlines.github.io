@@ -1,32 +1,32 @@
-- id: eurosys26spring
-  year: 2026
+- id: eurosys27spring
+  year: 2027
   title: EuroSys
   full_title: European Conference on Computer Systems
-  link: https://2026.eurosys.org/cfp.html
-  deadline: '2025-05-08 23:59:59'
+  link: https://2027.eurosys.org/cfp.html
+  deadline: '2026-05-07 23:59:59'
   timezone: Etc/GMT+12
   note: Spring cycle. Deadline for paper titles and abstracts. Full paper deadline
-    2025-05-15 23:59:59 AoE. Author notification 2025-08-22.
-  place: Edinburgh, United Kingdom
-  date: 27-30 April 2026
-  start: '2026-04-27'
-  end: '2026-04-30'
+    2026-05-14 23:59:59 AoE. Author notification 2026-08-21.
+  place: Rabat, Morocco
+  date: 19-24 April 2027
+  start: '2027-04-19'
+  end: '2027-04-24'
   sub:
   - DS
   inactive: false
-- id: eurosys26fall
-  year: 2026
+- id: eurosys27fall
+  year: 2027
   title: EuroSys
   full_title: European Conference on Computer Systems
-  link: https://2026.eurosys.org/cfp.html
-  deadline: '2025-09-18 23:59:59'
+  link: https://2027.eurosys.org/cfp.html
+  deadline: '2026-09-17 23:59:59'
   timezone: Etc/GMT+12
-  note: Fall cycle. Deadline for paper titles and abstracts. Full paper deadline 2025-09-25
-    23:59:59 AoE. Author notification 2026-01-30.
-  place: Edinburgh, United Kingdom
-  date: 27-30 April 2026
-  start: '2026-04-27'
-  end: '2026-04-30'
+  note: Fall cycle. Deadline for paper titles and abstracts. Full paper deadline 2026-09-24
+    23:59:59 AoE. Author notification 2027-01-29.
+  place: Rabat, Morocco
+  date: 19-24 April 2027
+  start: '2027-04-19'
+  end: '2027-04-24'
   sub:
   - DS
   inactive: false
