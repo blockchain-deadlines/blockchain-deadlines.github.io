@@ -1,15 +1,16 @@
-- id: aft25
-  year: 2025
+- id: aft26
+  year: 2026
   title: AFT
   full_title: Advances in Financial Technologies
-  link: https://advfintech.org/aft25/CFP.html
-  deadline: '2025-05-28 23:59:59'
+  link: https://aft.ifca.ai/aft26/CFP.html
+  deadline: '2026-05-20 23:59:59'
   timezone: Etc/GMT+12
-  note: Full paper deadline. Author notification 2025-07-16.
-  place: Carnegie Mellon University, Pittsburgh, PA, USA
-  date: October 8-10, 2025
-  start: '2025-10-08'
-  end: '2025-10-10'
+  note: Abstract registration deadline. Full paper deadline 2026-05-27 23:59:59 AoE.
+    Author notification 2026-07-15.
+  place: London, United Kingdom
+  date: 6-9 October 2026
+  start: '2026-10-06'
+  end: '2026-10-09'
   sub:
   - BC
   inactive: false

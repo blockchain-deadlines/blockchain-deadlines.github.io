@@ -1,15 +1,15 @@
-- id: tcc25
-  year: 2025
+- id: tcc26
+  year: 2026
   title: TCC
   full_title: Theory of Cryptography Conference
-  link: https://tcc.iacr.org/2025/callforpapers.php
-  deadline: '2025-05-27 23:59:59'
+  link: https://tcc.iacr.org/2026/callforpapers.php
+  deadline: '2026-05-19 23:59:59'
   timezone: Etc/GMT+12
   note: Submission deadline, 23:59 anywhere on earth (AoE).
-  place: Aarhus, Denmark
-  date: December 1-5, 2025
-  start: '2025-12-01'
-  end: '2025-12-05'
+  place: New York City, USA
+  date: November 10-13, 2026
+  start: '2026-11-10'
+  end: '2026-11-13'
   sub:
   - CR
   inactive: false

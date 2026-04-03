@@ -1,31 +1,31 @@
-- id: asiaccs26first
-  year: 2026
+- id: asiaccs27first
+  year: 2027
   title: ACM AsiaCCS
   full_title: ACM ASIA Conference on Computer and Communications Security
-  link: https://asiaccs2026.cse.iitkgp.ac.in/important-dates/
-  deadline: '2025-08-25 23:59:00'
+  link: https://asiaccs2027.cityu.edu.mo/call-for-papers/
+  deadline: '2026-08-21 23:59:59'
   timezone: Etc/GMT+12
-  note: First cycle. Author notification 2025-11-19.
-  place: Bangalore, India
-  date: June 1-6, 2026
-  start: '2026-06-01'
-  end: '2026-06-06'
+  note: First cycle. Author notification 2026-11-13.
+  place: Macau
+  date: July 12-16, 2027
+  start: '2027-07-12'
+  end: '2027-07-16'
   sub:
   - SEC
   - DS
   inactive: false
-- id: asiaccs26second
-  year: 2026
+- id: asiaccs27second
+  year: 2027
   title: ACM AsiaCCS
   full_title: ACM ASIA Conference on Computer and Communications Security
-  link: https://asiaccs2026.cse.iitkgp.ac.in/important-dates/
-  deadline: '2025-12-12 23:59:00'
+  link: https://asiaccs2027.cityu.edu.mo/call-for-papers/
+  deadline: '2026-12-11 23:59:59'
   timezone: Etc/GMT+12
-  note: Second cycle. Author notification 2026-03-10.
-  place: Bangalore, India
-  date: June 1-6, 2026
-  start: '2026-06-01'
-  end: '2026-06-06'
+  note: Second cycle. Author notification 2027-03-31.
+  place: Macau
+  date: July 12-16, 2027
+  start: '2027-07-12'
+  end: '2027-07-16'
   sub:
   - SEC
   - DS
