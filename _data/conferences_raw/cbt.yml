@@ -1,15 +1,15 @@
-- id: cbt25
-  year: 2025
+- id: cbt26
+  year: 2026
   title: CBT
   full_title: International Workshop on Cryptocurrencies and Blockchain Technology
   link: https://cbtworkshop.org/
-  deadline: '2025-06-30 23:59:59'
+  deadline: '2026-06-17 23:59:59'
   timezone: Etc/GMT+12
-  note: Full paper submission deadline (extended). Author notification 2025-07-31.
-  place: Toulouse, France
-  date: September 25, 2025
-  start: '2025-09-25'
-  end: '2025-09-25'
+  note: Author notification 2026-07-22.
+  place: Rome, Italy
+  date: September 17, 2026
+  start: '2026-09-17'
+  end: '2026-09-17'
   sub:
   - BC
   inactive: false

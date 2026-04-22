@@ -1,15 +1,15 @@
-- id: pkc26
-  year: 2026
+- id: pkc27
+  year: 2027
   title: PKC
   full_title: IACR International Conference on Public-Key Cryptography
-  link: https://pkc.iacr.org/2026/callforpapers.php
-  deadline: '2025-10-24 23:59:59'
+  link: https://pkc.iacr.org/2027/callforpapers.php
+  deadline: '2026-08-03 23:59:59'
   timezone: Etc/GMT+12
-  note: Author notification 2026-02-13.
-  place: West Palm Beach, FL, USA
-  date: May 25-28, 2026
-  start: '2026-05-25'
-  end: '2026-05-28'
+  note: Author notification 2026-11-19.
+  place: Taipei, Taiwan
+  date: March 1-4, 2027
+  start: '2027-03-01'
+  end: '2027-03-04'
   sub:
   - CR
   inactive: false

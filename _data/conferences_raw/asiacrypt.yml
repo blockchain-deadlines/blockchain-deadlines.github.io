@@ -1,15 +1,15 @@
-- id: asiacrypt25
-  year: 2025
+- id: asiacrypt26
+  year: 2026
   title: Asiacrypt
   full_title: Asiacrypt Conference
-  link: https://asiacrypt.iacr.org/2025/callforpapers.php
-  deadline: '2025-05-16 12:00:00'
-  timezone: Etc/GMT
-  note: Author notification 2025-08-10.
-  place: Melbourne, Australia
-  date: December 8-12, 2025
-  start: '2025-12-08'
-  end: '2025-12-12'
+  link: https://asiacrypt.iacr.org/2026/callforpapers.php
+  deadline: '2026-05-22 11:59:00'
+  timezone: Etc/UTC
+  note: Author notification 2026-08-14.
+  place: Hong Kong, China
+  date: December 7-11, 2026
+  start: '2026-12-07'
+  end: '2026-12-11'
   sub:
   - CR
   inactive: false
