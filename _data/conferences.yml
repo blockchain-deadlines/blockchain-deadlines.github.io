@@ -80,18 +80,18 @@
   - SEC
   - DS
   inactive: false
-- id: asiacrypt25
-  year: 2025
+- id: asiacrypt26
+  year: 2026
   title: Asiacrypt
   full_title: Asiacrypt Conference
-  link: https://asiacrypt.iacr.org/2025/callforpapers.php
-  deadline: '2025-05-16 12:00:00'
-  timezone: Etc/GMT
-  note: Author notification 2025-08-10.
-  place: Melbourne, Australia
-  date: December 8-12, 2025
-  start: '2025-12-08'
-  end: '2025-12-12'
+  link: https://asiacrypt.iacr.org/2026/callforpapers.php
+  deadline: '2026-05-22 11:59:00'
+  timezone: Etc/UTC
+  note: Author notification 2026-08-14.
+  place: Hong Kong, China
+  date: December 7-11, 2026
+  start: '2026-12-07'
+  end: '2026-12-11'
   sub:
   - CR
   inactive: false
@@ -112,18 +112,18 @@
   - DS
   - SEC
   inactive: true
-- id: cbt25
-  year: 2025
+- id: cbt26
+  year: 2026
   title: CBT
   full_title: International Workshop on Cryptocurrencies and Blockchain Technology
   link: https://cbtworkshop.org/
-  deadline: '2025-06-30 23:59:59'
+  deadline: '2026-06-17 23:59:59'
   timezone: Etc/GMT+12
-  note: Full paper submission deadline (extended). Author notification 2025-07-31.
-  place: Toulouse, France
-  date: September 25, 2025
-  start: '2025-09-25'
-  end: '2025-09-25'
+  note: Author notification 2026-07-22.
+  place: Rome, Italy
+  date: September 17, 2026
+  start: '2026-09-17'
+  end: '2026-09-17'
   sub:
   - BC
   inactive: false
@@ -298,12 +298,11 @@
   link: https://sites.google.com/di.uniroma1.it/esorics2026/call-for/papers
   deadline: '2026-01-09 23:59:59'
   timezone: Etc/GMT+12
-  note: Winter cycle. Full paper submission deadline. Author notification 2026-03-10.
-    Camera-ready deadline 2026-03-24 23:59:59 AoE.
+  note: Winter cycle. Author notification 2026-03-10.
   place: Rome, Italy
-  date: September 21-25, 2026
-  start: '2026-09-21'
-  end: '2026-09-25'
+  date: September 14-18, 2026
+  start: '2026-09-14'
+  end: '2026-09-18'
   sub:
   - SEC
   inactive: false
@@ -314,12 +313,11 @@
   link: https://sites.google.com/di.uniroma1.it/esorics2026/call-for/papers
   deadline: '2026-04-21 23:59:59'
   timezone: Etc/GMT+12
-  note: Spring cycle. Full paper submission deadline. Author notification 2026-06-12.
-    Camera-ready deadline 2026-06-26 23:59:59 AoE.
+  note: Spring cycle. Author notification 2026-06-12.
   place: Rome, Italy
-  date: September 21-25, 2026
-  start: '2026-09-21'
-  end: '2026-09-25'
+  date: September 14-18, 2026
+  start: '2026-09-14'
+  end: '2026-09-18'
   sub:
   - SEC
   inactive: false
@@ -425,7 +423,7 @@
   deadline: '2026-01-21 23:59:59'
   timezone: Etc/GMT+12
   note: Abstract registration and full paper submission deadline. Author notification
-    2026-04-15.
+    2026-04-21.
   place: Seoul, South Korea
   date: June 22-25, 2026
   start: '2026-06-22'
@@ -464,34 +462,34 @@
   sub:
   - EC
   inactive: false
-- id: ndss26summer
-  year: 2026
+- id: ndss27summer
+  year: 2027
   title: NDSS
   full_title: Network and Distributed System Security Symposium
-  link: https://www.ndss-symposium.org/ndss2026/submissions/call-for-papers/
-  deadline: '2025-04-23 23:59:59'
+  link: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
+  deadline: '2026-05-06 23:59:59'
   timezone: Etc/GMT+12
-  note: Summer Cycle. Paper submission deadline.
-  place: San Diego, California
-  date: February 23-27, 2026
-  start: '2026-02-23'
-  end: '2026-02-27'
+  note: Summer cycle. Author notification 2026-07-22.
+  place: TBD
+  date: TBD
+  start: '2027-01-01'
+  end: '2027-12-31'
   sub:
   - SEC
   - DS
   inactive: false
-- id: ndss26fall
-  year: 2026
+- id: ndss27fall
+  year: 2027
   title: NDSS
   full_title: Network and Distributed System Security Symposium
-  link: https://www.ndss-symposium.org/ndss2026/submissions/call-for-papers/
-  deadline: '2025-08-06 23:59:59'
+  link: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
+  deadline: '2026-08-19 23:59:59'
   timezone: Etc/GMT+12
-  note: Fall Cycle. Paper submission deadline.
-  place: San Diego, California
-  date: February 23-27, 2026
-  start: '2026-02-23'
-  end: '2026-02-27'
+  note: Fall cycle. Author notification 2026-11-04.
+  place: TBD
+  date: TBD
+  start: '2027-01-01'
+  end: '2027-12-31'
   sub:
   - SEC
   - DS
@@ -596,18 +594,18 @@
   sub:
   - DS
   inactive: false
-- id: pkc26
-  year: 2026
+- id: pkc27
+  year: 2027
   title: PKC
   full_title: IACR International Conference on Public-Key Cryptography
-  link: https://pkc.iacr.org/2026/callforpapers.php
-  deadline: '2025-10-24 23:59:59'
+  link: https://pkc.iacr.org/2027/callforpapers.php
+  deadline: '2026-08-03 23:59:59'
   timezone: Etc/GMT+12
-  note: Author notification 2026-02-13.
-  place: West Palm Beach, FL, USA
-  date: May 25-28, 2026
-  start: '2026-05-25'
-  end: '2026-05-28'
+  note: Author notification 2026-11-19.
+  place: Taipei, Taiwan
+  date: March 1-4, 2027
+  start: '2027-03-01'
+  end: '2027-03-04'
   sub:
   - CR
   inactive: false
@@ -627,18 +625,18 @@
   sub:
   - DS
   inactive: false
-- id: rwc26
-  year: 2026
+- id: rwc27
+  year: 2027
   title: RWC
   full_title: Real World Crypto
-  link: https://realworldcrypto.iacr.org/2026/contributed.php
-  deadline: '2025-10-10 23:59:59'
+  link: https://rwc.iacr.org/2027/contributed.php
+  deadline: '2026-11-16 23:59:59'
   timezone: Etc/UTC
-  note: Author notification 2025-12-08.
-  place: Taipei, Taiwan
-  date: March 9-11, 2026
-  start: '2026-03-09'
-  end: '2026-03-11'
+  note: Author notification 2027-01-10.
+  place: Seattle, WA, USA
+  date: 5-7 April 2027
+  start: '2027-04-05'
+  end: '2027-04-07'
   sub:
   - CR
   inactive: false

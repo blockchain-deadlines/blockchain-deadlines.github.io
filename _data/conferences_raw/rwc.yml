@@ -1,15 +1,15 @@
-- id: rwc26
-  year: 2026
+- id: rwc27
+  year: 2027
   title: RWC
   full_title: Real World Crypto
-  link: https://realworldcrypto.iacr.org/2026/contributed.php
-  deadline: '2025-10-10 23:59:59'
+  link: https://rwc.iacr.org/2027/contributed.php
+  deadline: '2026-11-16 23:59:59'
   timezone: Etc/UTC
-  note: Author notification 2025-12-08.
-  place: Taipei, Taiwan
-  date: March 9-11, 2026
-  start: '2026-03-09'
-  end: '2026-03-11'
+  note: Author notification 2027-01-10.
+  place: Seattle, WA, USA
+  date: 5-7 April 2027
+  start: '2027-04-05'
+  end: '2027-04-07'
   sub:
   - CR
   inactive: false
