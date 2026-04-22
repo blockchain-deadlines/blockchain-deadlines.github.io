@@ -1,0 +1,13 @@
+{
+  "name": "Claude Container",
+  "build": { "dockerfile": "Dockerfile" },
+  "remoteUser": "ubuntu",
+  "postCreateCommand": ".devcontainer/setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "anthropic.claude-code"
+      ]
+    }
+  }
+}
