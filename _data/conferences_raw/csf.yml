@@ -1,47 +1,47 @@
-- id: csf26summer
-  year: 2026
+- id: csf27summer
+  year: 2027
   title: IEEE CSF
   full_title: IEEE Computer Security Foundations Symposium
-  link: https://csf2026.ieee-security.org/cfp.html
-  deadline: '2025-07-24 23:59:59'
+  link: https://csf2027.ieee-security.org/cfp.html
+  deadline: '2026-08-03 23:59:59'
   timezone: Etc/GMT+12
-  note: Summer cycle. Author notification 2025-09-25.
-  place: Lisbon, Portugal
-  date: July 26-29, 2026
-  start: '2026-07-26'
-  end: '2026-07-29'
+  note: Summer cycle. Author notification 2026-10-07.
+  place: Tokyo, Japan
+  date: TBD
+  start: '2027-01-01'
+  end: '2027-12-31'
   sub:
   - DS
   - SEC
   inactive: false
-- id: csf26fall
-  year: 2026
+- id: csf27fall
+  year: 2027
   title: IEEE CSF
   full_title: IEEE Computer Security Foundations Symposium
-  link: https://csf2026.ieee-security.org/cfp.html
-  deadline: '2025-10-09 23:59:59'
+  link: https://csf2027.ieee-security.org/cfp.html
+  deadline: '2026-10-15 23:59:59'
   timezone: Etc/GMT+12
-  note: Fall cycle. Author notification 2025-12-11.
-  place: Lisbon, Portugal
-  date: July 26-29, 2026
-  start: '2026-07-26'
-  end: '2026-07-29'
+  note: Fall cycle. Author notification 2026-12-14.
+  place: Tokyo, Japan
+  date: TBD
+  start: '2027-01-01'
+  end: '2027-12-31'
   sub:
   - DS
   - SEC
   inactive: false
-- id: csf26winter
-  year: 2026
+- id: csf27winter
+  year: 2027
   title: IEEE CSF
   full_title: IEEE Computer Security Foundations Symposium
-  link: https://csf2026.ieee-security.org/cfp.html
-  deadline: '2026-01-29 23:59:59'
+  link: https://csf2027.ieee-security.org/cfp.html
+  deadline: '2027-01-28 23:59:59'
   timezone: Etc/GMT+12
-  note: Winter cycle. Author notification 2026-04-01.
-  place: Lisbon, Portugal
-  date: July 26-29, 2026
-  start: '2026-07-26'
-  end: '2026-07-29'
+  note: Winter cycle. Author notification 2027-04-05.
+  place: Tokyo, Japan
+  date: TBD
+  start: '2027-01-01'
+  end: '2027-12-31'
   sub:
   - DS
   - SEC

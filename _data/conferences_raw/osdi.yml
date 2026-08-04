@@ -1,16 +1,16 @@
-- id: osdi26
-  year: 2026
+- id: osdi27
+  year: 2027
   title: USENIX OSDI
   full_title: USENIX Symposium on Operating Systems Design and Implementation
-  link: https://www.usenix.org/conference/osdi26/call-for-papers
-  deadline: '2025-12-04 17:59:59'
+  link: https://www.usenix.org/conference/osdi27/call-for-papers
+  deadline: '2026-12-01 17:59:59'
   timezone: America/New_York
   note: Single submission cycle. Abstract registration deadline. Full paper deadline
-    2025-12-11 17:59:59 EST. Author notification 2026-03-26.
-  place: Seattle, WA, USA
-  date: July 13-15, 2026
-  start: '2026-07-13'
-  end: '2026-07-15'
+    2026-12-08 17:59:59 EST. Author notification 2027-03-16.
+  place: Baltimore, MD, USA
+  date: July 7-9, 2027
+  start: '2027-07-07'
+  end: '2027-07-09'
   sub:
   - DS
   inactive: false

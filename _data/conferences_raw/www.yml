@@ -1,15 +1,16 @@
-- id: www26
-  year: 2026
+- id: www27
+  year: 2027
   title: WWW
   full_title: International World Wide Web Conference
-  link: https://www2026.thewebconf.org/calls.html
-  deadline: '2025-09-30 23:59:59'
+  link: https://acmweb2027.org/important-dates/
+  deadline: '2026-10-11 23:59:59'
   timezone: Etc/GMT+12
-  note: Full paper deadline 2025-10-07 23:59:59 AoE. Author notification 2026-01-13.
-  place: Dubai, United Arab Emirates
-  date: April 13-17, 2026
-  start: '2026-04-13'
-  end: '2026-04-17'
+  note: Abstract submission deadline. Full paper deadline 2026-10-18 23:59:59 AoE.
+    Author notification 2026-12-10.
+  place: Dublin, Ireland
+  date: May 10-14, 2027
+  start: '2027-05-10'
+  end: '2027-05-14'
   sub:
   - SEC
   inactive: false

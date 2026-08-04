@@ -1,15 +1,15 @@
-- id: fc26
-  year: 2026
+- id: fc27
+  year: 2027
   title: FC
   full_title: Financial Cryptography and Data Security
-  link: https://fc26.ifca.ai/cfp.html
-  deadline: '2025-09-20 23:59:59'
+  link: https://fc27.ifca.ai/cfp.html
+  deadline: '2026-09-17 23:59:59'
   timezone: Etc/GMT+12
-  note: Author notification 2025-11-24.
-  place: St. Kitts Marriott Resort, St. Kitts
-  date: 2-6 March 2026
-  start: '2026-03-02'
-  end: '2026-03-06'
+  note: Author notification 2026-11-05.
+  place: Accra Beach Hotel & Spa, Barbados
+  date: 8-12 February 2027
+  start: '2027-02-08'
+  end: '2027-02-12'
   sub:
   - BC
   inactive: false

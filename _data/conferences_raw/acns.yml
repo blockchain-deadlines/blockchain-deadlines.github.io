@@ -1,32 +1,32 @@
-- id: acns26first
-  year: 2026
+- id: acns27first
+  year: 2027
   title: ACNS
   full_title: International Conference on Applied Cryptography and Network Security
-  link: https://acns2026.github.io/cfp.html
-  deadline: '2025-09-26 23:59:59'
+  link: https://acns2027.isg.rhul.ac.uk/calls/papers
+  deadline: '2026-09-24 23:59:59'
   timezone: Etc/GMT+12
-  note: First cycle. Author notification 2025-11-20.
-  place: SUNY Global Center, New York City, NY, USA
-  date: June 22-25, 2026
-  start: '2026-06-22'
-  end: '2026-06-25'
+  note: First cycle. Author notification 2026-11-26.
+  place: Egham, United Kingdom
+  date: 28 June-1 July 2027
+  start: '2027-06-28'
+  end: '2027-07-01'
   sub:
   - SEC
   - DS
   - CR
   inactive: false
-- id: acns26second
-  year: 2026
+- id: acns27second
+  year: 2027
   title: ACNS
   full_title: International Conference on Applied Cryptography and Network Security
-  link: https://acns2026.github.io/cfp.html
-  deadline: '2026-01-23 23:59:59'
+  link: https://acns2027.isg.rhul.ac.uk/calls/papers
+  deadline: '2027-01-21 23:59:59'
   timezone: Etc/GMT+12
-  note: Second cycle. Author notification 2026-03-19.
-  place: SUNY Global Center, New York City, NY, USA
-  date: June 22-25, 2026
-  start: '2026-06-22'
-  end: '2026-06-25'
+  note: Second cycle. Author notification 2027-03-25.
+  place: Egham, United Kingdom
+  date: 28 June-1 July 2027
+  start: '2027-06-28'
+  end: '2027-07-01'
   sub:
   - SEC
   - DS

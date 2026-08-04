@@ -1,32 +1,32 @@
-- id: acns26first
-  year: 2026
+- id: acns27first
+  year: 2027
   title: ACNS
   full_title: International Conference on Applied Cryptography and Network Security
-  link: https://acns2026.github.io/cfp.html
-  deadline: '2025-09-26 23:59:59'
+  link: https://acns2027.isg.rhul.ac.uk/calls/papers
+  deadline: '2026-09-24 23:59:59'
   timezone: Etc/GMT+12
-  note: First cycle. Author notification 2025-11-20.
-  place: SUNY Global Center, New York City, NY, USA
-  date: June 22-25, 2026
-  start: '2026-06-22'
-  end: '2026-06-25'
+  note: First cycle. Author notification 2026-11-26.
+  place: Egham, United Kingdom
+  date: 28 June-1 July 2027
+  start: '2027-06-28'
+  end: '2027-07-01'
   sub:
   - SEC
   - DS
   - CR
   inactive: false
-- id: acns26second
-  year: 2026
+- id: acns27second
+  year: 2027
   title: ACNS
   full_title: International Conference on Applied Cryptography and Network Security
-  link: https://acns2026.github.io/cfp.html
-  deadline: '2026-01-23 23:59:59'
+  link: https://acns2027.isg.rhul.ac.uk/calls/papers
+  deadline: '2027-01-21 23:59:59'
   timezone: Etc/GMT+12
-  note: Second cycle. Author notification 2026-03-19.
-  place: SUNY Global Center, New York City, NY, USA
-  date: June 22-25, 2026
-  start: '2026-06-22'
-  end: '2026-06-25'
+  note: Second cycle. Author notification 2027-03-25.
+  place: Egham, United Kingdom
+  date: 28 June-1 July 2027
+  start: '2027-06-28'
+  end: '2027-07-01'
   sub:
   - SEC
   - DS
@@ -117,7 +117,7 @@
   title: CBT
   full_title: International Workshop on Cryptocurrencies and Blockchain Technology
   link: https://cbtworkshop.org/
-  deadline: '2026-06-17 23:59:59'
+  deadline: '2026-07-01 23:59:59'
   timezone: Etc/GMT+12
   note: Author notification 2026-07-22.
   place: Rome, Italy
@@ -192,50 +192,50 @@
   sub:
   - CR
   inactive: false
-- id: csf26summer
-  year: 2026
+- id: csf27summer
+  year: 2027
   title: IEEE CSF
   full_title: IEEE Computer Security Foundations Symposium
-  link: https://csf2026.ieee-security.org/cfp.html
-  deadline: '2025-07-24 23:59:59'
+  link: https://csf2027.ieee-security.org/cfp.html
+  deadline: '2026-08-03 23:59:59'
   timezone: Etc/GMT+12
-  note: Summer cycle. Author notification 2025-09-25.
-  place: Lisbon, Portugal
-  date: July 26-29, 2026
-  start: '2026-07-26'
-  end: '2026-07-29'
+  note: Summer cycle. Author notification 2026-10-07.
+  place: Tokyo, Japan
+  date: TBD
+  start: '2027-01-01'
+  end: '2027-12-31'
   sub:
   - DS
   - SEC
   inactive: false
-- id: csf26fall
-  year: 2026
+- id: csf27fall
+  year: 2027
   title: IEEE CSF
   full_title: IEEE Computer Security Foundations Symposium
-  link: https://csf2026.ieee-security.org/cfp.html
-  deadline: '2025-10-09 23:59:59'
+  link: https://csf2027.ieee-security.org/cfp.html
+  deadline: '2026-10-15 23:59:59'
   timezone: Etc/GMT+12
-  note: Fall cycle. Author notification 2025-12-11.
-  place: Lisbon, Portugal
-  date: July 26-29, 2026
-  start: '2026-07-26'
-  end: '2026-07-29'
+  note: Fall cycle. Author notification 2026-12-14.
+  place: Tokyo, Japan
+  date: TBD
+  start: '2027-01-01'
+  end: '2027-12-31'
   sub:
   - DS
   - SEC
   inactive: false
-- id: csf26winter
-  year: 2026
+- id: csf27winter
+  year: 2027
   title: IEEE CSF
   full_title: IEEE Computer Security Foundations Symposium
-  link: https://csf2026.ieee-security.org/cfp.html
-  deadline: '2026-01-29 23:59:59'
+  link: https://csf2027.ieee-security.org/cfp.html
+  deadline: '2027-01-28 23:59:59'
   timezone: Etc/GMT+12
-  note: Winter cycle. Author notification 2026-04-01.
-  place: Lisbon, Portugal
-  date: July 26-29, 2026
-  start: '2026-07-26'
-  end: '2026-07-29'
+  note: Winter cycle. Author notification 2027-04-05.
+  place: Tokyo, Japan
+  date: TBD
+  start: '2027-01-01'
+  end: '2027-12-31'
   sub:
   - DS
   - SEC
@@ -321,18 +321,18 @@
   sub:
   - SEC
   inactive: false
-- id: eurocrypt26
-  year: 2026
+- id: eurocrypt27
+  year: 2027
   title: Eurocrypt
   full_title: European Cryptology Conference
-  link: https://eurocrypt.iacr.org/2026/callforpapers.php
-  deadline: '2025-10-02 23:59:59'
+  link: https://eurocrypt.iacr.org/2027/callforpapers.php
+  deadline: '2026-09-17 23:59:59'
   timezone: Etc/GMT+12
-  note: Full paper submission deadline. Author notification 2026-01-29.
-  place: Rome, Italy
-  date: May 10-14, 2026
-  start: '2026-05-10'
-  end: '2026-05-14'
+  note: Full paper submission deadline. Author notification 2027-01-18.
+  place: Eindhoven, The Netherlands
+  date: April 11-15, 2027
+  start: '2027-04-11'
+  end: '2027-04-15'
   sub:
   - CR
   inactive: false
@@ -385,18 +385,18 @@
   sub:
   - DS
   inactive: false
-- id: fc26
-  year: 2026
+- id: fc27
+  year: 2027
   title: FC
   full_title: Financial Cryptography and Data Security
-  link: https://fc26.ifca.ai/cfp.html
-  deadline: '2025-09-20 23:59:59'
+  link: https://fc27.ifca.ai/cfp.html
+  deadline: '2026-09-17 23:59:59'
   timezone: Etc/GMT+12
-  note: Author notification 2025-11-24.
-  place: St. Kitts Marriott Resort, St. Kitts
-  date: 2-6 March 2026
-  start: '2026-03-02'
-  end: '2026-03-06'
+  note: Author notification 2026-11-05.
+  place: Accra Beach Hotel & Spa, Barbados
+  date: 8-12 February 2027
+  start: '2027-02-08'
+  end: '2027-02-12'
   sub:
   - BC
   inactive: false
@@ -431,19 +431,19 @@
   sub:
   - DS
   inactive: false
-- id: ipdps26
-  year: 2026
+- id: ipdps27
+  year: 2027
   title: IEEE IPDPS
   full_title: IEEE International Parallel & Distributed Processing Symposium
-  link: https://www.ipdps.org/ipdps2026/2026-call-for-papers.html
-  deadline: '2025-10-02 23:59:59'
+  link: https://www.ipdps.org/ipdps2027/2027-call-for-papers.html
+  deadline: '2026-10-01 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract submission deadline. Full manuscript submission deadline 2025-10-09
-    23:59:59 AoE. Author notification 2026-02-02.
-  place: New Orleans, USA
-  date: May 25-29, 2026
-  start: '2026-05-25'
-  end: '2026-05-29'
+  note: Abstract submission deadline. Full manuscript submission deadline 2026-10-08
+    23:59:59 AoE.
+  place: Seattle, WA, USA
+  date: June 1-5, 2027
+  start: '2027-06-01'
+  end: '2027-06-05'
   sub:
   - DS
   inactive: false
@@ -451,11 +451,11 @@
   year: 2026
   title: MARBLE
   full_title: International Conference on Mathematical Research for Blockchain Economy
-  link: https://www.marble-conference.org/marble2026
+  link: https://www.marble-conference.org/marble2026-cfp
   deadline: '2026-06-14 23:59:59'
   timezone: Etc/GMT+12
   note: Author notification 2026-07-31.
-  place: Cyprus
+  place: Limassol, Cyprus
   date: September 16-18, 2026
   start: '2026-09-16'
   end: '2026-09-18'
@@ -562,35 +562,35 @@
   - DS
   - SEC
   inactive: false
-- id: opodis25
-  year: 2025
+- id: opodis26
+  year: 2026
   title: OPODIS
   full_title: International Conference on Principles of Distributed Systems
-  link: https://conferences.info.uaic.ro/opodis2025/cfp.html
-  deadline: '2025-08-29 23:59:59'
+  link: https://opodis26.software.imdea.org/cfp.html
+  deadline: '2026-08-31 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract registration deadline. Full paper submission deadline 2025-09-05
-    23:59:59 AoE. (Deadline was extended!)
-  place: "Ia\u0219i, Romania"
-  date: December 3-5, 2025
-  start: '2025-12-03'
-  end: '2025-12-05'
+  note: Abstract registration deadline. Full paper submission deadline 2026-09-03
+    23:59:59 AoE. Author notification 2026-10-28.
+  place: Madrid, Spain
+  date: December 9-11, 2026
+  start: '2026-12-09'
+  end: '2026-12-11'
   sub:
   - DS
   inactive: false
-- id: osdi26
-  year: 2026
+- id: osdi27
+  year: 2027
   title: USENIX OSDI
   full_title: USENIX Symposium on Operating Systems Design and Implementation
-  link: https://www.usenix.org/conference/osdi26/call-for-papers
-  deadline: '2025-12-04 17:59:59'
+  link: https://www.usenix.org/conference/osdi27/call-for-papers
+  deadline: '2026-12-01 17:59:59'
   timezone: America/New_York
   note: Single submission cycle. Abstract registration deadline. Full paper deadline
-    2025-12-11 17:59:59 EST. Author notification 2026-03-26.
-  place: Seattle, WA, USA
-  date: July 13-15, 2026
-  start: '2026-07-13'
-  end: '2026-07-15'
+    2026-12-08 17:59:59 EST. Author notification 2027-03-16.
+  place: Baltimore, MD, USA
+  date: July 7-9, 2027
+  start: '2027-07-07'
+  end: '2027-07-09'
   sub:
   - DS
   inactive: false
@@ -744,8 +744,8 @@
   link: https://tcc.iacr.org/2026/callforpapers.php
   deadline: '2026-05-19 23:59:59'
   timezone: Etc/GMT+12
-  note: Submission deadline, 23:59 anywhere on earth (AoE).
-  place: New York City, USA
+  note: Author notification 2026-08-20.
+  place: New York City, NY, USA
   date: November 10-13, 2026
   start: '2026-11-10'
   end: '2026-11-13'
@@ -784,18 +784,19 @@
   sub:
   - SEC
   inactive: false
-- id: www26
-  year: 2026
+- id: www27
+  year: 2027
   title: WWW
   full_title: International World Wide Web Conference
-  link: https://www2026.thewebconf.org/calls.html
-  deadline: '2025-09-30 23:59:59'
+  link: https://acmweb2027.org/important-dates/
+  deadline: '2026-10-11 23:59:59'
   timezone: Etc/GMT+12
-  note: Full paper deadline 2025-10-07 23:59:59 AoE. Author notification 2026-01-13.
-  place: Dubai, United Arab Emirates
-  date: April 13-17, 2026
-  start: '2026-04-13'
-  end: '2026-04-17'
+  note: Abstract submission deadline. Full paper deadline 2026-10-18 23:59:59 AoE.
+    Author notification 2026-12-10.
+  place: Dublin, Ireland
+  date: May 10-14, 2027
+  start: '2027-05-10'
+  end: '2027-05-14'
   sub:
   - SEC
   inactive: false

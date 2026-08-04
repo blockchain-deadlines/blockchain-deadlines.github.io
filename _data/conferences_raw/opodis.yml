@@ -1,16 +1,16 @@
-- id: opodis25
-  year: 2025
+- id: opodis26
+  year: 2026
   title: OPODIS
   full_title: International Conference on Principles of Distributed Systems
-  link: https://conferences.info.uaic.ro/opodis2025/cfp.html
-  deadline: '2025-08-29 23:59:59'
+  link: https://opodis26.software.imdea.org/cfp.html
+  deadline: '2026-08-31 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract registration deadline. Full paper submission deadline 2025-09-05
-    23:59:59 AoE. (Deadline was extended!)
-  place: "Ia\u0219i, Romania"
-  date: December 3-5, 2025
-  start: '2025-12-03'
-  end: '2025-12-05'
+  note: Abstract registration deadline. Full paper submission deadline 2026-09-03
+    23:59:59 AoE. Author notification 2026-10-28.
+  place: Madrid, Spain
+  date: December 9-11, 2026
+  start: '2026-12-09'
+  end: '2026-12-11'
   sub:
   - DS
   inactive: false
