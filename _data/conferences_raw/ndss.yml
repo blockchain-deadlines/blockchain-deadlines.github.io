@@ -5,11 +5,11 @@
   link: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
   deadline: '2026-05-06 23:59:59'
   timezone: Etc/GMT+12
-  note: Summer cycle. Author notification 2026-07-22.
-  place: TBD
-  date: TBD
-  start: '2027-01-01'
-  end: '2027-12-31'
+  note: Summer cycle. Author notification 2026-07-29.
+  place: Seoul, South Korea
+  date: 22-26 March 2027
+  start: '2027-03-22'
+  end: '2027-03-26'
   sub:
   - SEC
   - DS
@@ -21,11 +21,11 @@
   link: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
   deadline: '2026-08-19 23:59:59'
   timezone: Etc/GMT+12
-  note: Fall cycle. Author notification 2026-11-04.
-  place: TBD
-  date: TBD
-  start: '2027-01-01'
-  end: '2027-12-31'
+  note: Fall cycle. Author notification 2026-11-24.
+  place: Seoul, South Korea
+  date: 22-26 March 2027
+  start: '2027-03-22'
+  end: '2027-03-26'
   sub:
   - SEC
   - DS

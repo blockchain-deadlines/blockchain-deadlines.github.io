@@ -336,19 +336,19 @@
   sub:
   - CR
   inactive: false
-- id: eurosp26
-  year: 2026
+- id: eurosp27
+  year: 2027
   title: IEEE EuroS&P
   full_title: IEEE European Symposium on Security and Privacy
-  link: https://eurosp2026.ieee-security.org/
-  deadline: '2025-11-13 23:59:59'
+  link: https://eurosp2027.ieee-security.org/cfp.html
+  deadline: '2026-11-25 23:59:59'
   timezone: Etc/GMT+12
-  note: Registration deadline. Full paper submission deadline 2025-11-20 23:59:59
-    AoE. Author notification 2026-03-05.
-  place: Lisbon, Portugal
-  date: July 6-10, 2026
-  start: '2026-07-06'
-  end: '2026-07-10'
+  note: Registration deadline. Full paper submission deadline 2026-12-02 23:59:59
+    AoE. Author notification 2027-03-18.
+  place: Madrid, Spain
+  date: July 5-9, 2027
+  start: '2027-07-05'
+  end: '2027-07-09'
   sub:
   - DS
   - SEC
@@ -363,9 +363,9 @@
   note: Spring cycle. Deadline for paper titles and abstracts. Full paper deadline
     2026-05-14 23:59:59 AoE. Author notification 2026-08-21.
   place: Rabat, Morocco
-  date: 19-24 April 2027
+  date: 19-23 April 2027
   start: '2027-04-19'
-  end: '2027-04-24'
+  end: '2027-04-23'
   sub:
   - DS
   inactive: false
@@ -379,9 +379,9 @@
   note: Fall cycle. Deadline for paper titles and abstracts. Full paper deadline 2026-09-24
     23:59:59 AoE. Author notification 2027-01-29.
   place: Rabat, Morocco
-  date: 19-24 April 2027
+  date: 19-23 April 2027
   start: '2027-04-19'
-  end: '2027-04-24'
+  end: '2027-04-23'
   sub:
   - DS
   inactive: false
@@ -392,7 +392,7 @@
   link: https://fc27.ifca.ai/cfp.html
   deadline: '2026-09-24 23:59:59'
   timezone: Etc/GMT+12
-  note: Author notification 2026-11-05.
+  note: Author notification 2026-11-12.
   place: Accra Beach Hotel & Spa, Barbados
   date: 8-12 February 2027
   start: '2027-02-08'
@@ -400,18 +400,18 @@
   sub:
   - BC
   inactive: false
-- id: icbc26
-  year: 2026
+- id: icbc27
+  year: 2027
   title: IEEE ICBC
   full_title: IEEE International Conference on Blockchain and Cryptocurrency
-  link: https://icbc2026.ieee-icbc.org/important-dates
-  deadline: '2026-01-07 23:59:59'
+  link: https://icbc2027.ieee-icbc.org/authors/call-for-papers
+  deadline: '2026-12-03 23:59:59'
   timezone: Etc/GMT+12
-  note: Author notification 2026-03-18.
-  place: Brisbane, Australia
-  date: June 1-5, 2026
-  start: '2026-06-01'
-  end: '2026-06-05'
+  note: Author notification 2027-02-19.
+  place: Toronto, ON, Canada
+  date: May 31-June 4, 2027
+  start: '2027-05-31'
+  end: '2027-06-04'
   sub:
   - BC
   inactive: false
@@ -438,8 +438,8 @@
   link: https://www.ipdps.org/ipdps2027/2027-call-for-papers.html
   deadline: '2026-10-01 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract submission deadline. Full manuscript submission deadline 2026-10-08
-    23:59:59 AoE.
+  note: Abstract and paper registration deadline. Full manuscript deadline 2026-10-08
+    23:59:59 AoE. Author notification 2026-12-18 (first round), final decisions 2027-02-02.
   place: Seattle, WA, USA
   date: June 1-5, 2027
   start: '2027-06-01'
@@ -469,11 +469,11 @@
   link: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
   deadline: '2026-05-06 23:59:59'
   timezone: Etc/GMT+12
-  note: Summer cycle. Author notification 2026-07-22.
-  place: TBD
-  date: TBD
-  start: '2027-01-01'
-  end: '2027-12-31'
+  note: Summer cycle. Author notification 2026-07-29.
+  place: Seoul, South Korea
+  date: 22-26 March 2027
+  start: '2027-03-22'
+  end: '2027-03-26'
   sub:
   - SEC
   - DS
@@ -485,11 +485,11 @@
   link: https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/
   deadline: '2026-08-19 23:59:59'
   timezone: Etc/GMT+12
-  note: Fall cycle. Author notification 2026-11-04.
-  place: TBD
-  date: TBD
-  start: '2027-01-01'
-  end: '2027-12-31'
+  note: Fall cycle. Author notification 2026-11-24.
+  place: Seoul, South Korea
+  date: 22-26 March 2027
+  start: '2027-03-22'
+  end: '2027-03-26'
   sub:
   - SEC
   - DS
@@ -567,9 +567,9 @@
   title: OPODIS
   full_title: International Conference on Principles of Distributed Systems
   link: https://opodis26.software.imdea.org/cfp.html
-  deadline: '2026-08-31 23:59:59'
+  deadline: '2026-09-07 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract registration deadline. Full paper submission deadline 2026-09-03
+  note: Abstract registration deadline. Full paper submission deadline 2026-09-10
     23:59:59 AoE. Author notification 2026-10-28.
   place: Madrid, Spain
   date: December 9-11, 2026
@@ -599,9 +599,9 @@
   title: PKC
   full_title: IACR International Conference on Public-Key Cryptography
   link: https://pkc.iacr.org/2027/callforpapers.php
-  deadline: '2026-08-03 23:59:59'
+  deadline: '2026-08-16 23:59:59'
   timezone: Etc/GMT+12
-  note: Author notification 2026-11-19.
+  note: Author notification 2026-11-26.
   place: Taipei, Taiwan
   date: March 1-4, 2027
   start: '2027-03-01'
@@ -672,20 +672,19 @@
   sub:
   - DS
   inactive: false
-- id: sirocco26
-  year: 2026
+- id: sirocco27
+  year: 2027
   title: SIROCCO
   full_title: International Colloquium on Structural Information and Communication
     Complexity
-  link: https://easychair.org/cfp/sirocco2026
-  deadline: '2025-11-02 23:59:59'
+  link: https://cyprusconferences.org/sirocco2027/call-for-papers-2/
+  deadline: '2026-10-31 23:59:59'
   timezone: Etc/GMT+12
-  note: Abstract registration deadline. Full paper deadline 2025-11-09 23:59:59 AoE.
-    Author notification 2026-01-20.
-  place: Durham, UK
-  date: June 9-11, 2026
-  start: '2026-06-09'
-  end: '2026-06-11'
+  note: Author notification 2027-01-30.
+  place: Larnaca, Cyprus
+  date: June 2-4, 2027
+  start: '2027-06-02'
+  end: '2027-06-04'
   sub:
   - DS
   inactive: false
